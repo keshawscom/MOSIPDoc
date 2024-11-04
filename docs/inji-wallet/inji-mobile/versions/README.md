@@ -12,7 +12,7 @@
 * Name: Inji Wallet 0.13.1 Patch release
 * Date: 10th Sep, 2024
 * Type: Developer
-* [Release Notes](./#version-0.13.1)
+* [Release Notes](version-0.13.1/)
 
 ## Version: 0.13.0
 
