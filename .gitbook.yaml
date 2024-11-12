@@ -4,4 +4,4 @@ structure:
     summary: summary.md
     
 redirects:
-docs/inji-verify/test-topic: docs/inji-verify/overview.md
+inji-verify/test-topic: ./docs/inji-verify/overview.md
