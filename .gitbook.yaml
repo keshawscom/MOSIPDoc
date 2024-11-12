@@ -5,4 +5,4 @@ structure:
 
 redirect:
     modules/compliance-tool-kit: biometrics.md
-    inji: biometrics.md
+    docs/inji: biometrics.md
