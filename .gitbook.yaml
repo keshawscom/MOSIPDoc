@@ -3,5 +3,5 @@ root: ./docs/
 structure:
     summary: summary.md
     
-inji: readme/announcement.md
+readme/license: readme/announcement.md
 
