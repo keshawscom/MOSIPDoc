@@ -5,3 +5,7 @@ structure:
     
 redirects:
 inji-verify/test-topic: inji-verify/overview.md
+
+rewrites:
+  - from: "/inji-verify/*"
+    to: "/inji-verify/overview"
