@@ -3,5 +3,6 @@ root: ./docs/
 structure:
     summary: summary.md
     
-readme/license: readme/announcement.md
+redirects:
+inji-verify/test-topic: readme/announcement.md
 
