@@ -33,7 +33,7 @@ After adding the provider in configuration, it will be displayed on the UI on `A
 
 ### **Onboarding Mimoto as OIDC Client for a new Issuer:**
 
-#### Use already onboarded client-id on collab sendbox env
+#### Use already onboarded client-id on collab sandbox env
 A client-id is already created to try out authorizaton through esignet deployed on collab env.
 Following are the details:
 1. clientId - This is the client id created
