@@ -149,3 +149,7 @@
 * [Build & Deploy](inji-verify/build-and-deploy/README.md)
   * [Local Setup](inji-verify/build-and-deploy/local-setup.md)
   * [Generate QR Code](inji-verify/build-and-deploy/creating-verifiable-credentials-and-generating-qr-codes.md)
+
+***
+
+* [Page 1](page-1.md)
