@@ -17,52 +17,51 @@ Example:-
     export const Theme = PurpleTheme;
 ```
 
-### Logo and Background Images
+### App Logo and Background Images
 
-To change the MOSIP logo:
+To change app logo on homescreen
 
 ```
-MosipLogo: require(path of logo you want to use, in string format) in a theme file
+HomeScreenLogo: require(path of logo you want to use, in string format) in a theme file
 
 Example:-
+import HomeScreenLogo from '../../../assets/InjiHomeLogo.svg';
 export const DefaultTheme = {
-    MosipLogo: require('../../assets/mosip-logo.png')
+    HomeScreenLogo: HomeScreenLogo
     ...
 }
 ```
 
-To change the profile logo which is available as a demo while loading the vc details:
+Profile logo is part of downloaded verifiable credential. If credential doesn't face/photo attribute, default profile icon is being used. 
+
+To change the profile logo, In `ProfileIcon.tsx`, refer
 
 ```
-cardFaceIcon: require(path of logo you want to use, in string format)
-
-Example:-
-export const DefaultTheme = {
-    cardFaceIcon: require('../../assets/placeholder-photo.png')
-    ...
-}
+import {Icon} from 'react-native-elements';
+use `person` as icon from the library
 ```
 
-To change the `CloseCard` details background:
+Card background is driven by wellknown exposed by issuing authoriy. If background details are not exposed, default background is being used.
+To change card background on home screen if not provided by issuer:
 
 ```
 CloseCard: require(path of the image you want to use, in string format)
 
 Example:-
 export const DefaultTheme = {
-    CloseCard: require('../../assets/card_bg.png')
+    CloseCard: require('../../../assets/Card_Bg1.png'),
     ...
 }
 ```
 
-To change the `OpenCard` card details background:
+To change background on card details screen if not provided by issuer
 
 ```
 OpenCard: require(path of the image you want to use, in string format)
 
 Example:-
 export const DefaultTheme = {
-    OpenCard: require('../../assets/card_bg.png')
+    OpenCard: require('../../../assets/Card_Bg1.png'),
     ...
 }
 ```
@@ -74,10 +73,17 @@ To change the top header icons:
 In `HomeScreenLayout.tsx`, refer
 
 ```
-const HomeScreenOptions = {
-    headerLeft: ()  // for Inji icon
-    headerRight: () // for help and setting icon
-}
+ var HomeScreenOptions = {
+    headerLeft: () =>
+      isIOS() || !isRTL
+        ? SvgImage.InjiLogo(Theme.Styles.injiLogo)
+        : screenOptions,
+    headerTitle: '',
+    headerRight: () =>
+      isIOS() || !isRTL
+        ? screenOptions
+        : SvgImage.InjiLogo(Theme.Styles.injiLogo),
+  };
 ```
 
 ### Colours
@@ -86,48 +92,55 @@ To change the text, colour and logo for Tabs:
 
 ![](../../../.gitbook/assets/bottom\_tabs.png)
 
-In `main.ts`, there are 3 tab screens variables
+In `main.ts`, there are 4 tab screens variables
 
 ```
 const home: TabScreen
 const scan: TabScreen
 const history: TabScreen
+const settings: TabScreen
 
 ```
 
-`text` can be changed by `name` attribute `logo` can be changed by `icon` attribute `colour` can be changed by `color` attribute in `MainLayout.tsx` while rendering `Navigator`
+`image` can be changed by `icon` attribute, `text` and `styles` can be changed by `options` attribute in `MainLayout.tsx` while rendering `Navigator`
 
 ```
 Example:-
-color={focused ? Theme.Colors.Icon : Theme.Colors.GrayIcon}
+const history: TabScreen = {
+  name: BOTTOM_TAB_ROUTES.history,
+  component: HistoryScreen,
+  icon: 'history',
+  options: {
+    headerTitleStyle: Theme.Styles.HistoryHeaderTitleStyle,
+    title: i18n.t('MainLayout:history'),
+  },
+};
 ```
 
-To change the colour of the Details Label Text:
+Card content text color is driven by wellknown exposed by issuing authoriy. If text color is not exposed, default color is being used.
+To change default Label text color if not provided by issuer:
 
 ![](../../../.gitbook/assets/details-label.png)
 
 ```
 export const DefaultTheme = {
   Colors: {
-      DetailsLabel: Colors.Gray40,
+     DetailsLabel: Colors.Gray40,
     ...
   }
 }
 ```
 
-To change the colour of Details Value Text:
+To change default Label value color if not provided by issuer:
 
 ![](../../../.gitbook/assets/details-value.png)
 
 ```
 export const DefaultTheme = {
-  Styles: StyleSheet.create({
-      detailsValue: {
-        color: Colors.Black,
-        fontSize: 12,
-    }
+  Colors: {
+     Details: Colors.Black,
     ...
-  })
+  }
 }
 ```
 
@@ -141,49 +154,6 @@ In `HomeScreen.tsx`, refer `DownloadFABIcon` component
 const DownloadFABIcon: React.FC = () => {
     const plusIcon
 ....
-}
-```
-
-To change the colour of the Loading Transition:
-
-![](../../../.gitbook/assets/loading-transition.png)
-
-```
-export const DefaultTheme = {
-  Colors: {
-       Loading: colors.Orange,
-    ...
-  }
-}
-```
-
-To change the colour of the Error message:
-
-![](../../../.gitbook/assets/error-message.png)
-
-```
-export const DefaultTheme = {
-  Styles: StyleSheet.create({
-      error: {
-        color: Colors.Red,
-        fontFamily: 'Inter_600SemiBold',
-        fontSize: 12,
-    }
-    ...
-  })
-}
-```
-
-To change the colour of noUinText:
-
-![](../../../.gitbook/assets/no-uin-text.png)
-
-```
-export const DefaultTheme = {
-  Colors: {
-       getVidColor: Colors.Zambezi,
-    ...
-  }
 }
 ```
 
@@ -229,13 +199,12 @@ To change colour on add new card page:
 ```
 export const DefaultTheme = {
     Styles: StyleSheet.create({
-      ssuerHeading: {
+    issuerHeading: {
       fontFamily: 'Inter_600SemiBold',
       fontSize: 14,
-      lineHeight: 17,
       paddingHorizontal: 3,
-      paddingBottom: 4,
-      paddingTop: 1.7,
+      marginBottom: 2,
+      marginTop: 5,
     },
     issuerDescription: {
       fontSize: 11,
@@ -252,7 +221,7 @@ export const DefaultTheme = {
 
 ## VC Card Customization:
 
-The VC can be dynamically rendered with all the fields, and if the display properties provided in the[ .well-known](https://mosip-team.slack.com/archives/D05BJE34VT4/p1708683594418449), Inji Wallet downloads the `.well-known` and applies the below properties on the VC template to modify the VC render.
+The VC can be dynamically rendered with all the fields, and if the display properties provided in the[ .well-known](https://injicertify-mosipid.collab.mosip.net/v1/certify/issuance/.well-known/openid-credential-issuer), Inji Wallet downloads the `.well-known` and applies the below properties on the VC template to modify the VC render.
 
 * Text colour
 * Background colour
