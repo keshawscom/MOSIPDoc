@@ -4,8 +4,14 @@
 
 * Under `locales` folder, localization of a particular language JSON file has to be added.
 * Language JSON has to be imported in `i18n.ts` and load the resources to i18next as follows. `import fil from './locales/fil.json';` `const resources = { en, fil, ar, hi, kn, ta };`
-* To ensure the language needs to be included in the const `SUPPORTED_LANGUAGES`. `const { t } = useTranslation('common');`
-* To use with react, must include the key with the 't' function `<Text>{t('editLabel')}</Text>`
+* To ensure the language needs to be included in the const `SUPPORTED_LANGUAGES`. 
+* To use with react, must include the key with the 't' function
+  
+```
+const { t } = useTranslation('common');
+<Text>{t('editLabel')}</Text>
+
+```
 
 ## About libraries
 
