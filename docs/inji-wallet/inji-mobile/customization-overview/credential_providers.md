@@ -33,12 +33,18 @@ After adding the provider in configuration, it will be displayed on the UI on `A
 
 ### **Onboarding Mimoto as OIDC Client for a new Issuer:**
 
-#### Use already onboarded client-id on collab sandbox env
-A client-id is already created to try out authorizaton through esignet deployed on collab env.
-Following are the details:
-1. clientId - This is the client id created
-2. clientAlias - This is alias created during keypair generation
-4. oidckeystore.p12 - This is the file generated to be mounted on mimoto
+#### Use mock data from collab sandbox env
+If you are looking to try out wallet and certify building locally, then you can use collab env eSignet as authorization server. 
+Here are the details:
+1. We have configured few UINs/Individual Ids to use.
+   These UINs can be used while configuring the data for credential
+2. Use `wallet-demo` as client id in `mimoto-issuers-config.json`
+3. Use `wallet-demo-client` as client alias in `mimoto-issuers-config.json`
+4. oidckeystore.p12 file is attached [here]()
+   password to unlock this is `xy4gh6swa2i`
+5. authorization server to use in `well-known` is `https://esignet-mock.collab.mosip.net`
+
+After configuring issuers and data as mentioned above, we will be able to successfully authenticate through esigent and download credential in wallet.
 
 
 #### Create new client-id and onboard mimoto as OIDC client
