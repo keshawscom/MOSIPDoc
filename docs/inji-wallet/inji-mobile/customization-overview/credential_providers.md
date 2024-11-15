@@ -140,29 +140,29 @@ Once p12 file is generated, existing keystore file has to be exported from mimot
 
 **Step 6:**
 
-Once mimoto is added as an OIDC client, the new issuer should be added as a partner to mimoto. Please find the below section detailing the steps.
+Once mimoto is added as an OIDC client, the new issuer should be added as a partner to mimoto.
 
-### **Add new partner in Mimoto:**
+### **Using Mosip services to issue Mosip Credential:**
 
-Following is the process of adding a new partner by the name of “esignet--partner “ onto mimoto.
+1. Create a partner - following is the process of adding a new partner by the name of “esignet--partner “ onto mimoto.
 
 {% hint style="info" %}
 We already have a p12 file on the mimoto pod (as explained in above section), we are not replacing or creating a second p12 file, We are only adding another key to the key-store already present.
 {% endhint %}
 
-1. Download the existing p12 file from the mimoto pod using this command from the environment's terminal:
+1. Add this newly created partner into existing keystore - download the existing p12 file from the mimoto pod using this command from the environment's terminal:
 
 ```js
-kubectl -n mimoto cp mimoto-86cc54569c-9bs65:certs/..data/oidckeystore.p12 oidckeystore.p12
+kubectl -n mimoto cp <mimoto-podname>:certs/..data/oidckeystore.p12 oidckeystore.p12
 ```
 
-2. Add the esignet--partner's key as alias “esignet--partner“ onto the same p12 file using a tool like keystore-explorer. The password here is “mosip123“
+2. Add the esignet--partner's key as alias “esignet--partner“ onto the same p12 file using a tool like keystore-explorer. Use the password used while generating p12 file
 
 <figure><img src="../../../.gitbook/assets/Original_p12file_img1.png" alt=""><figcaption><p>Original p12 file as downloaded from environment</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Import new keypair_img2.png" alt=""><figcaption><p>Importing a new keypair</p></figcaption></figure>
 
-3. The below image shows how to browse and select the esignet-sunbird-partner’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file, in this case “mosip123“
+3. The below image shows how to browse and select the client-id’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file
 
 <figure><img src="../../../.gitbook/assets/OIDC keystore_img3.png" alt=""><figcaption><p>Selection of OIDC Keystore</p></figcaption></figure>
 
