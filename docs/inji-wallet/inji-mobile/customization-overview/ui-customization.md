@@ -4,10 +4,10 @@
 
 Currently, Inji Wallet supports two themes:
 
-* orange
+* default gradient
 * purple
 
-We can customize the application by adding a new file under `components/ui/themes` and import that file in `components/ui/styleUtils.ts` and assign that to `Theme` variable in it. Orange theme is referred as DefaultTheme.
+We can customize the application by adding a new file under `components/ui/themes` and import that file in `components/ui/styleUtils.ts` and assign that to `Theme` variable in it. Default Gradient theme is referred as DefaultTheme.
 
 ```
 Example:-
