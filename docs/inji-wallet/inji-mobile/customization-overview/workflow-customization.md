@@ -10,12 +10,13 @@ This is the root state machine for the application. On initialisation, it starts
 
 * store.ts
 * auth.ts
-* vc.ts
+* vcMetaMachine.ts
 * settings.ts
 * activityLog.ts
 * requestMachine.ts
 * scanMachine.ts
-* revoke.ts
+* backup.ts
+* backupRestore.ts
 
 ## store.ts
 
@@ -36,44 +37,34 @@ On first launch, once the user selects language preference, and goes through int
 
 After selecting the unlock method as passcode or biometric, the user is navigated to Home screen Once user is on home screen, app state is considered as authorized. Once a user logs out from settings, the state is considered as unauthorized.
 
-## vc.ts
+## vcItemMachine.ts
 
-This state machine takes care of the VC received in Inji Wallet as a Wallet or Verifier. When Inji Wallet is being used as a Wallet, all the user-downloaded VCs are displayed on the Home screen.
+This state machine is spawned for every VC downloaded, and tracks its lifecycle. This contains all the activities/state related to VC like:
 
-It also keeps track of sharing VC over BLE. When Inji Wallet is being used as a Verifier, all received VCs are displayed under the Received Card option in Settings.
-
-## ExistingMosipVCItemMAchine.ts
-
-This state machine takes care of VC downloaded via UIN/VID. This contains all the activities/state related to VC like:
-
-* downloading VC
-* sending the event to the store machine to store the VC
+* load VC
 * activate VC
-* uses the events from vc.ts
-* verifies the credentials once received
+* activate/delete/pin/unpin VC
+* verifies the credentials
 
-After a request is made to download a new VC, an event will be sent to this state machine. It will internally check if VC is "ISSUED" successfully, then initiate VC download. It also takes care of retrying in case there is any issue during the download.
+## vcMetaMachine.ts
 
-Any new feature for a VC is to be added to this state machine.
-
-## EsignetMosipVCItemMachine.ts
-
-This state machine takes care of VC downloaded via eSignet. This contains all the activities/state related to VC like:
-
-* downloading VC
-* sending the event to the store machine to store the VC
-* activate VC
-* uses the events from vc.ts
+This state machine takes care of the all the meta information related to all VCs.
 
 ## issuersMachine.ts
 
-This state machine manages the entire OpenID4VCI flow. The issuer state machine calls the endpoints `/issuers` and `/issuers/<issuer_name>` to display the list of issuers in the user interface, as well as downloads and caches the issuer's configuration. It also performs the following actions:
+This state machine  list of issuers in the user interface, as well as downloads and caches the issuer's configuration. It also performs the following actions:
 
-* OIDC authorization using `react-native-app-auth` library
-* generating key-pairs for OpenID4VCI flow
 * download credential
 * verify the verifiable credential
 * store the verifiable credential
+
+## backup.ts
+
+This state machine performs all action related to backing up of the verifiable credentials on google drive or iCloud.
+
+## backupRestore.ts
+
+This state machine performs all action related to restoring and verifying  the backed up verifiable credentials from  google drive or iCloud.
 
 ## settings.ts
 
@@ -90,12 +81,6 @@ This state machine is instantiated when the user launches the verification secti
 ## scanMachine.ts
 
 This state machine is instantiated when the user launches the scanner section which opens up the camera to scan the QR code presented by the Verifier. The scanned data is fed into the underlying [offline VC sharing component](../technical-overview/components.md#offline-vc-sharing-component) to allow the discovery of the Verifier device and establish a connection to it. Once the connection is established, the user is allowed to select the downloaded VCs that can be shared with Verifier. The state machine also allows selfie/face verification before sharing VC.
-
-## revoke.ts
-
-_Note_: This feature is currently disabled in Inji Wallet but underlying support for code is available.
-
-A unique ID can be revoked using Inji Wallet. For example, if the resident has used a VID to generate VCs and no longer wishes to use the VID, then it can be disabled. This state machine will communicate with the backend service to disable the VC.
 
 ## QrLoginMachine.ts
 
