@@ -9,6 +9,12 @@ Inji Wallet currently provides support for following credential providers:
 
 To set up a new provider that can issue VC, it can be accomplished by making a few configuration changes.
 
+**Few Demo UINs you can use**
+
+<table><thead><tr><th width="322">Type</th><th>UIN</th></tr></thead><tbody><tr><td>Male (Adult) </td><td>2154189532 , 5614273165</td></tr><tr><td>Female (Adult)</td><td>2089250384 , 5860356276</td></tr><tr><td>Minor (aged btw 5-18yrs)</td><td>3963293078</td></tr><tr><td>Infant (aged below 5 yrs)</td><td>5134067562</td></tr></tbody></table>
+
+
+
 **Steps:**
 
 1. The configuration details can be found in the `mimoto-issuers-config.json` property file. This file is maintained separately for each deployment environment. In this repository, each environment's configuration is stored in a dedicated branch specific to that environment.
@@ -26,26 +32,22 @@ After adding the provider in configuration, it will be displayed on the UI on `A
 * If new provider supports [OpenID4VCI](https://openid.net/specs/openid-4-verifiable-credential-issuance-1\_0.html) protocol, it is recommended to use `issuerMachine.ts` for workflow to download VC.
 
 3. At present, Inji Wallet supports verification of VCs which has RSA proof type. If VC is issued with any other proof type, VC verification is bypassed and it is marked as verified.
-
 4. Token endpoint should also use same issuer id. Refer https://github.com/mosip/inji-config/blob/collab/mimoto-issuers-config.json#L140
-
 5. Once the above steps are completed, mimoto should be onboarded as an OIDC client for every issuer. Please check the steps in the below sections.
 
 ### **Onboarding Mimoto as OIDC Client for a new Issuer:**
 
 #### Use mock data from collab sandbox env
-If you are looking to try out wallet and certify building locally, then you can use collab env eSignet as authorization server. 
-Here are the details:
-1. We have configured few UINs/Individual Ids to use.
-   These UINs can be used while configuring the data for credential
+
+If you are looking to try out wallet and certify building locally, then you can use collab env eSignet as authorization server. Here are the details:
+
+1. We have configured few UINs/Individual Ids to use. These UINs can be used while configuring the data for credential
 2. Use `wallet-demo` as client id in `mimoto-issuers-config.json`
 3. Use `wallet-demo-client` as client alias in `mimoto-issuers-config.json`
-4. oidckeystore.p12 file is attached [here]("../../../.gitbook/assets/oidckeystore.p12")
-   password to unlock this is `xy4gh6swa2i`
+4. oidckeystore.p12 file is attached [here](../.gitbook/assets/oidckeystore.p12%22) password to unlock this is `xy4gh6swa2i`
 5. authorization server to use in `well-known` is `https://esignet-mock.collab.mosip.net`
 
 After configuring issuers and data as mentioned above, we will be able to successfully authenticate through esigent and download credential in wallet.
-
 
 #### Create new client-id and onboard mimoto as OIDC client
 
@@ -162,8 +164,7 @@ kubectl -n mimoto cp <mimoto-podname>:certs/..data/oidckeystore.p12 oidckeystore
 
 <figure><img src="../../../.gitbook/assets/Import new keypair_img2.png" alt=""><figcaption><p>Importing a new keypair</p></figcaption></figure>
 
-3. The below image shows how to browse and select the client-id’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file.
-Note: we have used `esignet-sunbird-partner` as client id for reference in the attachment
+3. The below image shows how to browse and select the client-id’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file. Note: we have used `esignet-sunbird-partner` as client id for reference in the attachment
 
 <figure><img src="../../../.gitbook/assets/OIDC keystore_img3.png" alt=""><figcaption><p>Selection of OIDC Keystore</p></figcaption></figure>
 
