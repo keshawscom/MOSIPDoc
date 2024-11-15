@@ -468,7 +468,7 @@ Let us understand the process of sharing credentials using an example and see th
 
 </div>
 
-<figure><img src="../../../.gitbook/assets/On Resident&#x27;s wallet.png" alt="" width="375"><figcaption><p>On Resident's wallet</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/On Resident&#x26;#x27;s wallet.png" alt=""><figcaption><p>On Resident's wallet</p></figcaption></figure>
 
 **On the Relying Party's phone**:
 
