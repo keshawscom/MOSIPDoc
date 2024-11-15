@@ -142,9 +142,9 @@ Once p12 file is generated, existing keystore file has to be exported from mimot
 
 Once mimoto is added as an OIDC client, the new issuer should be added as a partner to mimoto.
 
-### **Using Mosip services to issue Mosip Credential:**
+### **Using MOSIP services to issue MOSIP Credential:**
 
-1. Create a partner - following is the process of adding a new partner by the name of “esignet--partner “ onto mimoto.
+1. Create a partner - following is the process of adding a new partner by the name of “esignet--partner “ onto mimoto. Refer [here](https://docs.mosip.io/1.2.0/partners#partner-onboarding) to create a partner and onboard the partner in MOSIP Ecosystem.
 
 {% hint style="info" %}
 We already have a p12 file on the mimoto pod (as explained in above section), we are not replacing or creating a second p12 file, We are only adding another key to the key-store already present.
@@ -162,7 +162,8 @@ kubectl -n mimoto cp <mimoto-podname>:certs/..data/oidckeystore.p12 oidckeystore
 
 <figure><img src="../../../.gitbook/assets/Import new keypair_img2.png" alt=""><figcaption><p>Importing a new keypair</p></figcaption></figure>
 
-3. The below image shows how to browse and select the client-id’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file
+3. The below image shows how to browse and select the client-id’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file.
+Note: we have used `esignet-sunbird-partner` as client id for reference in the attachment
 
 <figure><img src="../../../.gitbook/assets/OIDC keystore_img3.png" alt=""><figcaption><p>Selection of OIDC Keystore</p></figcaption></figure>
 
