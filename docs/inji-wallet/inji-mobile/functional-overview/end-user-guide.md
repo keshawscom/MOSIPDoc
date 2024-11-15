@@ -669,33 +669,13 @@ To backup VCs, the user has to choose their preference for the cloud based on th
 
 ### Data backup- ios
 
-<div>
+<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step1.png" alt="" width="188"><figcaption></figcaption></figure>
 
- 
 
-<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step2.png" alt="" width="188"><figcaption><p>Data backup on iOS</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step2.png" alt=""><figcaption></figcaption></figure>
 
- 
 
-<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step3.png" alt="" width="188"><figcaption></figcaption></figure>
-
-</div>
-
-<div>
-
-<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step4.png" alt="" width="188"><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step5.png" alt="" width="188"><figcaption><p>Data backup on iOS</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/Data Backup_iOS_Step6.png" alt="" width="188"><figcaption></figcaption></figure>
-
-</div>
 
 ### Restore
 
