@@ -2,7 +2,7 @@
 
 Inji Wallet currently provides support for following credential providers:
 
-**Download VC using OpenID for VC Issuance Flow (eSignet)**
+**Download VC using OpenID for VC Issuance Flow**
 
 * National ID
 * Insurance
@@ -13,28 +13,41 @@ To set up a new provider that can issue VC, it can be accomplished by making a f
 
 1. The configuration details can be found in the `mimoto-issuers-config.json` property file. This file is maintained separately for each deployment environment. In this repository, each environment's configuration is stored in a dedicated branch specific to that environment.
 
-> Refer to [mimoto-issuers-config.json](https://github.com/mosip/mosip-config/blob/collab1/mimoto-issuers-config.json) of Collab environment.
+> Refer to [mimoto-issuers-config.json](https://github.com/mosip/inji-config/blob/collab/mimoto-issuers-config.json) of Collab environment.
 
 These values will be used by Inji Wallet via Mimoto. Mimoto exposes APIs which is used by the Inji Wallet application to fetch, store the issuers and their configurations in the local storage.
 
-* API used to fetch issuers: `https://api.mosip.io/v1/mimoto/residentmobileapp/issuers`
-* API used to fetch issuer's configuration: `https://api.mosip.io/v1/mimoto/residentmobileapp/issuers/${issuerId}`
+* API used to fetch issuers: `https://api.collab.mosip.net/v1/mimoto/issuers`
 
 2. In `mimoto-issuers-config.json`, new providers can be added as per the `well-known` schema defined by OpenID4VCI standards.
 
 After adding the provider in configuration, it will be displayed on the UI on `Add new card` screen.
 
-* If new provider supports [OpenID4VCI](https://openid.net/specs/openid-4-verifiable-credential-issuance-1\_0.html) protocol, it is recommended to use `issuerMachine.ts` and `EsignetMosipVCItemMachine.ts` for workflow to download VC.
-* If it doesn't support `OpenID4VCI` protocol, new state machine needs to be added. Please refer to `issuerMachine.ts` and `EsignetMosipVCItemMachine.ts`.
+* If new provider supports [OpenID4VCI](https://openid.net/specs/openid-4-verifiable-credential-issuance-1\_0.html) protocol, it is recommended to use `issuerMachine.ts` for workflow to download VC.
 
-3. At present, Inji Wallet supports verification of VCs which has RSA proof type. If VC is issued with any other proof type, verification will fail and VC will not be downloaded. To bypass this VC verification, we need to use issuer id as "Sunbird".
+3. At present, Inji Wallet supports verification of VCs which has RSA proof type. If VC is issued with any other proof type, VC verification is bypassed and it is marked as verified.
 
-> Refer https://github.com/mosip/mosip-config/blob/collab1/mimoto-issuers-config.json#L71 as reference. Here, credential\_issuer should be "Sunbird" and then add all the configuration.
+4. Token endpoint should also use same issuer id. Refer https://github.com/mosip/inji-config/blob/collab/mimoto-issuers-config.json#L140
 
-4. Token endpoint should also use same issuer id. Refer https://github.com/mosip/mosip-config/blob/collab1/mimoto-issuers-config.json#L143
 5. Once the above steps are completed, mimoto should be onboarded as an OIDC client for every issuer. Please check the steps in the below sections.
 
 ### **Onboarding Mimoto as OIDC Client for a new Issuer:**
+
+#### Use mock data from collab sandbox env
+If you are looking to try out wallet and certify building locally, then you can use collab env eSignet as authorization server. 
+Here are the details:
+1. We have configured few UINs/Individual Ids to use.
+   These UINs can be used while configuring the data for credential
+2. Use `wallet-demo` as client id in `mimoto-issuers-config.json`
+3. Use `wallet-demo-client` as client alias in `mimoto-issuers-config.json`
+4. oidckeystore.p12 file is attached [here]("../../../.gitbook/assets/oidckeystore.p12")
+   password to unlock this is `xy4gh6swa2i`
+5. authorization server to use in `well-known` is `https://esignet-mock.collab.mosip.net`
+
+After configuring issuers and data as mentioned above, we will be able to successfully authenticate through esigent and download credential in wallet.
+
+
+#### Create new client-id and onboard mimoto as OIDC client
 
 **Step 1:**
 
@@ -49,7 +62,7 @@ The Userguide.md file explains the working of the script.
 Create a client ID using the Esignet API which is mentioned below:
 
 ```js
-RequestURL : {{URL}}/v1/esignet/client-mgmt/oidc-client
+RequestURL : {{ESIGNET-URL}}/v1/esignet/client-mgmt/oidc-client
 ```
 
 **Sample Request Body:**
@@ -60,18 +73,10 @@ RequestURL : {{URL}}/v1/esignet/client-mgmt/oidc-client
 {
   "requestTime": "2024-06-19T11:56:01.925Z",
   "request": {
-    "clientId": "mpartner-default-esignet-sunbird", #ClientId can be given as per user choice
-    "clientName": "SUNBIRD", #ClientName can be given as per user choice and this name shows on the UI
-    "publicKey":
-    "publicKey": #This public key you can get from the script results
-      {
-    "kty": "RSA",
-    "e": "AQAB",
-    "use": "sig",
-    "alg": "RS256",
-    "n": "iYUbabC5vDW1ajzCF_MamTYuNrj_q-VuGO1Phzoi8G2DttiPpWc1WXNe2n22wD8-xVpIFT0Tm-wCNm7vbnQJ0n5RyWgn_4fOJkCeUgNOFeVm4g92IDcstoN9Hos_4G2-FUwtNNmGh0z_g-jkdUs_y2HXHJS97MBex9v8czMUknru-5EJvXzyKjEYY_z50oMl7RfpsFK76vJ84T7bpj90ZlkCqSi_ru0rYZaYc8CE7UIV1oKf33fQXuUw4vxlaxMRNxYFtdiGooeYouz8tfpav7yN88Urn6Js2vHdf8ugUYodM1_TOesosHjYEaMr80M0nT0z394OoDPFwzI5YC3koQ"
-},
-    "relyingPartyId": "mpartner-default-esignet-sunbird", #This value can be same as clientId
+    "clientId": "client-id", #ClientId can be given as per user choice
+    "clientName": "client-name", #ClientName can be given as per user choice and this name shows on the UI
+    "publicKey": "public-key" #This public key you can get from the script results ,
+    "relyingPartyId": "client-id", #This value can be same as clientId
     "userClaims":  [       #Claims Section defines the different attributes of User Data taht is accessible to the OIDC client
             "birthdate",
             "address",
@@ -85,10 +90,11 @@ RequestURL : {{URL}}/v1/esignet/client-mgmt/oidc-client
     "authContextRefs":  [ #ACR values define the various ways a user can login e.g through INJI,using Bioemtrics and Throguh OTP
             "mosip:idp:acr:linked-wallet",
             "mosip:idp:acr:biometrics",
-            "mosip:idp:acr:knowledge"
+            "mosip:idp:acr:knowledge",
+            "mosip:idp:acr:generated-code"
         ],
-    "logoUri": "{{url}}/inji/inji-home-logo.png",
-    "redirectUris": [ "https:\/\/healthservices.{{url}}\/userprofile"],
+    "logoUri": "logourl" #This is logo url which is displayed on UI,
+    "redirectUris": [ "io.mosip.residentapp.inji://oauthredirect", http://injiweb.collab.mosip.net/redirect"],#These are the redirectUris for Inji wallet mobile and web both
     "grantTypes": [
       "authorization_code"
     ],
@@ -105,12 +111,9 @@ RequestURL : {{URL}}/v1/esignet/client-mgmt/oidc-client
 ```js
 
 {
-    "id": null,
-    "version": null,
-    "responsetime": "2024-05-21T11:56:26.752Z",
-    "metadata": null,
+    "responseTime": "2024-11-13T08:16:42.259Z",
     "response": {
-        "clientId": "mpartner-default-esignet-sunbird",
+        "clientId": "client-id",
         "status": "ACTIVE"
     },
     "errors": []
@@ -137,29 +140,30 @@ Once p12 file is generated, existing keystore file has to be exported from mimot
 
 **Step 6:**
 
-Once mimoto is added as an OIDC client, the new issuer should be added as a partner to mimoto. Please find the below section detailing the steps.
+Once mimoto is added as an OIDC client, the new issuer should be added as a partner to mimoto.
 
-### **Add new partner in Mimoto:**
+### **Using MOSIP services to issue MOSIP Credential:**
 
-Following is the process of adding a new partner by the name of “esignet--partner “ onto mimoto.
+1. Create a partner - following is the process of adding a new partner by the name of “esignet--partner “ onto mimoto. Refer [here](https://docs.mosip.io/1.2.0/partners#partner-onboarding) to create a partner and onboard the partner in MOSIP Ecosystem.
 
 {% hint style="info" %}
 We already have a p12 file on the mimoto pod (as explained in above section), we are not replacing or creating a second p12 file, We are only adding another key to the key-store already present.
 {% endhint %}
 
-1. Download the existing p12 file from the mimoto pod using this command from the environment's terminal:
+1. Add this newly created partner into existing keystore - download the existing p12 file from the mimoto pod using this command from the environment's terminal:
 
 ```js
-kubectl -n mimoto cp mimoto-86cc54569c-9bs65:certs/..data/oidckeystore.p12 oidckeystore.p12
+kubectl -n mimoto cp <mimoto-podname>:certs/..data/oidckeystore.p12 oidckeystore.p12
 ```
 
-2. Add the esignet--partner's key as alias “esignet--partner“ onto the same p12 file using a tool like keystore-explorer. The password here is “mosip123“
+2. Add the esignet--partner's key as alias “esignet--partner“ onto the same p12 file using a tool like keystore-explorer. Use the password used while generating p12 file
 
 <figure><img src="../../../.gitbook/assets/Original_p12file_img1.png" alt=""><figcaption><p>Original p12 file as downloaded from environment</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Import new keypair_img2.png" alt=""><figcaption><p>Importing a new keypair</p></figcaption></figure>
 
-3. The below image shows how to browse and select the esignet-sunbird-partner’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file, in this case “mosip123“
+3. The below image shows how to browse and select the client-id’s oidckeystore as the second alias. in the decryption password field should have the password of the p12 file.
+Note: we have used `esignet-sunbird-partner` as client id for reference in the attachment
 
 <figure><img src="../../../.gitbook/assets/OIDC keystore_img3.png" alt=""><figcaption><p>Selection of OIDC Keystore</p></figcaption></figure>
 
