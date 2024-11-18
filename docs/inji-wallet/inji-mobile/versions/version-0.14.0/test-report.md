@@ -58,13 +58,13 @@ Verification is performed on various configurations as mentioned below
 
 ## Feature Health
 
-**On Android Device**:
+On Android Device: inji\_wallet\_0.14.0\_feature\_health\_android
 
-<figure><img src="../../../../.gitbook/assets/inji_wallet_0.14.0_feature_health_android.png" alt=""><figcaption></figcaption></figure>
+**Image**
 
-**On iOS Device**:
+On iOS Device: inji\_wallet\_0.14.0\_feature\_health\_ios
 
-<figure><img src="../../../../.gitbook/assets/inji_wallet_0.14.0_feature_health_ios.png" alt=""><figcaption></figcaption></figure>
+**Image**
 
 ## Test execution statistics
 
@@ -138,11 +138,7 @@ SHA: sha256: 58e77d26fc1b98884c11638bba70c128d27994e3
 
 Below are the test metrics by performing VC Sharing functionality on various device combinations
 
-
-
-<figure><img src="../../../../.gitbook/assets/inji_wallet_0.14.0_combination_of_devices.png" alt=""><figcaption></figcaption></figure>
-
-
+**Image** inji\_wallet\_0.14.0\_combination\_of\_devices
 
 |                                      |            |            |             |
 | :----------------------------------: | :--------: | :--------: | :---------: |
