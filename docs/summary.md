@@ -24,7 +24,6 @@
     * [Workflow](inji-wallet/inji-mobile/functional-overview/feature-workflows.md)
     * [GenderMag](inji-wallet/inji-mobile/functional-overview/gendermag.md)
     * [End User Guide](inji-wallet/inji-mobile/functional-overview/end-user-guide.md)
-    * [Keshav](keshav.md)
   * [Technical Overview](inji-wallet/inji-mobile/technical-overview/README.md)
     * [Architecture](inji-wallet/inji-mobile/technical-overview/architecture.md)
     * [Technical Stack](inji-wallet/inji-mobile/technical-overview/technical-stack.md)
