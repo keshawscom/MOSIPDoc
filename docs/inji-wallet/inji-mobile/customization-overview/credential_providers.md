@@ -9,10 +9,6 @@ Inji Wallet currently provides support for following credential providers:
 
 To set up a new provider that can issue VC, it can be accomplished by making a few configuration changes.
 
-**Few Demo UINs you can use**
-
-<table><thead><tr><th width="322">Type</th><th>UIN</th></tr></thead><tbody><tr><td>Male (Adult) </td><td>2154189532 , 5614273165</td></tr><tr><td>Female (Adult)</td><td>2089250384 , 5860356276</td></tr><tr><td>Minor (aged btw 5-18yrs)</td><td>3963293078</td></tr><tr><td>Infant (aged below 5 yrs)</td><td>5134067562</td></tr></tbody></table>
-
 
 
 **Steps:**
@@ -41,7 +37,10 @@ After adding the provider in configuration, it will be displayed on the UI on `A
 
 If you are looking to try out wallet and certify building locally, then you can use collab env eSignet as authorization server. Here are the details:
 
-1. We have configured few UINs/Individual Ids to use. These UINs can be used while configuring the data for credential
+1. We have configured few UINs/Individual Ids to use. These UINs can be used while configuring the data for credential. (**Few Demo UINs you can use)**:
+
+<table><thead><tr><th width="322">Type</th><th>UIN</th></tr></thead><tbody><tr><td>Male (Adult) </td><td>2154189532 , 5614273165</td></tr><tr><td>Female (Adult)</td><td>2089250384 , 5860356276</td></tr><tr><td>Minor (aged btw 5-18yrs)</td><td>3963293078</td></tr><tr><td>Infant (aged below 5 yrs)</td><td>5134067562</td></tr></tbody></table>
+
 2. Use `wallet-demo` as client id in `mimoto-issuers-config.json`
 3. Use `wallet-demo-client` as client alias in `mimoto-issuers-config.json`
 4. oidckeystore.p12 file is attached [here](../.gitbook/assets/oidckeystore.p12%22) password to unlock this is `xy4gh6swa2i`
