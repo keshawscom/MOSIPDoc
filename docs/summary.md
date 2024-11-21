@@ -42,6 +42,7 @@
     * [Commons Developers Guide](modules/commons/commons-developer-guide.md)
     * [Audit Manager Developers Guide](modules/commons/audit-manager-developer-guide.md)
     * [OpenID-Bridge Developers Guide](modules/commons/openid-bridge-developer-guide.md)
+    * [ID Generator](modules/commons/id-generator.md)
   * [Datashare](modules/datashare.md)
   * [ID Authentication Services](modules/id-authentication-services/README.md)
     * [ID Authentication Demographic Data Normalization](modules/id-authentication-services/normalization-reference-impl.md)
