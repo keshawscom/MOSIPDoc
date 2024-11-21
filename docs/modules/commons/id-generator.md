@@ -21,7 +21,7 @@ The source code of the ID Generator Service may be found [here](https://github.c
 
 ## Number of unique IDs
 
-The above logic reduces the space of the total number of IDs possible.  As it is difficult to represent the above logic into a mathematical formula, we provide a statistical estimate of the total number of unique IDs as below:
+The above logic reduces the space of the total number of IDs possible.  As it is difficult to represent the above logic with a mathematical formula, we provide a statistical estimate of the total number of unique IDs as below:
 
 <table data-full-width="false"><thead><tr><th width="153" align="center">Length of ID</th><th>Estimated Unique IDs</th></tr></thead><tbody><tr><td align="center">              10</td><td>164 million</td></tr><tr><td align="center">              11</td><td>1.6 billion</td></tr><tr><td align="center">              12</td><td>15.7 billion</td></tr></tbody></table>
 
