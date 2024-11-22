@@ -29,7 +29,7 @@ Don’t miss out on how national IDs drive digital inclusion and efficiency!
 
 ## **eSignet Workshop 2024** 🚀
 
-**What to Expect in This Workshop:** ✨
+✨**What to Expect in This Workshop**
 
 Get ready for an interactive session where you’ll learn how to effortlessly integrate [eSignet](https://docs.esignet.io/) for identity verification and authentication in your service portal!&#x20;
 
