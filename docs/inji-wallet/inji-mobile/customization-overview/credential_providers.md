@@ -52,7 +52,11 @@ After configuring issuers and data as mentioned above, we will be able to succes
 
 **Step 1:**
 
-Please find a zip file attached to this document called certgen.zip which will help the user in creating the p12 file as well as the public-key.jwk file. certgen.zip
+Please find a zip file attached to this document called certgen.zip which will help the user in creating the p12 file as well as the public-key.jwk file.
+
+{% file src="../../../.gitbook/assets/certgen.zip" %}
+
+
 
 **Step 2:**
 
