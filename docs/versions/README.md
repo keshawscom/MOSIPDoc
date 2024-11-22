@@ -1,5 +1,11 @@
 # Releases
 
+## Version: 1.4.2
+
+* Name: eSignet(Patch)
+* Date: 22 Nov, 2024
+* [Release Notes](https://docs.esignet.io/versions/v1.4.2)
+
 ## Version: 1.4.1
 
 * Name: eSignet(Patch)
