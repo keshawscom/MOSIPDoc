@@ -4,7 +4,7 @@
 
 **Release Type**: Developer
 
-**Release Date**: Coming Soon
+**Release Date**: 25th Nov, 2024
 
 ### **Overview of the Release:**
 
@@ -30,7 +30,7 @@ We are excited to announce the release of **Inji Wallet Version 0.14.0!** This u
 
 | **Repositories**          | **Tags Released**                                                        |
 | ------------------------- | ------------------------------------------------------------------------ |
-| Inji-wallet               |  [v0.14.0](https://github.com/mosip/inji-wallet/tree/v0.14.0)            |
+| Inji-wallet               | [v0.14.0](https://github.com/mosip/inji-wallet/tree/v0.14.0)             |
 | Inji-vci-client-ios-swift | [v0.1.0](https://github.com/mosip/inji-vci-client-ios-swift/tree/v0.1.1) |
 
 ### **Compatible Modules:**
@@ -109,5 +109,5 @@ Below is the [**list**](https://mosip.atlassian.net/issues/?filter=11580) of fix
 * [Feature Documentation](https://docs.mosip.io/inji/inji-mobile-wallet/overview/features)
 * [Integration Guides](https://docs.mosip.io/inji/inji-mobile-wallet/integration-guide)
 * [User Guide](https://docs.mosip.io/inji/inji-mobile-wallet/end-user-guide)
-* QA Report
+* [QA Report](test-report.md)
 * [API Documentation](https://github.com/mosip/mimoto/tree/release-0.10.0/docs/postman-collections)

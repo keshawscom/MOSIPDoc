@@ -3,9 +3,8 @@
 ## Version: 0.14.0
 
 * Name: Inji Wallet 0.14.0
-* Date: Coming Soon
-* Type: Developer
-* Release Notes
+* Date: 25th Nov, 2024
+* [Release Notes](version-0.14.0/)
 
 ## Version: 0.13.1
 
