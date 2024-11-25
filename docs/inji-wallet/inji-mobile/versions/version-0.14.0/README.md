@@ -2,7 +2,7 @@
 
 **Release Name**: Inji Wallet 0.14.0
 
-**Release Type**: Developer
+**Release Type**: Developer Release
 
 **Release Date**: 25th Nov, 2024
 
