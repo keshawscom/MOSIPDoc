@@ -28,28 +28,27 @@ We are excited to announce the release of **Inji Wallet Version 0.14.0!** This u
 
 ### **Repository Released**
 
-| **Repositories** | **Tags Released**                                             |
-| ---------------- | ------------------------------------------------------------- |
-| Inji-wallet      |  [v0.14.0](https://github.com/mosip/inji-wallet/tree/v0.14.0) |
-|                  |                                                               |
+| **Repositories**          | **Tags Released**                                                        |
+| ------------------------- | ------------------------------------------------------------------------ |
+| Inji-wallet               |  [v0.14.0](https://github.com/mosip/inji-wallet/tree/v0.14.0)            |
+| Inji-vci-client-ios-swift | [v0.1.0](https://github.com/mosip/inji-vci-client-ios-swift/tree/v0.1.1) |
 
 ### **Compatible Modules:**
 
 The following table outlines the tested and certified compatibility of Inji Wallet 0.14.0 with other modules.
 
-| **Module**                | **Version**                                                                |
-| ------------------------- | -------------------------------------------------------------------------- |
-| Mimoto                    | [v0.14.0](https://github.com/mosip/mimoto/tree/v0.14.0)                    |
-| Inji-config               | [v0.3.0](https://github.com/mosip/inji-config/tree/v0.3.0)                 |
-| eSignet                   | [v1.4.1](https://github.com/mosip/esignet/tree/v1.4.1)                     |
-| Inji Verify               | [v0.10.0](https://github.com/mosip/inji-verify/tree/v0.10.0)               |
-| tuvali                    | [v0.5.0](https://github.com/mosip/tuvali/tree/v0.5.1)                      |
-| tuvali-ios-swift          | [v0.5.0](https://github.com/mosip/tuvali-ios-swift/releases/tag/v0.5.0)    |
-| secure-Keystore           | [v0.2.0](https://github.com/mosip/secure-keystore/tree/v0.2.1)             |
-| pixelpass                 | [v0.2.0](https://github.com/mosip/pixelpass/tree/v0.2.1)                   |
-| pixelpass-ios-swift       | [v0.2.0](https://github.com/mosip/pixelpass-ios-swift/releases/tag/v0.2.0) |
-| Inji-vci-client           | [v0.1.0](https://github.com/mosip/inji-vci-client/tree/v0.1.1)             |
-| Inji-vci-client-ios-swift | [v0.1.0](https://github.com/mosip/inji-vci-client-ios-swift/tree/v0.1.1)   |
+| **Module**          | **Version**                                                                |
+| ------------------- | -------------------------------------------------------------------------- |
+| Mimoto              | [v0.14.0](https://github.com/mosip/mimoto/tree/v0.14.0)                    |
+| Inji-config         | [v0.3.0](https://github.com/mosip/inji-config/tree/v0.3.0)                 |
+| eSignet             | [v1.4.1](https://github.com/mosip/esignet/tree/v1.4.1)                     |
+| Inji Verify         | [v0.10.0](https://github.com/mosip/inji-verify/tree/v0.10.0)               |
+| tuvali              | [v0.5.0](https://github.com/mosip/tuvali/tree/v0.5.1)                      |
+| tuvali-ios-swift    | [v0.5.0](https://github.com/mosip/tuvali-ios-swift/releases/tag/v0.5.0)    |
+| secure-Keystore     | [v0.2.0](https://github.com/mosip/secure-keystore/tree/v0.2.1)             |
+| pixelpass           | [v0.2.0](https://github.com/mosip/pixelpass/tree/v0.2.1)                   |
+| pixelpass-ios-swift | [v0.2.0](https://github.com/mosip/pixelpass-ios-swift/releases/tag/v0.2.0) |
+| Inji-vci-client     | [v0.1.0](https://github.com/mosip/inji-vci-client/tree/v0.1.1)             |
 
 ### **Known Issues**
 
