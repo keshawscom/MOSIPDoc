@@ -44,7 +44,7 @@ For more information on KBI, please refer to the [KBI documentation](https://doc
 * **eSignet Service Fixes**: Critical and major bug fixes related to the eSignet service.
 * **eSignet Signup Service Fixes**: Critical and major bug fixes related to the eSignet Signup service.
 
-For a complete list of all bugs addressed in this release, please refer to the [bug fixes list](https://mosip.atlassian.net/jira/software/c/projects/ES/issues/?jql=%22Release%20Number%5BLabels%5D%22%20in%20\(esignet\_v1.4.1\)%20and%20issuetype%3DBug).
+For a complete list of all bugs addressed in this release, please refer to the [bug fixes list](https://mosip.atlassian.net/jira/software/c/projects/ES/issues/?jql=%22Release%20Number%5BLabels%5D%22%20in%20\(esignet_v1.4.1\)%20and%20issuetype%3DBug).
 
 **Known Issues**
 
@@ -60,7 +60,7 @@ Please refer to [this link](https://mosip.atlassian.net/jira/software/c/projects
 
 | Repository Released        | Tags                                                                             |
 | -------------------------- | -------------------------------------------------------------------------------- |
-| eSignet                    | [v1.4.1](https://github.com/mosip/mosip-config/tree/v1.4.1-ES)                   |
+| eSignet                    | [v1.4.1](https://github.com/mosip/esignet/tree/v1.4.1)                           |
 | mosip-config               | [v1.4.1-ES](https://github.com/mosip/mosip-config/tree/release-1.4.1-ES)         |
 | esignet-mock-services      | [v0.9.3](https://github.com/mosip/esignet-mock-services/tree/release-0.9.x)      |
 | mosip-ref-impl/kernel      | [v1.2.0.2](https://github.com/mosip/mosip-ref-impl/tree/release-1.2.0.x/kernel)  |
