@@ -16,7 +16,7 @@ The 1.2.0 version of eSignet focuses on the [**VC Issuance**](../../integration/
 * **Multiple wallet support:** Mobile wallet-based authentication can be employed to scan a QR code and complete the authentication process utilizing the previously activated credentials for online login. Moreover, facial authentication can occur on the wallet to ensure the presence of the authorized individual is verified.
 * **Language Support for eSignet:** The eSignet user interface (UI) offers comprehensive language support to facilitate effective communication. By default, eSignet includes language bundles for Arabic, English, Hindi, Kannada, and Tamil. Moreover, it can be easily customized to incorporate additional languages as necessary to accommodate specific country requirements. Furthermore, eSignet has undergone meticulous testing to ensure seamless compatibility with right-to-left (RTL) languages. This means that users can rely on eSignet to confidently navigate and interact with RTL content.
 
-## Features Included
+### Features Included
 
 Below are the features available in the release:
 
@@ -28,7 +28,7 @@ Below are the features available in the release:
 * Consent storage
 * VC Issuance
 
-## Repositories Released
+### Repositories Released
 
 | Repository Released                | Tags                                                                         |
 | ---------------------------------- | ---------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ Below are the features available in the release:
 
 For details on deployment, go through the [helm charts](https://github.com/mosip/esignet/tree/v1.1.0/helm) in the eSignet repository.
 
-## Documentation
+### Documentation
 
 * [Feature Documentation](../../overview/features/)
 * [Integration Guides](../../integration/)

@@ -4,7 +4,9 @@
 
 **Release Date**: 14th March, 2024
 
+{% hint style="info" %}
 **Note**: Please be informed that the `esignet-signup` tag has been updated from **v1.0.0** to **v1.0.1** on 23rd April 2024 to address a bug in the helm installation script, which was causing `esignet-signup` service to fail to initialize.
+{% endhint %}
 
 ## Overview
 
@@ -18,14 +20,14 @@ The 1.3.0 version of eSignet focuses on launching new features in authentication
     Users now have the convenience of registering through our Sign-Up Service, seamlessly integrated with the ID repository without complete deployment of MOSIP Identity. In isolation with the Sign-Up Service, efficiently manages user registrations.
 3. **Fixes for known VCI issues from v1.2.0**
 
-## Features Included
+### Features Included
 
 Below are the features available in the release:
 
 * [Login with password](https://docs.esignet.io/overview/features)
 * [Sign-up service](https://docs.esignet.io/use-cases/sign-up-service)
 
-## Repositories Released
+### Repositories Released
 
 | Repository Released    | Tags                                                                                  |
 | ---------------------- | ------------------------------------------------------------------------------------- |
@@ -44,7 +46,7 @@ Below are the features available in the release:
 
 For details on deployment, refer to the [helm charts](https://github.com/mosip/esignet/tree/v1.3.0/helm) in the eSignet repository.
 
-## Documentation
+### Documentation
 
 * [Feature Documentation](../../overview/features/)
 * [Integration Guides](../../integration/)

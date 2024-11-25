@@ -46,7 +46,7 @@ For more information on KBI, please refer to the [KBI documentation](https://doc
 
 For a complete list of all bugs addressed in this release, please refer to the [bug fixes list](https://mosip.atlassian.net/jira/software/c/projects/ES/issues/?jql=%22Release%20Number%5BLabels%5D%22%20in%20\(esignet_v1.4.1\)%20and%20issuetype%3DBug).
 
-**Known Issues**
+### **Known Issues**
 
 * Key Known Issue:&#x20;
 
@@ -56,7 +56,7 @@ For a complete list of all bugs addressed in this release, please refer to the [
 
 Please refer to [this link](https://mosip.atlassian.net/jira/software/c/projects/ES/issues/?jql=labels%20%3D%20known-issue-eSignet-v1.4.1) for the list of all known issues.
 
-**Repositories Released**
+### **Repositories Released**
 
 | Repository Released        | Tags                                                                             |
 | -------------------------- | -------------------------------------------------------------------------------- |
