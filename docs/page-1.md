@@ -2,6 +2,7 @@
 hidden: true
 ---
 
+
 # Page 1
 
 
@@ -22,6 +23,8 @@ General Questions on Inji:
 1. What are Verifiable Credentials (VCs)?
 
 A [verifiable credential](https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential) can represent all the same information that a physical [credential](https://www.w3.org/TR/vc-data-model-2.0/#dfn-credential) represents. Adding technologies such as digital signatures can make [verifiable credentials](https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential) more tamper-evident and trustworthy than their physical counterparts. In short, VCs are secure digital certificates that can be verified cryptographically. They represent identity documents, degrees, or other trusted information.&#x20;
+
+<!--
 
 2. What are issuers, holders, and service providers?
 
@@ -297,3 +300,4 @@ Inji Verify:
 
 Test after markdown file deletion&#x20;
 
+-->
