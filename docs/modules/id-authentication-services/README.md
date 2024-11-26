@@ -42,7 +42,7 @@ OTP Request Service is used by Authentication/e-KYC Partners to generate OTP for
 * The credential is created by Credential Service uploaded to [Datashare](../datashare.md) service and the Datashare URL is sent to ID-Authentication using [WebSub](../websub/) message.
 * WebSub invokes the credential-issuance callback in [ID Authentication](../../id-authentication.md) where the credential data is downloaded from Datashare and then stored in IDA DB.
 
-![](../../.gitbook/assets/ida-credential-flow.png)
+<figure><img src="../../.gitbook/assets/ida-credential-flow (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Key generation
 
