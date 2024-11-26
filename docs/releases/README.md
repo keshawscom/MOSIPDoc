@@ -5,20 +5,20 @@
 **Version: 1.3.0-beta.1 (mock-service & converters)**
 
 * **Support:** Beta Release
-* **Date:** Coming Soon
+* **Date:** 26th November, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/1.3.0-beta.1-mock-service-and-converters)
 
 **Version: Android Registration Client v0.11.0-beta.1**
 
 * **Support:** Beta Release
-* **Date:** 10th Sept, 2024
+* **Date:** 10th September, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/android-registration-client-v0.11.0)
 
 **Version:** **Partner Management System v1.3.0-dp.1**
 
 * Partner Management System v1.3.0-dp.1
 * Developer Preview Release1
-* Date: 3rd Sept, 2024
+* Date: 3rd September, 2024
 * [Release Notes](partner-management-system-1.3.0-dp1/)
 
 **Version:** **v1.2.2.0 (Mosip - Config)**
