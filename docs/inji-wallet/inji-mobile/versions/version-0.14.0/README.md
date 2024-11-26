@@ -14,6 +14,8 @@ We are excited to announce the release of **Inji Wallet Version 0.14.0!** This u
 * **Integration with Inji Certify**: We've integrated eSignet for authentication and Certify for streamlined credential issuance, providing a seamless experience.
 * **Compliance with Draft 13 of the OpenID4VCI Spec**: Inji Wallet now fully supports the latest Draft 13 changes of the OpenID4VCI specification, ensuring compatibility with the evolving standards in the industry.
 * **Java upgrade in mimoto:** A significant tech upgrade for mimoto to move from java11 to java21.
+* **Theme Upgrade**:&#x20;
+  * **A Gradient Look and Feel**: Introducing a sleek gradient-based design as the new default theme for Inji Wallet. This theme offers a modern and visually appealing user experience, enhancing usability and aesthetic appeal.
 
 ### **Features Covered**
 
