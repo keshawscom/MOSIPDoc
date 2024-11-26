@@ -1,6 +1,6 @@
 # Partner Management Portal
 
-Welcome to the [Partner Management Portal](https://docs.mosip.io/1.2.0/modules/partner-management-services) Setup Guide, designed specifically for our [Collab Environment](https://collab.mosip.net/)! This guide will assist you in easily accessing the Partner Management Portal and effectively demonstrating its features.
+Welcome to the [Partner Management Portal](https://docs.mosip.io/1.2.0/modules/partner-management-services) Guide, designed specifically for our [Collab Environment](https://collab.mosip.net/)! This guide will assist you in easily accessing the Partner Management Portal and effectively demonstrating its features.
 
 The Partner Management Portal (PMP) is an essential component of MOSIP's ecosystem, designed to facilitate seamless collaboration and interaction between MOSIP and its trusted partners. It offers a user-friendly interface for partners to register themselves and engage with MOSIP's services effectively.
 
@@ -19,12 +19,12 @@ With this Partner Management Portal Demo Setup, you're close to showcasing the i
 
 **Step 1: Access the Partner Management Portal:**
 
-Visit the following URL to access the Partner Management portal in the Collab environment: [Partner Management Portal](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client\_id=mosip-pms-client\&redirect\_uri=https://api.collab.mosip.net/v1/partnermanager/login-redirect/aHR0cHM6Ly9wbXAuY29sbGFiLm1vc2lwLm5ldC8=\&state=b3feca86-1305-4bec-a861-c074af4bea6a\&response\_type=code\&scope=email).
+Visit the following URL to access the Partner Management portal in the Collab environment: [Partner Management Portal](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client_id=mosip-pms-client\&redirect_uri=https://api.collab.mosip.net/v1/partnermanager/login-redirect/aHR0cHM6Ly9wbXAuY29sbGFiLm1vc2lwLm5ldC8=\&state=b3feca86-1305-4bec-a861-c074af4bea6a\&response_type=code\&scope=email).
 
 **Step 2: Login:**
 
 * Login to the portal with a username and password.
-* Get your credentials by simply registering yourself by clicking on `New user` on [PMP](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client\_id=mosip-pms-client\&redirect\_uri=https://api.collab.mosip.net/v1/partnermanager/login-redirect/aHR0cHM6Ly9wbXAuY29sbGFiLm1vc2lwLm5ldC8=\&state=b3feca86-1305-4bec-a861-c074af4bea6a\&response\_type=code\&scope=email).
+* Get your credentials by simply registering yourself by clicking on `New user` on [PMP](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client_id=mosip-pms-client\&redirect_uri=https://api.collab.mosip.net/v1/partnermanager/login-redirect/aHR0cHM6Ly9wbXAuY29sbGFiLm1vc2lwLm5ldC8=\&state=b3feca86-1305-4bec-a861-c074af4bea6a\&response_type=code\&scope=email).
 
 **Step 3: Explore the features on the Partner Management Portal**
 

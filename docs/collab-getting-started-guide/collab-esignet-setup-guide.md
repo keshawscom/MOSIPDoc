@@ -1,6 +1,6 @@
 # eSignet
 
-Welcome to the eSignet Setup Guide tailored specifically for our Collab Environment!
+Welcome to the eSignet Guide tailored specifically for our Collab Environment!
 
 To fully explore [eSignet](https://docs.esignet.io/) and its features in the Collab environment, we kindly request you to refer to the eSignet [Try it out](https://docs.esignet.io/try-it-out) section provided within the eSignet documentation.
 

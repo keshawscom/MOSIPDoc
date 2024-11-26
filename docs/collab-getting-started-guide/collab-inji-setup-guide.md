@@ -1,6 +1,6 @@
 # Inji
 
-Welcome to the Inji Credentialing Stack Setup Guide tailored specifically for our Collab Environment!
+Welcome to the Inji Guide tailored specifically for our Collab Environment!
 
 To fully explore the Inji Credentialing Stack and its features in the Collab environment, we kindly request you to refer [Inji Credentialing Stack Setup Guide](https://docs.mosip.io/inji/readme/try-it-out) provided within the Inji documentation.
 

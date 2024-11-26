@@ -1,8 +1,8 @@
-# Pre-registration Setup Guide
+# Pre-registration
 
 ## Overview
 
-Welcome to the [Pre-registration](https://docs.mosip.io/1.2.0/modules/pre-registration) Client Setup Guide, tailored exclusively for our Collab environment! This guide will equip you to seamlessly access the Pre-registration demo application and effectively demonstrate its capabilities.
+Welcome to the [Pre-registration](https://docs.mosip.io/1.2.0/modules/pre-registration) Collab Guide! This guide will equip you to seamlessly access the Pre-registration demo application, explore, integrate and effectively demonstrate its capabilities.
 
 The Pre-registration module within MOSIP is designed keeping residents in mind, offering a user-friendly pre-registration process. This module boasts of a wide range of functionalities, starting with the collection of demographic data along with easy uploading of essential supporting documents, such as proof of address and birth certificates, besides facilitating appointment booking, modifications and notification alerts to mention a few.
 
@@ -44,7 +44,7 @@ Note: Please use 111111 as the OTP, for any OTP-based feature in the Collab envi
 
 ### Additional Resources
 
-Watch this informative [video here](https://youtu.be/eHb26gn5MoQ?si=xDt\_\_J3wzoEDnB8z) for a visual walkthrough of the features.
+Watch this informative [video here](https://youtu.be/eHb26gn5MoQ?si=xDt__J3wzoEDnB8z) for a visual walkthrough of the features.
 
 For more information about Pre-registration, click [here](https://docs.mosip.io/1.2.0/modules/pre-registration).
 

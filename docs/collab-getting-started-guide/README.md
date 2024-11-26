@@ -1,4 +1,4 @@
-# 🗳️ Collab Environment Setup Guides
+# 🗳️ Collab Environment Guides
 
 Hello Partner! Ready to delve deeper into the world of MOSIP? This expanded guide sheds light on the functionalities and benefits of each service and module available in the Collab environment. Explore, test, and build with confidence!
 
@@ -6,7 +6,7 @@ Let us dive deeper into MOSIP Collab: **Services** and **Modules** in detail.
 
 ### Introduction
 
-The Collab environment in [MOSIP ](https://docs.mosip.io/1.2.0/)offers a collaborative platform for partners and stakeholders to thoroughly test and validate their integrations, modules and services. This environment is exclusively designed for partners and contributors involved in developing solutions on the MOSIP platform, enabling them to perform comprehensive testing and seamless integration of their solutions with the latest platform code. To gain access to this environment, kindly click [here](https://collab.mosip.net/).
+The Collab environment in [MOSIP ](https://docs.mosip.io/1.2.0/)offers a collaborative platform for partners and stakeholders to thoroughly test, collaborate and validate their integrations, modules and services. This environment is exclusively designed for partners and contributors involved in developing solutions on the MOSIP platform, enabling them to perform comprehensive testing and seamless integration of their solutions with the latest platform code. To gain access to this environment, kindly click [here](https://collab.mosip.net/).
 
 ### Purpose
 
@@ -91,7 +91,7 @@ Imagine components talking seamlessly– that's ActiveMQ! This messaging broker 
 #### Keycloak - Secure Access always!
 
 * Identity management gets top priority with Keycloak. It acts as the gatekeeper, authenticating users and managing access control. Only authorized users with the right permissions can access specific modules and functionalities, upholding the platform's security and integrity. It plays a crucial role in maintaining the security and integrity of the platform by managing user identities, access controls, and user sessions. To learn more, click [here](https://docs.mosip.io/1.2.0/modules/keycloak).
-* On how to use the key manager services with key stores like [Hardware Security Module (HSM)](https://docs.mosip.io/1.2.0/modules/keymanager/hsm) and [mosip\_keymgr](https://github.com/mosip/keymanager/tree/release-1.2.0/db\_scripts/mosip\_keymgr) DB.
+* On how to use the key manager services with key stores like [Hardware Security Module (HSM)](https://docs.mosip.io/1.2.0/modules/keymanager/hsm) and [mosip\_keymgr](https://github.com/mosip/keymanager/tree/release-1.2.0/db_scripts/mosip_keymgr) DB.
 * Keycloak access in Collab is limited, contact the [community forum](https://community.mosip.io/) for specific module needs or alternative auth methods.
 
 #### Kibana - Visualize Your Insights
@@ -114,8 +114,8 @@ Imagine components talking seamlessly– that's ActiveMQ! This messaging broker 
 #### Mock MDS/SBI Services - Testing Made Real:
 
 * Need a testing ground for real-world scenarios? Mock MDS and SBI services come to the rescue! These simulated versions of the Master Data Store and Secure Biometric Interface replicate their functionalities without affecting actual data. Develop, test, and integrate your solutions with confidence, knowing you're working with realistic simulations.
-* Mock MDS (Mock Master Data Store) is a simulated version of the Master Data Store used for testing and development purposes. It replicates the behavior of the actual Master Data Store but doesn't store data persistently. Mock MDS is used to mimic the interactions with the Master Data Store during testing and development, allowing developers to verify the functionality of different modules without affecting the real data. To learn more, click [here](https://drive.google.com/drive/folders/1wMW5h1fBxAdBwTzOmPL7Sd\_UON7yuIvU).
-* SBI (Secure Biometric Interface) in MOSIP ensures secure and reliable integration of biometric data for identity verification and authentication. SBI ensures secure storage and retrieval of biometric data, enhancing the accuracy and reliability of identity-related operations. To learn more, click [here](https://drive.google.com/drive/folders/1wMW5h1fBxAdBwTzOmPL7Sd\_UON7yuIvU).
+* Mock MDS (Mock Master Data Store) is a simulated version of the Master Data Store used for testing and development purposes. It replicates the behavior of the actual Master Data Store but doesn't store data persistently. Mock MDS is used to mimic the interactions with the Master Data Store during testing and development, allowing developers to verify the functionality of different modules without affecting the real data. To learn more, click [here](https://drive.google.com/drive/folders/1wMW5h1fBxAdBwTzOmPL7Sd_UON7yuIvU).
+* SBI (Secure Biometric Interface) in MOSIP ensures secure and reliable integration of biometric data for identity verification and authentication. SBI ensures secure storage and retrieval of biometric data, enhancing the accuracy and reliability of identity-related operations. To learn more, click [here](https://drive.google.com/drive/folders/1wMW5h1fBxAdBwTzOmPL7Sd_UON7yuIvU).
 * To run [Mock MDS/SBI](https://github.com/mosip/mosip-mock-services/blob/master/MockMDS/README.md) in registration mode in the Collab environment, click [here](https://drive.google.com/file/d/1inXH7t1x2toVLGPNMoefYIU5kY1dG7C8/view?usp=sharing).
 
 ### Step 3: Testing and Validation

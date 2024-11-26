@@ -1,6 +1,6 @@
 # Registration Client
 
-Welcome to the [Registration Client](https://docs.mosip.io/1.2.0/modules/registration-client) Setup Guide tailored specifically for our Collab Environment!
+Welcome to the [Registration Client](https://docs.mosip.io/1.2.0/modules/registration-client) Guide tailored specifically for our Collab Environment!
 
 The Registration Client setup guide for the MOSIP Collab environment offers a detailed and user-friendly walk-through to assist you in configuring and accessing the Registration Client module. This module is specifically designed to provide Operators/Supervisors with a wide range of functionalities, including onboarding, data synchronization, packet management, and more.
 
@@ -40,10 +40,10 @@ With the implementation of this Registration Client Demo Setup, you are now on t
     * Run the following command from the folder where the TPM jar is located (The location of the folder is necessary while running the command) - `java -jar tpmutility-0.0.2.jar > tpmdetails.txt`
     * Make note of the details within **tpmdetails.txt** for the next step.
 * **Share TPM Details**
-  * Once the TPM utility is extracted and run in your system, fill out the details in this form [here](https://docs.google.com/forms/d/e/1FAIpQLSfqx6K8uZI-AxakNJiJLj4Vh5lSr7Lb1rqZaX\_05MoyR2aXsQ/viewform?fbzx=-6425171175964917239) to get your machine registered with MOSIP.
+  * Once the TPM utility is extracted and run in your system, fill out the details in this form [here](https://docs.google.com/forms/d/e/1FAIpQLSfqx6K8uZI-AxakNJiJLj4Vh5lSr7Lb1rqZaX_05MoyR2aXsQ/viewform?fbzx=-6425171175964917239) to get your machine registered with MOSIP.
   * Make sure you share **tpmdetails.txt** with us according to the form fields.
   * Once the details are received, we at MOSIP, will register your machine for usage of Registration Client in the Collab environment.
-* **Credentials**: Once the TPM request is received via the [form](https://docs.google.com/forms/d/e/1FAIpQLSfqx6K8uZI-AxakNJiJLj4Vh5lSr7Lb1rqZaX\_05MoyR2aXsQ/viewform?fbzx=-6425171175964917239), and your machine is registered with us, we will provide you with the necessary credentials to access the Registration Client and share the details with you via your email ID provided in the form.
+* **Credentials**: Once the TPM request is received via the [form](https://docs.google.com/forms/d/e/1FAIpQLSfqx6K8uZI-AxakNJiJLj4Vh5lSr7Lb1rqZaX_05MoyR2aXsQ/viewform?fbzx=-6425171175964917239), and your machine is registered with us, we will provide you with the necessary credentials to access the Registration Client and share the details with you via your email ID provided in the form.
 *   **Mock MDS**: Click [here](https://drive.google.com/drive/folders/14q7E5pZtfj0eimF3JGzlVfU4eV-MRPCQ) to download the Mock MDS in your system folder, which will enable you to simulate biometric capture (without real biometric devices).
 
     **Steps to run Mock MDS**
