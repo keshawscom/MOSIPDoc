@@ -2,11 +2,11 @@
 
 ## Latest Release 🌟
 
-**Version: 1.2.1.0-beta.1 (mock-service & converters)**
+**Version: 1.3.0-beta.1 (mock-service & converters)**
 
 * **Support:** Beta Release
 * **Date:** Coming Soon
-* Release Notes
+* [Release Notes](https://docs.mosip.io/1.2.0/releases/1.3.0-beta.1-mock-service-and-converters)
 
 **Version: Android Registration Client v0.11.0-beta.1**
 
