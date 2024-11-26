@@ -173,6 +173,7 @@
   * [MOSIP Branching Strategy](community/mosip-branching-strategy.md)
   * [Community Calendars](community/community-calendar.md)
 * [📖 Releases](releases/README.md)
+  * [1.3.0-beta.1 (mock-service & converters)](releases/1.3.0-beta.1-mock-service-and-converters.md)
   * [Android Registration Client 0.11.0-beta.1](releases/android-registration-client-0.11.0-beta.1/README.md)
     * [Test Report](releases/android-registration-client-0.11.0-beta.1/test-report.md)
   * [Partner Management System 1.3.0-dp.1](releases/partner-management-system-1.3.0-dp1/README.md)

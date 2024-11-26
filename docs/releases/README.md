@@ -1,11 +1,17 @@
 # 📖 Releases
 
-## Latest Release
+## Latest Release 🌟
+
+**Version: 1.2.1.0-beta.1 (mock-service & converters)**
+
+* **Support:** Beta Release
+* **Date:** Coming Soon
+* Release Notes
 
 **Version: Android Registration Client v0.11.0-beta.1**
 
-* Support: Beta Release
-* Date: 10th Sept, 2024
+* **Support:** Beta Release
+* **Date:** 10th Sept, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/android-registration-client-v0.11.0)
 
 **Version:** **Partner Management System v1.3.0-dp.1**
@@ -15,30 +21,30 @@
 * Date: 3rd Sept, 2024
 * [Release Notes](partner-management-system-1.3.0-dp1/)
 
-**Version:** v1.2.2.0 **(Mosip - Config)**
+**Version:** **v1.2.2.0 (Mosip - Config)**
 
 * Date: 26th August, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/1.2.2.0-mosip-config)
 
-**Version:** v1.2.1 **(Api Test Commons Releases)**
+**Version: v1.2.1 (Api Test Commons Releases)**
 
-* Support: 1.2.1
-* Date: 5th August, 2024
+* **Support:** 1.2.1
+* **Date:** 5th August, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/api-test-commons-releases)
 
-**Version:** v0.10.0 **(Android Registration Client)**
+**Version: v0.10.0 (Android Registration Client)**
 
-* Support: 0.10.0
-* Date: 14th June, 2024
+* **Support:** 0.10.0
+* **Date:** 14th June, 2024
 * [Release Notes](android-registration-client-v0.10.0/)
 
 **Version: 0.9.0 (Resident Services)**
 
-* Support: 0.9.0
-* Date: 30th May, 2024
+* **Support:** 0.9.0
+* **Date:** 30th May, 2024
 * [Release Notes](resident-services-0.9.0/)
 
-## Older Releases
+## Older Releases 📜
 
 **Version: 1.2.1.0 (ID Authentication)**
 
@@ -116,4 +122,4 @@
 * Recommended Patch Version: [1.2.0.1 Beta 2](release-notes-1.2.0.1-b2.md)
 * [Release Notes](release-notes/)
 
-Refer to [Older Releases](https://docs.mosip.io/1.1.5/mosip-releases).
+Please refer to the [Older Releases](https://docs.mosip.io/1.1.5/mosip-releases) section from the previous version.
