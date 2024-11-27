@@ -1,6 +1,6 @@
 # Resources
 
-## eSignet - A Technical Deep Dive
+### eSignet - A Technical Deep Dive
 
 Join our in-depth webinar on eSignet's architecture and integration. 🛠️
 
@@ -14,7 +14,7 @@ Watch the video below for more insights. Perfect for anyone looking to master eS
 
 {% embed url="https://www.youtube.com/watch?ab_channel=MOSIP&index=3&list=PLJH-POb_55z9bYTJDkTGGc8pxiInWod8t&v=ynSLlXDbTUM" %}
 
-## Unlocking the values of integration with Inji and eSignet 🌐 <a href="#unlocking-the-values-of-integration-with-inji-and-esignet" id="unlocking-the-values-of-integration-with-inji-and-esignet"></a>
+### Unlocking the values of integration with Inji and eSignet 🌐 <a href="#unlocking-the-values-of-integration-with-inji-and-esignet" id="unlocking-the-values-of-integration-with-inji-and-esignet"></a>
 
 Join our webinar to see how national IDs empower citizens in the digital age&#x20;
 
@@ -27,7 +27,7 @@ Don’t miss out on how national IDs drive digital inclusion and efficiency!
 
 {% embed url="https://www.youtube.com/watch?ab_channel=MOSIP&list=PLJH-POb_55z9bYTJDkTGGc8pxiInWod8t&v=DSQmHKnVQsE" %}
 
-## **eSignet Workshop 2024** 🚀
+### **eSignet Workshop 2024** 🚀
 
 ✨**What to Expect in This Workshop**
 
