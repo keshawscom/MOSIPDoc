@@ -4,42 +4,32 @@ hidden: true
 
 # SBISpec
 
-````
-[comment]: # (Still another comment)
+## Secure Biometrics Device Interface Specification
 
-# Secure Biometrics Device Interface Specification
-
-## Introduction and Background 
+### Introduction and Background
 
 This standard specifies a language-agnostic protocol and corresponding interfaces for biometric devices to support features such as the discovery of devices, capability exposure of the device, and capture of biometrics using the device for all instant capture modalities. This protocol also specifically addresses the trustworthiness of both the device and the captured data, in addition to data security.
 
-
-### Objective
+#### Objective
 
 This document provides the technical specifications of the interface and the compliance details for biometrics devices to adhere to the Secure Biometrics Device Interface (SBI) standard.
 
-[comment]: # (Still another comment)
-
-
-### Target Audience
+#### Target Audience
 
 This document aims to assist biometric device manufacturers, their developers, and their designers in building SBI-compliant devices.
 
-### SBI Devices
+#### SBI Devices
 
 All devices that collect biometric data for SBI-reliant applications should operate within the specifications of this document.
 
-## Revision History
+### Revision History
 
-| Version | State  | Date | Changes |
-| ------- | ------ | ------- |
-| draft.1   | Draft  | 20-Oct-2022 | Initial Draft |
+\| Version | State | Date | Changes | | ------- | ------ | ------- | | draft.1 | Draft | 20-Oct-2022 | Initial Draft |
 
-## Glossary of Terms
+### Glossary of Terms
 
 * **Device Provider**: An entity that manufactures or imports the devices in their name. This entity should have legal rights to obtain an organization-level digital certificate from the respective authority in the country.
-* **FTM Provider**: An entity that manufactures or guarantees the trustworthiness of the foundational trust module. This can be the device provider as well.
-**Device**: Hardware capable of capturing biometric information.
+* **FTM Provider**: An entity that manufactures or guarantees the trustworthiness of the foundational trust module. This can be the device provider as well. **Device**: Hardware capable of capturing biometric information.
 * **L1 Certified Device/L1 Device**: A device certified as capable of performing encryption in line with this specification in its trusted zone.
 * **L0 Certified Device/L0 Device**: A device certified as one where the encryption is done on the host machine device driver or the SBI service.
 * **FTM Provider Certificate**: A digital certificate was issued to the "Foundational Trust Provider". This certificate proves that the provider has successfully gone through the required Foundational Trust Provider evaluation. The entity is expected to keep this certificate in secure possession in an HSM. All the individual FTM trust certificates are issued using this certificate as the root. This certificate would be issued by the countries in conjunction with a trusted registry.
@@ -56,13 +46,11 @@ All devices that collect biometric data for SBI-reliant applications should oper
   * **Signature**: Base64urlencoded signature bytes
 * **ISO format timestamp**: [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) with format `yyyy-mm-ddTHH:MM:ssZ` (Example: 2020-12-08T09:39:37Z). This value should be in UTC (Coordinated Universal Time).
 
-***
-
-## Device Specification
+### Device Specification
 
 The SBI device specification provides compliance guidelines to devices for them to work with SBI-reliant applications. The compliance is based on device capability, trust and communication protocols. An SBI-compliant device would follow the standards established in this document. It is expected that the devices are compliant with this specification and tested and validated. The details of each of these are outlined in the subsequent sections.
 
-### Device Capability
+#### Device Capability
 
 The SBI-compliant device is expected to perform the following,
 
@@ -73,14 +61,14 @@ The SBI-compliant device is expected to perform the following,
 
 ***
 
-## Device Trust
+### Device Trust
 
 SBI-compliant devices provide a trusted environment for the devices to be used in registration, KYC and AUTH scenarios. The trust level is established based on the device support for trusted execution.
 
 * L1 - The trust is provided by a secure chip with a secure execution environment.
 * L0 - The trust is provided at the software level. No hardware-related trust exists. This type of compliance is used in controlled environments.
 
-### Foundational Trust Module (FTM)
+#### Foundational Trust Module (FTM)
 
 The foundational trust module would be created using a secure microprocessor capable of performing all required biometric processing and secure storage of keys. The foundational device trust would satisfy the below requirements.
 
@@ -95,7 +83,6 @@ The foundational trust module would be created using a secure microprocessor cap
 * CAVP validated implementation of the cryptographic algorithm.
 * The module can perform a cryptographically validatable secure boot.
 * The module can run trusted applications.
-
 
 The foundational device trust derived from this module is used to enable trust-based computing for biometric capture. The foundational device trust module provides for a trusted execution environment based on the following:
 
@@ -115,7 +102,7 @@ The foundational device trust derived from this module is used to enable trust-b
   * Isolated memory to support cryptographic operations.
   * All trust is anchored during the first boot and not modifiable.
 
-#### Certification
+**Certification**
 
 The FTM should have at least one of the following certifications in each category to meet the given requirement.
 
@@ -123,10 +110,9 @@ The FTM should have at least one of the following certifications in each categor
 
 * CAVP (RSA, AES, SHA256, TRNG (DRBGVS), ECC)
 
-**Note:** 
+**Note:**
 
-The supported algorithm and curves are listed [here](main.md#cryptography).
-
+The supported algorithm and curves are listed here.
 
 **Category: FTM Chip**
 
@@ -143,7 +129,7 @@ The supported algorithm and curves are listed [here](main.md#cryptography).
 
 System/Device Level Tamper Responsiveness is recommended (not mandatory). In this case, FTM should be capable of showcasing Tamper Responsiveness (keys must be erased) against a tamper at the system/device level.
 
-#### Threats to Protect
+**Threats to Protect**
 
 The FTM should protect against the following threats.
 
@@ -159,7 +145,7 @@ The FTM should protect against the following threats.
 * Attacks against secure boot & secure upgrade.
 * TEE/Secure processor OS attack (if applicable).
 
-#### Foundational Trust Module Identity
+**Foundational Trust Module Identity**
 
 Upon FTM provider approval by the adopters, the FTM provider would submit a self-signed public certificate to a trusted registry. Let us call this the FTM root. The adopter would use this certificate to seed their device's trust database. The FTM root and their key pairs should be generated and stored in FIPS 140-2 Level 3 or more compliant devices with no possible mechanism to extract the keys. The foundational module upon its first boot is expected to generate a random asymmetric key pair and provide the public part of the key to obtain a valid certificate. The FTM provider would validate to ensure that the chip is unique and would issue a certificate with the issuer set to an FTM certificate chain. The entire certificate issuance would be in a secured provisioning facility. Auditable upon notice by the adopters or its approved auditors. The certificate issued to the module will have a defined validity period as per the application certificate policy document defined by the application adopters. This certificate and private key within the FTM chip are expected to be in its permanent memory.
 
@@ -167,14 +153,14 @@ Upon FTM provider approval by the adopters, the FTM provider would submit a self
 
 The validity of the chip certificate can not exceed 20 years from the date of manufacturing.
 
-### Device
+#### Device
 
 SBI devices are most often used to collect biometrics. The devices are expected to follow the specifications for all levels of compliance and their usage. The SBI devices have a Trust Level where the device is expected to be whitelisted with a fully capable PKI and secure storage of keys at the hardware.
 
 * L0 - A device can obtain L0 certification when it uses a software-level cryptographic library with no secure boot or FTM. These devices will follow different device identities and the same would be mentioned as part of exception flows.
 * L1 - A device can obtain L1 certification when it is built in a secure facility with one of the certified FTMs.
 
-#### Device Identity
+**Device Identity**
 
 All devices that connect to an SBI-reliant application must be identifiable. The SBI specification relies on cryptographic Identity as its basis for trust.
 
@@ -186,7 +172,7 @@ An identification mark that shows SBI compliance and a readable unique device se
 
 A digital device ID in SBI would be a signed JSON (RFC 7515) as follows:
 
-```JSON
+```json
 {
   "serialNo": "Serial number",
   "make": "Make of the device",
@@ -197,7 +183,9 @@ A digital device ID in SBI would be a signed JSON (RFC 7515) as follows:
   "deviceProviderId": "Device provider id",
   "dateTime": "Current datetime in ISO format"
 }
-````
+```
+
+
 
 Signed with the JSON Web Signature (RFC 7515) using the "Foundational Trust Module" Identity key, this data is the fundamental identity of the device. Every SBI-compliant device will need the foundational trust module.
 
