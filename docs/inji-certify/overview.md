@@ -86,6 +86,32 @@ Inji Certify, a platform for issuing and managing verifiable credentials (VCs), 
 
 The segregation of eSignet VCI enhances Inji Certify’s performance and scalability, providing a robust solution for issuing and managing verifiable credentials. This strategic move ensures a more secure and efficient credentialing ecosystem for organizations and users.
 
+#### Verifiable Credentials Issuance Through Inji Certify
+
+**Overview**
+
+Verifiable Credentials (VCs) are digital representations of physical credentials such as passports and licenses. These credentials are cryptographically signed, ensuring tamper resistance and immediate verifiability. VCs empower users by allowing them to store credentials in digital wallets and seamlessly access various services.
+
+**Inji Certify for VC Issuance**
+
+**Inji Certify** is a robust credential issuance platform that connects with existing credential registries to issue standards-compliant VCs. It replaces the earlier reliance on eSignet with a seamless integration of the Sunbird RC plugin for issuing credentials. The platform enables issuers to define credential schemas, issue certificates in JSON-LD format, and support interoperability using W3C Verifiable Credentials (VC) v1.1 standards.
+
+**Sunbird RC Plugin Integration**
+
+The Sunbird RC plugin allows registries, such as Sunbird RC, to issue VCs upon successful identity verification. Key features include:
+
+* **Version**: Supports Sunbird RC version v2.0.0-rc3.
+* **Dynamic Credential Updates**: The plugin uses the access token subject to query the registry and generate an up-to-date VC based on the credential schema, type, and version.
+* **Wallet Integration**: Credentials are securely transferred to the Inji wallet through the OpenID4VCI flow.
+
+**Authentication and Credential Transfer**
+
+Inji Certify employs OpenID4VCI, an extension of the OAuth 2.0 protocol, for secure and interoperable credential issuance. This mechanism ensures:
+
+1. **Standards-Based Interaction**: Establishes compatibility with various digital wallet providers.
+2. **Reliable User Authentication**: Authenticates individuals before issuing credentials.
+3. **Wallet-Initiated Flow**: Supports a streamlined flow where VCs are delivered just in time upon request from the user’s wallet.
+
 ### **Conclusion**
 
 Inji Certify revolutionizes how organizations issue and manage verifiable credentials, empowering users with greater control over their data and access to services. With its configurable schema, seamless generation and signing of VCs, and integration with robust microservices, Inji Certify sets a new standard for secure and efficient credentialing. Explore the possibilities with Inji Certify and unlock the potential of verifiable credentials for your organization.
