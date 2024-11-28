@@ -51,7 +51,7 @@ Traditionally, institutes and organizations expend considerable time and effort 
 
 ### **Segregation of eSignet VCI Component to Inji Certify**
 
-Inji Certify, a platform for issuing and managing verifiable credentials (VCs), has enhanced its system by segregating the [**eSignet VCI component**](https://docs.esignet.io/overview/features#verifiable-credentials-issuance). This strategic move optimizes functionality and scalability.
+Inji Certify, a platform for issuing and managing verifiable credentials (VCs), has enhanced its system by segregating the **eSignet VCI component**. This strategic move optimizes functionality and scalability.
 
 {% hint style="info" %}
 **Important Update: Now eSignet VCI is known as Inji Certify Core!**
@@ -59,7 +59,7 @@ Inji Certify, a platform for issuing and managing verifiable credentials (VCs), 
 
 ### **What was eSignet VCI?**
 
-[**eSignet VCI** ](https://docs.esignet.io/overview/features#verifiable-credentials-issuance)is a microservice for secure authentication, issuance, and verification of VCs, based on OAuth 2.0 and OpenID Connect protocols. It ensures reliable user authentication and promotes interoperability across systems.
+**eSignet VCI** was a microservice for secure authentication, issuance, and verification of VCs, based on OAuth 2.0 and OpenID Connect protocols. It ensures reliable user authentication and promotes interoperability across systems.
 
 #### **Reasons for Segregation**
 
