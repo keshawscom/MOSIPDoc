@@ -1,6 +1,7 @@
-# Inji Verify Setup Guide
+# Inji Verify Guide
 
-Welcome to the Inji Verify Setup Guide tailored specifically for our Collab Environment! This guide is designed to assist you in exploring the [**Inji Verify**](https://docs.mosip.io/inji/inji-verify/overview) portal in our sandbox Collab environment. By following the steps outlined in this guide, you will be able to smoothly utilize the Inji Verify portal, empowering you to explore its features and functionalities effectively. Whether you're a Developer, System Integrator, or an enthusiast eager to dive into the world of verifiable credentials, this guide will provide you with the necessary information to get started with Inji Verify in our [**Collab**](https://collab.mosip.net/) environment. Let's begin this journey of seamless setup and exploration.
+Welcome to the Inji Verify Guide tailored specifically for our Collab Environment! \
+This guide is designed to assist you in exploring the [**Inji Verify**](https://docs.mosip.io/inji/inji-verify/overview) portal in our sandbox Collab environment. By following the steps outlined in this guide, you will be able to smoothly utilize the Inji Verify portal, empowering you to explore its features and functionalities effectively. Whether you're a Developer, System Integrator, or an enthusiast eager to dive into the world of verifiable credentials, this guide will provide you with the necessary information to get started with Inji Verify in our [**Collab**](https://collab.mosip.net/) environment. Let's begin this journey of seamless setup and exploration.
 
 ### **Explore with mock data** <a href="#explore-with-mock-data" id="explore-with-mock-data"></a>
 
@@ -11,11 +12,7 @@ If you are looking to try out Inji Verify in our Collab environment, please foll
 
 ### **Verifiable QR Code - Valid VC**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Birth Certificate.png" alt="" width="375"><figcaption><p>Valid Verifiable Credentials</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Birth Certificate.png" alt="" width="375"><figcaption><p>Valid Verifiable Credentials</p></figcaption></figure></div>
 
 ### **Sample QR code - Valid VC Data**&#x20;
 
@@ -76,11 +73,7 @@ If you are looking to try out Inji Verify in our Collab environment, please foll
 
 ### **Verifiable QR Code - Expired VC**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/response_2_v21.png" alt="" width="375"><figcaption><p>Expired Verifiable Credentials </p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/response_2_v21.png" alt="" width="375"><figcaption><p>Expired Verifiable Credentials </p></figcaption></figure></div>
 
 ### **Sample QR code - Expired VC Data** &#x20;
 
@@ -133,11 +126,7 @@ If you are looking to try out Inji Verify in our Collab environment, please foll
 
 ### **Verifiable QR Code - Invalid VC**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Verifiable QR Code - Invalid VC.png" alt="" width="375"><figcaption><p>Invalid Verifiable Credential</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Verifiable QR Code - Invalid VC.png" alt="" width="375"><figcaption><p>Invalid Verifiable Credential</p></figcaption></figure></div>
 
 ### **Sample QR code - Invalid VC Data**&#x20;
 
