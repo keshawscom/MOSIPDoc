@@ -152,4 +152,4 @@
 
 ***
 
-* [Page 1](page-1.md)
+* [FAQ](page-1.md)
