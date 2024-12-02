@@ -41,7 +41,7 @@ When the scan is initiated, you will be prompted to grant the necessary camera p
 * Once the QR code is captured, the data is sent to the Inji Verify portal for processing.
 
 {% hint style="info" %}
-* **Decoding and Verification:**
+- **Decoding and Verification:**
   * The QR data is passed to the Pixel Pass library for decoding.
   * Pixel Pass returns the decoded data to Inji Verify for further processing.
   * Inji Verify then verifies the decoded data using the Verification SDK.
@@ -86,7 +86,7 @@ When the scan is initiated, you will be prompted to grant the necessary camera p
 * Inji Verify passes the QR data from the uploaded file to the Pixel Pass library for processing.
 
 {% hint style="info" %}
-* **Decoding and Verification:**
+- **Decoding and Verification:**
   * The QR data is passed to the Pixel Pass SDK for decoding.
   * Pixel Pass returns the decoded data to Inji Verify for further processing.
   * Inji Verify then verifies the decoded data using the Verification SDK.
@@ -132,7 +132,7 @@ When the scan is initiated, you will be prompted to grant the necessary camera p
 
 **Scenario 3:** If the QR code is unreadable or blurry then Inji Verify returns to the home screen.
 
-* An error message stating**"No multi-format readers were able to read the QR code."**
+* An error message statin&#x67;**"No multi-format readers were able to read the QR code."**
 
 **Desktop View**
 

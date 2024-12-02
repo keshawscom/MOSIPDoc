@@ -18,14 +18,14 @@ The below given are the list of features for the Inji Verify Portal:
    * Supports various formats like PDFs and images(JPEG, JPG, and PNG) containing QR codes.
    * Utilizes PixelPass library to automatically decode uploaded QR codes for accurate credential retrieval.
 3. **Streamlined Credential Sharing:**
-   1. Inji Verify leverages [**OpenID4VP**](https://openid.net/specs/openid-4-verifiable-presentations-1\_0.html#name-cross-device-flow) standards to simplify the process of verifying the verifiable credentials (VCs). Instead of embedding the entire credential within the QR code and with the OpenIDVP online sharing feature the QR code is embedded with a URL that points to a secure storage location like Inji Web or any platform adhering to OpenID4VP standards. This reduces the size and complexity of the QR code, making it easier to scan and share across devices, while still ensuring secure credential verification.
+   1. Inji Verify leverages [**OpenID4VP**](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html#name-cross-device-flow) standards to simplify the process of verifying the verifiable credentials (VCs). Instead of embedding the entire credential within the QR code and with the OpenIDVP online sharing feature the QR code is embedded with a URL that points to a secure storage location like Inji Web or any platform adhering to OpenID4VP standards. This reduces the size and complexity of the QR code, making it easier to scan and share across devices, while still ensuring secure credential verification.
 4. **Docker Compose for Easy Installation:**
    1. Inji Verify offers a streamlined installation process by supporting Docker Compose. This containerization tool allows users to quickly set up and deploy the application without complex configuration steps.
 5. **Validation and Verification:**
    * Upon scanning a QR code or uploading the QR Code, Inji Verify validates the authenticity of the credential data.
    * Advanced algorithms and cryptographic methods ensure that the QR code has not been tampered with and consumes [**pixel pass library v0.1.6**](https://www.npmjs.com/package/@mosip/pixelpass/v/0.1.6)**.**
    * Real-time verification provides instant feedback on the validity of the credential, giving users confidence in its authenticity.
-   * PixelPass library now supports decoding of CBOR-encoded QR codes, enabling Inji Verify to verify CBOR**-**encoded QR codes. However, CBOR encoding capability within the PixelPass library is still under development.
+   * PixelPass library now supports decoding of CBOR-encoded QR codes, enabling Inji Verify to verify CBO&#x52;**-**&#x65;ncoded QR codes. However, CBOR encoding capability within the PixelPass library is still under development.
 6. **Credential Display:**
    * Valid credentials retrieved through QR code scanning or uploading QR codes are displayed securely within the Inji Verify portal.
    * Users can view detailed information about the credential, including name, DOB, gender, expiration date, and any associated claims.

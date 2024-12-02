@@ -145,7 +145,7 @@
   * [Version 0.8.0](inji-verify/releases/release-notes/README.md)
     * [Test Report](inji-verify/releases/release-notes/test-report.md)
 * [Try It Out](inji-verify/releases-1/README.md)
-  * [Inji Verify - Collab Guide](inji-verify/releases-1/inji-verify-setup-guide.md)
+  * [Inji Verify - Collab Guide](inji-verify/releases-1/inji-verify-collab-guide.md)
 * [Build & Deploy](inji-verify/build-and-deploy/README.md)
   * [Local Setup](inji-verify/build-and-deploy/local-setup.md)
   * [Generate QR Code](inji-verify/build-and-deploy/creating-verifiable-credentials-and-generating-qr-codes.md)

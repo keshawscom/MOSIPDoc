@@ -22,7 +22,7 @@ Inji Certify continues to innovate in the realm of verifiable credentials (VCs) 
    * **JSON-LD Compliance:** Ensures adherence to W3C VC v1.1 standards promoting interoperability and industry compliance.
    * **Credential Schema Configuration:** Issuers can now configure custom credential schemas for various types of certificates, enhancing flexibility in credential design and issuance.
 4. **Ease of Installation and Deployment:**
-   * **Docker-compose Support:** Quick and easy deployment using Docker-compose, allowing for rapid local setup and scaling. Click [**here**](https://github.com/mosip/inji-certify/tree/v0.9.0/docker-compose) to learn more**!**
+   * **Docker-compose Support:** Quick and easy deployment using Docker-compose, allowing for rapid local setup and scaling. Click [**here**](https://github.com/mosip/inji-certify/tree/v0.9.0/docker-compose) to learn mor&#x65;**!**
 5. **Inji-config Repository:**
    * **Configuration Management:** Introduction of the inji-config repository to maintain all configurations related to the Inji Certify, streamlining configuration management and consistency across deployments.
 6. **Support for Mock and Insurance Credential Use Cases:**
@@ -61,7 +61,7 @@ The following table outlines the tested and certified compatibility of Inji Cert
 
 ### **Known Issues**
 
-Below is the list of known issues. To read in detail and view all the topics related to Inji Verify please click [**here**](https://mosip.atlassian.net/issues/?filter=11419\&jql=project%20%3D%20%22Inji%20Certify%22%20AND%20issuetype%20%3D%20Bug%20%20AND%20labels%20not%20in%20\(API\_Automation%2C%20AWSdevicefarm%2C%20device\_specific%2C%20qa-inji-UI-auto\)%20%20%20%20ORDER%20BY%20created%20DESC%2C%20updated%20DESC%2C%20cf%5B10039%5D%20)**.**
+Below is the list of known issues. To read in detail and view all the topics related to Inji Verify please click [**here**](https://mosip.atlassian.net/issues/?filter=11419\&jql=project%20%3D%20%22Inji%20Certify%22%20AND%20issuetype%20%3D%20Bug%20%20AND%20labels%20not%20in%20\(API_Automation%2C%20AWSdevicefarm%2C%20device_specific%2C%20qa-inji-UI-auto\)%20%20%20%20ORDER%20BY%20created%20DESC%2C%20updated%20DESC%2C%20cf%5B10039%5D%20)**.**
 
 | **Jira ID**                                                         | **Description**                                                                                                   |
 | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
