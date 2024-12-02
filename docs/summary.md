@@ -64,6 +64,7 @@
       * [Test Report](inji-wallet/inji-mobile/versions/version-0.9.1/test-report-0.9.1.md)
     * [Version 0.9.0](inji-wallet/inji-mobile/versions/version-0.9.0/README.md)
       * [Test Report](inji-wallet/inji-mobile/versions/version-0.9.0/test-report-0.9.0.md)
+    * [Version 0.15.0](inji-wallet/inji-mobile/versions/version-0.15.0.md)
   * [Try It Out](inji-wallet/inji-mobile/sandbox-details/README.md)
     * [Inji Mobile - Collab Guide](inji-wallet/inji-mobile/sandbox-details/inji-setup-guide.md)
   * [Build & Deploy](inji-wallet/inji-mobile/build-and-deployment/README.md)
