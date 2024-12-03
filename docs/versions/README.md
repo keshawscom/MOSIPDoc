@@ -1,5 +1,5 @@
 ---
-description: Here you can find all the latest release details
+description: Here you can find all the latest release details 🌟
 ---
 
 # Releases
