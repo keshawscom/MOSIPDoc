@@ -17,10 +17,11 @@ Below sections details on the steps for integrating the Kotlin and Swift package
 ### Repository
 
 * inji-vci-client repo is [here](https://github.com/mosip/inji-vci-client)
+* * Maven snapshots available [here](https://repo1.maven.org/maven2/io/mosip/inji-vci-client/)
 
 ### Installation
 
-Builds are available [here](https://repo1.maven.org/maven2/io/mosip/inji-vci-client/).
+Snapshot builds are available [here](https://oss.sonatype.org/content/repositories/snapshots/io/mosip/inji-vci-client/).
 
 
 {% hint style="info" %}

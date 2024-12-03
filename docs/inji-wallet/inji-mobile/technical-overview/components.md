@@ -116,7 +116,7 @@ Note:
   * [kotlin](https://github.com/mosip/inji-vci-client/blob/master/kotlin/README.md)
   * [swift](https://github.com/mosip/inji-vci-client-ios-swift)
 * To understand about the installation and the API documentation, refer [here](https://docs.mosip.io/inji/inji-mobile-wallet/integration-guide/vci-client).
-* Android artifacts are available [here](https://repo1.maven.org/maven2/io/mosip/inji-vci-client/)
+* Maven snapshots are available [here](https://oss.sonatype.org/content/repositories/snapshots/io/mosip/inji-vci-client/)
 {% endhint %}
 
 
