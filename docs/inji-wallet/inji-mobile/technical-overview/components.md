@@ -34,7 +34,6 @@ Note:
 * To learn more about Tuvali's implementation, refer [here](https://docs.mosip.io/inji/integration-guide/tuvali).
 * For information on Tuvali's permissions and requirements, refer [here](https://docs.mosip.io/inji/integration-guide/tuvali/tuvali-requirements).
 * To understand Tuvali and Inji Wallet integration, along with API documentation, refer[ here](https://docs.mosip.io/inji/integration-guide/tuvali/tuvali-inji).
-* To check the NPM module, click [here](https://www.npmjs.com/package/@mosip/tuvali).
 * Maven snapshots are available [here](https://oss.sonatype.org/content/repositories/snapshots/io/mosip/tuvali/)
 {% endhint %}
 
