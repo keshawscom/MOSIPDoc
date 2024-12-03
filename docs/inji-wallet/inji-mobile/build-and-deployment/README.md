@@ -226,9 +226,9 @@ sdk.dir = <location-of-the-android-sdk>
 
 #### Step 3:
 
-* Inji application currently supports two themes: **orange** and **purple**.
-* The default theme of the app is orange.
-* To change the theme of the application, go to `.env` file and change the value of `APPLICATION_THEME` to `orange` or `purple`
+* Inji application currently supports two themes: **gradient** and **purple**.
+* The default theme of the app is gradient.
+* To change the theme of the application, go to `.env` file and change the value of `APPLICATION_THEME` to `purple` or `orange` to apply gradient theme
 
 #### Step 4:
 

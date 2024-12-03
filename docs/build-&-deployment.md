@@ -224,9 +224,9 @@ sdk.dir = <location-of-the-android-sdk>
 
 #### Step 3:
 
-* Inji application currently supports two themes: **orange** and **purple**.&#x20;
-* The default theme of the app is orange.
-* &#x20;To change the theme of the application, go to `.env` file and change the value of `APPLICATION_THEME` to `orange` or `purple`
+* Inji application currently supports two themes: **gradient** and **purple**.&#x20;
+* The default theme of the app is gradient.
+* &#x20;To change the theme of the application, go to `.env` file and change the value of `APPLICATION_THEME` to `purple` or `orange` to apply gradient theme
 
 #### Step 4:
 
@@ -326,7 +326,7 @@ The Internal testing version of the build can be uploaded to `PlayConsole` for t
 
 A Google play console developer account is a must to publish builds in PlayConsole.
 
-1. Set the backend URL and choose a theme (orange | purple) inside the `.env` file.
+1. Set the backend URL and choose a theme (gradient | purple) inside the `.env` file.
 2. Build the Apk or App bundle.
 3. Login to PlayConsole and create a new release inside Internal testers.
 4. Upload the Apk or App bundle to PlayConsole.
