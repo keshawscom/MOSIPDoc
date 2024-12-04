@@ -27,7 +27,7 @@
 
 ### Architecture
 
-![](<../../.gitbook/assets/deployment\_architecture (1).png>)
+![](<../../.gitbook/assets/deployment_architecture (1).png>)
 
 ### Deployment repos
 
@@ -55,7 +55,7 @@
 
 * All the VM's should be able to communicate with each other.
 * Need stable Intra network connectivity between these VM's.
-* All the VM's should have stable internet connectivity for docker image download (in case of local setup ensure to have a locally accesible docker registry).
+* All the VM's should have stable internet connectivity for docker image download (in case of local setup ensure to have a locally accessible docker registry).
 * Server Interface requirement as mentioned in below table:
 
 | Sl no. | Purpose                  | Network Interfaces                                                                                                                                                                                                                                                                                         |
@@ -93,10 +93,10 @@
 
 As only secured https connections are allowed via nginx server will need below mentioned valid ssl certificates:
 
-* One valid wildcard ssl certificate related to domain used for accessing Observation cluster, this needs to be stored inside the nginx server VM for Observation cluster. In above e.g.: \*.org.net is the similiar example domain.
-* One valid wildcard ssl certificate related to domain used for accesing Mosip cluster, this needs to be stored inside the nginx server VM for mosip cluster. In above e.g.: \*.sandbox.xyz.net is the similiar example domain.
+* One valid wildcard ssl certificate related to domain used for accessing Observation cluster, this needs to be stored inside the nginx server VM for Observation cluster. In above e.g.: \*.org.net is the similar example domain.
+* One valid wildcard ssl certificate related to domain used for accessing Mosip cluster, this needs to be stored inside the nginx server VM for mosip cluster. In above e.g.: \*.sandbox.xyz.net is the similar example domain.
 
-**Tools to be installed in Personel Computers for complete deployment**
+**Tools to be installed in Personal Computers for complete deployment**
 
 * [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)- any client version above 1.19
 * [helm](https://helm.sh/docs/intro/install/)- any client version above 3.0.0 and add below repos as well:
