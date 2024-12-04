@@ -238,6 +238,7 @@
 * [📚 MOSIP Support Policy](support-policy.md)
 * [📫 Sandbox Details](sandbox-details.md)
 * [🗳️ Collab Environment Guides](collab-getting-started-guide/README.md)
+  * [Admin Portal](collab-getting-started-guide/admin-portal.md)
   * [Inji](collab-getting-started-guide/collab-inji-setup-guide.md)
   * [eSignet](collab-getting-started-guide/collab-esignet-setup-guide.md)
   * [Pre-registration](collab-getting-started-guide/collab-pre-registration-guide.md)
