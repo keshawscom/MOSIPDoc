@@ -1,6 +1,26 @@
 # Resources
 
+## Inji Ecosystem Workshop: Comprehensive demonstration on Digital Identity Management and Credential Integration
+
+{% embed url="https://youtu.be/eyhnGFED-xc?si=Btq6pZgUXO_rEyzQ" %}
+
+The workshop aims to provide a comprehensive understanding of the Inji ecosystem, focusing on its various components, configuration, and practical usage. It covered essential topics to help participants effectively use and integrate Inji's features.
+
+- **Understanding DID Methods**: The workshop explains the different Decentralized Identifier (DID) methods supported by Inji, helping participants grasp how digital identities are managed.
+
+- **OIDC Client and p12 File Creation**: Participants learn how to create an OIDC client and generate a p12 file, ensuring secure key storage and authentication processes.
+
+- **Configuring Mimoto in Inji Web**: Detailed steps are provided to configure Mimoto within the Inji Web application, addressing common issues and ensuring seamless integration.
+
+- **Credential Management**: The workshop covers how credentials are stored, secured, and validated in both **Web** and **Wallets**, emphasizing security and compliance with standards.
+
+- **Real-World Deployment and Integration**: It discusses the roles of issuers and service providers in real-world deployments, the use of blockchain for security, and the potential for running AI agents for selective disclosure.
+
+
 ## Inji Certify Credential Issuance Workshop <a href="#inji-certify-credential-issuance-workshop" id="inji-certify-credential-issuance-workshop"></a>
+
+{% embed url="https://youtu.be/cmF8e36P3GM?si=8yGY8qGD0Tb9qpIy" %}
+
 
 The Workshop demonstrates how to integrate Inji Certify, a credential issuance platform, with a custom data provider plugin to issue 'Verifiable Credentials'. The specific use case covered is issuing farmer IDs based on official land registry data.
 
@@ -12,11 +32,9 @@ The Workshop demonstrates how to integrate Inji Certify, a credential issuance p
 
 
 
-{% embed url="https://youtu.be/cmF8e36P3GM?si=8yGY8qGD0Tb9qpIy" %}
-
-
-
 ## Inji A Technical Deep Dive
+
+{% embed url="https://youtu.be/yrnJT_EB-sA?si=Aj_xVHiN-cGhMFnq" %}
 
 The webinar delves into the technical architecture and implementation details of the Inji Stack, specifically focusing on the Inji Wallet and its integration with other stacks/components like eSignet and Inji Certify. The webinar offers a comprehensive overview of the technical intricacies involved in building a decentralized credential issuance and verification system using the MOSIP's Inji platform.
 
@@ -27,11 +45,10 @@ The webinar delves into the technical architecture and implementation details of
 * **Configuration:** The webinar discusses the configuration aspects, such as setting up issuer information, defining VC templates, and configuring the connection to eSignet.
 * **Development and Integration:** The presentation provides insights into the development process, including the use of React Native for the mobile app, the integration of native modules, and the management of data storage.
 
-{% embed url="https://youtu.be/yrnJT_EB-sA?si=Aj_xVHiN-cGhMFnq" %}
-
-
 
 ## Unlocking the Value of Integrations with Inji and eSignet
+
+{% embed url="https://youtu.be/DSQmHKnVQsE?si=AgiahlTfsd5BDlbk" %}
 
 The webinar delves into MOSIP's solutions for identity verification and credential management also to see how national IDs empower citizens in the digital age.
 
@@ -41,4 +58,3 @@ The webinar delves into MOSIP's solutions for identity verification and credenti
 * **Inji**: A platform for managing the lifecycle of verifiable credentials.
 * **Real-World Impact**: Understand how eSignet and Inji provide secure and efficient digital experiences.
 
-{% embed url="https://youtu.be/DSQmHKnVQsE?si=AgiahlTfsd5BDlbk" %}
