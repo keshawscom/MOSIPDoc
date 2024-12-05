@@ -1,7 +1,7 @@
 ---
 hidden: true
 ---
-New Test
+New Test 2
 
 
 # Page 1
