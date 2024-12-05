@@ -1,6 +1,7 @@
 # Resources
 
-## Inji Ecosystem Workshop: Comprehensive demonstration on Digital Identity Management and Credential Integration
+## Inji Ecosystem Workshop
+### Comprehensive demonstration on Digital Identity Management and Credential Integration
 
 {% embed url="https://youtu.be/eyhnGFED-xc?si=Btq6pZgUXO_rEyzQ" %}
 
