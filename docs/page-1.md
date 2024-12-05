@@ -1,6 +1,8 @@
 ---
 hidden: true
 ---
+New Test
+
 
 # Page 1
 
