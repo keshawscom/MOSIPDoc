@@ -16,7 +16,7 @@ To fully explore the [Inji Web](https://docs.mosip.io/inji/inji-web/overview) an
 
 ### Inji Verify:
 
-To fully explore the [Inji Verify](https://docs.mosip.io/inji/inji-verify/overview) and its features in the Collab environment, we kindly request you to refer to the Inji Verify "[Try it out](https://app.gitbook.com/s/aY8BQ4hdzhSchZV814Ev/inji-verify/releases-1/inji-verify-setup-guide)" section provided within the Inji documentation.
+To fully explore the [Inji Verify](https://docs.mosip.io/inji/inji-verify/overview) and its features in the Collab environment, we kindly request you to refer to the Inji Verify "[Try it out](https://app.gitbook.com/s/aY8BQ4hdzhSchZV814Ev/inji-verify/releases-1/inji-verify-collab-guide)" section provided within the Inji documentation.
 
 _Thank you. Wishing you a pleasant experience!_
 

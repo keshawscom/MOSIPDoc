@@ -138,7 +138,7 @@ The FTM should have at least one of the following certifications in each categor
 * PCI - PED 2.0 or above (Pre-Certified)
 * One of the following Common Criteria (CC) certification
   * [https://www.commoncriteriaportal.org/files/ppfiles/pp0035a.pdf](https://www.commoncriteriaportal.org/files/ppfiles/pp0035a.pdf)
-  * [https://www.commoncriteriaportal.org/files/ppfiles/pp0084a\_pdf.pdf](https://www.commoncriteriaportal.org/files/ppfiles/pp0084a\_pdf.pdf)
+  * [https://www.commoncriteriaportal.org/files/ppfiles/pp0084a\_pdf.pdf](https://www.commoncriteriaportal.org/files/ppfiles/pp0084a_pdf.pdf)
 
 **System/Device Level Tamper (optional)**
 
@@ -682,7 +682,7 @@ Used only for registration module-compatible devices. This API is visible only f
 
 **Device Stream Response**
 
-Live Video stream with a quality of 3 frames per second or more using [M-JPEG](https://en.wikipedia.org/wiki/Motion\_JPEG).
+Live Video stream with a quality of 3 frames per second or more using [M-JPEG](https://en.wikipedia.org/wiki/Motion_JPEG).
 
 \{% hint style="info" %\} The preview should have quality markings and segment markings. The preview would also be used to display an error message on the user screen. All error messages should be localized. \{% endhint %\}
 
@@ -1048,46 +1048,46 @@ Discovery will return the appId of the discovered items. Users will be given a c
 #### Device Discovery <a href="#device-discovery-1" id="device-discovery-1"></a>
 
 _Request_: io.sbi.device\
-_action_: io.sbi.device\
-_data_: no change\
-_type_: application/json\
-_Request Schema_: No change in the data structure. The serialized request data as byte array is set in the intent extras with the key as “input”.\
-_Response Schema_: No change in the data structure. The serialized response data (byte array) is set in the intent extras with the key as “response”.
+&#xNAN;_&#x61;ction_: io.sbi.device\
+&#xNAN;_&#x64;ata_: no change\
+&#xNAN;_&#x74;ype_: application/json\
+&#xNAN;_&#x52;equest Schema_: No change in the data structure. The serialized request data as byte array is set in the intent extras with the key as “input”.\
+&#xNAN;_&#x52;esponse Schema_: No change in the data structure. The serialized response data (byte array) is set in the intent extras with the key as “response”.
 
 _callbackId_ should be set to the appId, and can not be empty in android.
 
 #### Device Info <a href="#device-info-1" id="device-info-1"></a>
 
 _Request_: appId.Info\
-_action_: appId.Info\
-_data_: no change\
-_type_: application/json\
-_Request Schema_: No change in the data structure. The serialized request data as a byte array is set in the intent extras with the key as “input”.\
-_Response Schema_: No change in the data structure. The serialized response data as a byte array is set in the intent extras with the key as “response”.
+&#xNAN;_&#x61;ction_: appId.Info\
+&#xNAN;_&#x64;ata_: no change\
+&#xNAN;_&#x74;ype_: application/json\
+&#xNAN;_&#x52;equest Schema_: No change in the data structure. The serialized request data as a byte array is set in the intent extras with the key as “input”.\
+&#xNAN;_&#x52;esponse Schema_: No change in the data structure. The serialized response data as a byte array is set in the intent extras with the key as “response”.
 
 _deviceInfo_: _callbackId_ should be set to the appId, can not be empty in android.
 
 #### Capture <a href="#capture-1" id="capture-1"></a>
 
 _Request_: appId.Capture\
-_action_: appId.Capture\
-_data_: no change\
-_type_: application/json\
-_flag_: FLAG\_GRANT\_READ\_URI\_PERMISSION\
-_Request Schema_: No change in the data structure. The serialized request data as a byte array is set in the intent extras with the key as “input”.\
-_Response Schema_: No change in the data structure. The response content is set as content URI “content://authority/path/id” in the intent extras as a string with the key as “response”.
+&#xNAN;_&#x61;ction_: appId.Capture\
+&#xNAN;_&#x64;ata_: no change\
+&#xNAN;_&#x74;ype_: application/json\
+&#xNAN;_&#x66;lag_: FLAG\_GRANT\_READ\_URI\_PERMISSION\
+&#xNAN;_&#x52;equest Schema_: No change in the data structure. The serialized request data as a byte array is set in the intent extras with the key as “input”.\
+&#xNAN;_&#x52;esponse Schema_: No change in the data structure. The response content is set as content URI “content://authority/path/id” in the intent extras as a string with the key as “response”.
 
 URI must be invalidated right after the read.
 
 #### rCapture <a href="#rcapture" id="rcapture"></a>
 
 _Request_: appId.rCapture\
-_action_: appId.rCapture\
-_data_: no change\
-_type_: application/json\
-_flag_: FLAG\_GRANT\_READ\_URI\_PERMISSION\
-_Request Schema_: No change in the data structure. The serialized request data as a byte array is set in the intent extras with the key as “input”.\
-_Response Schema_: No change in the data structure. The response content is set as content URI “content://authority/path/id” in the intent extras as a string with the key as “response”.
+&#xNAN;_&#x61;ction_: appId.rCapture\
+&#xNAN;_&#x64;ata_: no change\
+&#xNAN;_&#x74;ype_: application/json\
+&#xNAN;_&#x66;lag_: FLAG\_GRANT\_READ\_URI\_PERMISSION\
+&#xNAN;_&#x52;equest Schema_: No change in the data structure. The serialized request data as a byte array is set in the intent extras with the key as “input”.\
+&#xNAN;_&#x52;esponse Schema_: No change in the data structure. The response content is set as content URI “content://authority/path/id” in the intent extras as a string with the key as “response”.
 
 The content provider should not support insert, update, delete
 
