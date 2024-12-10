@@ -12,9 +12,7 @@ This beta release introduces significant enhancements, including migration to Ja
 
 Additionally, transitioning from the landing zone folder to the MinIO object store addresses scalability and storage challenges, ensuring efficient data handling.
 
-This release is tested and supports eSignet 1.3.0.
-
-For users who have already deployed MOSIP and intend to upgrade to Java 21, please refer here(link to be updated soon) for a detailed, step-by-step process to ensure a seamless transition.
+This release has been tested with and supports **eSignet 1.3.0**. For users who have already deployed MOSIP and intend to upgrade to Java 21, please refer to this guide (link to be updated soon) for a detailed step-by-step process to ensure a seamless transition.
 
 {% hint style="info" %}
 **Note:**
