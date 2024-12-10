@@ -1,4 +1,4 @@
-# 🤵‍♂️ Partners
+# Partners
 
 ## Overview
 
