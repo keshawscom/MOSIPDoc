@@ -175,7 +175,7 @@
   * [Community Calendars](community/community-calendar.md)
 * [📖 Releases](releases/README.md)
   * [1.3.0-beta.1](releases/1.3.0-beta.1/README.md)
-    * [Enhancements and bug fixes](releases/1.3.0-beta.1/enhancements-and-bug-fixes.md)
+    * [Enhancements and Bug Fixes](releases/1.3.0-beta.1/enhancements-and-bug-fixes.md)
     * [Test Report](releases/1.3.0-beta.1/test-report.md)
   * [API Test Commons Releases](releases/api-test-commons-releases/README.md)
     * [v1.3.0](releases/api-test-commons-releases/v1.3.0.md)

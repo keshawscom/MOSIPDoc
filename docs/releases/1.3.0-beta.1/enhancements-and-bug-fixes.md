@@ -1,8 +1,8 @@
-# Enhancements and bug fixes
+# Enhancements and Bug Fixes
 
 ### **Enhancements**
 
-1. **Data Segregation**([MOSIP-26804](https://mosip.atlassian.net/browse/MOSIP-26804))**:** MOSIP data which was considered to be master data have been categorized into default data and seed data. Default data refers to data that are mandatory to proceed with the deployment of MOSIP. Seed data refers to the data that are not mandatory during the deployment but are required for the functionality. this data will be fed by the countries based on their requirement. In this release, the categorization of the data performed and CSV files related to default data have been placed along with the source code while the CSV files that are related to seed data have been moved to the mosip-data repo. As part of this process, data that are not required anymore also have been removed. Please refer to the below changes:
+1. **Data Segregation** ([MOSIP-26804](https://mosip.atlassian.net/browse/MOSIP-26804))**:** MOSIP data which was considered to be master data have been categorized into default data and seed data. Default data refers to data that are mandatory to proceed with the deployment of MOSIP. Seed data refers to the data that are not mandatory during the deployment but are required for the functionality. this data will be fed by the countries based on their requirement. In this release, the categorization of the data performed and CSV files related to default data have been placed along with the source code while the CSV files that are related to seed data have been moved to the mosip-data repo. As part of this process, data that are not required anymore also have been removed. Please refer to the below changes:
 
 * Few language specific data which was identified as default data have been moved to the admin repo also modified these tables to be language agnostic. Below is the list of changes made under this category:
 
@@ -16,7 +16,7 @@ process_list
 reason_category
 ```
 
-* **below tables which are placed under admin\_service were deleted as they are not in use anymore in LTS- - 1.2.x**
+* Below tables which are placed under admin\_service were deleted as they are not in use anymore in LTS- - 1.2.x
 
 ```
 master-admin_param.sql
@@ -42,7 +42,7 @@ registration_center_h
 template
 ```
 
-* **removed dml data from mosip\_data as it is present already in the admin repo as default data**
+* **Removed DML data from mosip\_data as it is present already in the admin repo as default data**
 
 ```
 app_authentication_method
@@ -106,10 +106,10 @@ Refer to the below repos that are released with JAVA 21&#x20;
 
 ### **Bug Fixes**
 
-| Jira id                                                       | Issue description                                                                                                                                                                                                                                                |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [MOSIP-32283](https://mosip.atlassian.net/browse/MOSIP-32283) | Fixed an issue where zero-byte packets were being uploaded to the landing zone bucket when configured as an object store.                                                                                                                                        |
-| [MOSIP-20535](https://mosip.atlassian.net/browse/MOSIP-20535) | Fixed an issue where the Name and Description fields in Dynamic Fields could not be edited if filled and focus was moved to the next field before creation.                                                                                                      |
-| [MOSIP-21585](https://mosip.atlassian.net/browse/MOSIP-21585) | Fixed a technical error that occurred when clicking on the "Document Category - Type Mapping" feature in the Admin UI.                                                                                                                                           |
-| [MOSIP-30261](https://mosip.atlassian.net/browse/MOSIP-30261) | Fixed an issue in the PMP portal where partner policies were not reflecting correctly after user creation, requiring manual database updates. This was observed during ABIS and Print partner onboarding.                                                        |
-| [MOSIP-23873](https://mosip.atlassian.net/browse/MOSIP-23873) |  Fixed an issue in the center creation page where the location hierarchy was not functioning correctly. Changes were made to clear lower location hierarchy field values when the higher location hierarchy (Province) value was changed, resolving the problem. |
+| Jira id                                                       | Issue description                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [MOSIP-32283](https://mosip.atlassian.net/browse/MOSIP-32283) | Fixed an issue where zero-byte packets were being uploaded to the landing zone bucket when configured as an object store.                                                                                                                                       |
+| [MOSIP-20535](https://mosip.atlassian.net/browse/MOSIP-20535) | Fixed an issue where the Name and Description fields in Dynamic Fields could not be edited if filled and focus was moved to the next field before creation.                                                                                                     |
+| [MOSIP-21585](https://mosip.atlassian.net/browse/MOSIP-21585) | Fixed a technical error that occurred when clicking on the "Document Category - Type Mapping" feature in the Admin UI.                                                                                                                                          |
+| [MOSIP-30261](https://mosip.atlassian.net/browse/MOSIP-30261) | Fixed an issue in the PMP portal where partner policies were not reflecting correctly after user creation, requiring manual database updates. This was observed during ABIS and Print partner onboarding.                                                       |
+| [MOSIP-23873](https://mosip.atlassian.net/browse/MOSIP-23873) | Fixed an issue in the center creation page where the location hierarchy was not functioning correctly. Changes were made to clear lower location hierarchy field values when the higher location hierarchy (Province) value was changed, resolving the problem. |
