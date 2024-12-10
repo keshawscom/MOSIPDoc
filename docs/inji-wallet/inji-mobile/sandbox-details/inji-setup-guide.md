@@ -1,4 +1,4 @@
-# Inji Mobile Guide
+# Inji Mobile - Collab Guide
 
 Welcome to the Inji Mobile Guide tailored specifically for our Collab Environment! This guide is designed to assist you in setting up and configuring the [**Inji Wallet**](https://docs.mosip.io/inji) wallet app in our sandbox Collab environment. By following the steps outlined in this guide, you will be able to smoothly install and utilize the Inji Wallet app, empowering you to explore its features and functionalities effectively. Whether you're a Developer, System Integrator, or an enthusiast eager to dive into the world of digital identity, this guide will provide you with the necessary information to get started with Inji Wallet in our [**Collab**](https://collab.mosip.net/) environment. Let's begin this journey of seamless setup and exploration!
 
@@ -7,13 +7,11 @@ Welcome to the Inji Mobile Guide tailored specifically for our Collab Environmen
 Before you start with setting up Inji Mobile, ensure you have the following in place.
 
 1. Inji Wallet APK File:
-   * If you are using an Android smartphone, click [here](https://drive.google.com/drive/folders/1SRHhFxQBNfOc-cdPU8VlKecIdc-WkuGZ) to get the Inji Mobile `apk` file for installation.
+   * If you are using an Android smartphone, click [**here**](https://drive.google.com/drive/folders/1SRHhFxQBNfOc-cdPU8VlKecIdc-WkuGZ) to get the Inji Mobile `apk` file for installation.
    * Transfer the `apk` file onto the smartphone on which it is to be installed.
 2. Inji Wallet Test Flight Access:
-   * If you are using an iOS device, fill out the [form](https://docs.google.com/forms/d/e/1FAIpQLSd_P4OMwimjTxGlJ2bfLob2TIt9UaaZDQF3sBO74e9TBST-vQ/viewform) here to get access to the Inji Wallet app on test flight.
-     * Ensure you have downloaded the test flight application from your app store
-   * You will receive an email on the email ID (associated to the Apple ID) provided in the form.
-   * Follow the instructions in the email and access Inji Wallet from the iOS device on which it has to be installed.
+   * If you are using an iOS device, click [**here**](https://testflight.apple.com/join/7FTAdjLe) get access to the Inji Wallet app on test flight.
+     * Ensure you have get the test flight application from your app store.
 3.  UIN Credentials:
 
     * Issuance of UIN (Unique identification number) as a demo credential will allow you to explore Inji Mobile's capabilities and experience seamless VC sharing firsthand.
