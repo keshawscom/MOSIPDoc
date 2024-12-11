@@ -10,7 +10,7 @@
 
 **Version: 1.3.0 -  API Test Commons**
 
-* **Date:** Coming soon
+* **Date:** 11th December, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/api-test-commons-releases/v1.3.0)
 
 **Version: 1.3.0-beta.1 (mock-service & converters)**
