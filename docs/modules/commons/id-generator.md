@@ -29,7 +29,7 @@ Note: Significant thought has been invested in the above design to ensure the ge
 
 The source code of the ID Generator Service may be found [here](https://github.com/mosip/commons/tree/release-1.2.0/kernel/kernel-idgenerator-service).
 
-## Number of unique IDs
+## Number of Unique IDs
 
 The above logic reduces the space of the total number of IDs possible.  As it is difficult to represent the above logic with a mathematical formula, we provide a statistical estimate of the total number of unique IDs as below:
 
