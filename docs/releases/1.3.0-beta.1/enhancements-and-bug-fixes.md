@@ -16,7 +16,7 @@ process_list
 reason_category
 ```
 
-* Below tables which are placed under admin\_service were deleted as they are not in use anymore in LTS- - 1.2.x
+* The below tables which are placed under admin\_service were deleted as they are not in use anymore in LTS- - 1.2.x
 
 ```
 master-admin_param.sql
@@ -32,7 +32,7 @@ master-status_list.sql
 master-status_type.sql
 ```
 
-* **The below tables were identified as seed data and hence moved to dml in mosip-data**
+* The below tables were identified as seed data and hence moved to DML in mosip-data.
 
 ```
 days_of_week_list
