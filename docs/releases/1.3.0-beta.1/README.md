@@ -8,7 +8,7 @@
 
 ### **Overview**
 
-This beta release introduces significant enhancements, including migration to Java 21 for improved compatibility and performance, the categorization of MOSIP data into default and seed data for streamlined deployment and customization and support for new cryptographic algorithms (SECP256K1, SECP256R1, and Ed25519) to strengthen security.
+This component wise beta release introduces significant enhancements, including migration to Java 21 for improved compatibility and performance, the categorization of MOSIP data into default and seed data for streamlined deployment and customization, and support for new cryptographic algorithms (SECP256K1, SECP256R1, and Ed25519) to strengthen security
 
 Additionally, transitioning from the landing zone folder to the MinIO object store addresses scalability and storage challenges, ensuring efficient data handling.
 
@@ -29,7 +29,7 @@ As part of the Java 21 migration in this beta release, users must follow specifi
 This setup ensures compatibility and seamless operation of Java 11 and Java 21-supported repositories. Any latest Java 11-compatible Artifactory server can be used for this purpose.
 
 {% hint style="info" %}
-**Note:** As we approach the MOSIP platform v1.2.1.0-beta.1 release, the v1.3.0-beta.1 is also part of the main MOSIP platform release.
+**Note:** This component wise beta release will be part of the MOSIP Identity v1.2.1.0-beta.1 release.
 {% endhint %}
 
 #### **Major Areas of Work**

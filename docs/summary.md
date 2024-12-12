@@ -179,7 +179,7 @@
     * [Test Report](releases/1.3.0-beta.1/test-report.md)
   * [API Test Commons Releases](releases/api-test-commons-releases/README.md)
     * [v1.3.0](releases/api-test-commons-releases/v1.3.0.md)
-  * [1.3.0-beta.1 (mock-service & converters)](releases/1.3.0-beta.1-mock-service-and-converters.md)
+  * [1.2.1.0-beta.1(Part 1)](releases/1.3.0-beta.1-mock-service-and-converters.md)
   * [Android Registration Client 0.11.0-beta.1](releases/android-registration-client-0.11.0-beta.1/README.md)
     * [Test Report](releases/android-registration-client-0.11.0-beta.1/test-report.md)
   * [Partner Management System 1.3.0-dp.1](releases/partner-management-system-1.3.0-dp1/README.md)
