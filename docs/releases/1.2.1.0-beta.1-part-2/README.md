@@ -1,6 +1,6 @@
-# 1.2.1.0-beta.1 (part 2)
+# 1.2.1.0-beta.1 (Part 2)
 
-**Release Version**: 1.2.1.0-beta.1 (part 2)
+**Release Version**: 1.2.1.0-beta.1
 
 **Release Type:** Beta Release
 
@@ -17,8 +17,7 @@ This release has been tested with and supports **eSignet 1.3.0**. For users who 
 {% hint style="info" %}
 **Note:**
 
-* As the Inji stack continues to evolve, we are introducing the inji-config repository to manage the Spring Cloud configuration for the stack. You can find the inji-config repository [here](https://github.com/mosip/inji-config).
-* Inji Wallet and Inji Web use Mimoto as their backend service. Since Mimoto is part of the Inji stack, its configuration properties have been moved to the inji-config repository. These properties can now be accessed to deploy the Inji stack.
+As the Inji stack continues to evolve, we are introducing the inji-config repository to manage the Spring Cloud configuration for the stack. Hence Inji-config file has been moved out from the mosip-config repository and placed under the inji-config repository [here](https://github.com/mosip/inji-config).
 {% endhint %}
 
 As part of the Java 21 migration in this beta release, users must follow specific steps to migrate Artifactory and MOSIP configuration files. Before proceeding with the migration, ensure that two separate Artifactory servers are running:
@@ -49,4 +48,4 @@ This setup ensures compatibility and seamless operation of Java 11 and Java 21-s
 
 * For module wise Enhancements & Bug fixes please refer [here](https://docs.mosip.io/1.2.0/releases/1.3.0-beta.1/enhancements-and-bug-fixes).
 * Functional test report (To be updated).
-* For Known issues. Please refer [here](https://mosip.atlassian.net/issues/?filter=11674).
+* For Known issues, please refer [here](https://mosip.atlassian.net/issues/?filter=11674).
