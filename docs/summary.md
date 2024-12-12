@@ -174,7 +174,7 @@
   * [MOSIP Branching Strategy](community/mosip-branching-strategy.md)
   * [Community Calendars](community/community-calendar.md)
 * [📖 Releases](releases/README.md)
-  * [1.2.1.0-beta.1 (part 2)](releases/1.2.1.0-beta.1-part-2/README.md)
+  * [1.2.1.0-beta.1 (Part 2)](releases/1.2.1.0-beta.1-part-2/README.md)
     * [Enhancements and Bug Fixes](releases/1.2.1.0-beta.1-part-2/enhancements-and-bug-fixes.md)
     * [Test Report](releases/1.2.1.0-beta.1-part-2/test-report.md)
   * [API Test Commons Releases](releases/api-test-commons-releases/README.md)
