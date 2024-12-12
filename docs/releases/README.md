@@ -2,7 +2,7 @@
 
 ## Latest Releases 🌟
 
-**Version: 1.3.0-beta.1**&#x20;
+**Version: 1.2.1.0-beta.1(Part 2)**
 
 * **Support:** Beta Release
 * **Date:** Coming Soon
@@ -13,7 +13,7 @@
 * **Date:** 12th December, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/api-test-commons-releases/v1.3.0)
 
-**Version: 1.2.0.1(Part 1)**
+**Version: 1.2.0.1-beta.1(Part 1)**
 
 * **Support:** Beta Release
 * **Date:** 26th November, 2024

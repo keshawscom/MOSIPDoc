@@ -1,6 +1,6 @@
-# 1.3.0-beta.1
+# 1.2.1.0-beta.1 (part 2)
 
-**Release Version**: 1.3.0-beta.1
+**Release Version**: 1.2.1.0-beta.1 (part 2)
 
 **Release Type:** Beta Release
 
