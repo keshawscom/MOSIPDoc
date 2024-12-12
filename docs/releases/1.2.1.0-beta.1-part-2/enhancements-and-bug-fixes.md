@@ -104,17 +104,14 @@ Refer to the below repositories that are released with JAVA 21&#x20;
 
        * The attribute \`config.server.file.storage.uri\` has been renamed as below:
 
-       mosip.config.server.file.storage.uri=${spring.cloud.config.uri}/${spring.application.name}/${spring.profiles.active}/${spring.cloud.config.label}/ delta
+       `mosip.config.server.file.storage.uri=${spring.cloud.config.uri}/${spring.application.name}/${spring.profiles.active}/${spring.cloud.config.label}/ delta`
 
-       * As part of Spring-boot 3.x migration property server.max-http-header-size is deprecated and the below property is used:\
-         server.max-http-request-header-size=${server.max-http-header-size}
-       * The below property which is used to define vc verification file urls has been moved from id-repo to application-default property files:\
-         mosip.vercred.context.url.map={"https://www.w3.org/ns/odrl.jsonld" : "odrl.jsonld", "https://www.w3.org/2018/credentials/v1" : "cred-v1.jsonld", "https://${mosip.api.public.host}/.well-known/mosip-context.json" : "mosip-context.json"}
-       * A new property:
-
-       `registrationcenter.centerdetail.rest.uri=${mosip.base.url}/v1/masterdata/registrationcenters`has been included in the pre-registration-default.properties\` file which will be used to retrieve center details during the appointment booking process
-
-       * Property related to Maximum age limit has been removed in the config file ‘registration-default.properties’
+       * As part of Spring-boot 3.x migration property `server.max-http-header-size` is deprecated and the below property is used:\
+         `server.max-http-request-header-size=${server.max-http-header-size}`
+   * The below property which is used to define vc verification file urls has been moved from id-repo to application-default property files:\
+     `mosip.vercred.context.url.map={"https://www.w3.org/ns/odrl.jsonld" : "odrl.jsonld", "https://www.w3.org/2018/credentials/v1" : "cred-v1.jsonld", "https://${mosip.api.public.host}/.well-known/mosip-context.json" : "mosip-context.json"}`
+   * A new property: `registrationcenter.centerdetail.rest.uri=${mosip.base.url}/v1/masterdata/registrationcenters`has been included in the pre-registration-default.properties\` file which will be used to retrieve center details during the appointment booking process
+   * Property related to the Maximum age limit has been removed in the config file ‘registration-default.properties’.
 
 ### **Bug Fixes**
 
