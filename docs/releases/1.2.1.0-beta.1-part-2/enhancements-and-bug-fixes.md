@@ -44,7 +44,7 @@ template_type
 reason_category
 ```
 
-* **Removed DML data from mosip\_data as it is present already in the admin repo as default data**
+* Removed DML data from mosip\_data as it is present already in the admin repository as default data.
 
 ```
 app_authentication_method
