@@ -53,27 +53,25 @@ Upon the initial launch of Inji Wallet, the model is downloaded in the backgroun
 
 ### **3. Secure Keystore**
 
-The [secure-keystore](https://github.com/mosip/secure-keystore) library is designed for the purpose of creating and storing key-pairs in the hardware keystore of Android devices. The library also supports encryption, decryption, and HMAC calculation functionalities.
+The [secure-keystore](https://github.com/mosip/secure-keystore) library is designed for creating and storing key pairs in the hardware keystore of devices. The library supports encryption, decryption, HMAC calculation, and signing with aliases created during key pair generation.
 
-It also helps to sign with aliases, created as part of key pair generation.
+This library is available for both Android and iOS platforms:
 
-As the description says, this module is only for Android devices which support hardware keystore.
+- **For Android**: Refer to the [secure-keystore Kotlin library](https://github.com/mosip/secure-keystore).
+- **For iOS**: Refer to the [secure-keystore-iOS Swift library](https://github.com/mosip/secure-keystore-ios-swift).
 
-This library is available as Kotlin artefact in maven as well as npm module for react native application. Inji Wallet is integrated with the kotlin artefact of secure-keystore.
-
-In order to reduce the key size during credential download request, Inji Wallet is using RSA-2048 instead of RSA-4096 bits keys.
+Inji Wallet integrates with the secure-keystore library to ensure secure key management. To optimize the key size during credential download requests, Inji Wallet uses RSA-2048, ECR1, ECK1, ED25519 keys.
 
 To check all the APIs supported by this module, refer [here](../../technical-overview/components.md).
 
 {% hint style="info" %}
-Note:
+**Note:**
 
-* This feature is exclusive to the Android operating system.
-* It is only compatible with devices that have a hardware keystore.
-* To understand about the library and the API documentation, refer [here](integration-guide/secure-keystore.md).
-* To check the NPM module, click [here](https://www.npmjs.com/package/@mosip/secure-keystore).
-* Maven snapshots are available [here](https://oss.sonatype.org/content/repositories/snapshots/io/mosip/secure-keystore/)
+* Compatible with devices that support a hardware keystore.
+* To understand the library and access API documentation, refer [here](integration-guide/secure-keystore.md).
+* Maven snapshots are available [here](https://oss.sonatype.org/content/repositories/snapshots/io/mosip/secure-keystore/).
 {% endhint %}
+
 
 ### **4. BLE Verifier**
 
