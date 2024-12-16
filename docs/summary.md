@@ -26,7 +26,7 @@
   * [Compliance Tool Kit](https://docs.mosip.io/compliance-tool-kit/)
   * [SBISpec](biometrics/sbispec.md)
 * [👫 Partners](partners.md)
-* [⚒️ Modules](modules/README.md)
+* [🛠️ Modules](modules/README.md)
   * [Administration](modules/administration/README.md)
     * [Admin Portal User Guide](modules/administration/admin-portal-user-guide.md)
     * [Admin Services Developers Guide](modules/administration/admin-services-developers-guide.md)
