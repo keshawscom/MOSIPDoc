@@ -130,10 +130,22 @@ Inji Web is now responsive supporting a wide range of devices (Smartphones & Tab
 
 Overview
 
-This End-User-Guide helps you with following:
+The End-User-Guide for Inji Wallet (Web) helps you with 'Downloading National ID VC as PDF' , 'Download of Insurance ID VC as PDF' along with how you can select/choose a language or where you can look for help.
 
-- Download of National ID VC as PDF:
-- Download of Insurance ID VC as PDF:
+also mention here within the intro the following:
+
+Time bound VC storage
+- Landing page
+- Responsive view: Details on how the application adapts to different device views, including mobile and tablet devices.
+
+
+
+
+
+
+- Interface Overview // Have one large screenshots mark/highlight the areas, also enlist the areas where you will find what. // Say - Inji Wallet is akin to inji wallet with a web interface.
+- Download of National ID VC as PDF
+- Download of Insurance ID VC as PDF
 - Language Selection:
 - Language Selection: Guidance on selecting the preferred language for the application.
 Responsive Views:
@@ -205,29 +217,27 @@ To download a National ID VC using eSignet as authentication layer (OTP method)
 
 <!-- 
 
-## Download of Insurance ID VC as PDF
+## Downloading Insurance ID VC as PDF
 
-You can download your National ID, here we will see how to do it when we use eSignet for Authentication which will use OTP.
+You can download your Insurance ID, here we will see how to do it when we use eSignet for Authentication which is to use OTP.
 
-What details I need to provide to download my credential?
-The credential issuer would have provided details Policy number, Name and DoB for an Insurance card. This information has to be fed to the authentication system to enable download.
+Q - What details I need to provide to download my credential?
+A - The credential issuer would have provided details Policy number, Name and DoB for an Insurance card. This information has to be fed to the authentication system to enable download.
 
 
-To download a Insurance ID VC using eSignet as authentication layer (KBI method), please follow the below mentioned steps:
+To download an Insurance ID VC using eSignet for authentication (KBI method), follow the step below:
 
-**Step1**: Launch the Inji Web application in your web browser.
+**Step1**: Launch the Inji Web application in your web browser. The home page presents you with the list of Issuers. You can also use the 'Search' box to quickly find an Issuer (Insurance VC).
 
 <figure><img src="../../../.gitbook/assets/Inji Web_Download National ID as PDF_Step1.png" alt=""><figcaption><p>Launch application</p></figcaption></figure>
 
-**Step2**: Search for an issuer (Insurance Provider) by name in **Search** box.
-
 <figure><img src="../../../.gitbook/assets/Inji Web_Download Insurance ID as PDF_Step1.png" alt=""><figcaption><p>Search issuer</p></figcaption></figure>
 
-**Step3**: In the Home page, from the section, **List of Issuers** section, click on issuers' tile to land in **Credential Types** selection page.
+**Step2**: click on issuers' tile to land in **Credential Types** selection page.
 
 <figure><img src="../../../.gitbook/assets/Inji Web_Download Insurance ID as PDF_Step2.png" alt=""><figcaption><p>Credential Types page</p></figcaption></figure>
 
-**Step4**: In the Credentials Types selection page, choose a credential type from the List of Credentials section or Search for a credential type in the search box.
+**Step4**: In the Credentials Types selection page, choose a credential type from the List of Credentials section.
 
 <figure><img src="../../../.gitbook/assets/Inji Web_Download Insurance ID as PDF_Step3.png" alt=""><figcaption><p>Credential Type selection</p></figcaption></figure>
 
@@ -250,6 +260,16 @@ To download a Insurance ID VC using eSignet as authentication layer (KBI method)
 **Step6**: Upon successful PDF generation, user can view the PDF of the downloaded VC (Insurance ID).
 
 <figure><img src="../../../.gitbook/assets/Inji Web_Download Insurance ID as PDF_Step8.png" alt="" width="375"><figcaption><p>Downloaded Insurance VC as PDF</p></figcaption></figure>
+
+
+-->
+
+
+
+
+<!-- 
+
+Also include 'Don't have an account? Signup with Unified Login.
 
 
 -->
