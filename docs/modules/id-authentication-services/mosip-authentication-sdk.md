@@ -92,7 +92,7 @@ During installation, the SDK must be configured by updating the authenticator-co
 * **Timeout Settings**
 * **Logging Settings**
 
-For step-by-step instructions, refer to the **Configuration Guide**.
+For step-by-step instructions, refer to the **Configuration Guide** (Link to be updated).
 
 ### **Installation**
 
