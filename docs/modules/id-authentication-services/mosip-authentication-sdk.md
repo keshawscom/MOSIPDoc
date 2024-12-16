@@ -83,16 +83,29 @@ auth(
 * otp\_value _(Optional\[str])_: The One-Time Password (OTP) for authentication, if applicable.
 * consent _(bool)_: Indicates if the individual has given consent for authentication.
 
+
+
+**Pre Requisites:**
+
+Prior to initiate on the installation configuration of this SDK, user must have executed below steps:
+
+1. Register their org as Authentication Partner. you can refer [here](https://docs.mosip.io/1.2.0/partners#authentication-partner-ap) to follow the steps to register as AP
+2. Should possess IDA-FIR(K21) certificate. user can get the certificate [here](https://mosip.github.io/documentation/1.2.0/authentication-internal-service.html#operation/getCertificate).\
+   Please enter below details in the request:
+   1. app id: IDA
+   2. ref : IDA-FIR
+3. User should install pip in their machine. they can refer to this [link](https://pip.pypa.io/en/stable/installation/) to follow the installation
+
 #### **Configuration**
 
-During installation, the SDK must be configured by updating the authenticator-config.toml file. This file contains essential details, including:
+During installation, the SDK must be configured by updating the authenticator-config.toml file. please refer [here](https://github.com/mosip/ida-auth-sdk/blob/v0.9.0/mosip_auth_sdk/_authenticator/authenticator-config.toml) for configuration file, This file contains essential details, including:
 
 * **Service Endpoints**
 * **Encryption Keys**
 * **Timeout Settings**
 * **Logging Settings**
 
-For step-by-step instructions, refer to the **Configuration Guide** (Link to be updated).
+Refer [here](http://https/github.com/mosip/ida-auth-sdk/blob/v0.9.0/examples/config.toml) for sample configuration file for reference.
 
 ### **Installation**
 
