@@ -40,13 +40,10 @@ Default configuration - with 6 Languages (English/Arabic/French/Hindi/Tamil/Kann
 
 Main feature tested:
 
-▪         Admin
-
-▪         Pre-Registration
-
-▪         Registration Client
-
-▪         Registration Processor
+* Admin
+* &#x20;Pre-Registration
+* Registration Client
+* Registration Processor  &#x20;
 
 ## Test execution statistics
 
