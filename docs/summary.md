@@ -11,6 +11,7 @@
   * [Identifiers](id-lifecycle-management/identifiers.md)
   * [Anonymous Profiling Support](id-lifecycle-management/anonymous-profiling-support.md)
 * [✅ ID Authentication](id-authentication.md)
+* [MOSIP Authentication SDK](mosip-authentication-sdk.md)
 * [🔐 Privacy and Security](privacy-and-security/README.md)
   * [Data Protection](privacy-and-security/data-protection.md)
   * [Privacy](privacy-and-security/privacy.md)
