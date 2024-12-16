@@ -65,3 +65,93 @@ They are typically online services, websites, or applications that need to verif
 The identity provider, often utilizing protocols like [OpenID Connect](https://openid.net/connect/), provides authentication and identity information to the relying party, allowing users to access the service without having to create a new account or authenticate separately for each relying party.
 
 </details>
+
+
+
+
+Define ID registry plugin
+
+ID Registry plugin carries on with the same approach and philosophy to integrate the Signup Service as well, Now the Signup service integrate with any Id registry system. Now the tight integration of signup service with MOSIP ID-repository has been done away with.
+
+...
+
+Tight integration of signup service with MOSIP ID-repository should be removed. Follow the same eSignet plugin approach to integrate signup service with any ID registry systems.
+
+In signup service version < 1.1.0, Integration was used to create user identity entry and update user identity. Validation of the input user identity data was carried out in signup service before posting the request to MOSIP ID repository. ID repository also validated the identity data in the request using MOSIP defined Identity schema.
+
+Once the data is validated and saved in ID repo, the same was published to MOSIP IDA. Only after the identity data is published to IDA, end user will be able to authenticate via eSignet using the created identity. So it is required for signup service to check the status of the identity in ID registry before confirming registration completion to the end user.
+
+Note: eSignet connects to MOSIP IDA via 'Authenticator' plugin.
+
+
+
+...
+
+
+## Overview
+
+Signup portal display list of Verifiers and end user can choose one among them and start the verification process.
+
+
+Claims in a user profile can be verified by any trusted verifier. 
+
+Verified claims and the verification metadata itself could be stored in the ID registry. 
+
+An authenticated user can go through the verification process in signup portal to update his/her profile with verification metadata and mark claims as verified.
+
+
+
+** Verification process can be online or offline involving manual steps or consist of both online & manual steps. 
+
+
+
+
+### Video based verification:
+
+Video based online verification process is designed and supported with Signup portal. **Considering online verification in-scope for 1.1.0.
+
+Online video based process verification allows for:
+
+1. Liveliness check
+2. Face match
+3. Document verification
+4. Disability check
+
+
+So with this it is understood that every verification process can consist of any combination of steps. 
+
+Signup service should be able to **start** the process and **end** the process when signalled by the chosen verifier. End step should expect verification details which should be updated in 
+ID registry against the authenticated end user individual ID.
+
+
+
+
+
+### How is the user authenticated context shared with the signup portal?
+Authentication of user before verification process can be carried out in eSignet(OP). Authenticated user's transaction is shared as an id_token_hint to the signup portal. 
+Signup portal now takes the role of an RP and starts OIDC flow in eSignet with "mosip:idp:acr:id-token" ACR. As the authroize request already contains id_token_hint, user will not be prompted to enter credentials, but still may prompt to user to provide consent only if required. 
+Most of the time, "sub" claim in the userinfo response should suffice the requirement.
+
+
+## Provision to integrate with any Identity verification workflow
+Signup service has a provision to add any steps between **start** and **end** step in the verification workflow. We have defined [IdentityVerifierPlugin.java](../../signup-integration-api/src/main/java/io/mosip/signup/api/spi/IdentityVerifierPlugin.java) abstract class. 
+
+Verifier should only take care of
+
+1. Initializing every workflow run with required configuration based on the provided input. 
+2. Verify the input frame based on the current step and publish the feedback or details about the next step to start in this run to kafka (publishAnalysisResult concrete method is already defined in the plugin abstract class).
+3. Once the verifier decides to **end** the workflow run, it should hint the signup service by publishing **end** step details using the same publishAnalysisResult concrete method.
+4. Signup service will invoke the getVerificationResult method implemented by the verifier to fetch the verification details. VerificationResult can either be failure or successful. The same will be conveyed to the end user.
+
+### How to add Verifier and its workflow details?
+
+1. Verifier details should be added [signup-identity-verifier-details.json](../../signup-service/src/main/resources/signup-identity-verifier-details.json)
+2. Create a json file with workflow details, file should be named after the verifier ID as defined in the [signup-identity-verifier-details.json](../../signup-service/src/main/resources/signup-identity-verifier-details.json)
+
+Refer [signup-idv_mock-identity-verifier.json](../../signup-service/src/main/resources/signup-idv_mock-identity-verifier.json) the sample workflow details file. Note the file name is prepended with constant "signup-idv_"
+
+## Out of Scope features of verifier plugin
+
+1. Option to retry on verification failure without having to re-authenticate.
+2. Option to retry any step in the verification process.
+3. handling timeouts in the verification process in a user-friendly manner.
