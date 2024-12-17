@@ -14,7 +14,7 @@ Additionally, while the SDK is currently Python-based, a Java-based version will
 
 ### Purpose
 
-This page provides an overview of the Authentication SDK, outlining its functionality and providing a detailed process for installing and testing the IDA API using the SDK.
+This page provides an overview of the Authentication SDK, outlining its functionality and providing a [detailed process for installing](https://docs.mosip.io/1.2.0/modules/id-authentication-services/mosip-authentication-sdk#installation-process) and testing the IDA API using the SDK.
 
 #### **Why Use This SDK?**
 
