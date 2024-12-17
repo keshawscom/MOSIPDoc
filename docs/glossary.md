@@ -40,6 +40,7 @@ Identity systems, in the context of digital identity and access management, refe
 
 <summary>Identity Verification</summary>
 
+
 Identity verification is the important process of ensuring that a person is who they claim to be to avail of various government and private sector services.
 
 This process allows one to confirm one's identity and confirm the validity of details shared on the relying party's online portal.
@@ -65,6 +66,16 @@ They are typically online services, websites, or applications that need to verif
 The identity provider, often utilizing protocols like [OpenID Connect](https://openid.net/connect/), provides authentication and identity information to the relying party, allowing users to access the service without having to create a new account or authenticate separately for each relying party.
 
 </details>
+
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
 
 
 # ID registry plugin and eKYC plugin
@@ -188,6 +199,18 @@ Most of the time, "sub" claim in the userinfo response should suffice the requir
 1. Option to retry on verification failure without having to re-authenticate.
 2. Option to retry any step in the verification process.
 3. handling timeouts in the verification process in a user-friendly manner.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
