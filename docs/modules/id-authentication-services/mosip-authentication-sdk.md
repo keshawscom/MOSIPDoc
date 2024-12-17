@@ -10,7 +10,7 @@ The **MOSIP Authentication SDK** is a (Python-based) wrapper designed to simplif
 \
 Currently, the SDK supports OTP authentication and demographic authentication. Future updates will expand its functionality to include biometric authentication.\
 \
-Additionally, while the SDK is currently Python-based, a Java-based version will also be made available shortly to provide broader support.
+Additionally, although the SDK is currently Python-based, we will soon be expanding support to other languages to offer broader compatibility.
 
 ### Purpose
 
