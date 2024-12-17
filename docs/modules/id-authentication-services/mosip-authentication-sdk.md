@@ -8,14 +8,14 @@ icon: id-card-clip
 
 The **MOSIP Authentication SDK** is a Python wrapper that simplifies interaction with the **MOSIP Authentication Service**, enabling seamless integration of robust identity verification workflows into Python applications. Currently, this SDK supports OTP authentication and demographic authentication, but future updates will include support for biometric authentication as well. Developers are relieved from managing intricate details like request/response structures, encryption/decryption mechanisms, and error handling, allowing for quick and efficient implementation.
 
-While **eSignet**, MOSIP's OAuth- and OIDC-based solution, is recommended for most online and scalable authentication needs due to its modern, standards-compliant design, the MOSIP Authentication SDK is critical for scenarios requiring offline capabilities, such as data collection during registration or use cases in regions with limited real-time connectivity. This flexibility makes the SDK an invaluable tool for addressing diverse identity verification requirements across online and offline environments.
+#### **Why Use This SDK?**
 
-### **Why Use This SDK?**
+While you build your solution around MOSIP it is recommended that you should use **eSignet** which is MOSIP's OAuth- and OIDC-based solution for most online and scalable authentication needs and for its modern, standards-compliant design. At the same time, MOSIP Authentication SDK has its advantages for the flexibility it provides and why it qualifies to be an invaluable tool for addressing diverse identity verification requirements.
 
 1. **Ease of Integration**: Reduces the learning curve for working with MOSIP’s APIs.
 2. **Consistency**: Provides a uniform interface for different authentication operations.
 3. **Security**: Handles encryption and decryption of requests and responses in compliance with MOSIP standards.
-4. **Flexibility**: Supports multiple authentication methods, including demographic and biometric authentication.
+4. **Flexibility**: Supports multiple authentication methods including demographic details.
 
 ### **Key Features**
 
