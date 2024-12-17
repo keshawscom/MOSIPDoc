@@ -8,7 +8,7 @@
 
 The 1.0.0 version of eSignet focuses on essential features such as logging in with OTP and logging in with biometrics, along with wallet-based authentication. The subsequent releases will have more features and integration with digital wallet solutions.
 
-## Features Covered
+### Features Covered
 
 The features included in this release are:
 
@@ -18,7 +18,7 @@ The features included in this release are:
 * Multi-language support
 * Captcha validation
 
-## Documentation
+### Documentation
 
 * [Feature Documentation](../../overview/features/)
 * [Integration Guides](../../integration/)

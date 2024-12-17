@@ -1,12 +1,12 @@
 # Components
 
-The image below is a block diagram of the eSignet comprising of various components along with the different layers and external systems.
+The image below is a block diagram of the eSignet comprising various components along with the different layers and external systems.
 
-![](../../.gitbook/assets/component-diagram.png)
+<figure><img src="../../.gitbook/assets/eSignet-Components.png" alt=""><figcaption><p>eSignet Components</p></figcaption></figure>
 
 ### Relying Party System
 
-[Relying Party](../../glossary.md#relying-party) Systems depend on identity providers, such as eSignet, to authenticate and verify the identities of users before granting them access to protected resources or services.
+The [Relying Party](../../glossary.md#relying-party) Systems depend on identity providers, such as eSignet, to authenticate and verify the identities of users before granting them access to protected resources or services.
 
 Clients utilizing OpenID Connect within the OAuth 2.0 framework are commonly referred to as Relying Parties (RPs).
 
@@ -26,7 +26,7 @@ This is the user interface component of eSignet, developed using React JS. Its m
 * eSignet UI also offers QR code-based login with support for multiple digital wallets.
 * In addition, eSignet UI is compatible with MOSIP SBI 2.0 for biometric capture.
 * Furthermore, the eSignet UI provides flag-based captcha validation for OTP login.
-* Lastly, the landing page of the eSignet UI showcases the available "[_.well-know_](../../build-and-deploy/configuration/.well-known/)_"_ endpoints.
+* Lastly, the landing page of the eSignet UI showcases the available "[.well-known](https://docs.esignet.io/build-and-deploy/configuration/.well-known)_"_ endpoints.
 
 {% hint style="info" %}
 Here are a few frequently asked questions on the eSignet UI.
@@ -67,4 +67,4 @@ This system refers to any operational or fundamental identification system that 
 
 ### VC Issuer
 
-VC Issuer is an entity that can assert claims of a subject (here the holder), create verifiable credentials from these claims and transmit the verifiable credentials to the holder.
+VC Issuer is an entity that can assert claims of a subject (here the holder), create verifiable credentials from these claims, and transmit the verifiable credentials to the holder.

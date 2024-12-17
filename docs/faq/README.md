@@ -1,6 +1,6 @@
 # FAQs
 
-Here are a few of the frequently asked questions (FAQs) on e-Signet:
+Here are a few of the frequently asked questions (FAQs) on eSignet:
 
 ## About eSignet
 
@@ -133,13 +133,13 @@ You have to change _**acr-amr-mapping.json**_ in the _**mosip-config**_ repo; de
 }
 ```
 
-For details on ISO 639-1 and ISO 639-2, please follow the [documentation here](https://www.loc.gov/standards/iso639-2/php/English\_list.p).
+For details on ISO 639-1 and ISO 639-2, please follow the [documentation here](https://www.loc.gov/standards/iso639-2/php/English\_list.php).
 
 **Adding a new language in the production setup**
 
 Similar to the local mentioned above, you need to create a new language JSON file (as per ISO 639-1 and then update language configurations in _the **default.json**_ file.
 
-Apart from that, you have to make the above changes in the `develop` branch of your [_**artifactory-ref-impl**_](https://github.com/mosip/artifactory-ref-impl/tree/develop) repository. In order to do so,
+Apart from that, you have to make the above changes in the `develop` branch of your [_**artifactory-ref-impl**_](https://github.com/mosip/artifactory-ref-impl/tree/develop) repository. To do so,
 
 1. Clone the repo and switch to the `develop` branch.
 2. Go to the folder location:\
@@ -287,3 +287,18 @@ mosip.esignet.authenticator.default.auth-factor.kba.individual-id-field=policyNu
 
 </details>
 
+<details>
+
+<summary>How to configure KBI form in eSignet UI</summary>
+
+KBI form can be configured based on the fields required to identify a user via Knowledge based identification, please refer to the use case [example](https://docs.esignet.io/end-user-guide/knowledge-based-authentication) here and please find the below properties to be changed to reflect the fields in the KBI form on eSignet UI.
+
+```
+Update the below sub properties inside mosip.esignet.ui.config.key-values property
+'auth.factor.kba.individual-id-field' : '${mosip.esignet.authenticator.sunbird-rc.auth-factor.kba.individual-id-field}',\
+'auth.factor.kba.field-details':${mosip.esignet.authenticator.sunbird-rc.auth-factor.kba.field-details}
+```
+
+To know more about how to configure the KBI Form in eSignet please refer [here](https://github.com/mosip/digital-credential-plugins/blob/master/sunbird-rc-esignet-integration-impl/README.md)
+
+</details>

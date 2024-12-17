@@ -20,9 +20,9 @@ Key highlights of this feature are:
 Consent management is not applicable in this release as it solely focuses on the storage of user consent. The functionalities of editing, revoking, updating, or viewing the consent after it has been given by the user are considered beyond the scope of this release.
 {% endhint %}
 
-## Features Included
+### Features Included
 
-Below are the features available in the release,
+Below are the features available in the release:
 
 * Login with OTP
 * Login with biometrics
@@ -31,15 +31,15 @@ Below are the features available in the release,
 * Captcha validation
 * Consent storage
 
-## Repositories Released
+### Repositories Released
 
 * eSignet: [v1.1.0](https://github.com/mosip/esignet/tree/v1.1.0)
 * artifactory-ref-impl: [v1.2.0.1-B5](https://github.com/mosip/artifactory-ref-impl/tree/v1.2.0.1-B5)
 * mosip-config: [v1.1.0-ES](https://github.com/mosip/mosip-config/releases/tag/v1.1.0-ES)
 
-For details for deployment go through the [helm charts in the eSignet repository](https://github.com/mosip/esignet/tree/v1.1.0/helm).
+For details for deployment go through the helm charts in the [eSignet repository](https://github.com/mosip/esignet/tree/v1.1.0/helm).
 
-## Documentation
+### Documentation
 
 * [Feature Documentation](../../overview/features/)
 * [Integration Guides](../../integration/)
