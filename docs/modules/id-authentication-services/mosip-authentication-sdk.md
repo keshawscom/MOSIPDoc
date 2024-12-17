@@ -10,7 +10,10 @@ The **MOSIP Authentication SDK** is a (Python-based) wrapper designed to simplif
 \
 Currently, the SDK supports OTP authentication and demographic authentication. Future updates will expand its functionality to include biometric authentication.\
 \
-Additionally, while the SDK is currently Python-based, a Java-based version will also be made available shortly to provide broader support.
+Additionally, while the SDK is currently Python-based, a Java-based version will also be made available shortly to provide broader support.\
+\
+**Purpose**\
+This page provides an overview of the Authentication SDK, outlining its functionality and providing a detailed process for installing and testing the IDA API using the SDK.
 
 #### **Why Use This SDK?**
 
@@ -89,7 +92,7 @@ auth(
 * otp\_value _(Optional\[str])_: The One-Time Password (OTP) for authentication, if applicable
 * consent _(bool)_: Indicates if the individual has given consent for authentication
 
-
+### Installation Process
 
 **Pre-requisites:**
 
