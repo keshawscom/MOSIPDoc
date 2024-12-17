@@ -169,10 +169,6 @@ The SDK provides clear error messages and codes to help diagnose issues effectiv
 
 All communication with the MOSIP service is securely encrypted. Use the decrypt\_response method to handle responses.
 
-### **License**
-
-TBD
-
 ### **Conclusion**
 
 The **MOSIP Authentication SDK** simplifies the integration of robust authentication workflows into Python applications, ensuring secure, efficient, and compliant identity verification. By abstracting the complexities of direct API interaction, the SDK empowers developers to focus on building impactful solutions without worrying about intricate implementation details.
