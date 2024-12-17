@@ -6,24 +6,28 @@ icon: id-card-clip
 
 ### **Overview**
 
-The **MOSIP Authentication SDK** is a Python wrapper that simplifies interaction with the **MOSIP Authentication Service**, enabling seamless integration of robust identity verification workflows into Python applications. Currently, this SDK supports OTP authentication and demographic authentication, but future updates will include support for biometric authentication as well. Developers are relieved from managing intricate details like request/response structures, encryption/decryption mechanisms, and error handling, allowing for quick and efficient implementation.
+The **MOSIP Authentication SDK** is a (Python-based) wrapper designed to simplify interaction with the **MOSIP Authentication Service**, enabling seamless integration of robust identity verification workflows into Python applications. This SDK abstracts complex details such as request/response structures, encryption/decryption mechanisms, and error handling, allowing developers to implement authentication workflows quickly and efficiently.\
+\
+Currently, the SDK supports OTP authentication and demographic authentication. Future updates will expand its functionality to include biometric authentication.\
+\
+Additionally, while the SDK is currently Python-based, a Java-based version will also be made available shortly to provide broader support.
 
 #### **Why Use This SDK?**
 
-While you build your solution around MOSIP it is recommended that you should use **eSignet** which is MOSIP's OAuth- and OIDC-based solution for most online and scalable authentication needs and for its modern, standards-compliant design. At the same time, MOSIP Authentication SDK has its advantages for the flexibility it provides and why it qualifies to be an invaluable tool for addressing diverse identity verification requirements.
+While building your solution around MOSIP, it is recommended to use eSignet, MOSIP's OAuth- and OIDC-based solution, for most online and scalable authentication needs due to its modern, standards-compliant design. However, the MOSIP Authentication SDK offers its own advantages, particularly in the flexibility it provides, making it an invaluable tool for addressing a wide range of identity verification requirements.
 
-1. **Ease of Integration**: Reduces the learning curve for working with MOSIP’s APIs.
-2. **Consistency**: Provides a uniform interface for different authentication operations.
-3. **Security**: Handles encryption and decryption of requests and responses in compliance with MOSIP standards.
-4. **Flexibility**: Supports multiple authentication methods including demographic details.
+1. **Ease of Integration**: Simplifies the process of working with MOSIP’s APIs, reducing the learning curve for developers
+2. **Consistency**: Provides a uniform interface for different authentication operations, ensuring a consistent experience
+3. **Security**: Manages encryption and decryption of requests and responses, adhering to MOSIP's security standards
+4. **Flexibility**: Supports multiple authentication methods, including demographic authentication, offering versatility in identity verification workflows
 
 ### **Key Features**
 
-1. **Simplified API Interaction**: Abstracts the complexity of direct API calls to MOSIP services.
-2. **Support for Multiple Authentication Workflows**: Includes controllers for both KYC-based and general authentication.
-3. **Comprehensive Configuration**: Allows customization via a configuration file (authenticator-config.toml).
-4. **Secure Handling**: Automatically encrypts requests and decrypts responses to ensure secure communication.
-5. **Error Management**: Provides clear error messages and handling mechanisms.
+1. **Simplified API Interaction**: Abstracts the complexity of direct API calls to MOSIP services
+2. **Support for Multiple Authentication Workflows**: Includes controllers for both KYC-based and general authentication
+3. **Comprehensive Configuration**: Allows customization via a configuration file (authenticator-config.toml)
+4. **Secure Handling**: Automatically encrypts requests and decrypts responses to ensure secure communication
+5. **Error Management**: Provides clear error messages and handling mechanisms
 
 ### **Controllers**
 
@@ -33,21 +37,23 @@ The SDK provides two primary controllers, each designed for a specific authentic
    Used for **Know Your Customer (KYC)** authentication. This controller facilitates verification using demographic data or OTP verification.\
    **Reference**: [KYC Auth Controller API Documentation](https://mosip.github.io/documentation/1.2.0/authentication-service.html#tag/kyc-auth-controller)
 2. auth-controller\
-   Used for general authentication of individuals, allowing verification based on a wide range of identifiers such as demo authentication and OTP authentication.\
+   Used for general authentication of individuals, allowing verification based on a wide range of identifiers such as demographic authentication and OTP authentication.\
    **Reference**: [Auth Controller API Documentation](https://mosip.github.io/documentation/1.2.0/authentication-service.html#operation/authenticateIndividual)
 
 ### **Method Reference**
 
-The SDK provides two key methods for authentication workflows:
+The SDK provides two key methods for authentication:
 
 1. kyc **Method**: Used for KYC-based authentication by verifying an individual's demographic data and OTP.
 2. auth **Method**: Handles general authentication requests with similar parameters as kyc.
 
-Both methods require the individual's ID (individual\_id), ID type (individual\_id\_type), demographic data (DemographicsModel), and optionally an OTP, biometric data, and consent confirmation. These methods streamline identity verification processes for diverse use cases. please refer below to know more about the methods:
+Both methods require the individual's ID (individual\_id), ID type (individual\_id\_type), demographic data (DemographicsModel), optionally an OTP, biometric data, and consent confirmation. These methods streamline identity verification processes for diverse use cases. \
+\
+Please refer below to know more about the methods.
 
 #### kyc Method
 
-Authenticates an individual using KYC-based workflows.
+Authenticates an individual using KYC-based workflow.
 
 ```python
 kyc(
@@ -62,7 +68,7 @@ kyc(
 
 #### auth Method
 
-Performs a general authentication request.
+Performs a general authentication.
 
 ```python
 auth(
@@ -77,35 +83,35 @@ auth(
 
 **Common Parameters**
 
-* individual\_id _(str)_: The unique ID of the individual (e.g., VID, UIN).
-* individual\_id\_type _(str)_: Specifies the type of ID used (e.g., VID, UIN).
-* demographic\_data _(DemographicsModel)_: A model containing demographic details such as name and address.
-* otp\_value _(Optional\[str])_: The One-Time Password (OTP) for authentication, if applicable.
-* consent _(bool)_: Indicates if the individual has given consent for authentication.
+* individual\_id _(str)_: The unique ID of the individual (e.g., VID, UIN)
+* individual\_id\_type _(str)_: Specifies the type of ID used (e.g., VID, UIN)
+* demographic\_data _(DemographicsModel)_: A model containing demographic details such as name and address
+* otp\_value _(Optional\[str])_: The One-Time Password (OTP) for authentication, if applicable
+* consent _(bool)_: Indicates if the individual has given consent for authentication
 
 
 
-**Pre Requisites:**
+**Pre-requisites:**
 
-Prior to initiate on the installation configuration of this SDK, user must have executed below steps:
+Before beginning the installation and configuration of this SDK, the user must complete the following steps:
 
-1. Register their org as Authentication Partner. you can refer [here](https://docs.mosip.io/1.2.0/partners#authentication-partner-ap) to follow the steps to register as AP
-2. Should possess IDA-FIR(K21) certificate. user can get the certificate [here](https://mosip.github.io/documentation/1.2.0/authentication-internal-service.html#operation/getCertificate).\
-   Please enter below details in the request:
+1. **Register as an Authentication Partner (AP)**: Register their organization as an Authentication Partner. Please refer to this link [here](https://docs.mosip.io/1.2.0/partners#authentication-partner-ap) and follow the steps for registration.
+2. **Obtain the IDA-FIR(K21) Certificate**: The user must possess the IDA-FIR(K21) certificate. The certificate can be obtained [here](https://mosip.github.io/documentation/1.2.0/authentication-internal-service.html#operation/getCertificate).
+3. **Provide required details in the request**:
    1. app id: IDA
    2. ref : IDA-FIR
-3. User should install pip in their machine. they can refer to this [link](https://pip.pypa.io/en/stable/installation/) to follow the installation
+4. **Install pip on the machine**: The user should install pip to manage Python packages. Installation instructions can be found [here](https://pip.pypa.io/en/stable/installation/).
 
 #### **Configuration**
 
-During installation, the SDK must be configured by updating the authenticator-config.toml file. please refer [here](https://github.com/mosip/ida-auth-sdk/blob/v0.9.0/mosip_auth_sdk/_authenticator/authenticator-config.toml) for configuration file, This file contains essential details, including:
+During installation, the SDK must be configured by updating the authenticator-config.toml file. Please refer to this link [here](https://github.com/mosip/ida-auth-sdk/blob/v0.9.0/mosip_auth_sdk/_authenticator/authenticator-config.toml) for the configuration file, This file contains essential details, such as:
 
 * **Service Endpoints**
 * **Encryption Keys**
 * **Timeout Settings**
 * **Logging Settings**
 
-Refer [here](http://https/github.com/mosip/ida-auth-sdk/blob/v0.9.0/examples/config.toml) for sample configuration file for reference.
+Refer to this link [here](http://https/github.com/mosip/ida-auth-sdk/blob/v0.9.0/examples/config.toml) for a sample configuration file to guide you in the setup process.
 
 ### **Installation**
 
@@ -119,12 +125,12 @@ pip install git+https://github.com/mosip/ida-auth-sdk.git@v0.9.0
 
 Users who wish to try out this SDK should follow these steps:
 
-1. **Initialize the Authenticator**: Set up the authentication instance.
-2. **Create Demographic Data**: Prepare the required demographic information.
-3. **Perform Authentication**: Execute the authentication request using the SDK.
-4. **Handle the Response**: Process and utilize the response received from the authentication service.
+1. **Initialize the Authenticator**: Set up the authentication instance to begin interacting with the SDK
+2. **Create Demographic Data**: Prepare the necessary demographic information required for authentication
+3. **Perform Authentication**: Execute the authentication request using the SDK
+4. **Handle the Response**: Process and utilize the response received from the authentication service
 
-Refer to the model implementation below for detailed guidance on performing these steps during the installation process.
+For detailed guidance on performing these steps during the installation process, please refer to the model implementation below.
 
 **Basic Example:**
 
@@ -167,8 +173,17 @@ The SDK provides clear error messages and codes to help diagnose issues effectiv
 
 #### **Encryption and Decryption**
 
-All communication with the MOSIP service is securely encrypted. Use the decrypt\_response method to handle responses.
+All communication with the MOSIP service is securely encrypted. Use the decrypt\_response method to handle encrypted responses appropriately.
 
 ### **Conclusion**
 
-The **MOSIP Authentication SDK** simplifies the integration of robust authentication workflows into Python applications, ensuring secure, efficient, and compliant identity verification. By abstracting the complexities of direct API interaction, the SDK empowers developers to focus on building impactful solutions without worrying about intricate implementation details.
+The **MOSIP Authentication SDK** simplifies the integration of robust authentication workflows into Python applications, ensuring secure, efficient, and compliant identity verification. By abstracting the complexities of direct API interaction, the SDK enables developers to focus on building impactful solutions without having to manage intricate implementation details.
+
+### Get in Touch <a href="#get-in-touch" id="get-in-touch"></a>
+
+If you require any assistance or encounter any issues during the testing and integration process, kindly reach out to us through the support provided below.
+
+* Navigate to [Community](https://community.mosip.io/).
+* Provide a detailed description about the support you require or provide complete information about the issue you have encountered, including steps to reproduce, error messages, logs and any other required details.
+
+_Thank you. Wishing you a pleasant experience!_
