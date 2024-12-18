@@ -4,7 +4,7 @@
 
 **Release Type:** Beta Release
 
-**Release Date**: Coming Soon
+**Release Date**: 16th December, 2024
 
 ### **Overview**
 
