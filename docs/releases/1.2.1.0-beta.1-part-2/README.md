@@ -47,5 +47,5 @@ This setup ensures compatibility and seamless operation of Java 11 and Java 21-s
 #### **Documents for reference**
 
 * [Enhancements & Bug fixes](https://docs.mosip.io/1.2.0/releases/1.2.1.0-beta.1-part-2/enhancements-and-bug-fixes)
-* [Functional test report](https://docs.mosip.io/1.2.0/releases/1.2.1.0-beta.1-part-2)
+* [Functional test report](https://docs.mosip.io/1.2.0/releases/1.2.1.0-beta.1-part-2/test-report)
 * [Known issues](https://mosip.atlassian.net/issues/?filter=11674)
