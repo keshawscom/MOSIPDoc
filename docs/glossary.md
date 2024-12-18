@@ -40,6 +40,7 @@ Identity systems, in the context of digital identity and access management, refe
 
 <summary>Identity Verification</summary>
 
+
 Identity verification is the important process of ensuring that a person is who they claim to be to avail of various government and private sector services.
 
 This process allows one to confirm one's identity and confirm the validity of details shared on the relying party's online portal.
