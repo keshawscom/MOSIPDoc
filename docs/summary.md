@@ -249,7 +249,7 @@
   * [Registration Client](collab-getting-started-guide/collab-reg-client-setup-guide.md)
   * [Android Registration Client](collab-getting-started-guide/collab-android-reg-client.md)
   * [Resident Portal](collab-getting-started-guide/collab-resident-portal-guide.md)
-  * [Partner Management Portal](collab-getting-started-guide/collab-pmp-guide.md)
+  * [Partner Management System](collab-getting-started-guide/collab-pmp-guide.md)
   * [Inji](collab-getting-started-guide/collab-inji-setup-guide.md)
   * [eSignet](collab-getting-started-guide/collab-esignet-setup-guide.md)
 * [📒 Resources](resources.md)
