@@ -2,7 +2,7 @@
 
 Welcome to the [Partner Management System](https://docs.mosip.io/1.2.0/modules/partner-management-services) Guide, designed specifically for our [Collab Environment](https://collab.mosip.net/)! This guide will assist you in easily accessing the Partner Management System and effectively demonstrating its features.
 
-The Partner Management System (PMP) is an essential component of MOSIP's ecosystem, designed to facilitate seamless collaboration and interaction between MOSIP and its trusted partners. It offers a user-friendly interface for partners to register themselves and engage with MOSIP's services effectively.
+The Partner Management System (PMS) is an essential component of MOSIP's ecosystem, designed to facilitate seamless collaboration and interaction between MOSIP and its trusted partners. It offers a user-friendly interface for partners to register themselves and engage with MOSIP's services effectively.
 
 With this Partner Management System Demo Setup, you're close to showcasing the impressive capabilities of MOSIP's Partner Management System. Let's get started!
 
@@ -24,18 +24,18 @@ Visit the following URL to access the Partner Management System in the Collab en
 **Step 2: Login:**
 
 * Login to the portal with a username and password.
-* Get your credentials by simply registering yourself by clicking on `New user` on [PMP](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client_id=mosip-pms-client\&redirect_uri=https://api.collab.mosip.net/v1/partnermanager/login-redirect/aHR0cHM6Ly9wbXAuY29sbGFiLm1vc2lwLm5ldC8=\&state=b3feca86-1305-4bec-a861-c074af4bea6a\&response_type=code\&scope=email).
+* Get your credentials by simply registering yourself by clicking on `New user` on [PMS](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client_id=mosip-pms-client\&redirect_uri=https://api.collab.mosip.net/v1/partnermanager/login-redirect/aHR0cHM6Ly9wbXAuY29sbGFiLm1vc2lwLm5ldC8=\&state=b3feca86-1305-4bec-a861-c074af4bea6a\&response_type=code\&scope=email).
 
 **Step 3: Explore the features on the Partner Management System**
 
 To access all the features of the Partner Management System and explore the partner onboarding process in MOSIP, refer to our [end user guide](https://docs.mosip.io/1.2.0/modules/partner-management-services/partner-management-portal).
 
-> **Note**: We kindly request you to fill out the attached [form](https://docs.google.com/forms/d/e/1FAIpQLScMpWoX0c1yA8vAxXm1w5M3wlzXh7BC-2l2pD3O4o8coxlBtQ/viewform) in order to request a password modification for your account. This is necessary as the current Partner Management System (PMP) in the Collab environment does not allow users to change their passwords independently. To cater to your specific requirements and security protocols, we encourage you to submit a formal request to MOSIP using this form. Our team will promptly assist you with your password customization.
+> **Note**: We kindly request you to fill out the attached [form](https://docs.google.com/forms/d/e/1FAIpQLScMpWoX0c1yA8vAxXm1w5M3wlzXh7BC-2l2pD3O4o8coxlBtQ/viewform) in order to request a password modification for your account. This is necessary as the current Partner Management System (PMS) in the Collab environment does not allow users to change their passwords independently. To cater to your specific requirements and security protocols, we encourage you to submit a formal request to MOSIP using this form. Our team will promptly assist you with your password customization.
 
 ### Additional Resources
 
 * Watch this [video](https://youtu.be/VseMUIfJ2Y8) for a visual walkthrough of the features.
-* Click on [Partner Policies](https://docs.mosip.io/1.2.0/modules/partner-management-services/partner-policies), [Auth Partner](https://docs.mosip.io/1.2.0/modules/partner-management-services/auth-credential-partner), [Device Partner](https://docs.mosip.io/1.2.0/modules/partner-management-services/device-provider-partner), and [Foundation Trust Partner](https://docs.mosip.io/1.2.0/modules/partner-management-services/ftm-partner) to get in-depth knowledge of PMP.
+* Click on [Partner Policies](https://docs.mosip.io/1.2.0/modules/partner-management-services/partner-policies), [Auth Partner](https://docs.mosip.io/1.2.0/modules/partner-management-services/auth-credential-partner), [Device Partner](https://docs.mosip.io/1.2.0/modules/partner-management-services/device-provider-partner), and [Foundation Trust Partner](https://docs.mosip.io/1.2.0/modules/partner-management-services/ftm-partner) to get in-depth knowledge of PMS.
 
 For more information about Partner Management System Developer Setup, click [here](https://docs.mosip.io/1.2.0/modules/partner-management-services/partner-management-services-developer-setup).
 
