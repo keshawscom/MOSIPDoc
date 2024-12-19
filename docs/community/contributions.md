@@ -6,11 +6,7 @@ MOSIP is a product of the combined efforts of multiple stakeholders. Contributio
 
 ## [LTIMindtree Ltd](https://www.mindtree.com/)
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/LTIM.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/LTIM.png" alt=""><figcaption></figcaption></figure></div>
 
 MOSIP partnered with LTIMindtree in August 2018 and since then it has been a fruitful association in areas of engineering, architecture, devops to name a few. Mindtree has contributed, through secondment of engineering resources, approximately 2260 person days of engineering effort, which roughly translates to more than 21000 person hours of work on the MOSIP project.
 
@@ -44,11 +40,7 @@ Singapore based Newlogic is a software consultancy company providing innovative 
 
 ## [Thoughtworks](https://www.thoughtworks.com/)
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/thoughts.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/thoughts.png" alt=""><figcaption></figcaption></figure></div>
 
 In 2022, Thoughtworks partnered with MOSIP as an engineering ally, embarking on a significant journey together. Key milestone was the creation of Tuvali, a BLE layer adhering to OpenID4VP standards. An alternate to Google Nearby, Tuvali facilitates the exchange of verifiable IDs across wallets and devices even without internet connectivity. This innovation empowers governments to effectively provide efficient and monitored citizen services.
 
@@ -60,27 +52,29 @@ The organization has broadened its contributions to other essential components o
 
 ## [Infosys](https://www.infosys.com/)
 
-<div align="left">
+<div align="left"><figure><img src="../.gitbook/assets/infy.png" alt=""><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/infy.png" alt=""><figcaption></figcaption></figure>
-
-</div>
-
-Infosys began collaborating with MOSIP in Early 2023 as part of its Technology for good initiative. The company has been actively contributing to the development of the eSignet module, Android Registration Client, and other related modules. Through this pro bono collaboration, Infosys demonstrates its commitment to using technology for social good and empowering individuals with secure and reliable digital identities.
+Infosys began collaborating with MOSIP in early 2023 as part of its Technology for good initiative. The company has been actively contributing to the development of the eSignet module, Android Registration Client, and other related modules. Through this pro bono collaboration, Infosys demonstrates its commitment to using technology for social good and empowering individuals with secure and reliable digital identities.
 
 **About Infosys**: Infosys, a global leader in next-generation digital services and consulting, headquartered in Bengaluru, India, is a multinational corporation that provides business consulting, information technology, and outsourcing services to clients across the globe.
 
 ## [CyberPWN](https://cyberpwn.com/)
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/cyber.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/cyber.png" alt=""><figcaption></figcaption></figure></div>
 
 In January 2020, CyberPWN partnered with IIIT Bangalore to offer development assistance for MOSIP. Presently, CyberPWN's product engineering team, consisting of 30+ engineers, actively contributes expertise in multiple areas of MOSIP, encompassing Architecture, Product Management, Product Development, Quality Assurance, DevSecOps, Security, and Biometrics.
 
 **About CyberPWN**: CyberPWN Technologies Private Limited is a respected cybersecurity consultancy and advisory firm. Leveraging their extensive expertise in the field, they collaborate with organizations to enhance their security posture, protect sensitive data, and counter cyber threats.
+
+## <mark style="color:blue;">GH Solutions Consultants</mark>
+
+
+
+<figure><img src="../.gitbook/assets/image005.png" alt=""><figcaption></figcaption></figure>
+
+GHSC has partnered with MOSIP in the critical area of security, making significant contributions to the Security Assurance Services, in collaboration with MOSIP’s core development team. This partnership plays a vital role in strengthening MOSIP’s security framework and ensuring robust protection across its ecosystem.
+
+**About GHSC**: GHSC is a renowned cybersecurity and compliance firm with a strong focus on serving the financial services and government sectors. Leveraging their extensive expertise, they have now expanded into the Digital Public Infrastructure (DPI) domain, actively engaging with several Digital Public Goods (DPGs). This contribution to MOSIP highlights their commitment to driving innovation and delivering secure, scalable solutions for emerging global needs.
 
 ## [Students @ IIIT Bangalore](https://www.iiitb.ac.in/)
 
@@ -112,11 +106,7 @@ The following workflows were developed under this project:
 
 ## [Protean](https://www.proteantech.in/)
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/Protean Logo.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/Protean Logo.png" alt=""><figcaption></figcaption></figure></div>
 
 Protean partnered with MOSIP in September 2018 and since then the company has actively contributed in development and testing of various modules of MOSIP like Pre-Registration, Registration, Registration Processor, and other related modules.
 
