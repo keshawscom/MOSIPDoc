@@ -74,7 +74,9 @@ In January 2020, CyberPWN partnered with IIIT Bangalore to offer development ass
 
 GHSC has partnered with MOSIP in the critical area of security, making significant contributions to the Security Assurance Services, in collaboration with MOSIP’s core development team. This partnership plays a vital role in strengthening MOSIP’s security framework and ensuring robust protection across its ecosystem.
 
-**About GHSC**: GHSC is a renowned cybersecurity and compliance firm with a strong focus on serving the financial services and government sectors. Leveraging their extensive expertise, they have now expanded into the Digital Public Infrastructure (DPI) domain, actively engaging with several Digital Public Goods (DPGs). This contribution to MOSIP highlights their commitment to driving innovation and delivering secure, scalable solutions for emerging global needs.
+**About GHSC**: GHSC is a renowned cybersecurity and compliance firm with a strong focus on serving the financial services and government sectors. Leveraging their extensive expertise, they have now expanded into the Digital Public Infrastructure (DPI) domain, actively engaging with several Digital Public Goods (DPGs). \
+\
+Their contribution to MOSIP highlights their commitment to driving innovation and delivering secure, scalable solutions for emerging global needs.
 
 ## [Students @ IIIT Bangalore](https://www.iiitb.ac.in/)
 
