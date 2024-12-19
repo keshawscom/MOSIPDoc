@@ -63,7 +63,7 @@ Why wait to register at the centers?
 
 #### Partner Management - Trust Made Easy
 
-* MOSIP thrives on collaboration, and the Partner Management Portal facilitates it. This module handles partner onboarding and manages policy configurations, between partners and the platform. Building solutions together has never been easier! To learn more, click [here](https://docs.mosip.io/1.2.0/modules/partner-management-services).
+* MOSIP thrives on collaboration, and the Partner Management System facilitates it. This module handles partner onboarding and manages policy configurations, between partners and the platform. Building solutions together has never been easier! To learn more, click [here](https://docs.mosip.io/1.2.0/modules/partner-management-services).
 * MOSIP's Partner management services (PMS) module streamlines partner onboarding, policy management, and data sharing. It comprises of Partner Management and Policy Management Services, providing essential support for effective collaboration within MOSIP.
 * For the end-to-end process of how to run Partner Management in our collab environment, click [here](https://docs.mosip.io/1.2.0/collab-getting-started-guide/collab-pmp-guide).
 * For details on how to use the application, refer to our [end user guide](https://docs.mosip.io/1.2.0/modules/partner-management-services/partner-management-portal).
