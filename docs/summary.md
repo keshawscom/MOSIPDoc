@@ -5,6 +5,7 @@
   * [Use case](readme/use-case.md)
   * [Resources](readme/resources.md)
   * [Roadmap](readme/roadmap/README.md)
+    * [Roadmap 2025](readme/roadmap/roadmap-2025.md)
     * [Roadmap 2024](readme/roadmap/roadmap-2024.md)
   * [Supported Integrations](readme/supported-integrations/README.md)
     * [MOSIP](https://docs.mosip.io)
