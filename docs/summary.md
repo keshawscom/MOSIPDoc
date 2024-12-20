@@ -70,5 +70,5 @@
 * [License](license.md)
 * [Resources](resources.md)
 * [Roadmap](roadmap/README.md)
+  * [Roadmap 2025](roadmap/roadmap-2025.md)
   * [Roadmap 2024](roadmap/roadmap-2024.md)
-* [Crude](crude.md)
