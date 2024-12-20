@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Roadmap 2025
 
 To be published in [https://docs.inji.io/readme/roadmap/roadmap-2024](https://docs.inji.io/readme/roadmap/roadmap-2024)
