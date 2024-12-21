@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    table {
-      width: 100%; /* Set table width to 100% of its container */
-      border-collapse: collapse; 
-    }
-
-    th {
-      border: 1px solid black;
-      padding: 10px; 
-      text-align: left; 
-    }
-  </style>
-</head>
-<body>
-
 # Experiment
 
 Experiment
@@ -36,13 +18,13 @@ Q4: Oct25 - Dec25
 
 
 
-<table data-full-width="true">
+<table data-full-width="false">
     <thead>
         <tr>
             <th width="60">Quarter</th>
-            <th>Feature</th>
-            <th width="125">Status</th>
-            <th width="125">Feature Details</th>
+            <th width="300">Feature</th>
+            <th width="90">Status</th>
+            <th width="100">Feature Details</th>
             <th width="80">Release Details</th>
         </tr>
     </thead>
@@ -221,13 +203,13 @@ Q3: Jul25 - Sep25
 
 Q4: Oct25 - Dec25
 
-<table data-full-width="true">
+<table data-full-width="false">
     <thead>
         <tr>
             <th width="60">Quarter</th>
-            <th>Feature</th>
-            <th width="125">Status</th>
-            <th width="125">Feature Details</th>
+            <th width="300">Feature</th>
+            <th width="90">Status</th>
+            <th width="100">Feature Details</th>
             <th width="80">Release Details</th>
         </tr>
     </thead>
@@ -394,13 +376,13 @@ Q4: Oct 25 - Dec 25
 
 
 
-<table data-full-width="true">
+<table data-full-width="false">
     <thead>
         <tr>
             <th width="60">Quarter</th>
-            <th>Feature</th>
-            <th width="125">Status</th>
-            <th width="125">Feature Details</th>
+            <th width="300">Feature</th>
+            <th width="90">Status</th>
+            <th width="100">Feature Details</th>
             <th width="80">Release Details</th>
         </tr>
     </thead>
