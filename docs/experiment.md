@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%; /* Set table width to 100% of its container */
+      border-collapse: collapse; 
+    }
+
+    th {
+      border: 1px solid black;
+      padding: 10px; 
+      text-align: left; 
+    }
+  </style>
+</head>
+<body>
+
 # Experiment
 
 Experiment
@@ -23,9 +41,9 @@ Q4: Oct25 - Dec25
         <tr>
             <th width="100">Quarter</th>
             <th width="300">Feature</th>
-            <th width="150">Status</th>
-            <th width="150">Feature Details</th>
-            <th width="150">Release Details</th>
+            <th> Status</th>
+            <th>Feature Details</th>
+            <th width="100">Release Details</th>
         </tr>
     </thead>
     <tbody>
@@ -208,9 +226,9 @@ Q4: Oct25 - Dec25
         <tr>
             <th width="100">Quarter</th>
             <th width="300">Feature</th>
-            <th width="150">Status</th>
-            <th width="150">Feature Details</th>
-            <th width="150">Release Details</th>
+            <th>Status</th>
+            <th>Feature Details</th>
+            <th width="100">Release Details</th>
         </tr>
     </thead>
     <tbody>
@@ -381,9 +399,9 @@ Q4: Oct 25 - Dec 25
         <tr>
             <th width="100">Quarter</th>
             <th width="300">Feature</th>
-            <th width="150">Status</th>
-            <th width="150">Feature Details</th>
-            <th width="150">Release Details</th>
+            <th>Status</th>
+            <th>Feature Details</th>
+            <th width="100">Release Details</th>
         </tr>
     </thead>
     <tbody>
