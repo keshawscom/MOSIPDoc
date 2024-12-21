@@ -35,10 +35,10 @@ Q4: Oct25 - Dec25
 <table data-full-width="true">
     <thead>
         <tr>
-            <th width="75">Quarter</th>
-            <th width="175">Feature</th>
-            <th width="125">Status</th>
-            <th width="200">Feature Details</th>
+            <th width="40">Quarter</th>
+            <th width="300">Feature</th>
+            <th width="150">Status</th>
+            <th width="150">Feature Details</th>
             <th>Release Details</th>
         </tr>
     </thead>
