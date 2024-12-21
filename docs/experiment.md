@@ -18,11 +18,11 @@ Q4: Oct25 - Dec25
 
 
 
-<table data-full-width="false">
+<table data-full-width="true">
     <thead>
         <tr>
             <th width="60">Quarter</th>
-            <th width="300">Feature</th>
+            <th>Feature</th>
             <th width="90">Status</th>
             <th width="100">Feature Details</th>
             <th width="80">Release Details</th>
@@ -203,11 +203,11 @@ Q3: Jul25 - Sep25
 
 Q4: Oct25 - Dec25
 
-<table data-full-width="false">
+<table data-full-width="true">
     <thead>
         <tr>
             <th width="60">Quarter</th>
-            <th width="300">Feature</th>
+            <th>Feature</th>
             <th width="90">Status</th>
             <th width="100">Feature Details</th>
             <th width="80">Release Details</th>
@@ -376,11 +376,11 @@ Q4: Oct 25 - Dec 25
 
 
 
-<table data-full-width="false">
+<table data-full-width="true">
     <thead>
         <tr>
             <th width="60">Quarter</th>
-            <th width="300">Feature</th>
+            <th>Feature</th>
             <th width="90">Status</th>
             <th width="100">Feature Details</th>
             <th width="80">Release Details</th>
