@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Roadmap 2025
 
 ## Inji Wallet
