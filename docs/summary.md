@@ -256,6 +256,7 @@
 * [🛣️ Roadmap](roadmap/README.md)
   * [Roadmap 2023](roadmap/roadmap-2023-2024.md)
   * [Roadmap 2024](roadmap/roadmap-2024-2025.md)
+  * [Roadmap 2025](roadmap/roadmap-2025.md)
 * [❗ MOSIP Documentation Style Guide](mosip-documentation-style-guide.md)
 * [🌟 Documentation Credits](documentation-credits.md)
 * [📩 License](license.md)
