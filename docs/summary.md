@@ -263,4 +263,3 @@
 * [💻 API](https://mosip.github.io/documentation/1.2.0/1.2.0.html)
 * [📚 Documentation for 1.1.5](https://docs.mosip.io/1.1.5)
 * [API](https://mosip.github.io/documentation/1.2.0/1.2.0.html)
-* [Documentation for 1.1.5](https://docs.mosip.io/1.1.5)
