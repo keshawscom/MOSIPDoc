@@ -13,6 +13,12 @@ The quarters are defined as follows:
 * <mark style="background-color:red;">**Q3**</mark>: Jul'25 – Sep'25
 * <mark style="background-color:green;">**Q4**</mark>: Jul'25 – Sep'25
 
+
+
+## MOSIP Identity&#x20;
+
+
+
 <details>
 
 <summary>Vision</summary>
@@ -24,10 +30,6 @@ Efforts will focus on boosting efficiency with revamped notification services, b
 By improving integration with internal and external systems, removing dependencies, and enabling modular deployments, we ensure flexibility and scalability. We will prioritize achieving **zero failure in automation testing**, strengthening the platform’s security, and enhancing performance across all modules.
 
 </details>
-
-
-
-## MOSIP Identity&#x20;
 
 
 
