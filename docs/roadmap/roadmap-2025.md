@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Roadmap 2025
 
 Here we present the product roadmap for MOSIP Identity for the calendar year 2025.
@@ -26,9 +22,9 @@ The quarters are defined as follows:
 This year, our focus is on enhancing the platform's adaptability, inclusivity, and operational efficiency while ensuring seamless integration, robust security, and optimized performance to meet the evolving needs of global identity management.\
 Key initiatives include:
 
-* Efficiency Improvements: Upgrading notification services, optimizing bulk printing, introducing draft-saving capabilities, and implementing intuitive UI-based configurations.
-* Integration and Flexibility: Strengthening integration with internal and external systems, eliminating dependencies, and enabling modular deployments for greater scalability and adaptability.
-* Quality and Security: Striving for zero failures in automation testing, fortifying platform security, and delivering consistent performance enhancements across all modules.
+* **Efficiency Improvements**: Upgrading notification services, optimizing bulk printing, introducing draft-saving capabilities, and implementing intuitive UI-based configurations.
+* **Integration and Flexibility**: Strengthening integration with internal and external systems, eliminating dependencies, and enabling modular deployments for greater scalability and adaptability.
+* **Quality and Security**: Striving for zero failures in automation testing, fortifying platform security, and delivering consistent performance enhancements across all modules.
 
 These efforts will ensure a more robust, user-friendly, and future-ready platform.
 
