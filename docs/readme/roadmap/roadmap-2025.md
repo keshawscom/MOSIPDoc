@@ -63,7 +63,7 @@ Inji Certify’s vision is to foster **trust and interoperability** in the digit
 
 <details>
 
-<summary></summary>
+<summary>Vision</summary>
 
 Our **vision** for 2025 is to position Inji Verify as the go-to tool for seamless and secure credential verification. We aim to deliver easily configurable UI components for third-party verifier portals, tailored to meet the diverse needs of organizations across the globe. With support for multiple credential formats (SD-JWT, mDoc/mDL, W3C) and advanced cryptographic standards (ECC), Inji Verify ensures flexible and secure credential handling.
 
