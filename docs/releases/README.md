@@ -2,6 +2,11 @@
 
 ## Latest Releases 🌟
 
+**Version: 1.2.0.2**
+
+* **Date:** Coming soon
+* [Release Notes](https://docs.mosip.io/1.2.0/releases/1.2.0.2)
+
 **Version: 1.2.1.0-beta.1(Part 2)**
 
 * **Support:** Beta Release

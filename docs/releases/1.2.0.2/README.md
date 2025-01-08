@@ -1,6 +1,6 @@
 # 1.2.0.2
 
-**Release Version: 1.2.2.0**
+**Release Version: 1.2.0.2**
 
 **Release Date: Coming soon**
 
