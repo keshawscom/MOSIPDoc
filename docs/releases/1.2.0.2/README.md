@@ -26,12 +26,13 @@ This release launches an enhancement in the Registration Processor to support th
 
 ### **Repository Released**
 
-| Repositories            | Tag version |
-| ----------------------- | ----------- |
-| id-repository           | 1.2.2.0     |
-| packet-manager          | 1.2.0.2     |
-| registration            | 1.2.0.2     |
-| bio-utils/biometric-api | 1.2.03      |
+| Repositories            | Tag version                                                       |
+| ----------------------- | ----------------------------------------------------------------- |
+| mosip-config            | [v1.2.3.0](https://github.com/mosip/mosip-config/tree/v1.2.3.0)   |
+| id-repository           | [v1.2.2.0](https://github.com/mosip/id-repository/tree/v1.2.2.0)  |
+| packet-manager          | [v1.2.0.2](https://github.com/mosip/packet-manager/tree/v1.2.0.2) |
+| registration            | [v1.2.0.2](https://github.com/mosip/registration/tree/v1.2.0.2)   |
+| bio-utils/biometric-api | [v1.2.03](https://github.com/mosip/bio-utils/tree/v1.2.0.3)       |
 
 ### **Compatible Modules**
 
