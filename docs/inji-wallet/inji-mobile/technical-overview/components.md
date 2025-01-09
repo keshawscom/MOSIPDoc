@@ -13,6 +13,7 @@ The libraries are as follows:
 5. PixelPass
 6. VCI-client
 7. Telemetry (coming soon)
+8. OpenID4VP - Online Sharing
 
 <figure><img src="../../../.gitbook/assets/InjiWalletComponents.png" alt=""><figcaption></figcaption></figure>
 
@@ -123,5 +124,31 @@ Note:
 The [telemetry](https://github.com/mosip/sunbird-telemetry-sdk) module is derived from the [sunbird telemetry](https://github.com/project-sunbird/sunbird-telemetry-sdk) module. It is responsible for generating events that can provide valuable analytics.
 
 _**Note**_: _The publication of this project is currently a work in progress and has not been released yet. Stay tuned for further announcements!_
+
+### **8. OpenID4VP - Online Sharing**
+This OpenID4VP library enables consumer applications (mobile wallet) to share users Verifiable Credentials with
+Verifiers who request them online. It adheres to the OpenID4VP specification which outlines the standards for
+requesting and presenting Verifiable Credentials.
+#### **This library follows the below steps to share the Verifiable Credentials with the Requested Verifier:**
+1. Receives the Verifier's Authorization Request sent by the consumer application (mobile wallet).
+2. Authenticates the Verifier using the received **client_id** and validates the whole Request to check if the required
+   details are present or not and then returns the Authorization Request to the consumer application if all the
+   validations are successful.
+3. Receives the list of Verifiable Credentials from the consumer application which are selected by the consumer
+   application end-user based on the credentials requested as part of Verifier Authorization request.
+4. Constructs the vp_token without proof section and sends it back to the consumer application for generating
+   Json Web Signature (JWS).
+5. Receives the generated signature along with the other details and generates vp_token with proof section &
+   presentation_submission.
+6. Sends a POST request with generated vp_token and presentation_submission to the received Verifier's response_uri
+   endpoint.
+{% hint style="info" %}
+Note:
+* Refer to the inji-openid4vp repository [here](https://github.com/mosip/inji-openid4vp/blob/develop/kotlin/openID4VP/README.md).
+* To understand about the installation and the API documentation,
+  refer [here]().
+* Maven snapshots are
+  available [here](https://oss.sonatype.org/content/repositories/snapshots/io/mosip/inji-openid4vp/)
+  {% endhint %}
 
 > To know more about each of these, refer [Integration Guides](https://docs.mosip.io/inji/integration-guide).
