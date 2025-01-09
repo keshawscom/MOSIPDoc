@@ -146,7 +146,7 @@ requesting and presenting Verifiable Credentials.
 Note:
 * Refer to the inji-openid4vp repository [here](https://github.com/mosip/inji-openid4vp/blob/develop/kotlin/openID4VP/README.md).
 * To understand about the installation and the API documentation,
-  refer [here]().
+  refer [here](https://docs.mosip.io/inji/inji-wallet/inji-mobile/technical-overview/integration-guide/openid4vp).
 * Maven snapshots are
   available [here](https://oss.sonatype.org/content/repositories/snapshots/io/mosip/inji-openid4vp/)
   {% endhint %}
