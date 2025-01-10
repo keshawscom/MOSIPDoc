@@ -1,8 +1,8 @@
 # 1.2.0.2 - Reg Processor & ID Repo
 
-**Release Version: 1.2.0.2**
+**Release Version:** 1.2.0.2(Reg Processor & ID Repo)
 
-**Release Date: Coming soon**
+**Release Date:** 8th January, 2025
 
 ### **Overview**
 
@@ -44,5 +44,5 @@ The following table outlines the tested and certified compatibility of [**1.2.0.
 
 ### Documentation
 
-* Functional test reports (link to be updated)&#x20;
+* [Functional test report](https://docs.mosip.io/1.2.0/releases/1.2.0.2-reg-processor-and-id-repo/test-report)
 * [Known Issues](https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22known-issue-1.2.0.2%22)
