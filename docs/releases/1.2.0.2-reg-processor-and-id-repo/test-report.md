@@ -169,4 +169,4 @@ The various metrics that assist in test tracking and efficiency are as follows:
 
 ●      **Failed Test Case Coverage:** It measures the percentage of all failed test cases. (Number of failed tests / Total number of test cases executed) x 100
 
-Please find the Git hub link for the xls file **here**(To be updated)
+Please find the Github link for the .xlsx file [here](https://github.com/mosip/test-management/blob/master/ARC/ARC%200.11.0%20Platform%201.2.0.2/ARC_Platform_1.2.0.2_Verification_Report_latest.xlsx).
