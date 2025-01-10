@@ -115,22 +115,22 @@ Verification is performed on various configurations as mentioned below
 Below are the test metrics by performing functional testing using mock SBI and mock ABIS.&#x20;
 
 1. **Test Metrics Overview**:
-   * Functional testing was performed using **mock SBI** and **mock ABIS**.
+   * **Functional testing** was performed using mock SBI and mock ABI&#x53;**.**
 2. **Testing Approach**:
    * **Black-box testing** was used, focusing on test cases based on the specifications of the software component.
 3. **Testing Types**:
    * Functional testing was conducted in combination with:
-     1. **Individual module testing**.
-     2. **Integration testing**.
+     1. Individual module testing.
+     2. Integration testing.
 4. **Test Data Preparation**:
-   * Test data were created based on **user stories**.
-   * Expected results were validated by monitoring the **user interface**.
+   * Test data were created based on user stories.
+   * Expected results were validated by monitoring the user interface.
 5. **Scope of Testing**:
    * **GUI testing**.
    * **System testing**.
-   * End-to-end flows across multiple **languages** and **configurations**.
+   * End-to-end flows across multiple languages and configurations.
 6. **Simulation Testing**:
-   * Simulated multiple **identity schema** and corresponding **UI schema configurations** during the testing cycle.
+   * Simulated multiple identity schema and corresponding UI schema configurations during the testing cycle.
 
 <table data-full-width="true"><thead><tr><th>Total</th><th>Passed</th><th>Failed</th><th>Skipped (N/A)</th></tr></thead><tbody><tr><td>521</td><td>386</td><td>135</td><td>0</td></tr></tbody></table>
 
@@ -165,8 +165,8 @@ Below are the detailed test metrics by performing manual/automation testing. The
 
 The various metrics that assist in test tracking and efficiency are as follows:
 
-●       Passed Test Cases Coverage: It measures the percentage of passed test cases. (Number of passed tests / Total number of tests executed) x 100
+●       **Passed Test Cases Coverage:** It measures the percentage of passed test cases. (Number of passed tests / Total number of tests executed) x 100
 
-●       Failed Test Case Coverage: It measures the percentage of all failed test cases. (Number of failed tests / Total number of test cases executed) x 100
+●      **Failed Test Case Coverage:** It measures the percentage of all failed test cases. (Number of failed tests / Total number of test cases executed) x 100
 
 Please find the Git hub link for the xls file **here**(To be updated)
