@@ -5,7 +5,7 @@
 **Version:  1.2.0.2(Reg Processor & ID Repo)**
 
 * **Date:** 8th January, 2025
-* [Release Notes](https://docs.mosip.io/1.2.0/releases/1.2.0.2)
+* [Release Notes](https://docs.mosip.io/1.2.0/releases/1.2.0.2-reg-processor-and-id-repo)
 
 **Version: 1.2.1.0-beta.1(Part 2)**
 

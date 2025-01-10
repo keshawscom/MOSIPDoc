@@ -1,6 +1,6 @@
 # Test Report
 
-## Testing Scope
+### Testing Scope
 
 The scope of testing is to verify fitment to the specification from the perspective of&#x20;
 
@@ -66,7 +66,7 @@ Verification is performed not only from the end user perspective but also from t
 
 ●     Regproc verified along with ARC
 
-## Test Approach <a href="#id-3znysh7" id="id-3znysh7"></a>
+### Test Approach <a href="#id-3znysh7" id="id-3znysh7"></a>
 
 Persona based approach has been adopted to perform the IV\&V, by simulating test scenarios that resemble a real-time implementation.
 
@@ -82,13 +82,13 @@ A Persona is a fictional character/user profile created to represent a user type
 
 &#x20;The verification methods may differ based on how the need was addressed.
 
-## Verified configuration <a href="#id-2et92p0" id="id-2et92p0"></a>
+### Verified configuration <a href="#id-2et92p0" id="id-2et92p0"></a>
 
 Verification is performed on various configurations as mentioned below
 
 ●     Default configuration - with 1 Language (English)
 
-## Limitations or Out of Scope <a href="#id-3dy6vkm" id="id-3dy6vkm"></a>
+### Limitations or Out of Scope <a href="#id-3dy6vkm" id="id-3dy6vkm"></a>
 
 ●     Update UIN
 
@@ -104,13 +104,13 @@ Verification is performed on various configurations as mentioned below
 | registration-processor  |  1.2.0.x           |
 | packet-manager          | 1.2.0.x            |
 
-## Feature Health   &#x20;
+### Feature Health   &#x20;
 
 <div align="left"><figure><img src="../../.gitbook/assets/ARC_Plactform_1.2.0.2_Feature_Health.png" alt=""><figcaption><p>Feature Health</p></figcaption></figure></div>
 
-## Test execution statistics
+### Test execution statistics
 
-### Functional test results by modules <a href="#id-17dp8vu" id="id-17dp8vu"></a>
+#### Functional test results by modules <a href="#id-17dp8vu" id="id-17dp8vu"></a>
 
 Below are the test metrics by performing functional testing using mock SBI and mock ABIS.&#x20;
 
