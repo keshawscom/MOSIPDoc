@@ -32,15 +32,15 @@ This release launches an enhancement in the Registration Processor to support th
 | id-repository           | [v1.2.2.0](https://github.com/mosip/id-repository/tree/v1.2.2.0)  |
 | packet-manager          | [v1.2.0.2](https://github.com/mosip/packet-manager/tree/v1.2.0.2) |
 | registration            | [v1.2.0.2](https://github.com/mosip/registration/tree/v1.2.0.2)   |
-| bio-utils/biometric-api | [v1.2.03](https://github.com/mosip/bio-utils/tree/v1.2.0.3)       |
+| bio-utils/biometric-api | [v1.2.0.3](https://github.com/mosip/bio-utils/tree/v1.2.0.3)      |
 
 ### **Compatible Modules**
 
-The following table outlines the tested and certified compatibility of [**1.2.0.1**](../release-notes-1.2.0.1/) with other modules.
+The following table outlines the tested and certified compatibility of [1.2.0.1](../release-notes-1.2.0.1/) with other modules.
 
-| Module    | Version               |
-| --------- | --------------------- |
-|  Platform |    1.2.0.1 B3 version |
+| Module    | Version                |
+| --------- | ---------------------- |
+|  Platform |    v1.2.0.1 B3 version |
 
 ### Documentation
 
