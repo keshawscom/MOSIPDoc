@@ -1,48 +1,38 @@
 # 1.2.0.2
 
-**Release Version: 1.2.0.2**
+## Release Notes
 
-**Release Date: Coming soon**
+**Release Version**: 1.2.0.2
 
-### **Overview**
+**Release Date**: 5th April 2024
 
-This release launches an enhancement in the Registration Processor to support the [Custom Handle](https://docs.mosip.io/1.2.0/modules/id-repository/custom-handle) feature to be enabled during the new registration process using the Android Registration Client. As part of this release, changes were made in the packet manager, ID repo & registration processor to process packets that contain demographic fields with datatype as an array.
+### Overview
 
-### **Major Highlights**
+The **1.2.0.2** release addresses critical bugs reported, enhancing the stability and usability of the software to ensure a seamless customer experience. Below, you'll find a detailed description of the fixes included in this version:
 
-* Registration
-* Packet Manager
-* ID Repository
+### Bug fixes
 
-### **New Features**
+1. **Issue with Policy Creation**: Previously, while attempting to create an Authorization or DataShare policy, the application encountered difficulties in successfully establishing the policy. The issue is resolved now and users can effortlessly define their Authorization or DataShare policies after creating and activating policy groups. [#MOSIP-31976](https://mosip.atlassian.net/browse/MOSIP-31976)
+2. **Login Failure in Registration Client**: Previously, users could not log into Registration Client as the 'Submit' button did not work as expected. The issue is resolved now, users can now successfully log into Registration Client. [#MOSIP-32037](https://mosip.atlassian.net/browse/MOSIP-32027)
 
-* **Supporting Array DataType in packet processing** :\
-  The handle attribute is passed as an array datatype in the packet during packet creation with the custom handle feature enabled. This change has modified the registration processor and packet manager to handle both string and array values.&#x20;
+**Major Areas of Work**
 
-### **Bug Fixes**
+* Registration Client
+* Partner Management Portal
 
-* **Unable to authenticate using handles:**\
-  Fix was provided through this release by introducing a new endpoint in ID Repository which will retrieve the identity based on handle and idtype.
+## Repository Released
 
-### **Repository Released**
+| Repositories              | Tags Released                                                                |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| registration-client       | [v1.2.0.2](https://github.com/mosip/registration-client/tree/v1.2.0.2)       |
+| mosip-mock-services       | [v1.2.0.2](https://github.com/mosip/mosip-mock-services/tree/v1.2.0.2)       |
+| artifactory-ref-impl      | [v1.2.0.2](https://github.com/mosip/artifactory-ref-impl/tree/v1.2.0.2)      |
+| mosip-infra               | [v1.2.0.2](https://github.com/mosip/mosip-infra/tree/v1.2.0.2)               |
+| mosip-helm                | [v1.2.0.2](https://github.com/mosip/mosip-helm/tree/v1.2.0.2)                |
+| K8s-infra                 | [v1.2.0.2](https://github.com/mosip/k8s-infra/tree/v1.2.0.2)                 |
+| partner-management-portal | [v1.2.0.2](https://github.com/mosip/partner-management-portal/tree/v1.2.0.2) |
 
-| Repositories            | Tag version                                                       |
-| ----------------------- | ----------------------------------------------------------------- |
-| mosip-config            | [v1.2.3.0](https://github.com/mosip/mosip-config/tree/v1.2.3.0)   |
-| id-repository           | [v1.2.2.0](https://github.com/mosip/id-repository/tree/v1.2.2.0)  |
-| packet-manager          | [v1.2.0.2](https://github.com/mosip/packet-manager/tree/v1.2.0.2) |
-| registration            | [v1.2.0.2](https://github.com/mosip/registration/tree/v1.2.0.2)   |
-| bio-utils/biometric-api | [v1.2.03](https://github.com/mosip/bio-utils/tree/v1.2.0.3)       |
+## Documentation
 
-### **Compatible Modules**
-
-The following table outlines the tested and certified compatibility of [**1.2.0.1**](../release-notes-1.2.0.1/) with other modules.
-
-| Module    | Version               |
-| --------- | --------------------- |
-|  Platform |    1.2.0.1 B3 version |
-
-### Documentation
-
-* Functional test reports (link to be updated)&#x20;
-* [Known Issues](https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22known-issue-1.2.0.2%22)\
+* [Functional test report](https://docs.mosip.io/1.2.0/releases/1.2.0.2/test-report)
+* [Known Issues](https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22known_issue_1202%22)
