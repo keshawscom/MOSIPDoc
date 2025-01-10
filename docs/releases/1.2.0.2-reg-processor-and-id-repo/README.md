@@ -38,9 +38,9 @@ This release launches an enhancement in the Registration Processor to support th
 
 The following table outlines the tested and certified compatibility of [1.2.0.1](../release-notes-1.2.0.1/) with other modules.
 
-| Module    | Version                |
-| --------- | ---------------------- |
-|  Platform |    v1.2.0.1 B3 version |
+| Module    | Version        |
+| --------- | -------------- |
+|  Platform |    v1.2.0.1 B3 |
 
 ### Documentation
 
