@@ -1,9 +1,7 @@
 # OpenID4VP - Online Sharing
 
-## OpenID4VP - Online Sharing
-
 This library enables consumer applications (mobile wallet) to share users Verifiable Credentials with
-Verifiers who request them online. It adheres to the OpenID4VP specification which outlines the standards for
+Verifiers who request them online. It adheres to the OpenID4VP [specification](https://openid.net/specs/openid-4-verifiable-presentations-1_0-21.html) which outlines the standards for
 requesting and presenting Verifiable Credentials.
 
 ### Functionalities / steps that are performed by the library from decoding the Request to sending the response to the Verifier:
@@ -58,6 +56,7 @@ Below are the APIs provided by this library:
 |------------------------------|----------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | encodedAuthenticationRequest | String | Base64 encoded string containing the Verifier's authorization request | `"T1BFTklENFZQOi8vYXV0"` |
 | trustedVerifiers | List<Verifier> | A list of trusted Verifier objects each containing a clientId and a responseUri list | `listOf(Verifier("https://verify.env1.net",listOf("https://verify.env1.net/responseUri"))` |
+
 **Exceptions**
 
 1. DecodingException is thrown when there is an issue while decoding the Authorization Request
@@ -83,6 +82,7 @@ Below are the APIs provided by this library:
 | Name | Type | Description | Sample |
 |------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | verifiableCredentials | Map<String, List<String>> | A Map which contains input descriptor id as key and corresponding matching Verifiable Credentials list as value. | `mapOf("id_123" to listOf("vc1","vc2"))` |
+
 **Exceptions**
 
 1. JsonEncodingFailed exception is thrown if there is any issue while serializing the vp_token without proof.
@@ -100,6 +100,7 @@ Below are the APIs provided by this library:
 | Name | Type | Description | Sample |
 |---------------------|---------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | vpResponseMetadata | VPResponseMetadata | This contains domain & proof details such as jws, signatureAlgorithm, publicKey, domain | `VPResponseMetadata(jws = "eyJiweyrtwegrfwwaBKCGSwxjpa5suaMtgnQ",signatureAlgorithm = "RsaSignature2018",publicKey = "publicKey",domain = "https://domain.net")")` |
+
 **Exceptions**
 
 1. JsonEncodingFailed exception is thrown if there is any issue while serializing the generating vp_token or presentation_submission class instances.
@@ -118,6 +119,7 @@ Below are the APIs provided by this library:
 | Name | Type | Description | Sample |
 |-----------|-----------|------------------------------------|----------------------------------|
 | exception | Exception | This contains the exception object | `new Exception("exception message")` |
+
 **Exceptions**
 
 1. InterruptedIOException is thrown if the connection is timed out when network call is made.
@@ -155,7 +157,8 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 | Name | Type | Description | Sample |
 |-----------------------------|------------|--------------------------------------------------------------------------------------|------------------------------------------------------|
 | encodedAuthorizationRequest | String | Base64 encoded string containing the Verifier's authorization request | `"T1BFTklENFZQOi8vYXV0"` |
-| trustedVerifierJSON | [Verifier] | A list of trusted Verifier objects each containing a clientId and a responseUri list | `Verifier(clientId: String, responseUris: [String])` |
+| trustedVerifierJSON | [Verifier] | A list of trusted Verifier objects each containing a clientId and a responseUri list | `[Verifier(clientId: String, responseUris: [String])]` |
+
 **Exceptions**
 
 1. DecodingException is thrown when there is an issue while decoding the Authorization Request
@@ -181,6 +184,7 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 | Name | Type | Description | Sample |
 |----------------|--------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------|
 | credentialsMap | [String: [String]] | A Map which contains input descriptor id as key and corresponding matching Verifiable Credentials list as value | `["bank_input":["VC1","VC2"]]` |
+
 **Exceptions**
 
 1. JsonEncodingFailed exception is thrown if there is any issue while serializing the vp_token without proof.
@@ -198,6 +202,7 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 | Name | Type | Description | Sample |
 |---------------------|---------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | vpResponseMetadata | VPResponseMetadata | This contains domain & proof details such as jws, signatureAlgorithm, publicKey, domain | `VPResponseMetadata(jws: "jws", signatureAlgorithm: "signatureAlgoType", publicKey: "publicKey", domain: "domain")` |
+
 **Exceptions**
 
 1. JsonEncodingFailed exception is thrown if there is any issue while serializing the generating vp_token or presentation_submission class instances.
@@ -216,6 +221,7 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 | Name | Type | Description | Sample |
 |-------|-------|------------------------------------|-----------------------------------------------------------------------------------|
 | error | Error | This contains the exception object | `AuthorizationConsent.consentRejectedError(message: "User rejected the consent")` |
+
 **Exceptions**
 
 1. InterruptedIOException is thrown if the connection is timed out when network call is made.
