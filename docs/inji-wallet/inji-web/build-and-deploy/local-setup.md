@@ -21,13 +21,14 @@ $ nvm install 18
 
 * **helm:** folder contains helm charts required to deploy on K8S
 * **inji-web:** contains the source code and Dockerfile
-* [README link](https://github.com/mosip/inji-web/blob/release-0.11.0/README.md)
+* **docker-compose:** contains docker-compose.yml, environment files, and service configurations.
+* [README link](https://github.com/mosip/inji-web/blob/master/README.md)
 
 ***
 
 ## Run Inji Web locally using Docker Compose:
 
-This setup uses Docker Compose to run both **Mimoto Service** (Backend for Frontend) and **Inji Web** (Frontend) together locally, providing a simple and easy-to-manage environment.
+This setup uses Docker Compose to run **DataShare Service (Service to store VC)**, **Mimoto Service** (Backend for Frontend) and **Inji Web** (Frontend) together locally, providing a simple and easy-to-manage environment.
 
 ### Steps:
 
@@ -98,33 +99,9 @@ npm start
 ```bash
 npm test
 ```
-
 ---
-
-## Build and run Docker for Inji Web service (Standalone):
-
-If you'd prefer to run Inji Web as a standalone Docker container, you can do so by building the Docker image and running it as a container.
-
-1. **Build the Docker image:**
-
-```bash
-cd ./inji-web
-docker build -t <dockerImageName>:<tag> .
-```
-
-2. **Run the Docker container:**
-
-```bash
-docker run -it -d -p 3004:3004 <dockerImageName>:<tag>
-```
-
-3. **Access the Inji Web app:**
-
-Open your browser and visit [http://localhost:3004](http://localhost:3004/).
-```
-
 ### Summary:
 
 - **Docker Compose Setup**: This is the recommended setup for running Inji Web along with Mimoto locally.
-- **Standalone Setup**: If you prefer, you can run Inji Web as a standalone Node.js application or build it into a Docker container.
+- **Standalone Setup**: If you prefer, you can run Inji Web as a standalone Node.js application.
 
