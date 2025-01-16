@@ -35,24 +35,6 @@ What details I need to provide to download my credential? The credential issuer 
 
 To download a National ID VC using eSignet as authentication layer (OTP method)
 
-{% stepper %}
-{% step %}
-###
-
-
-{% endstep %}
-
-{% step %}
-###
-
-
-{% endstep %}
-{% endstepper %}
-
-
-
-
-
 * Launch the Inji Wallet (Web) in your web browser, The home page presents you with the list of Issuers. You can also use the 'Search' box to search through and quickly find the Issuer (Credential Issuer) you are looking for.
 
 <figure><img src="../../../.gitbook/assets/inji-web-download-national-id-as-pdf-1.png" alt=""><figcaption><p>Launch application</p></figcaption></figure>
