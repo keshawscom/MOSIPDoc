@@ -2,10 +2,6 @@
 
 ## End User Guide
 
-{% hint style="warning" %}
-**Important**: We are in the process of updating screenshots and content in the End User Guide to reflect our new branding. These updates will be available soon, thank you for your patience!
-{% endhint %}
-
 ## Overview
 
 Inji Wallet (Web) End User Guide is structured as below:
@@ -21,9 +17,10 @@ Inji Wallet (Web) End User Guide is structured as below:
 Inji Wallet (Web) is akin to Inji Wallet with a web interface which is fully responsive and accessible over Desktop, Tablet and Mobile browsers. Interface Overview provides you a high level interface view (Desktop View) of the portal and labels the interface elements/items to let you quickly find an item referred to throughout this guide.
 
 * Main Menu
+* Language
 * Workspace
-* Search box
-*   List of Issuers
+* Search
+* Issuers
 
     <figure><img src="../../../.gitbook/assets/inji-web-interface-overview.png" alt=""><figcaption><p>Interface Overview</p></figcaption></figure>
 
@@ -79,34 +76,30 @@ You can download your Insurance ID, here we will see how to do it when we use eS
 
 To download an Insurance ID VC using eSignet for authentication (KBI method), follow the step below:
 
-* Launch the Inji Web application in your web browser. The home page presents you with the list of Issuers. You can also use the 'Search' box to quickly find an Issuer (Insurance VC).
+* Launch the Inji Web application in your web browser. The application home page presents you with the list of Issuers. You can also use the 'Search' box to quickly find an Issuer (Insurance VC Issuer). Click on a particular 'Issuer' (Insurance VC Issuer), you will land to its **Credential Types** selection page.
 
 <figure><img src="../../../.gitbook/assets/inji-web-download-insurance-vc-as-pdf-1.png" alt=""><figcaption><p>Launch application</p></figcaption></figure>
 
-* Click on a particular 'Issuer' to land in **Credential Types** selection page.
+* On the **Credentials Types** page, choose a credential type from the List of Credentials section, 'Credential Validity' screen will appear.
 
 <figure><img src="../../../.gitbook/assets/inji-web-download-insurance-vc-as-pdf-2.png" alt=""><figcaption><p>Search issuer</p></figcaption></figure>
 
-* On the Credentials Types selection page, choose a credential type from the List of Credentials section, 'Credential Validity' screen will appear.
+* On 'Credential Validity' screen you can choose to decide the number of times a credential can be used, choose from drop down (once, twice, unlimited or custom). Click ok and proceed, It takes you to next page for authentication (eSignet).
 
 <figure><img src="../../../.gitbook/assets/inji-web-download-insurance-vc-as-pdf-3.png" alt=""><figcaption><p>Credential Types page</p></figcaption></figure>
 
-* On 'Credential Validity' screen you can choose to decide the 1. Number of times a credential can be used, choose from drop down (once, twice or unlimited). Click ok and proceed, It takes you to next page for authentication (eSignet),
-
-**Note**: All the fields are mandatory.
+* On eSignet authentication page enter Policy Number, Name and DOB, and click on 'Login'. **Note**: All the fields are mandatory.
 
 <figure><img src="../../../.gitbook/assets/inji-web-download-insurance-vc-as-pdf-4.png" alt=""><figcaption><p>Authentication page</p></figcaption></figure>
 
-* On eSignet authentication page enter Policy Number, Name and DOB, and click on 'Login'. Credential is downloaded in the background and PDF will be generated and stored in the Downloads folder of the system.
+Credential is downloaded in the background and PDF will be generated and stored in the Downloads folder of the system (A download progress screen can also be seen when the credential is being downloaded).
 
-<figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption><p>Authentication page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/inji-web-download-insurance-vc-as-pdf-5.png" alt=""><figcaption><p>Authentication page</p></figcaption></figure>
 
-* A download progress screen appears
-*
-* PDF will be generated and stored in the Downloads folder of the system.
+* The generated pdf is stored in the Downloads folder of the system.
 * You can view the PDF of the downloaded VC (National ID) from download folder.
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption><p>Downloaded National ID VC as PDF</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/inji-web-download-insurance-vc-as-pdf-6.png" alt=""><figcaption><p>Downloaded National ID VC as PDF</p></figcaption></figure>
 
 ### Preference
 
