@@ -112,7 +112,7 @@ below]{.mark}
 
 # Feature Health
 
-<figure><img src="../../../.gitbook/assets/inji_web_0.11.0_test_report_feature_health_1.png" alt=""><figcaption><p>Interface Overview</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inji_web_0.11.0_test_report_feature_health_1.png" alt=""><figcaption><p>Launch application</p></figcaption></figure>
 
 # Test execution statistics 
 
@@ -129,65 +129,41 @@ flows across multiple configurations. The testing cycle included
 simulation of multiple identity schema and respective UI schema
 configurations.
 
-  ----------------- ----------------- ----------------- -----------------
-      **Total**        **Passed**        **Failed**        **Skipped**
 
-         456               426               30                 0
+| **Total** | **Passed** | **Failed** | **Skipped** |
+|-----------|------------|------------|-------------|
+| 456       | 426        | 30         | 0           |
 
-  Test Rate: 100%,                                      
-   With Pass Rate:                                      
-         93%                                            
-  ----------------- ----------------- ----------------- -----------------
+Test Rate: 100%,  
+With Pass Rate: 93%
+
 
 Here is the detailed breakdown of metrics for each module:
 
-  ------------------------------------ ---------------- ------------------
-                                                          **Test cases**
-
-        INJI Web UI Verification            Total              456
-
-                                            Passed             426
-
-                                            Failed              30
-
-                                           Skipped              0
-  ------------------------------------ ---------------- ------------------
+| **INJI Web UI Verification** | **Total** | **Passed** | **Failed** | **Skipped** |
+|------------------------------|-----------|------------|------------|-------------|
+| Test cases                   | 456       | 426        | 30         | 0           |
 
 ## UI Automation and API Test Rig test results
 
 Below are the test metrics by performing UI Automation and API Test rig.
 
-  ----------------- ----------------- ----------------- ---------------------
-      **Total**        **Passed**        **Failed**      **Skipped/Ignored**
+| **Total** | **Passed** | **Failed** | **Skipped/Ignored** |
+|-----------|------------|------------|---------------------|
+| 180       | 151        | 2          | 27                  |
 
-         180               151                2                  27
-
-   Test Rate: 83%,                                      
-   With Pass Rate:                                      
-         99%                                            
-  ----------------- ----------------- ----------------- ---------------------
+Test Rate: 83%,  
+With Pass Rate: 99%
 
 Here is the detailed breakdown of metrics for each module:
 
-  ------------------------------------ ----------------- ------------------
-                                                           **Test cases**
+| **INJI Web UI Automation** | **Total** | **Passed** | **Failed** | **Skipped** |
+|----------------------------|-----------|------------|------------|-------------|
+| Test cases                 | 19        | 17         | 2          | 0           |
 
-         INJI Web UI Automation              Total               19
-
-                                            Passed               17
-
-                                            Failed               2
-
-                                            Skipped              0
-
-         INJI Web API Test Rig               Total              161
-
-                                            Passed              134
-
-                                            Failed               0
-
-                                        Skipped/Ignored          27
-  ------------------------------------ ----------------- ------------------
+| **INJI Web API Test Rig**  | **Total** | **Passed** | **Failed** | **Skipped/Ignored** |
+|----------------------------|-----------|------------|------------|---------------------|
+| Test cases                 | 161       | 134        | 0          | 27                  |
 
 **Note**: Ignored 27 OTP related test cases which are descoped and not
 applicable
