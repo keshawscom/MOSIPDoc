@@ -4,7 +4,7 @@
 
 * Name: Inji Web 0.11.0
 * Date: Coming Soon
-* Release Notes
+* [Release Notes](https://docs.inji.io/inji-wallet/inji-web/inji-web/version-0.11.0)
 
 ## Version: 0.10.0
 

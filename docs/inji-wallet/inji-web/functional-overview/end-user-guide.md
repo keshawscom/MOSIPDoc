@@ -1,20 +1,19 @@
 # End User Guide
 
-## End User Guide
-
 ## Overview
 
 Inji Wallet (Web) End User Guide is structured as below:
 
 * Interface Overview
-* Download National ID VC as PDF
-* Download Insurance VC as PDF
+* Downloading VCs as PDF
+  * Download National ID VC as PDF
+  * Download Insurance VC as PDF
 * Preference
   * Change Language
 
 ## Interface Overview
 
-Inji Wallet (Web) is akin to Inji Wallet with a web interface which is fully responsive and accessible over Desktop, Tablet and Mobile browsers. Interface Overview provides you a high level interface view (Desktop View) of the portal and labels the interface elements/items to let you quickly find an item referred to throughout this guide.
+Inji Wallet (Web) is akin to Inji Wallet with a web interface which is fully responsive and accessible over Desktop, Tablet and Mobile browsers. Interface Overview provides you with a high level interface view (Desktop View) of the portal and labels the interface elements/items to let you quickly find an item referred to throughout this guide.
 
 * Main Menu
 * Language
@@ -45,6 +44,9 @@ To download a National ID VC using eSignet as authentication layer (OTP method)
 <figure><img src="../../../.gitbook/assets/inji-web-download-national-id-as-pdf-2.png" alt=""><figcaption><p>List Of Credential Type</p></figcaption></figure>
 
 * On validity screen you can choose to decide the number of times a credential can be used, choose from drop down (Once, Twice, Unlimited or Custom ). Click ok and proceed, It takes you to next page for authentication (eSignet).
+
+<figure><img src="../../../.gitbook/assets/inji-web-download-national-id-as-pdf-0.png" alt=""><figcaption><p>Share Validity</p></figcaption></figure>
+
 * On eSignet authentication page enter UIN/VID and click on 'Get OTP', a next will appear asking you to enter OTP
 
 <figure><img src="../../../.gitbook/assets/inji-web-download-national-id-as-pdf-4.png" alt=""><figcaption><p>Authentication page</p></figcaption></figure>

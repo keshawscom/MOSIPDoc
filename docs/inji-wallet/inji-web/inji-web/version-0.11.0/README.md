@@ -71,17 +71,12 @@ The following table outlines the tested and certified compatibility of **Inji We
 | **vc-verifier**        | **v1.1.0-beta.1** |
 | **durian(data share)** | **v1.3.0-beta.2** |
 
-#### **SBOM Report**
 
-* This release includes a Software Bill of Materials (SBOM) generated using SPDX format. You can download the SBOM report \<here>
 
 ### Documentation
 
-* **Functional Test Report**
-* **Sonar Report**
-* **Build and Deployment**
-* **SBOM Report**
+* [**Build and Deployment**](../../build-and-deploy/)
 * [**Feature Documentation**](https://docs.mosip.io/inji/inji-web/functional-overview/features)
 * [**User Guide**](https://docs.mosip.io/inji/inji-web/functional-overview/end-user-guide)
-* **QA Report**
+* [**QA Report**](https://docs.inji.io/inji-wallet/inji-web/inji-web/version-0.11.0/test-report)
 * [**API Documentation**](https://docs.mosip.io/inji/inji-web/technical-overview/backend-services/mimoto-bff)
