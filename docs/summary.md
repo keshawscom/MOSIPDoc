@@ -220,6 +220,7 @@
     * [Security Test Report](releases/release-notes/security-test-report.md)
     * [Feature Health Report](releases/release-notes/feature-health-report.md)
 * [📋 Adopting LTS 1.2.0](adopting-lts-1.2.0.md)
+* [☕ Java 21 Migration Guide](java-21-migration-guide.md)
 * [🈴 Upgrade Runbook](upgrade-runbook/README.md)
   * [Deployment Architecture Upgrade](upgrade-runbook/upgrade-deployment-architecture.md)
   * [Platform Upgrade](upgrade-runbook/upgrade-platform.md)

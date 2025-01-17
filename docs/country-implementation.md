@@ -13,23 +13,23 @@ This is a guide to implement MOSIP for a country. It is advised that Government 
 5. Customisation and procurement of components as given [here](modules/reference-implementations.md).
 6. [ID schema](id-lifecycle-management/id-schema.md) (as prescribed by the country's regulatory authority).
 7. Hardware requirements estimate.
-   * [Server side](https://github.com/mosip/documentation/tree/develop/docs/\_files)
-   * [Devices](\_files/mosip-devices-calculator.xlsx)
+   * [Server side](https://github.com/mosip/documentation/tree/develop/docs/_files)
+   * [Devices](_files/mosip-devices-calculator.xlsx)
 8. [Credential choices](modules/id-repository/#credential-types).
 9. ID Card print design.
 10. MOSIP versions.
 11. MOSIP support (scope).
 12. Disaster recovery strategy.
-13. Phased approach for rollout.
+13. A phased approach for rollout.
 
 ## Procurement
 
 1. Engagement with an SI - terms and conditions.
-2. Procurement of biometric and other external components.
+2. Procurement of biometrics and other external components.
 3. HSM
-4. [Postgres](https://docs.mosip.io/1.2.0/modules/persistence/postgres-db))
+4. [Postgres](https://docs.mosip.io/1.2.0/modules/persistence/postgres-db)
 5. [Object store](https://docs.mosip.io/1.2.0/modules/persistence/object-store)
-6. Compute hardware
+6. Computer hardware
 
 ## Country specific data
 
