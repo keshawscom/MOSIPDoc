@@ -1,5 +1,11 @@
 # Releases
 
+## Version: 0.11.0
+
+* Name: Inji Web 0.11.0
+* Date: Coming Soon
+* Release Notes
+
 ## Version: 0.10.0
 
 * Name: Inji Web 0.10.0
