@@ -1,6 +1,6 @@
 # Architecture
 
-[MOSIP](https://www.mosip.io/#1) as it stands is a modular microservice based architecture. It's modularity helps in adoption of MOSIP at complex situations. Most of the MOSIP [modules](../modules/) are designed to be a strong foundation infrastructure modules and can be adopted in several projects.
+[MOSIP](https://www.mosip.io/#1) as it stands is a modular microservice based architecture. It's modularity helps in adoption of MOSIP at complex situations. Most of the [MOSIP modules](../modules/) are designed to be a strong foundation infrastructure modules and can be adopted in several projects.
 
 MOSIP is designed with the following architecture principles. These architecture principles are core to the development of the system's feature and has a great influence on how and why specific software design patterns are used within.
 
