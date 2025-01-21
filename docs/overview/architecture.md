@@ -13,15 +13,18 @@ MOSIP is designed with the following architectural principles. These architectur
 * Manageable
 * Secure By Default
 
-<figure><img src="../.gitbook/assets/MOSIP-Architecture-Overview.jpg" alt=""><figcaption><p>Architecture Overview</p></figcaption></figure>
+### Architecture Overview
 
-To know how MOSIP can be deployed, refer to [Getting Started](https://docs.mosip.io/1.2.0/deploymentnew/getting-started). The different installation models are detailed in the [Deployment](https://docs.mosip.io/1.2.0/deploymentnew) section.
+The diagram below provides an architectural overview, visually representing the components of the MOSIP Identity framework and its associated technology stack.
+
+<figure><img src="../.gitbook/assets/MOSIP-Architecture-Overview.jpg" alt=""><figcaption><p>Architecture Overview</p></figcaption></figure>
 
 ### High-Level Reference Functional Architecture
 
+This reference blueprint provides a comprehensive vision for designing and implementing a Digital ID-led DPI infrastructure. It outlines how foundational identity systems can be leveraged alongside key DPI components, enabling various use cases across both the public and private sectors. The blueprint is structured in layers of technology, governance, and service delivery, ensuring scalability, inclusivity, and compliance with legal frameworks.&#x20;
+
 <div align="left"><figure><img src="../.gitbook/assets/Functional_Architecture.png" alt=""><figcaption></figcaption></figure></div>
 
-This reference blueprint provides a comprehensive vision for designing and implementing a Digital ID-led DPI infrastructure. It outlines how foundational identity systems can be leveraged alongside key DPI components, enabling various use cases across both the public and private sectors. The blueprint is structured in layers of technology, governance, and service delivery, ensuring scalability, inclusivity, and compliance with legal frameworks. \
 \
 Below is an explanation of its core components and their roles within the ecosystem.
 
@@ -59,4 +62,6 @@ This blueprint is designed to act as a catalyst for seamless service delivery an
 
 #### 9. Legal and Regulatory Framework <a href="#legal-and-regulatory-framework" id="legal-and-regulatory-framework"></a>
 
-Finally, the framework operates within a robust legal and regulatory environment, complying with key legislation such as the Data Protection Act, the Cybersecurity Act, and the Electronic Transactions Act. These laws safeguard data privacy and security, ensuring that the system operates transparently, trustworthily, and in full legal compliance.
+Finally, the framework operates within a robust legal and regulatory environment, complying with key legislation such as the Data Protection Act, the Cybersecurity Act, and the Electronic Transactions Act. These laws safeguard data privacy and security, ensuring that the system operates transparently, trustworthy, and in full legal compliance.
+
+To know how MOSIP can be deployed, refer to [Getting Started](https://docs.mosip.io/1.2.0/deploymentnew/getting-started). The different installation models are detailed in the [Deployment](https://docs.mosip.io/1.2.0/deploymentnew) section.
