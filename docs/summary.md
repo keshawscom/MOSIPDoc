@@ -181,6 +181,7 @@
     * [Enhancements and Bug Fixes](releases/1.2.1.0-beta.1-part-2/enhancements-and-bug-fixes.md)
     * [Test Report](releases/1.2.1.0-beta.1-part-2/test-report.md)
   * [API Test Commons Releases](releases/api-test-commons-releases/README.md)
+    * [v1.3.1](releases/api-test-commons-releases/v1.3.1.md)
     * [v1.3.0](releases/api-test-commons-releases/v1.3.0.md)
   * [1.2.1.0-beta.1(Part 1)](releases/1.3.0-beta.1-mock-service-and-converters.md)
   * [Android Registration Client 0.11.0-beta.1](releases/android-registration-client-0.11.0-beta.1/README.md)
