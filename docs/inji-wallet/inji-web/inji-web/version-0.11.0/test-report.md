@@ -84,14 +84,14 @@ Here is the detailed breakdown of metrics for each module:
 
 Below are the test metrics by performing UI Automation and API Test rig.
 
-<table><thead><tr><th width="233">Total</th><th>Passed</th><th>Failed</th><th>Skipped/Ignored</th></tr></thead><tbody><tr><td>180</td><td>151</td><td>2</td><td>27</td></tr><tr><td>Test Rate: 83%, With Pass Rate: 99%</td><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="233">Total</th><th>Passed</th><th>Failed</th><th>Skipped/Ignored</th></tr></thead><tbody><tr><td>180</td><td>153</td><td>0</td><td>27</td></tr><tr><td>Test Rate: 83%, With Pass Rate: 99%</td><td></td><td></td><td></td></tr></tbody></table>
 
 Test Rate: 83%,\
 With Pass Rate: 99%
 
 Here is the detailed breakdown of metrics for each module:
 
-<table><thead><tr><th width="230">INJI Web UI Automation</th><th>Total</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead><tbody><tr><td>Test cases</td><td>19</td><td>17</td><td>2</td><td>0</td></tr></tbody></table>
+<table><thead><tr><th width="230">INJI Web UI Automation</th><th>Total</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead><tbody><tr><td>Test cases</td><td>19</td><td>19</td><td>0</td><td>0</td></tr></tbody></table>
 
 <table><thead><tr><th width="232">INJI Web API Test Rig</th><th>Total</th><th>Passed</th><th>Failed</th><th>Skipped/Ignored</th></tr></thead><tbody><tr><td>Test cases</td><td>161</td><td>134</td><td>0</td><td>27</td></tr></tbody></table>
 
