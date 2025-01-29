@@ -9,7 +9,7 @@ The workflow for credential issuance in the described scenario can be summarized
 1. **Initiation of Credential Request**:
    * The identity owner (user) begins the credential request process by accessing the service's landing page.
 2. **Authentication Process**:
-   * The user is directed to an authentication page managed by a backend system that implements OpenID Connect (OIDC).
+   * The user is directed to an authentication page managed by a backend system that implements OpenID Connect (OIDC), We can consider example of eSignet here (Check the note below this section for eSignet).
    * The user's personally identifiable information (PII) is sent to the authentication layer for verification against the identity registry.
 3. **Issuance of Authentication Code**:
    * Upon successful verification, the authentication layer generates an authentication code. This code is typically valid for a single use and is provided to third-party web services.
