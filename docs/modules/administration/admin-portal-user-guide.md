@@ -205,7 +205,7 @@ An admin can deactivate or decommission a machine through the admin portal.
 * MOSIP uses Keycloak as an IAM (Identity access management tool) for managing Users. These users are internal users of MOSIP including Registration Officers, Registration Supervisors, Zonal Admins, Global Admins, etc.
 * using this portal, an Admin can map the users to a zone and a center.
 
-### User Zone Mapping
+#### User Zone Mapping
 
 * Once a user is created in KeyCloak, they need to be mapped to a zone to access specific information available in that zone.
 * Admin portal allows an admin to map users to a zone. This mapping specifies which zone the user will belong to.
@@ -236,16 +236,16 @@ To re-map a user to a zone,
 **Note-** If the center is already mapped, the admin needs to unmap the center to remap the zone.
 {% endhint %}
 
-### User Center Mapping
+#### User Center Mapping
 
 * Once the user is mapped to a zone, they will be listed in the screen below. Now, the user will be mapped to a center to be able to manage their assigned center.
 * Admin portal allows an admin to map users to a center. This mapping specifies as to which center the user will be used in.
 * A user can only be mapped to a center that belongs under the user’s Administrative Zone.
-* A user can later be unmapped from the Center in cases where a User is needed to be moved to another Center. In such cases, the user will later need to be mapped to the new center. In case the user is required to be mapped to a Registration center outside the Administrative Zonal restriction, the Administrative Zone of the user must be changed.
+* A user can later be unmapped from the Center in cases where a User needs to be moved to another Center. In such cases, the user will later need to be mapped to the new center. In case the user is required to be mapped to a Registration center outside the Administrative Zonal restriction, the Administrative Zone of the user must be changed.
 
 ![](../../.gitbook/assets/admin-user-center-list.png)
 
-**Map/un-map/re-map user to a registration center**
+#### **Map/un-map/re-map user to a registration center**
 
 ![](../../.gitbook/assets/admin-user-center-map.png)
 
@@ -256,7 +256,7 @@ To map a user to a center,
 3. Select the **Center Name** from the dropdown against the User Name, Administrative Zone.
 4. Click **Save**.
 
-### Search and dropdowns
+#### Search and dropdowns
 
 * To get the results starting with a specific character/ set of characters, prepend that specific character/set of characters with `asterisk` symbol.
 * Similarly to get the results ending with a specific character/ set of characters, append that specific character/ set of characters with `asterisk`.
@@ -275,7 +275,7 @@ Below is the image illustrating the same.
 
 ![](../../.gitbook/assets/admin-packet-status.png)
 
-## Pause/Resume RID
+#### Pause/Resume RID
 
 * The Registration Admin has the privilege to view the registration packets that are in a paused state.
 * Admin can use this portal to resume or reject paused packets. They would have 3 options:
@@ -285,7 +285,7 @@ Below is the image illustrating the same.
 
 Once processing of a packet is resumed, it will be removed from this list
 
-## Retrieve lost RID
+#### Retrieve lost RID
 
 * The Registration Admin can use this feature to retrieve lost RID.
 * For instance, if the resident did not provide any valid email and/or phone number and has lost the RID slip received during the registration, to find their RID details, the resident contact the MOSIP helpline and share details such as name, center name, registration date, and postal code to the admin, who will use the lost RID feature and try to retrieve the RID number.
@@ -296,7 +296,7 @@ A few filters may be applied to retrieve the RID.
 
 _Note_: This feature is currently under development.
 
-## Master Data
+### Master Data
 
 * Admin portal allows an Admin to manage the Masterdata applicable for a country.
 * These data include a list of Genders, a list of Holidays, Templates, Center Types, Machine Types, etc.
@@ -305,15 +305,15 @@ _Note_: This feature is currently under development.
 
 To know more, refer to the [Masterdata guide](masterdata-guide.md).
 
-## Bulk upload
+### Bulk upload
 
 * If a country decides to upload the data through the _.csv_ files, they could use this feature to upload the existing data into the MOSIP platform.
 * The listing screen displays the uploaded data transaction information.
-* As the information inside .csv files may be huge, it would go through the batch job to process the information and store it in the tables. Also, it may take time to get a unique transaction ID against the particular action.
+* As the information inside .csv files may be huge, it would go through the batch job to process the information and store it in the tables. Also, it may take time to get a unique transaction ID against a particular action.
 
 ![](../../.gitbook/assets/admin-list-bulk-upload.png)
 
-### Master Data
+#### Master Data
 
 ![](../../.gitbook/assets/admin-upload-masterdata.png)
 
@@ -322,7 +322,7 @@ To upload Master data using the Admin portal,
 1. Go to Bulk Upload > Master Data
 2. On the master data dashboard, click **Upload Data**.
 3. Select the operation (insert/update/delete)
-4. Select the table name into which the data needs to be uploaded into.
+4. Select the table name into which the data needs to be uploaded.
 5. Click **Choose file** to select the data and click **Upload**
 
 * To view the format for inserting data in a particular table, click on the Download icon.
@@ -387,8 +387,8 @@ With the help of this feature, the Admin user can generate and manage the keys r
 
 ### GetCertificate
 
-* The user can get a certificate for all the keys generated in Keymanager and any partner certificates uploaded in Keymanager service for partner data sharing purpose.
-* _GetCertificate_ option is visible to all the users who log in to the Admin portal.
+* The user can get a certificate for all the keys generated in Keymanager and any partner certificates uploaded in Keymanager service for partner data sharing purposes.
+* The _GetCertificate_ option is visible to all the users who log in to the Admin portal.
 * The user has to provide the Application ID and Reference ID to get a certificate.
 * A new key will be auto generated in case the key does not exist and the already existing key has expired for Module encryption keys.
 * Whereas, for [Module](../keymanager/#Key-hierarchy) master key or [Root](../keymanager/#Key-hierarchy) key, a new key will not get auto-generated in case the key does not exist, but a new key will get auto-generated if the key exists and has expired. For the partner certificate, a new key will not be generated in the Key Manager service.
