@@ -4,7 +4,7 @@
 
 **Version: 1.3.1 -  API Test Commons**
 
-* **Date:** Coming Soon
+* **Date:** 28th Jan, 2025
 * [Release Notes](api-test-commons-releases/v1.3.1.md)
 
 **Version:  1.2.0.2(Reg Processor & ID Repo)**
