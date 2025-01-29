@@ -13,6 +13,12 @@ Currently, Inji Certify offers the following features:
   * Mock IDA Plugin for testing and development purposes.
 * **Multiple Credential Schemas**: Allows configuration of multiple credential schemas for various certificate types.
 * **JSON-LD Format**: Generates certificates compliant with W3C VC v1.1 standards in JSON-LD format, ensuring interoperability and compatibility.
+* **Data Provider Plugins:** These plugins fetch relevant data from external sources or registries. They retrieve the necessary information and return it to Inji Certify as a JSON object. Inji Certify then utilizes this data to generate and issue the corresponding VCs.
+  * **Current Data Provider Plugins:**
+    * MCSV Data Provider Plugin
+    * Postgres Data Provider Plugin
+
+Users can easily integrate custom plugins into the Inji Certify Registry, This plugin architecture allows for seamless integration with various external systems and data sources, making Inji Certify a highly adaptable and customizable solution for diverse credentialing needs.
 
 **Ease of Installation**
 

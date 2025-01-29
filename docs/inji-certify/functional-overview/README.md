@@ -49,6 +49,10 @@ Inji Certify is designed to meet the needs of both organizations and individuals
   * **MOSIP Identity Plugin**: Integrates with MOSIP for identity verification.
   * **Sunbird Plugin**: Facilitates seamless integration with Sunbird services.
   * **Mock IDA Plugin**: Allows for testing and development purposes.
+  * **Data Provider Plugins:** These plugins fetch relevant data from external sources or registries. They retrieve the necessary information and return it to Inji Certify as a JSON object. Inji Certify then utilizes this data to generate and issue the corresponding VCs.
+    * **Current Data Provider Plugins:**
+      * Mock CSV Data Provider Plugin
+      * Postgres Data Provider Plugin
 * **Ease of Installation**: Utilizes Docker-compose scripts for quick deployment. Includes comprehensive documentation for efficient utilization of data registry plugins.
 
 #### **Multiple VC Format Support** <a href="#multiple-vc-format-support" id="multiple-vc-format-support"></a>

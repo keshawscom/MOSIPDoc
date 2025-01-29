@@ -16,20 +16,42 @@ Traditionally, institutes and organizations expend considerable time and effort 
 
 * The generated credentials align with OpenID specifications, ensuring interoperability with other compliant systems and platforms. This allows for a seamless integration into existing ecosystems, promoting broader adoption and usage of VCs.
 
-#### **Plugin Support**
+**Plugin Support**
 
-* Inji Certify enables plugin support for the Registry, allowing users to integrate custom plugins easily by following the provided **README** instructions in the Inji Certify Repository. This feature enhances the platform's flexibility and adaptability to various organizational needs.
-  * **Current Plugin Support:**
-    * Sunbird Plugin
-    * Mock IDA Plugin
-    * MOSIP Identity Plugin
+Inji Certify supports the integration of custom plugins to enhance its flexibility and adaptability to diverse organizational needs. These plugins can be broadly categorized into two types:
 
-#### **Verifiable Credential Formats Support**
+1. **VC Issuance Plugins:**
 
-* Inji Certify supports multiple credential formats, including JSON, and SD-JWT. This versatility caters to different data format requirements, ensuring compatibility with various applications and systems.
-  * Future Support
-    * mDoc
-    * mDL
+* **Functionality:** These plugins are responsible for generating and signing Verifiable Credentials (VCs) themselves. They typically interact with external identity or authentication systems to obtain necessary information and then generate the VC in JSON-LD format.
+* **Current VC Issuance Plugins:**
+  * Mock IDA Plugin
+  * Mosip Identity Plugin
+  * Sunbird RC Plugin
+
+2. **Data Provider Plugins:**
+
+* **Functionality:** These plugins fetch relevant data from external sources or registries. They retrieve the necessary information and return it to Inji Certify as a JSON object. Inji Certify then utilizes this data to generate and issue the corresponding VCs.
+* **Current Data Provider Plugins:**
+  * Mock CSV Data Provider Plugin
+  * Postgres Data Provider Plugin
+
+Users can easily integrate custom plugins into the Inji Certify Registry by following the detailed instructions provided in the Inji Certify Repository's README file. This plugin architecture allows for seamless integration with various external systems and data sources, making Inji Certify a highly adaptable and customizable solution for diverse credentialing needs.
+
+**Verifiable Credential Formats Support**
+
+Inji Certify supports a variety of widely used credential formats, including:
+
+* **JSON-LD:** A standardized format for representing linked data, enabling seamless data exchange and interoperability across different systems.
+* **Signed JWT (JWT):** A compact and self-contained format for securely transmitting claims between two parties, enhancing security and ease of use.
+
+This support for multiple credential formats ensures compatibility with a wide range of applications and systems, catering to diverse data format requirements.
+
+**Future Support:**
+
+* **mDoc:** A mobile document format designed for secure and efficient storage and exchange of digital documents.
+* **mDL:** A mobile driver's license format that enables secure and convenient presentation of driver's licenses on mobile devices.
+
+By expanding its support to include these emerging formats, Inji Certify will further enhance its interoperability and adaptability to future advancements in digital credentialing technologies.
 
 #### **Revocation Mechanism**
 
@@ -94,15 +116,60 @@ Verifiable Credentials (VCs) are digital representations of physical credentials
 
 **Inji Certify for VC Issuance**
 
-**Inji Certify** is a robust credential issuance platform that connects with existing credential registries to issue standards-compliant VCs. It replaces the earlier reliance on eSignet with a seamless integration of the Sunbird RC plugin for issuing credentials. The platform enables issuers to define credential schemas, issue certificates in JSON-LD format, and support interoperability using W3C Verifiable Credentials (VC) v1.1 standards.
+Inji Certify is a powerful and versatile platform designed for seamless issuance of Verifiable Credentials (VCs). It leverages a robust architecture that integrates with existing credential registries, enabling organizations to efficiently and securely issue standards-compliant VCs.
 
-**Sunbird RC Plugin Integration**
+Key features of Inji Certify for VC Issuance include:
 
-The Sunbird RC plugin allows registries, such as Sunbird RC, to issue VCs upon successful identity verification. Key features include:
+* **Seamless Integration:** Replaces the earlier reliance on eSignet with a seamless integration of the Sunbird RC plugin, streamlining the credential issuance process.
+* **Flexible Schema Definition:** Allows issuers to easily define and customize credential schemas for various credential types, ensuring compliance with W3C VC v1.1 standards and facilitating interoperability.
+* **Efficient Issuance:** Enables the efficient issuance of VCs in the industry-standard JSON-LD format.
+* **Enhanced Security:** Incorporates robust security measures to protect the integrity and confidentiality of issued credentials.
 
-* **Version**: Supports Sunbird RC version v2.0.0-rc3.
-* **Dynamic Credential Updates**: The plugin uses the access token subject to query the registry and generate an up-to-date VC based on the credential schema, type, and version.
-* **Wallet Integration**: Credentials are securely transferred to the Inji wallet through the OpenID4VCI flow.
+<mark style="color:red;">By utilizing Inji Certify, organizations can streamline their credential issuance processes, enhance security, and improve the overall user experience for both issuers and recipients.</mark>
+
+
+
+<mark style="color:red;">**Inji Certify**</mark> <mark style="color:red;"></mark><mark style="color:red;">is a robust credential issuance platform that connects with existing credential registries to issue standards-compliant VCs. It replaces the earlier reliance on eSignet with a seamless integration of the Sunbird RC plugin for issuing credentials. The platform enables issuers to define credential schemas, issue certificates in JSON-LD format, and support interoperability using W3C Verifiable Credentials (VC) v1.1 standards.</mark>
+
+<mark style="color:red;">**Sunbird RC Plugin Integration**</mark>
+
+<mark style="color:red;">The Sunbird RC plugin allows registries, such as Sunbird RC, to issue VCs upon successful identity verification. Key features include:</mark>
+
+* <mark style="color:red;">**Version**</mark><mark style="color:red;">: Supports Sunbird RC version v2.0.0-rc3.</mark>
+* <mark style="color:red;">**Dynamic Credential Updates**</mark><mark style="color:red;">: The plugin uses the access token subject to query the registry and generate an up-to-date VC based on the credential schema, type, and version.</mark>
+* <mark style="color:red;">**Wallet Integration**</mark><mark style="color:red;">: Credentials are securely transferred to the Inji wallet through the OpenID4VCI flow.</mark>
+
+
+
+#### **Plugin Integration**
+
+Inji Certify supports a flexible plugin architecture that allows for seamless integration with various external systems and data sources. This plugin architecture enhances the platform's adaptability and allows for customization to meet diverse credentialing needs.
+
+The plugins are categorized into two main types:
+
+1. **VC Issuance Plugins:**
+
+* **Role:** VC Issuance Plugins are responsible for the core process of generating and issuing Verifiable Credentials (VCs).
+* **Functionality:**
+  * These plugins typically interact with external identity or authentication systems (e.g., identity providers, registries) to obtain necessary information about the credential recipient (e.g., name, date of birth, unique identifiers).
+  * They then utilize this information to generate the VC in the appropriate format (e.g., JSON-LD) according to the defined credential schema.
+  * Finally, the plugin issues the generated VC to the recipient.
+* **Examples:**
+  * **Mock Certify Plugin:** This plugin simulates a real-world scenario by interacting with the **Mosip Mock Identity System**. It retrieves sample identity data from the mock system and subsequently generates and issues VCs based on this data. This plugin is valuable for testing and development purposes.
+  * **Mosip IDA Certify Plugin:** This plugin integrates with the **Mosip National ID System**, a real-world identity platform. It retrieves verified identity information from the Mosip National ID System and utilizes this data to generate and issue VCs.
+  * **Sunbird RC Certify Plugin:** This plugin interacts with the **Sunbird RC registry**, a platform for managing learning resources and learner data. It retrieves relevant data from the Sunbird RC registry, such as academic records and certifications, and generates and issues VCs based on this retrieved information.
+
+2. **Data Provider Plugins:**
+
+* **Role:** Data Provider Plugins are responsible for fetching relevant data from external sources or registries.
+* **Functionality:**
+  * These plugins connect to external data sources (e.g., databases, APIs, registries) and retrieve the necessary information about the credential recipient or the credential itself.
+  * The retrieved data is then provided to a VC Issuance Plugin for further processing, including VC generation and issuance.
+* **Examples:**
+  * **Mock CSV Data Provider Plugin:** This plugin retrieves data from a **CSV file** that acts as a sample data source or a simplified registry. It extracts relevant information from the CSV file and provides it to a connected VC Issuance Plugin. This plugin is useful for testing and development purposes, allowing for easy simulation of data from various sources.
+  * **Postgres Data Provider Plugin:** This plugin connects to a **PostgreSQL database** that acts as a data repository. It retrieves relevant data (e.g., user profiles, academic records) from the specified tables within the PostgreSQL database and provides this data to a connected VC Issuance Plugin for further processing.
+
+\---
 
 **Authentication and Credential Transfer**
 
