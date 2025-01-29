@@ -1,5 +1,11 @@
 # Releases
 
+**Version: 0.10.0**
+
+* Name: Inji Certify 0.10.0
+* Date: Coming Soon
+* [Release Notes](version-0.10.0/)
+
 **Version: 0.9.1**
 
 * Name: Inji Certify 0.9.1 (Patch)
