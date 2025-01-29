@@ -4,7 +4,7 @@
 
 **Support:** Developer
 
-**Release Date:** Coming Soon
+**Release Date:** 29th Jan, 2025
 
 ### **Overview**
 
@@ -55,21 +55,21 @@ Below is the list of **known** issues. To read in detail click [**here**](https:
 
 The following table outlines the tested and certified compatibility of **Inji Web 0.11.0** with other modules.
 
-| Module           | Version                                                         |
-| ---------------- | --------------------------------------------------------------- |
-| **eSignet**      | [**1.4.1**](https://github.com/mosip/esignet/tree/v1.4.1)       |
-| **Inji Verify**  | [**0.10.0**](https://github.com/mosip/inji-verify/tree/v0.10.0) |
-| **Inji Certify** | [**0.9.1**](https://github.com/mosip/inji-certify/tree/v0.9.1)  |
+| Module           | Version                                                          |
+| ---------------- | ---------------------------------------------------------------- |
+| **eSignet**      | [**v1.4.1**](https://github.com/mosip/esignet/tree/v1.4.1)       |
+| **Inji Verify**  | [**v0.10.0**](https://github.com/mosip/inji-verify/tree/v0.10.0) |
+| **Inji Certify** | [**v.0.9.1**](https://github.com/mosip/inji-certify/tree/v0.9.1) |
 
 ### **Repositories Released**
 
-| Repositories           | Tags Released     |
-| ---------------------- | ----------------- |
-| **Inji-web**           |  **v0.11.0**      |
-| **mimoto**             | **v0.15.0**       |
-| **Inji-config**        | **v0.4.0**        |
-| **vc-verifier**        | **v1.1.0-beta.1** |
-| **durian(data share)** | **v1.3.0-beta.2** |
+| Repositories           | Tags Released                                                                |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| **Inji-web**           |  [**v0.11.0**](https://github.com/mosip/inji-web/tree/v0.11.0)               |
+| **mimoto**             | [**v0.15.0**](https://github.com/mosip/mimoto/tree/v0.15.0)                  |
+| **Inji-config**        | [**v0.4.0**](https://github.com/mosip/inji-config/tree/v0.4.0)               |
+| **vc-verifier**        | [**v1.1.0-beta.1**](https://github.com/mosip/vc-verifier/tree/V1.1.0-beta.1) |
+| **durian(data share)** | [**v1.3.0-beta.2**](https://github.com/mosip/durian/tree/1.3.0-beta.2)       |
 
 
 

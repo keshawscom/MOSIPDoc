@@ -3,7 +3,7 @@
 ## Version: 0.11.0
 
 * Name: Inji Web 0.11.0
-* Date: Coming Soon
+* Date: 29th Jan, 2025
 * [Release Notes](https://docs.inji.io/inji-wallet/inji-web/inji-web/version-0.11.0)
 
 ## Version: 0.10.0
