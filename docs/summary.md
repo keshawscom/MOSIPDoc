@@ -25,6 +25,7 @@
   * [CBEFF](biometrics/cbeff-xml.md)
   * [Compliance Tool Kit](https://docs.mosip.io/compliance-tool-kit/)
   * [SBISpec](biometrics/sbispec.md)
+* [Inclusion](inclusion.md)
 * [👫 Partners](partners.md)
 * [🛠️ Modules](modules/README.md)
   * [Administration](modules/administration/README.md)
@@ -266,4 +267,3 @@
 * [📩 License](license.md)
 * [💻 API](https://mosip.github.io/documentation/1.2.0/1.2.0.html)
 * [📚 Documentation for 1.1.5](https://docs.mosip.io/1.1.5)
-* [Inclusion](inclusion.md)
