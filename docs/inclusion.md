@@ -7,7 +7,7 @@ description: Technology that leaves no one behind.
 
 With the mission of empowering lives all over the world, MOSIP continues to take steps towards being an inclusive platform. Ongoing collaborations with global universities, research organizations, and strong on-ground teams have sharpened our focus on developing technology that is unrestricted by gender, race, and economic status. Additionally, technology features allow individuals to access services with digital identities through multiple channels, and even in remote areas with low connectivity, ensuring no one is left behind.
 
-Some mechanisms through which the MOSIP platform support inclusivity is illustrated below:
+Some mechanisms through which the MOSIP platform supports inclusivity is illustrated below:
 
 * <mark style="color:blue;">**Introducer Support For The Undocumented**</mark>
   * The **Introducer concept** in MOSIP allows individuals **without formal identity documents** to be enrolled into the digital identity system. A trusted and verified **Introducer**, such as a community leader or an authorized individual, vouches for the person’s identity. This ensures that **marginalized populations**, including refugees, nomadic groups, and those lacking paperwork, can still obtain a digital identity. By enabling **inclusion through trust-based verification**, the Introducer mechanism helps governments provide **identity access to all**, promoting **social and financial inclusion**.
