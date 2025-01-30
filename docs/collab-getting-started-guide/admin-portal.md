@@ -41,4 +41,4 @@ If you require any assistance or encounter any issues during the testing and int
    b. Error messages, logs, or screenshots (if applicable)\
    c. Any other relevant details to help diagnose the issue
 
-_Thank you! We wish you a smooth experience with the Admin Portal collab guide._![rocket](https://pf-emoji-service--cdn.us-east-1.prod.public.atl-paas.net/standard/caa27a19-fc09-4452-b2b4-a301552fd69c/32x32/1f680.png)
+_We wish you a smooth experience with the Admin Portal collab guide !_
