@@ -14,16 +14,16 @@ For a detailed breakdown of the Admin Portal features, please refer to the [**Ad
 
 ### Step-by-Step Guide <a href="#step-by-step-guide" id="step-by-step-guide"></a>
 
-#### Step 1: Access the Admin Portal <a href="#step-1-access-the-admin-portal" id="step-1-access-the-admin-portal"></a>
+**Step 1:** Access the Admin Portal
 
 Visit the **Admin Portal** in the Collab environment by navigating to: [Admin Portal](https://mosip.atlassian.net/wiki/spaces/PROD/pages/1571815440/Admin+portal+-+Collab+Guide).
 
-#### Step 2: Log in to the Portal <a href="#step-2-log-in-to-the-portal" id="step-2-log-in-to-the-portal"></a>
+**Step 2:** Log in to the Portal
 
 1. Enter your **username** and **password**.
 2. Click **Login** to proceed.
 
-#### Step 3: Explore Admin Portal Features <a href="#step-3-explore-admin-portal-features" id="step-3-explore-admin-portal-features"></a>
+**Step 3:** Explore Admin Portal Features
 
 Once logged in, you can access the available features based on your role. Refer to the [Admin Portal User Guide](https://docs.mosip.io/1.2.0/modules/administration/admin-portal-user-guide) for more details on specific functionalities.
 
