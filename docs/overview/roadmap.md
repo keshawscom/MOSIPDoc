@@ -1,0 +1,34 @@
+---
+description: The guiding foundation.
+icon: mistletoe
+---
+
+# Principles
+
+MOSIP is designed, developed, and implemented based on a set of **core principles** that drive its effectiveness and adaptability. These principles ensure that MOSIP remains open, secure, interoperable, scalable, and inclusive, allowing it to meet the needs of diverse users and support the creation of accessible, digital identity systems globally.
+
+* **Modularity:** _Identity systems that serve unique needs with mutually-exclusive technology bundles._\
+  \
+  Rather than a stand-alone solution offered to every adopting nation, MOSIP technology allows user countries to build custom workflows. Each functionality is built with independent microservices to provide flexibility and control.\
+
+* **Open Source**: _Trusted and transparent technology, as a part of the effort towards developing global standards._\
+  \
+  An open-source code repository, available in entirety on GitHub, encourages contributions from user communities and offers governments control over their ID systems. MOSIP also actively works with the **Institute of Electrical and Electronics Engineers (IEEE)**, governments, and a commercial ecosystem to arrive at common **Open Standards and Protocols**. This makes MOSIP easy to integrate, interoperable, cost- and time-efficient.\
+
+* **Vendor-Neutrality**: _Offering governments the ability to integrate with a wide range of compliant technologies._\
+  \
+  In the setting up of a foundational digital ID system, it is critical that platform, biometric devices, and system integrators, are able to integrate and function smoothly. Vendor-neutrality, maintained through the **MOSIP Partner Programme** and the establishment of the **MOSIP Marketplace** offers countries the ability to choose and change their technology solutions at any time, and save precious time and financial resources.\
+
+* **Privacy and Security**: _Ensuring that every individual is in control of their own data._\
+  \
+  MOSIP is designed keeping **data security and privacy** in mind, ensuring that data is protected in flight and rest. **Cryptographic encryption** and **zero knowledge architecture** ensure that no sensitive data is stored on the MOSIP system. Governments of adopting nations have sovereign control over their ID systems, and data sharing only happens with the individual’s consent.\
+
+* **Scalability**: The platform is designed to be scalable, accommodating the growth of users and services. \
+
+* **Human-Centricity:** _Unique technology for unique environments._\
+  \
+  We aim to develop technology that can cater to **diverse** and varying requirements around the world. The team at MOSIP constantly strives to learn from on-ground experiences in adopting nations, to understand their context-specific requirements and provide **adaptable** solutions.\
+
+* **Inclusivity**: _Technology that leaves no one behind._\
+  \
+  With the mission of empowering lives all over the world, MOSIP continues to take steps towards being an inclusive platform. Ongoing collaborations with global universities, research organizations, and strong on-ground teams have sharpened our focus on developing technology that is **unrestricted by gender, race,** and **economic status**. Additionally, technology features allow residents to access their digital identities even in remote areas with **low connectivity**.

@@ -1,3 +1,7 @@
+---
+icon: grid
+---
+
 # Architecture
 
 MOSIP is built on a modular, microservices-based architecture. Its modularity enables seamless adoption even in complex scenarios. Most [MOSIP modules](../modules/) are designed as robust foundational infrastructure components, making them suitable for integration into various projects.

@@ -2,6 +2,8 @@
 
 * [🍁 Home](README.md)
 * [🔍 Overview](overview/README.md)
+  * [Principles](overview/roadmap.md)
+  * [Inclusion](overview/inclusion.md)
   * [Architecture](overview/architecture.md)
   * [Standards & Specifications](overview/standards-and-specifications/README.md)
     * [169 - QR Code Specifications](overview/standards-and-specifications/169-qr-code-specification.md)
@@ -25,7 +27,6 @@
   * [CBEFF](biometrics/cbeff-xml.md)
   * [Compliance Tool Kit](https://docs.mosip.io/compliance-tool-kit/)
   * [SBISpec](biometrics/sbispec.md)
-* [Inclusion](inclusion.md)
 * [👫 Partners](partners.md)
 * [🛠️ Modules](modules/README.md)
   * [Administration](modules/administration/README.md)
