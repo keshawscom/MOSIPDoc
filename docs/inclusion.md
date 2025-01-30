@@ -1,5 +1,6 @@
 ---
 description: Technology that leaves no one behind.
+icon: people-roof
 ---
 
 # Inclusion
