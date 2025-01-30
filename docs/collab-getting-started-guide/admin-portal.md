@@ -4,7 +4,7 @@
 
 Welcome to the Admin Portal Collab Guide. The **Admin Portal** is a web-based application for administrative personnel to manage various master data sets. It provides functionalities to oversee resources such as registration centers, devices, machines, users, and security management. Admin users can also generate master keys, track registration status, retrieve lost RIDs, and resume paused packets.
 
-For a detailed breakdown of the Admin Portal features, please refer to the [**Administration Page**](https://docs.mosip.io/1.2.0/modules/administration/admin-portal-user-guide).
+For a detailed breakdown of the Admin Portal features, please refer to the [Administration Page](https://docs.mosip.io/1.2.0/modules/administration/admin-portal-user-guide).
 
 ### Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
@@ -16,7 +16,7 @@ For a detailed breakdown of the Admin Portal features, please refer to the [**Ad
 
 **Step 1:** Access the Admin Portal
 
-Visit the **Admin Portal** in the Collab environment by navigating to: [Admin Portal](https://mosip.atlassian.net/wiki/spaces/PROD/pages/1571815440/Admin+portal+-+Collab+Guide).
+Visit the **Admin Portal** in the Collab environment by navigating to the [Admin Portal](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client_id=mosip-admin-client\&redirect_uri=https://api-internal.collab.mosip.net/v1/admin/login-redirect/aHR0cHM6Ly9hZG1pbi5jb2xsYWIubW9zaXAubmV0Lw==\&state=022130ef-ff8f-4ef0-b6da-dc473b82f5b4\&response_type=code\&scope=email).
 
 **Step 2:** Log in to the Portal
 
