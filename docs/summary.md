@@ -2,8 +2,8 @@
 
 * [🍁 Home](README.md)
 * [🔍 Overview](overview/README.md)
-  * [Principles](overview/roadmap.md)
-  * [Inclusion](overview/inclusion.md)
+  * [Principles](overview/roadmap/README.md)
+    * [Inclusion](overview/roadmap/inclusion.md)
   * [Architecture](overview/architecture.md)
   * [Standards & Specifications](overview/standards-and-specifications/README.md)
     * [169 - QR Code Specifications](overview/standards-and-specifications/169-qr-code-specification.md)
