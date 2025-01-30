@@ -13,6 +13,8 @@ Along with the resource and data management, the admin can generate master keys,
 
 To learn more, refer to the video below!
 
+#### Session 1
+
 {% embed url="https://www.youtube.com/watch?v=v6KjyVoNcqI&list=PLF83tgjxrJvh6QVM27lxIYq5nlZx8rY8Z&index=1" %}
 
 ## First Admin user

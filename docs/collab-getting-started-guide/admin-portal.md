@@ -29,7 +29,7 @@ Once logged in, you can access the available features based on your role. Refer 
 
 ### Additional Resources <a href="#additional-resources" id="additional-resources"></a>
 
-Please watch [this video](https://docs.mosip.io/1.2.0/modules/administration/admin-portal-user-guide#session-1) to learn more about the features in the Admin Portal.
+Please watch this video to learn more about the features in the Admin Portal.
 
 ### Get in Touch <a href="#get-in-touch" id="get-in-touch"></a>
 
