@@ -11,15 +11,9 @@ An admin application is a web-based application used by a privileged group of ad
 
 Along with the resource and data management, the admin can generate master keys, check registration status, retrieve lost RID, and resume processing of paused packets. To start using the Admin portal, an admin user must be assigned to a zone.
 
-To learn more, refer to the videos below!
-
-#### **Session 1**
+To learn more, refer to the video below!
 
 {% embed url="https://www.youtube.com/watch?v=v6KjyVoNcqI&list=PLF83tgjxrJvh6QVM27lxIYq5nlZx8rY8Z&index=1" %}
-
-#### **Session2**
-
-{% embed url="https://www.youtube.com/watch?v=v6KjyVoNcqI&list=PLF83tgjxrJvh6QVM27lxIYq5nlZx8rY8Z&index=2" %}
 
 ## First Admin user
 
@@ -31,7 +25,7 @@ To learn more, refer to the videos below!
 **Note:**  On the login of the first admin user, user zone mapping is handled automatically.
 {% endhint %}
 
-The above is done automatically as part of [default sandbox installation](https://github.com/mosip/mosip-infra/tree/release-1.2.0/deployment/v3).
+The above is done automatically as part of the [default sandbox installation](https://github.com/mosip/mosip-infra/tree/release-1.2.0/deployment/v3).
 
 ### Login
 
@@ -110,15 +104,17 @@ To know more, refer [Activate/deactivate/decommission resources](./#Activate/dea
 
 ## Devices
 
-* Using this portal, an admin can manage the devices a country will use for registering residents like devices used for bio-metric capture (Fingerprint, Iris, Web camera, etc.), printers, scanners.
-* This portal allows an Admin to view, create, edit, activate, deactivate and decommission registration centers.
+* Using this portal, an admin can manage the devices a country will use for registering residents like devices used for bio-metric capture (Fingerprint, Iris, Web camera, etc.), printers, and scanners.
+* This portal allows an Admin to view, create, edit, activate, deactivate, and decommission registration centers.
 * The admin portal allows an admin to view the list of all the devices available in the jurisdiction of their administrative zone.
 * The system does not fetch the details of decommissioned devices but only the active and inactive devices.
 
-_Note_
+{% hint style="info" %}
+**Note:**
 
-* Device entity is language agnostic (independent of languages).
-* The data collected about Devices is used only for book keeping, i.e., MOSIP system does not use this data for any validation.
+* The device entity is language agnostic (independent of languages).
+* The data collected about Devices is used only for book keeping, i.e., the MOSIP system does not use this data for any validation.
+{% endhint %}
 
 ![](../../.gitbook/assets/admin-view-device.png)
 
@@ -216,7 +212,11 @@ An admin can deactivate or decommission a machine through the admin portal.
 
 #### Map/Un-map/re-map user to a zone
 
-![](../../.gitbook/assets/admin-user-zone-mapping.png) To map a user to a zone,
+&#x20;
+
+<figure><img src="../../.gitbook/assets/admin-user-zone-mapping.png" alt=""><figcaption></figcaption></figure>
+
+To map a user to a zone,
 
 1. Click Resources-> User Zone mapping
 2. Click **+Map Zone**
