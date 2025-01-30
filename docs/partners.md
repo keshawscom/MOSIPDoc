@@ -23,14 +23,13 @@ The MOSIP platform requires integration with several other systems. Typically, a
 
 ## Partner policies
 
-The MOSIP Partner Policy establishes a structured framework for collaboration between MOSIP adopters and their partners and defines the rules for data access and sharing. 
-It specifies which partners can access what information and the procedures for requesting it.For instance, a registered print provider automatically receives data via WebSub if designated under the print policy, whereas an authentication partner must actively call the authentication system to retrieve data based on policy guidelines. 
-If eKYC is permitted, the partner may receive additional personally identifiable information (PII). 
-The policy ensures granular control over shared attributes allowing different partners to receive varying levels of information; one may access only a name while another may obtain both a name and a photograph.
-This structured approach enhances security, compliance, and flexibility.
+The MOSIP Partner Policy establishes a structured framework for collaboration between MOSIP adopters and their partners and defines the rules for data access and sharing.&#x20;
+
+It specifies which partners can access what information and the procedures for requesting it, for instance, a registered print provider automatically receives data via WebSub if designated under the print policy whereas an authentication partner must actively call the authentication system to retrieve data based on policy guidelines. If eKYC is permitted, the partner may receive additional personally identifiable information (PII).&#x20;
+
+The policy ensures granular control over shared attributes allowing different partners to receive varying levels of information; one may access only a name while another may obtain both a name and a photograph. This structured approach enhances security, compliance, and flexibility.
 
 Learn more about [partner policies](https://docs.mosip.io/1.2.0/modules/partner-management-services/pms-revamp/functional-overview/auth-partner/end-user-guide#creating-policy-group-and-policy).
-
 
 ## Partner onboarding
 
