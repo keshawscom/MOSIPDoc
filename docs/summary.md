@@ -2,6 +2,8 @@
 
 * [🍁 Home](README.md)
 * [🔍 Overview](overview/README.md)
+  * [Principles](overview/principles/README.md)
+    * [Inclusion](overview/principles/inclusion.md)
   * [Principles](overview/roadmap/README.md)
     * [Inclusion](overview/roadmap/inclusion.md)
   * [Architecture](overview/architecture.md)
