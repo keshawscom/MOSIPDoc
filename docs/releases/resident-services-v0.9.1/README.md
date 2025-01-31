@@ -31,7 +31,7 @@ The key features provided on the Resident portal are:
    * View profile details of the logged in user (name, photo, and last login details)
    * Responsive UI support
 
-For a quick overview of the design principles and to understand the relationship of Resident Services with other services, read [Resident Services Overview](https://docs.mosip.io/1.2.0/modules/resident-services).
+For a quick overview of the design principles and to understand the relationship of Resident Services with other services, please refer to [Resident Services Overview](https://docs.mosip.io/1.2.0/modules/resident-services).
 
 ## **Major Highlights/Features** <a href="#id-2.-major-highlights-features" id="id-2.-major-highlights-features"></a>
 
@@ -39,14 +39,14 @@ For a quick overview of the design principles and to understand the relationship
 
 ## Repository Released&#x20;
 
-| Repositories     | Tags Released(To be updated soon) |
-| ---------------- | --------------------------------- |
-| resident-service | 1.2.1.1                           |
-| resident-ui      | 0.9.1                             |
-| mosip-config     | 1.2.3.1                           |
-| mosip-data       | 1.2.2.0                           |
-| admin-service    | 1.2.1.1                           |
-| postgres-init    | 1.2.0.2                           |
+| Repositories      | Tags Released                                                       |
+| ----------------- | ------------------------------------------------------------------- |
+| resident-services | [1.2.1.1](https://github.com/mosip/resident-services/tree/v1.2.1.1) |
+| resident-ui       | [0.9.1](https://github.com/mosip/resident-ui/tree/v0.9.1)           |
+| mosip-config      | [1.2.3.1](https://github.com/mosip/mosip-config/tree/v1.2.3.1)      |
+| mosip-data        | [1.2.2.0](https://github.com/mosip/mosip-data/tree/v1.2.2.0)        |
+| admin-services    | [1.2.1.1](https://github.com/mosip/admin-services/tree/v1.2.1.1)    |
+| postgres-init     | [1.2.0.2](https://github.com/mosip/postgres-init/tree/v1.2.0.2)     |
 
 ## **Enhancements**  <a href="#id-3.-enhancements" id="id-3.-enhancements"></a>
 
@@ -77,7 +77,7 @@ To get the complete list of known bugs please refer here \<link to be updated so
 
 ## **Compatible Modules** <a href="#id-6.-compatible-modules" id="id-6.-compatible-modules"></a>
 
-The following table outlines the tested and certified compatibility of \<version> with other modules.
+The following table outlines the tested and certified compatibility of v0.9.1 with other modules.
 
 | Module                                                          | Versions |
 | --------------------------------------------------------------- | -------- |

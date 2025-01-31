@@ -1,4 +1,4 @@
-# Android Registration Client         0.11.0-beta.1
+# Android Registration Client 0.11.0-beta.1
 
 **Release Name**: Android Registration Client 0.11.0-beta.1
 
@@ -28,7 +28,7 @@ Version 0.11.0-beta.1 of the Android Registration Client is the beta release, co
 
 ### **Repository Released**
 
-| **Repositories**            | **Tags Released**                                                                                 |
+| Repositories                | Tags Released                                                                                     |
 | --------------------------- | ------------------------------------------------------------------------------------------------- |
 | android-registration-client | [0.11.0-beta.1](https://github.com/mosip/android-registration-client/releases/tag/v0.11.0-beta.1) |
 
@@ -46,4 +46,4 @@ To learn more about the available features, processes, and user interface, refer
 
 ### **Known Issues**
 
-To view the list of known issues, refer [here](https://mosip.atlassian.net/issues/RCF-969?jql=parent%3Drcf-31%20and%20issuetype%3Dbug%20and%20status%20not%20in%20\(closed%2C%20Canceled\)%20and%20labels!%3DARC\_Real\_Device).&#x20;
+To view the list of known issues, please refer [here](https://mosip.atlassian.net/issues/RCF-969?jql=parent%3Drcf-31%20and%20issuetype%3Dbug%20and%20status%20not%20in%20\(closed%2C%20Canceled\)%20and%20labels!%3DARC_Real_Device).&#x20;
