@@ -177,6 +177,7 @@
   * [MOSIP Branching Strategy](community/mosip-branching-strategy.md)
   * [Community Calendars](community/community-calendar.md)
 * [📖 Releases](releases/README.md)
+  * [Resident Services 0.9.1](releases/resident-services-0.9.1.md)
   * [1.2.0.2 - Reg Processor & ID Repo](releases/1.2.0.2-reg-processor-and-id-repo/README.md)
     * [Test Report](releases/1.2.0.2-reg-processor-and-id-repo/test-report.md)
   * [1.2.1.0-beta.1 (Part 2)](releases/1.2.1.0-beta.1-part-2/README.md)
