@@ -70,8 +70,6 @@ To get the complete list of known bugs please refer here \<link to be updated>
 
 #### Key Issues
 
-Mentioned below is the list of other '**key known issues**'.
-
 | JIRA Issues                                                   | Issue Description                                                                            |
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | [MOSIP-38771](https://mosip.atlassian.net/browse/MOSIP-38771) | Update my data feature is not working as expected for a few UINs. The issue is intermittent. |

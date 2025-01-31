@@ -2,6 +2,11 @@
 
 ## Latest Releases 🌟
 
+**Version: 0.9.1 -  Resident Services**
+
+* **Date:** Coming Soon!&#x20;
+* [Release Notes](https://docs.mosip.io/1.2.0/releases/resident-services-0.9.1)
+
 **Version: 1.3.1 -  API Test Commons**
 
 * **Date:** 28th Jan, 2025
