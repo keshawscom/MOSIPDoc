@@ -2,11 +2,11 @@
 
 **Release version**: v0.9.1
 
-**Release Date**: Coming soon
+**Release Date**: Coming soon!
 
 ## Overview
 
-This is a 0.9.1 release of Resident Services, offering valuable insights into the range of features and functionality. Resident Services is designed to run on the 1.2.0.1 version of the MOSIP platform. Resident Services are the self-services that the residents themselves use via a portal. [Resident Portal](https://docs.mosip.io/1.2.0/modules/resident-services/resident-portal-user-guide) is a web-based UI application that provides residents of a country with services related to their Unique Identification Number (UIN). The residents can perform various operations related to their UIN/ VID and can also raise concerns if any through the portal.
+This is a v0.9.1 release of Resident Services, offering valuable insights into the range of features and functionality. Resident Services is designed to run on the 1.2.0.1 version of the MOSIP platform. Resident Services are the self-services that the residents themselves use via a portal. [Resident Portal](../../modules/resident-services/) is a web-based UI application that provides residents of a country with services related to their Unique Identification Number (UIN). The residents can perform various operations related to their UIN/ VID and can also raise concerns if any through the portal.
 
 The key features provided on the Resident portal are:
 
@@ -31,7 +31,7 @@ The key features provided on the Resident portal are:
    * View profile details of the logged in user (name, photo, and last login details)
    * Responsive UI support
 
-For a quick overview of the design principles and to understand the relationship of Resident Services with other services, please refer to [Resident Services Overview](https://docs.mosip.io/1.2.0/modules/resident-services).
+For a quick overview of the design principles and to understand the relationship of Resident Services with other services, please refer to the [Resident Services Overview](https://docs.mosip.io/1.2.0/modules/resident-services#overview) section.
 
 ## **Major Highlights/Features** <a href="#id-2.-major-highlights-features" id="id-2.-major-highlights-features"></a>
 
@@ -66,14 +66,14 @@ MOSIP provides a reference implementation of the resident portal that can be cus
 
 #### Complete List
 
-To get the complete list of known bugs please refer here \<link to be updated soon>
+To get the complete list of known bugs please refer here (link to be updated soon)
 
 #### Key Issues
 
 | JIRA Issues                                                   | Issue Description                                                                            |
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | [MOSIP-38771](https://mosip.atlassian.net/browse/MOSIP-38771) | Update my data feature is not working as expected for a few UINs. The issue is intermittent. |
-| [MOSIP-35282](https://mosip.atlassian.net/browse/MOSIP-35282) | video policy transactions allowed not working as per policy.                                 |
+| [MOSIP-35282](https://mosip.atlassian.net/browse/MOSIP-35282) | Video policy transactions allowed are not working as per policy.                             |
 
 ## **Compatible Modules** <a href="#id-6.-compatible-modules" id="id-6.-compatible-modules"></a>
 
