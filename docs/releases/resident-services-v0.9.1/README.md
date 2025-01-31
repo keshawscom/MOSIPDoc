@@ -1,4 +1,4 @@
-# Resident Services 0.9.1
+# Resident Services v0.9.1
 
 **Release version**: v0.9.1
 
@@ -35,22 +35,22 @@ For a quick overview of the design principles and to understand the relationship
 
 ## **Major Highlights/Features** <a href="#id-2.-major-highlights-features" id="id-2.-major-highlights-features"></a>
 
-\<To be updated soon>
+(To be updated soon)
 
 ## Repository Released&#x20;
 
-| Repositories     | Tags Released\<to be updated soon> |
-| ---------------- | ---------------------------------- |
-| resident-service | 1.2.1.1                            |
-| resident-ui      | 0.9.1                              |
-| mosip-config     | 1.2.3.1                            |
-| mosip-data       | 1.2.2.0                            |
-| admin-service    | 1.2.1.1                            |
-| postgres-init    | 1.2.0.2                            |
+| Repositories     | Tags Released(To be updated soon) |
+| ---------------- | --------------------------------- |
+| resident-service | 1.2.1.1                           |
+| resident-ui      | 0.9.1                             |
+| mosip-config     | 1.2.3.1                           |
+| mosip-data       | 1.2.2.0                           |
+| admin-service    | 1.2.1.1                           |
+| postgres-init    | 1.2.0.2                           |
 
 ## **Enhancements**  <a href="#id-3.-enhancements" id="id-3.-enhancements"></a>
 
-\<To be updated>
+(To be updated soon)
 
 ## Summary
 
@@ -66,7 +66,7 @@ MOSIP provides a reference implementation of the resident portal that can be cus
 
 #### Complete List
 
-To get the complete list of known bugs please refer here \<link to be updated>
+To get the complete list of known bugs please refer here \<link to be updated soon>
 
 #### Key Issues
 
@@ -128,4 +128,4 @@ The following table outlines the tested and certified compatibility of \<version
 * [Resident Portal User Guide](https://docs.mosip.io/1.2.0/modules/resident-services/resident-portal-user-guide)
 * [Functional Overview](https://docs.mosip.io/1.2.0/modules/resident-services/functional-overview)
 * [API Documentation](https://mosip.stoplight.io/docs/resident/9a5192571fc51-document)
-* Test Report\<link to be updated>
+* [Test Report](test-report.md)
