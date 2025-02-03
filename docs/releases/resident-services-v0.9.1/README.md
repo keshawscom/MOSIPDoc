@@ -21,18 +21,19 @@ The v0.9.1 release of Resident Services for MOSIP is the first patch update foll
 
 ## Major Highlights
 
-* **MOSIP Resident Services v0.9.1** is a patch release on v0.9.0, focusing on bug fixes, security, and performance improvements, along with minor feature enhancements.
-* **Key highlight**: Certain attributes now come from **mosip-config** instead of being hardcoded, enabling users for easier configuration.
+**Bug fixes -** Security, and performance improvements, along with minor feature enhancements.
+
+**Key highlights -** Certain attributes now come from **mosip-config** instead of being hardcoded, enabling users for easier configuration.
 
 ## Summary
 
 #### Services
 
-For a detailed description of Resident services, the code, and the design, refer to the [resident services repo](https://github.com/mosip/resident-services/releases/tag/v1.2.1.0).
+For a detailed description of Resident services, the code, and the design, refer to the [resident services repo](https://github.com/mosip/resident-services/tree/v1.2.1.1).
 
 #### Resident Portal UI
 
-MOSIP provides a reference implementation of the resident portal that can be customized to the country’s needs. The sample implementation is available [here](https://github.com/mosip/resident-ui/releases/tag/v0.9.0).
+MOSIP provides a reference implementation of the resident portal that can be customized to the country’s needs. The sample implementation is available [here](https://github.com/mosip/resident-ui/releases/tag/v0.9.1).
 
 ## Known Issues
 
@@ -87,10 +88,10 @@ The following table outlines the tested and certified compatibility of v0.9.1 wi
 | mosipid/registration-processor-registration-transaction-service | [1.2.0.1](https://github.com/mosip/registration/tree/v1.2.0.1/registration-processor/post-processor/registration-processor-registration-transaction-service) |
 | mosipid/registration-processor-workflow-manager-service         | [1.2.0.1](https://github.com/mosip/registration/tree/v1.2.0.1/registration-processor/workflow-engine/registration-processor-workflow-manager-service)        |
 | mosipid/kernel-auditmanager-service                             | [1.2.0.1](https://github.com/mosip/audit-manager/tree/v1.2.0.1)                                                                                              |
-| mosipid/kernel-masterdata-service                               | [1.2.1.0](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/kernel-masterdata-service)                                                             |
-| mosipid/admin-service                                           | [1.2.1.0](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/admin-service)                                                                         |
-| mosipid/hotlist-service                                         | [1.2.1.0](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/hotlist-service)                                                                       |
-| mosipid/kernel-syncdata-service                                 | [1.2.1.0](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/kernel-syncdata-service)                                                               |
+| mosipid/kernel-masterdata-service                               | [1.2.1.1](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/kernel-masterdata-service)                                                             |
+| mosipid/admin-service                                           | [1.2.1.1](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/admin-service)                                                                         |
+| mosipid/hotlist-service                                         | [1.2.1.1](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/hotlist-service)                                                                       |
+| mosipid/kernel-syncdata-service                                 | [1.2.1.1](https://github.com/mosip/admin-services/tree/v1.2.1.1/admin/kernel-syncdata-service)                                                               |
 | mosipid/digital-card-service                                    | [1.2.0.1](https://github.com/mosip/digital-card-service/tree/v1.2.0.1)                                                                                       |
 | mosipid/print                                                   | [1.2.0.1](https://github.com/mosip/print/tree/v1.2.0.1)                                                                                                      |
 | mosipid/commons-packet-service                                  | [1.2.0.1](https://github.com/mosip/packet-manager/tree/v1.2.0.1/commons-packet/commons-packet-service)                                                       |
