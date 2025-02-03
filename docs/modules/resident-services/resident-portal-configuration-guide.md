@@ -11,7 +11,28 @@ Resident Service uses the following configuration files:
 ```
 application-default.properties
 resident-default.properties
+resident-ui-share-credential-schema.json
+resident-ui-update-demographics-schema.json
+resident-ui-personalized-card-schema.json
 ```
+
+### Resident Services dependent modules configuration files
+
+{% hint style="info" %}
+Changes are done only in the below config files for dependent modules.
+{% endhint %}
+
+id-repository-default.properties
+
+id-authentication-default.properties
+
+mosip-vid-policy.json
+
+registration-default.properties
+
+#### Changes done in the MOSIP config repo
+
+Please go to the [Files changes](https://github.com/mosip/mosip-config/compare/v1.2.2.0...v1.2.3.1#diff-92203d1941cd9aa59b2bf9ec85975363157fc644d7dc923e795f67e54dd4ed29) section and refer to removed and added properties.
 
 ### Database
 
@@ -640,6 +661,7 @@ resident.template.purpose.failure.REVOKE_VID=gen-or-revoke-vid-negative-purpose
 resident.template.purpose.failure.GET_MY_ID=get-my-uin-card-negative-purpose
 resident.template.purpose.failure.VALIDATE_OTP=verify-my-phone-email-negative-purpose
 resident.template.purpose.failure.VID_CARD_DOWNLOAD=vid-card-download-negative-purpose
+resident.template.purpose.failure.AUTHENTICATION_REQUEST=authentication-request-negative-purpose
 ```
 
 ## Template type codes for purpose (Cancelled) content
@@ -667,6 +689,7 @@ resident.template.summary.success.REVOKE_VID=gen-or-revoke-vid-success-summary
 resident.template.summary.success.GET_MY_ID=get-my-uin-card-success-summary
 resident.template.summary.success.VALIDATE_OTP=verify-my-phone-email-success-summary
 resident.template.summary.success.VID_CARD_DOWNLOAD=vid-card-download-positive-summary
+resident.template.summary.success.AUTHENTICATION_REQUEST=authentication-request-positive-summary
 ```
 
 ## Template type code for summary (cancelled) content
@@ -1139,6 +1162,7 @@ resident.cache.expiry.time.millisec.getCenterDetails=86400000
 resident.cache.expiry.time.millisec.getImmediateChildrenByLocCode=86400000
 resident.cache.expiry.time.millisec.getLocationHierarchyLevels=86400000
 resident.cache.expiry.time.millisec.getAllDynamicFieldByName=86400000
+resident.cache.expiry.time.millisec.getNameValueFromIdentityMapping=86400000
 ```
 
 ### Separators
@@ -1620,9 +1644,6 @@ This is used in Resident in Update UIN feature to show remaining update count fo
 		"fullName": 2,
 		"gender": 4,
 		"dateOfBirth": 3
-
-		
-		
 	}
 }
 ```
@@ -1631,6 +1652,4 @@ This is used in Resident in Update UIN feature to show remaining update count fo
 
 This file contains Mvel method definitions for masking attributes, getting passwords, and formatting attributes.
 
-This is used in Resident for downloading PDF cards and for masking attributes in the share credential feature and personalize card feature.
-
-[https://github.com/mosip/mosip-config/blob/pla-1.2.0.1/credentialdata.mvel](https://github.com/mosip/mosip-config/blob/pla-1.2.0.1/credentialdata.mvel)
+This is used in Resident for downloading PDF cards and for [masking attributes](https://github.com/mosip/mosip-config/blob/v1.2.3.1/credentialdata.mvel) in the share credential feature and personalize card feature.
