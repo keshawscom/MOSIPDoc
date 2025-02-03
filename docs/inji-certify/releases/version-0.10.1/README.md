@@ -1,10 +1,10 @@
-# Version 0.10.0
+# Version 0.10.1
 
-**Release Version**: v0.10.0
+**Release Version**: v0.10.1
 
 **Release Type**: Developer Release
 
-**Release** **Date**: Coming Soon
+**Release** **Date**: 3rd February, 2025
 
 ### **Overview**
 
@@ -27,7 +27,7 @@ Inji Certify continues to innovate by integrating new features that enhance the 
 
 ### **Bug Fixes**
 
-Below is the list of bug fixes as part of the **0.10.0** release:
+Below is the list of bug fixes as part of the **0.10.1** release:
 
 | **Jira ID**                                                     | **Description**                                         |
 | --------------------------------------------------------------- | ------------------------------------------------------- |
@@ -46,7 +46,7 @@ Below is the list of known issues. To read in detail and view all the topics rel
 
 | Repositories               | Tags Released                                                                       |
 | -------------------------- | ----------------------------------------------------------------------------------- |
-|  inji-certify              |  [**v0.10.0**](https://github.com/mosip/inji-certify/tree/v0.10.0)                  |
+|  inji-certify              | [ **v0.10.1**](https://github.com/mosip/inji-certify/tree/v0.10.1)                  |
 | digital-credential-plugins | [**v0.3.0**](https://github.com/mosip/digital-credential-plugins/tree/v0.3.0)       |
 | artifactory                | [**v0.10.0-INJI**](https://github.com/mosip/digital-credential-plugins/tree/v0.3.0) |
 | inji-config                | [**v0.5.0**](https://github.com/mosip/inji-config/tree/v0.5.0)                      |
@@ -72,4 +72,4 @@ The following table outlines the tested and certified compatibility of \<release
 
 * [Feature Documentation](https://docs.inji.io/inji-certify/functional-overview/features)
 * [Integration Guide](https://docs.inji.io/inji-certify/build-and-deploy/local-setup)
-* QA Report
+* [QA Report](https://docs.inji.io/inji-verify/releases/version-0.10.1/test-report)
