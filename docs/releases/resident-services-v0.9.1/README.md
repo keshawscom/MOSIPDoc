@@ -6,32 +6,7 @@
 
 ## Overview
 
-This is a v0.9.1 release of Resident Services, offering valuable insights into the range of features and functionality. Resident Services is designed to run on the 1.2.0.1 version of the MOSIP platform. Resident Services are the self-services that the residents themselves use via a portal. [Resident Portal](../../modules/resident-services/) is a web-based UI application that provides residents of a country with services related to their Unique Identification Number (UIN). The residents can perform various operations related to their UIN/ VID and can also raise concerns if any through the portal.
-
-The key features provided on the Resident portal are:
-
-1. Avail UIN services using UIN/ VID (through [eSignet](https://docs.esignet.io)):
-   * View My History
-   * Manage My VID
-   * Secure My ID
-   * Track My Requests
-   * Get Personalised Card
-   * Share My Data
-   * Update My Data
-   * Login and Logout
-2. Get Information
-   1. Get the list of Registration Centres
-   2. Get the list of Supporting Documents
-3. Get My UIN (using UIN/ VID/ AID)
-4. Verify Email ID and/ or phone number
-5. Book an appointment for new enrolment (via the pre-registration portal)
-6. Ancillary features
-   * Multi-lingual support
-   * Get Notifications (email and bell notifications)
-   * View profile details of the logged in user (name, photo, and last login details)
-   * Responsive UI support
-
-For a quick overview of the design principles and to understand the relationship of Resident Services with other services, please refer to the [Resident Services Overview](https://docs.mosip.io/1.2.0/modules/resident-services#overview) section.
+The v0.9.1 release of Resident Services for MOSIP is the first patch update following v0.9.0. This release primarily addresses bug fixes, security improvements, and performance enhancements, along with minor feature updates. A key highlight of this patch is the transition of certain attributes from being hardcoded to being configurable via mosip-config, making customization more flexible for users.
 
 ## Repository Released&#x20;
 
