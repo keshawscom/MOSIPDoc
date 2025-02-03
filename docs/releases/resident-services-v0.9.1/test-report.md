@@ -62,7 +62,7 @@ For regression check, “MOSIP Test Rig” - an automation testing suite - is in
 
 Verification is performed on various configurations as mentioned below
 
-&#x20;    ●        Default configuration - with 3 Languages (English/Arabic/French)
+&#x20;    ●   Default configuration - with 3 Languages (English/Arabic/French)
 
 ## Test execution statistics
 
@@ -115,4 +115,4 @@ The various metrics that assist in test tracking and efficiency are as follows:
 
 <figure><img src="../../.gitbook/assets/0.9.1-sonar-report.png" alt=""><figcaption><p>Sonar Report</p></figcaption></figure>
 
-Please refer to the GitHub link for the XLS file given here(To be updated)
+Please refer to the GitHub link for the XLS file given [here](https://github.com/mosip/test-management/tree/master/Resident%20Revamp%201.2.0.1/0.9.1).

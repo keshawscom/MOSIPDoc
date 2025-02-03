@@ -2,33 +2,33 @@
 
 ## Latest Releases 🌟
 
-**Version: 0.9.1 -  Resident Services**
+**Version: 0.9.1 - Resident Services**
 
-* **Date:** Coming Soon!&#x20;
+* **Date:** 28th, Jan 2025
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/resident-services-0.9.1)
 
-**Version: 1.3.1 -  API Test Commons**
+**Version: 1.3.1 - API Test Commons**
 
 * **Date:** 28th Jan, 2025
 * [Release Notes](api-test-commons-releases/v1.3.1.md)
 
-**Version:  1.2.0.2(Reg Processor & ID Repo)**
+**Version: 1.2.0.2 (Reg Processor & ID Repo)**
 
 * **Date:** 8th January, 2025
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/1.2.0.2-reg-processor-and-id-repo)
 
-**Version: 1.2.1.0-beta.1(Part 2)**
+**Version: 1.2.1.0-beta.1 (Part 2)**
 
 * **Support:** Beta Release
 * **Date:** 16th December, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/1.3.0-beta.1)
 
-**Version: 1.3.0 -  API Test Commons**
+**Version: 1.3.0 - API Test Commons**
 
 * **Date:** 12th December, 2024
 * [Release Notes](https://docs.mosip.io/1.2.0/releases/api-test-commons-releases/v1.3.0)
 
-**Version: 1.2.0.1-beta.1(Part 1)**
+**Version: 1.2.0.1-beta.1 (Part 1)**
 
 * **Support:** Beta Release
 * **Date:** 26th November, 2024
