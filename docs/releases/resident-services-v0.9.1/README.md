@@ -2,7 +2,7 @@
 
 **Release version**: v0.9.1
 
-**Release Date**: 28th, Jan 2025
+**Release Date**: 28th January, 2025
 
 ## Overview
 
