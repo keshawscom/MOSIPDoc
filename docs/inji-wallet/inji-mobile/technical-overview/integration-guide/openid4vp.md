@@ -246,4 +246,41 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 
 The below diagram shows the interactions between Inji Wallet, Verifier and OpenID4VP library.
 
-<figure><img src="../../../../.gitbook/assets/inji_mobile_wallet_openid4vp_sequence_diagram.png" alt=""><figcaption></figcaption></figure>
+```mermaid
+sequenceDiagram
+    participant Verifier as 🔍 Verifier
+    participant Wallet as 📱 Wallet
+    participant Library as 📚 Native Library
+    
+    Note over Verifier: Generate QR Code with<br/>Authorization Request
+    Wallet -->> Verifier: Scan QR Code
+    Wallet -->> Library: Forward Authorization Request
+
+    activate Library
+    Note over Library: Validate Request against:<br/>1. Client ID<br/>2. Response URI<br/>3. Trusted Verifiers
+    Note over Library: Validate Required Fields<br/>and Values
+    deactivate Library
+    Library-->>Wallet: Return Validated Authorization
+    
+
+    activate Wallet
+    Note over Wallet: Display Matching VCs<br/>to User
+    deactivate Wallet
+    
+    Wallet-->>Library: Send Selected VCs<br/>with User Consent
+    Library-->>Library: Construct VP Token
+    Library-->>Wallet: Return VP Token
+    
+    activate Wallet
+    Note over Wallet: Sign VP Token
+    Note over Wallet: Construct JWS Token
+    deactivate Wallet
+    Wallet-->>Library: Send Signed JWS Token
+    
+    activate Library
+    Note over Library: Construct Proof Object
+    Note over Library: Attach Proof to VP Token
+    deactivate Library
+    
+    Library-->>Verifier: HTTP POST Request with:<br/>1. VP Token<br/>2. Presentation Submission<br/>3. State
+```
