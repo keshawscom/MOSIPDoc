@@ -4,7 +4,7 @@ This library enables consumer applications (mobile wallet) to share users Verifi
 Verifiers who request them online. It adheres to the OpenID4VP [specification](https://openid.net/specs/openid-4-verifiable-presentations-1_0-21.html) which outlines the standards for
 requesting and presenting Verifiable Credentials.
 
-### Functionalities / steps that are performed by the library from decoding the Request to sending the response to the Verifier:
+### Library Functionalities: Processing the Request from Decoding to Verifier Response
 
 1. Receives the Verifier's Authorization Request sent by the consumer application (mobile wallet).
 2. Authenticates the Verifier using the received **client_id** and validates the whole Request to check if the required
@@ -21,7 +21,7 @@ requesting and presenting Verifiable Credentials.
 7. Below sections details on the steps for integrating the Kotlin and Swift packages into the app.
    Below sections details on the steps for integrating the Kotlin and Swift packages into the app.
 
-## Android: Kotlin package for openid4vp:
+## Android: Kotlin package for OpenID4VP:
 
 ### Repository
 
@@ -34,13 +34,14 @@ Snapshot builds are available [here](https://oss.sonatype.org/content/repositori
 Note: implementation "io.mosip:inji-openID4VP:0.1.0-SNAPSHOT"
 {% endhint %}
 
-### Create instance of OpenId4VP library to invoke its methods
+### Create instance of OpenID4VP library to invoke its methods
 
 val openID4VP = OpenID4VP("test-OpenID4VP")
 
 ### APIs
 
 Below are the APIs provided by this library:
+
 **1. authenticateVerifier**
 
 -   Receives a list of trusted verifiers & Verifier's encoded Authorization request from consumer app(mobile wallet).
@@ -52,6 +53,7 @@ Below are the APIs provided by this library:
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |------------------------------|----------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | encodedAuthenticationRequest | String | Base64 encoded string containing the Verifier's authorization request | `"T1BFTklENFZQOi8vYXV0"` |
@@ -69,7 +71,8 @@ Below are the APIs provided by this library:
 4. InvalidInput exception is thrown if any of required params value is empty or null
 5. InvalidVerifierClientID exception is thrown if the received request client_iD & response_uri are not matching with any of the trusted verifiers
    This method will also notify the Verifier about the error by sending it to the response_uri endpoint over http post request. If response_uri is invalid and validation failed then Verifier won't be able to know about it.
-   **2. constructVerifiablePresentation**
+   
+**2. constructVerifiablePresentation**
 
 -   Receives a map of input_descriptor id & list of verifiable credentials for each input_descriptor that are selected by the end-user.
 -   Creates a vp_token without proof using received input_descriptor IDs and verifiable credentials, then returns its string representation to consumer app(mobile wallet) for signing it.
@@ -79,6 +82,7 @@ Below are the APIs provided by this library:
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | verifiableCredentials | Map<String, List<String>> | A Map which contains input descriptor id as key and corresponding matching Verifiable Credentials list as value. | `mapOf("id_123" to listOf("vc1","vc2"))` |
@@ -87,7 +91,8 @@ Below are the APIs provided by this library:
 
 1. JsonEncodingFailed exception is thrown if there is any issue while serializing the vp_token without proof.
    This method will also notify the Verifier about the error by sending it to the response_uri endpoint over http post request. If response_uri is invalid and validation failed then Verifier won't be able to know about it.
-   **3. shareVerifiablePresentation**
+   
+**3. shareVerifiablePresentation**
 
 -   This function constructs a vp_token with proof using received VPResponseMetadata, then sends it and the presentation_submission to the Verifier via a HTTP POST request.
 -   Returns the response back to the consumer app(mobile app) saying whether it has received the shared Verifiable Credentials or not.
@@ -97,6 +102,7 @@ Below are the APIs provided by this library:
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |---------------------|---------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | vpResponseMetadata | VPResponseMetadata | This contains domain & proof details such as jws, signatureAlgorithm, publicKey, domain | `VPResponseMetadata(jws = "eyJiweyrtwegrfwwaBKCGSwxjpa5suaMtgnQ",signatureAlgorithm = "RsaSignature2018",publicKey = "publicKey",domain = "https://domain.net")")` |
@@ -107,7 +113,8 @@ Below are the APIs provided by this library:
 2. InterruptedIOException is thrown if the connection is timed out when network call is made.
 3. NetworkRequestFailed exception is thrown when there is any other exception occurred when sending the response over http post request.
    This method will also notify the Verifier about the error by sending it to the response_uri endpoint over http post request. If response_uri is invalid and validation failed then Verifier won't be able to know about it.
-   **4. sendErrorToVerifier**
+   
+**4. sendErrorToVerifier**
 
 -   Receives an exception and sends its message to the Verifier via an HTTP POST request.
 
@@ -116,6 +123,7 @@ Below are the APIs provided by this library:
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |-----------|-----------|------------------------------------|----------------------------------|
 | exception | Exception | This contains the exception object | `new Exception("exception message")` |
@@ -125,7 +133,7 @@ Below are the APIs provided by this library:
 1. InterruptedIOException is thrown if the connection is timed out when network call is made.
 2. NetworkRequestFailed exception is thrown when there is any other exception occurred when sending the response over http post request.
 
-## iOS: Swift package for openid4vp:
+## iOS: Swift package for OpenID4VP:
 
 ### Repository
 
@@ -133,11 +141,11 @@ Below are the APIs provided by this library:
 
 ### Installation
 
-1. Clone the repo
-2. In your swift application go to file > add package dependency > add the https://github.com/mosip/inji-vci-client-ios-swift in git search bar > add package
+1. Clone the repo.
+2. In your swift application go to file > add package dependency > add the https://github.com/mosip/inji-openid4vp-ios-swift in git search bar > add package.
 3. Import the library and use.
 
-### Create instance of OpenId4VP library to invoke its methods
+### Create instance of OpenID4VP library to invoke its methods
 
 let openID4VP = OpenID4VP(traceabilityId: "AXESWSAW123", networkManager: NetworkManager)
 
@@ -154,6 +162,7 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |-----------------------------|------------|--------------------------------------------------------------------------------------|------------------------------------------------------|
 | encodedAuthorizationRequest | String | Base64 encoded string containing the Verifier's authorization request | `"T1BFTklENFZQOi8vYXV0"` |
@@ -171,7 +180,8 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 4. InvalidInput exception is thrown if any of required params value is empty or null
 5. InvalidVerifierClientID exception is thrown if the received request client_iD & response_uri are not matching with any of the trusted verifiers
    This method will also notify the Verifier about the error by sending it to the response_uri endpoint over http post request. If response_uri is invalid and validation failed then Verifier won't be able to know about it.
-   **2. constructVerifiablePresentation**
+   
+**2. constructVerifiablePresentation**
 
 -   Receives a map of input_descriptor id & list of verifiable credentials for each input_descriptor that are selected by the end-user.
 -   Creates a vp_token without proof using received input_descriptor IDs and verifiable credentials, then returns its string representation to consumer app(mobile wallet) for signing it.
@@ -181,6 +191,7 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |----------------|--------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------|
 | credentialsMap | [String: [String]] | A Map which contains input descriptor id as key and corresponding matching Verifiable Credentials list as value | `["bank_input":["VC1","VC2"]]` |
@@ -189,7 +200,8 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 
 1. JsonEncodingFailed exception is thrown if there is any issue while serializing the vp_token without proof.
    This method will also notify the Verifier about the error by sending it to the response_uri endpoint over http post request. If response_uri is invalid and validation failed then Verifier won't be able to know about it.
-   **3. shareVerifiablePresentation**
+   
+**3. shareVerifiablePresentation**
 
 -   This function constructs a vp_token with proof using received VPResponseMetadata, then sends it and the presentation_submission to the Verifier via a HTTP POST request.
 -   Returns the response back to the consumer app(mobile app) saying whether it has received the shared Verifiable Credentials or not.
@@ -199,6 +211,7 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |---------------------|---------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | vpResponseMetadata | VPResponseMetadata | This contains domain & proof details such as jws, signatureAlgorithm, publicKey, domain | `VPResponseMetadata(jws: "jws", signatureAlgorithm: "signatureAlgoType", publicKey: "publicKey", domain: "domain")` |
@@ -209,7 +222,8 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 2. InterruptedIOException is thrown if the connection is timed out when network call is made.
 3. NetworkRequestFailed exception is thrown when there is any other exception occurred when sending the response over http post request.
    This method will also notify the Verifier about the error by sending it to the response_uri endpoint over http post request. If response_uri is invalid and validation failed then Verifier won't be able to know about it.
-   **4. sendErrorToVerifier**
+   
+**4. sendErrorToVerifier**
 
 -   Receives an exception and sends its message to the Verifier via an HTTP POST request.
 
@@ -218,6 +232,7 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 ```
 
 **Parameters**
+
 | Name | Type | Description | Sample |
 |-------|-------|------------------------------------|-----------------------------------------------------------------------------------|
 | error | Error | This contains the exception object | `AuthorizationConsent.consentRejectedError(message: "User rejected the consent")` |
@@ -231,4 +246,4 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 
 The below diagram shows the interactions between Inji Wallet, Verifier and OpenID4VP library.
 
-<figure><img src="../../../../.gitbook/assets/inji_mobile_wallet_openid4vp-sequence-diagram.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inji_mobile_wallet_openid4vp_sequence_diagram.png" alt=""><figcaption></figcaption></figure>
