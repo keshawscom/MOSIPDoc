@@ -8,9 +8,9 @@ For a detailed breakdown of the Admin Portal features, please refer to the [Admi
 
 ### Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
-* Accessing the Admin portal in the Collab environment does not require any complex setup.
+* Accessing the Admin portal in the Collab environment requires no complex setup.
 * All you need is a **username and password** to login to the [Admin Portal](https://iam.collab.mosip.net/auth/realms/mosip/protocol/openid-connect/auth?client_id=mosip-admin-client\&redirect_uri=https://api-internal.collab.mosip.net/v1/admin/login-redirect/aHR0cHM6Ly9hZG1pbi5jb2xsYWIubW9zaXAubmV0Lw==\&state=022130ef-ff8f-4ef0-b6da-dc473b82f5b4\&response_type=code\&scope=email).
-* If you do not have credentials, you can request access **here.** \<link to be updated soon>
+* If you do not have credentials, you can request access [here](https://forms.gle/CvUzXSPWQFJ7iBrL7)**.**
 
 ### Step-by-Step Guide <a href="#step-by-step-guide" id="step-by-step-guide"></a>
 
