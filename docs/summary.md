@@ -30,7 +30,6 @@
     * [Technical Stack](inji-wallet/inji-mobile/technical-overview/technical-stack.md)
     * [Components](inji-wallet/inji-mobile/technical-overview/components.md)
     * [Integration Guides](inji-wallet/inji-mobile/technical-overview/integration-guide/README.md)
-      * [openid4vp](inji-wallet/inji-mobile/technical-overview/integration-guide/openid4vp.md)
       * [Face Match](inji-wallet/inji-mobile/technical-overview/integration-guide/face-match.md)
       * [Secure Keystore](inji-wallet/inji-mobile/technical-overview/integration-guide/secure-keystore.md)
       * [Tuvali](inji-wallet/inji-mobile/technical-overview/integration-guide/tuvali/README.md)
