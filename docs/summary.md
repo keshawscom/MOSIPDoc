@@ -39,6 +39,7 @@
       * [PixelPass](inji-wallet/inji-mobile/technical-overview/integration-guide/pixelpass.md)
       * [Telemetry](inji-wallet/inji-mobile/technical-overview/integration-guide/telemetry.md)
       * [VCI-Client](inji-wallet/inji-mobile/technical-overview/integration-guide/vci-client.md)
+      * [OpenID4VP](inji-wallet/inji-mobile/technical-overview/integration-guide/openid4vp.md)
     * [Specifications](inji-wallet/inji-mobile/technical-overview/specifications/README.md)
       * [Face SDK Specifications](inji-wallet/inji-mobile/technical-overview/specifications/face-sdk-specifications.md)
     * [Backend Services](inji-wallet/inji-mobile/technical-overview/backend-services/README.md)
