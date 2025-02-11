@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Version 0.14.1
 
 **Release Name:** Inji Wallet 0.14.1(Patch)
@@ -17,7 +13,7 @@ This patch release addresses a critical issue related to iOS dependency manageme
 **Key Highlights:**
 
 * **Fixed:** Checksum issue with Boost dependency in iOS, ensuring successful package installation.
-* **iOS TestFlight Republish:** The previous TestFlight build for the **release**-[**0.14.0**](https://github.com/mosip/mimoto/tree/v0.14.0) expired due to the 90-day limit. This patch enables republishing without requiring additional changes to the release branch.
+* **iOS TestFlight Republish:** The previous TestFlight build for **release**-[**0.14.0**](https://github.com/mosip/mimoto/tree/v0.14.0) expired due to the 90-day limit. This patch enables republishing without requiring additional changes to the release branch.
 * **Build Process Improvement:** The IPA is rebuilt and republished from the same branch, ensuring smooth distribution on TestFlight.
 
 This patch ensures that iOS builds remain functional and available for testing and deployment.
@@ -59,5 +55,4 @@ The list of known issues can be found [**here**](https://mosip.atlassian.net/jir
 * [**Feature Documentation**](https://docs.mosip.io/inji/inji-mobile-wallet/overview/features)
 * [**Integration Guides**](https://docs.mosip.io/inji/inji-mobile-wallet/integration-guide)
 * [**User Guide**](https://docs.mosip.io/inji/inji-mobile-wallet/end-user-guide)
-* [**QA Report**](https://docs.inji.io/inji-wallet/inji-mobile/versions/version-0.14.0/test-report)
 * [**API Documentation**](https://github.com/mosip/mimoto/tree/release-0.10.0/docs/postman-collections)

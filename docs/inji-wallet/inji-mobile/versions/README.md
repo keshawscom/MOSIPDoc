@@ -2,7 +2,7 @@
 
 ## Version: 0.14.1
 
-* Name: Inji Wallet 0.14.1
+* Name: Inji Wallet 0.14.1(Patch)
 * Date: Coming Soon
 * [Release Notes](version-0.14.1.md)
 
