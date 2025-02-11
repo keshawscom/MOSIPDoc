@@ -234,7 +234,6 @@ let response = try authenticateVerifier(encodedAuthorizationRequest: String, tru
 
 The below diagram shows the interactions between Inji Wallet, Verifier and OpenID4VP library.
 
-````mermaid
 ```mermaid
 sequenceDiagram
     participant Verifier as 🔍 Verifier
@@ -272,4 +271,8 @@ sequenceDiagram
     deactivate Library
     
     Library-->>Verifier: HTTP POST Request with:<br/>1. VP Token<br/>2. Presentation Submission<br/>3. State
-````
+
+```
+
+
+
