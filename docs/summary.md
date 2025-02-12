@@ -15,6 +15,7 @@
     * [Code of Conduct](readme/contribution/code-of-conduct.md)
   * [License](readme/license.md)
   * [Announcement](readme/announcement.md)
+  * [Deploy](readme/deploy.md)
 
 ## Inji Wallet
 
