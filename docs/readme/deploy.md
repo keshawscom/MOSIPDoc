@@ -4,11 +4,6 @@ hidden: true
 
 # Deploy
 
-Rough - OpenIDVP Sequence Diagram - Inji Wallet - 0.15.0
-
-* Bhargavi and other devs and their PRs needs to be checked for basic checks..
-* Term OpenIDVP to be termed as this.
-* User Guide - Inji Wallet - 0.15.0 (Screenshot - InjiWallet + Inji Verify)
 
 ## Abhishek
 
@@ -33,7 +28,96 @@ If it is being deployed with MOSIP/eSignet/PMS etc
 
 Scenario - 6 Need a High level Architecture Diagram Also - Other products (MOSIP/Esignet) - How does their components interact
 
-## eSignet - Deployment Guide
+## Prerequisites
+
+Necessary dependencies or packages. Required version for your system or other system requirements. Specialist knowledge or skills.
+
+### Operating System Considerations
+
+
+# Inji Installation Guide (Abhishek)
+
+1. Install prerequsits on the system before stating deployment:
+
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#prerequisites)
+
+2. To create cluster request devops team to provide the Node details OR ask for AWS access :
+
+3. Clone the Kubernetes Infrastructure Repository:
+
+Clone the k8s-infra repository from the v1.2.0.2 tag:
+
+git clone -b v1.2.0.2 https://github.com/mosip/k8s-infra.git cd k8s-infra/mosip/onprem
+
+4. Create copy of hosts.ini.sample as hosts.ini. Update the IP addresses.
+
+5. Open the ports for the nodes:
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#ports
+
+6. Docker installation:
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#docker
+
+7. Create RKE cluster: 
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#docker
+
+8. Apply global config map:
+https://github.com/mosip/k8s-infra/blob/v1.2.0.2/mosip/global\_configmap.yaml.sample
+
+9. Import cluster
+
+10. NGINX setup: 
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem/nginx
+
+11. NFS setup:
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/nfs
+
+12. Monitoring:
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/monitoring#install
+
+13. Istio Setup:
+https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem/istio#install
+
+## INSTALL THE REQUIRED EXTERNAL AND MOSIP SERVICES BASED ON THE COMPATIBILITY OF THE EXISTING SYSTEM.
+
+14. Postgres installation: 
+
+https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/external/postgres
+
+15. conf-secret installation:
+
+https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/conf-secrets
+
+16. config-server installation:
+
+https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/config-server
+
+17. artifactory installation:
+
+https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/artifactory
+
+18. datashare installation:
+
+https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/datashare
+
+19. mimoto installation: 
+
+https://github.com/mosip/mimoto/tree/develop/helm/mimoto
+
+20. Inji web and datashare installation: 
+
+https://github.com/mosip/inji-web/tree/v0.10.0/helm/inji-web
+
+21. Inji Verify installation:
+
+https://github.com/mosip/inji-verify/tree/v0.10.0
+
+22. Inji Certify installation:
+
+https://github.com/mosip/inji-certify/tree/v0.9.1
+
+
+
+# eSignet - Deployment Guide
 
 ## eSignet and Dependencies Deployment in Kubernetes cluster
 
@@ -376,62 +460,3 @@ cd esignet-signup
 3. Install [eSignet signup](https://github.com/mosip/esignet-signup/tree/release-1.1.x?tab=readme-ov-file#install-signup-service) services.
 4. Deploy dependencies for eSignet signup onboarder following [steps](https://github.com/mosip/esignet-signup/tree/release-1.1.x?tab=readme-ov-file#prerequisites-for-mosip-kernel-services).
 5. [Onboard](https://github.com/mosip/esignet-signup/tree/release-1.1.x/partner-onboarder#partner-onboarder) eSignet signup services.
-
-## Prerequisites
-
-Necessary dependencies or packages. Required version for your system or other system requirements. Specialist knowledge or skills.
-
-### Operating System Considerations
-
-Linux
-
-Install prerequsits on the system before stating deployment: https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#prerequisites
-
-To create cluster request devops team to provide the Node details OR ask for AWS access :
-
-Clone the Kubernetes Infrastructure Repository:
-
-Clone the k8s-infra repository from the v1.2.0.2 tag:
-
-git clone -b v1.2.0.2 https://github.com/mosip/k8s-infra.git cd k8s-infra/mosip/onprem
-
-Create copy of hosts.ini.sample as hosts.ini. Update the IP addresses.
-
-Open the ports for the nodes: https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#ports
-
-Docker installation : https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#docker
-
-Create RKE cluster : https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem#docker
-
-Apply global config map : https://github.com/mosip/k8s-infra/blob/v1.2.0.2/mosip/global\_configmap.yaml.sample
-
-Import cluster
-
-NGINX setup : https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem/nginx
-
-NFS setup: https://github.com/mosip/k8s-infra/tree/v1.2.0.2/nfs
-
-Monitoring : https://github.com/mosip/k8s-infra/tree/v1.2.0.2/monitoring#install
-
-Istio Setup : https://github.com/mosip/k8s-infra/tree/v1.2.0.2/mosip/on-prem/istio#install
-
-INSTALL THE REQUIRED EXTERNAL AND MOSIP SERVICES BASED ON THE COMPATIBILITY OF THE EXISTING SYSTEM.
-
-Postgres installation : https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/external/postgres
-
-conf-secret installation :\
-https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/conf-secrets
-
-config-server installation : https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/config-server
-
-artifactory installation : https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/artifactory
-
-datashare installation : https://github.com/mosip/mosip-infra/tree/v1.2.0.2/deployment/v3/mosip/datashare
-
-mimoto installation : https://github.com/mosip/mimoto/tree/develop/helm/mimoto
-
-Inji web and datashare installation : https://github.com/mosip/inji-web/tree/v0.10.0/helm/inji-web
-
-Inji Verify installation : https://github.com/mosip/inji-verify/tree/v0.10.0
-
-Inji Certify installation : https://github.com/mosip/inji-certify/tree/v0.9.1

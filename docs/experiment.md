@@ -2,48 +2,170 @@
 hidden: true
 ---
 
-# Experiment
 
-## Experiment
 
-Experiment
 
-## Roadmap 2025
+# Template
 
-### Inji Wallet
 
-#### Inji Mobile
+# Installation template guide
 
-Q1: Jan25 - Mar25
+> Thank you for downloading this template from The Good Docs Project! Before using the template, read this template guide for information about how to complete each section. Want to explore more templates? Check them out in our [templates GitLab repository](https://gitlab.com/tgdp/templates).
 
-Q2: Apr25 - Jun25
+## Introduction
 
-Q3: Jul25 - Sep25
+An installation guide covers all the steps necessary to install the product and set it up for further use. You need an installation guide to install:
 
-Q4: Oct25 - Dec25
+* Operating systems, applications, plugins, and extensions.
+* SaaS (Software as a Service) applications.
+* Open source software (OSS) product documentation.
+* Hardware device product documentation.
 
-<table data-full-width="true"><thead><tr><th width="60">Quarter</th><th>Feature</th><th width="90">Status</th><th width="100">Feature Details</th><th width="80">Release Details</th></tr></thead><tbody><tr><td>Q1</td><td>Cross Device OpenIDVP Enhancements - Verifier Metadata Management</td><td>In Progress</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22Cross-device-flow_Enhancements%22">Cross-device-flow_Enhancements</a></td><td>v0.16.0</td></tr><tr><td>Q1</td><td>Sharing of mDoc/mDL VC Support through OpenIDVP</td><td>In Progress</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22mDoc%2FmDL_Wallet-Support%22">mDoc/mDL_Wallet-Support</a></td><td>v0.17.0</td></tr><tr><td>Q1</td><td>Implement SIOP (Key binding as part of the download)</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%20%3D%20injimob%20and%20%22Feature%5BLabels%5D%22%20in%20%28SIOP%29%20order%20by%20created%20DESC">SIOP</a></td><td>v0.17.0</td></tr><tr><td>Q1</td><td>Support for ECC K1</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22ECC_Key_Support%22">ECC_Key_Support</a></td><td>v0.17.0</td></tr><tr><td>Q2</td><td>W3C Data Model 2.0 &#x26; SVG Render Method</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=cf%5B10043%5D%20%3D%20%22WalletRendering%22">WalletRendering</a> &#x26; <a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22svgTemplate%22">svgTemplate</a></td><td>v0.18.0</td></tr><tr><td>Q2</td><td>Revocation of VC</td><td>To be planned</td><td></td><td>v0.18.0</td></tr><tr><td>Q2</td><td><ol start="1"><li>SD JWT VC Support</li><li>Selective disclosure of user information while sharing.</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20Milestone2023%20AND%20Feature%20%3D%20SD_JWT">SD_JWT</a></td><td>v0.18.0</td></tr><tr><td>Q2</td><td>Wallet Login &#x26; Common Key Management</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%20%3D%20injimob%20and%20%22Feature%5BLabels%5D%22%20in%20%28WalletLogin%29%20order%20by%20created%20DESC">Holder Login</a></td><td>v0.19.0</td></tr><tr><td>Q2</td><td>Shamir’s secret open standard Implementation</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=cf%5B10043%5D%20%3D%20%22Sharmir%27s-OpenStandard_Implem%22">Sharmir's-OpenStandard_Implem</a></td><td>v0.19.0</td></tr><tr><td>Q2</td><td>Create Profile - Profiling with Single VC</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20Milestone2023%20AND%20Feature%20%3D%20User_profile">User_profile</a></td><td>v0.19.0</td></tr><tr><td>Q3</td><td><p>Same Device Flow: Multiple credential requests during the presentation.(OpenIDVP)</p><ol start="1"><li>Request for multiple credentials.</li><li>Support multiple credential submissions.</li><li>Single VP request with multiple credentials for single wallet</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22OpenIDVP_SameDevice_Flow%22">OpenIDVP_SameDevice_Flow</a></td><td>v0.20.0</td></tr><tr><td>Q3</td><td><p>OpenID4VCI enhancements:</p><ol start="1"><li>credential_offer endpoint</li><li>pre-authorised code flow</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=cf%5B10043%5D%20%3D%20%22OpenIDVCIEnhancement%22">OpenIDVCIEnhancement</a></td><td>v0.20.0</td></tr><tr><td>Q3</td><td>BBS+ support</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%3D%22Inji%20Mobile%22%20and%20%22Feature%5BLabels%5D%22%20in%20%28%22BBS%2B%22%29%20order%20by%20created%20DESC">BBS+</a></td><td>v0.20.0</td></tr><tr><td>Q3</td><td>Play integrity of the app- Android</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%20%3D%20injimob%20and%20%22Feature%5BLabels%5D%22%20in%20%28PlayIntegrity%29%20order%20by%20created%20DESC">App integrity</a></td><td>v0.20.0</td></tr><tr><td>Q4</td><td><p>Inji Wallet(Mobile) - One-time credentials.</p><ol start="1"><li>Request for bulk credentials. So multiple copies of the same credentials with different credential IDs and different keys are issued.</li><li>Then, the wallet would present every credential once. This helps in privacy, as every credential is unique, breaking the 360-degree profiling.</li><li>The wallet should abstract all these credentials and show it as only one card on the UI.</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22One-time_Credentials%22">One-time_Credentials</a></td><td>v1.0</td></tr><tr><td>Q4</td><td><p>Multi-user Credentials -</p><p>(Eg: Revocation to be done from both the wallet )</p><ol start="1"><li>Credentials that are used for the family. combining multiple subjects.</li><li>Each subject might need to download this credential.</li><li>Each one can use it for their own needs.</li><li>eg: ration card, property sale deed(property title)</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22Multi-user_Credentials%22">Multi-user_Credentials</a></td><td>v1.0</td></tr><tr><td>Q4</td><td>JWT VC Support</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22JWT_VC_Support%22">JWT_VC_Support</a></td><td>v1.0</td></tr><tr><td>Q4</td><td>Support for ECC R1</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22ECC_Key_Support%22">ECC_Key_Support</a></td><td>v1.0</td></tr></tbody></table>
+There are two categories of an installation guide:
 
-#### Inji Web
+* **Standalone**: An independent installation guide document or page that includes all the necessary information required to install the software or application, including system requirements and step-by-step instructions.
+* **Integrated**: An installation guide document or page integrated inside an existing README document.
 
-Q1: Jan25 - Mar25
+## Identify your audience
 
-Q2: Apr25 - Jun25
+An installation guide is for users who have the sufficient technical expertise required to understand the installation instructions provided. If your proposed audience requires some technical expertise to install the product, you should highlight and list these requirements in the prerequisites section of the document.
 
-Q3: Jul25 - Sep25
+## Why do you need an installation guide?
 
-Q4: Oct25 - Dec25
+An installation guide can:
 
-<table data-full-width="true"><thead><tr><th width="60">Quarter</th><th>Feature</th><th width="90">Status</th><th width="100">Feature Details</th><th width="80">Release Details</th></tr></thead><tbody><tr><td>Q1</td><td>User login, VC management, profile management (profile menu)</td><td>PLANNING IN PROGRESS</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%3D%22Inji%20Web%22%20and%20labels%20in%20%28userlogin%29%20order%20by%20created%20DESC">User Login</a></td><td>v0.12.0</td></tr><tr><td>Q1</td><td>Key management for download (common for both web &#x26; mobile)</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22Key_Management_Wallet%22">Key_Management_Wallet</a></td><td>v0.12.0</td></tr><tr><td>Q1</td><td>W3C Data Model 2.0 &#x26; SVG Render Method</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=cf%5B10043%5D%20%3D%20%22VCRendering%22">VCRendering</a></td><td>v0.13.0</td></tr><tr><td>Q2</td><td>Shamir’s secret open standard Implementation</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22Sharmir%27s-OpenStandard_Implementation%22">Sharmir's-OpenStandard_Implem</a></td><td>v0.13.0</td></tr><tr><td>Q2</td><td>Key Support for download and Verification : ED25519 Signature 2018 &#x26; 2020</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22ED25519_Key-Support%22">ED25519_Key-Support</a></td><td>v0.13.0</td></tr><tr><td>Q2</td><td>Key Support for download and Verification : ECC K1</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22ECC_Key_Support(Web)%22">ECC_Key_Support(Web)</a></td><td>v0.14.0</td></tr><tr><td>Q2</td><td>mDoc/mDL VC Support</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%3D%22Inji%20Web%22%20and%20labels%20in%20%28VCFormat%29%20order%20by%20created%20DESC">VC Formats</a></td><td>v0.14.0</td></tr><tr><td>Q2</td><td>CBOR VC Support</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22CBOR_VC_Support%22">CBOR_VC_Support</a></td><td>v0.14.0</td></tr><tr><td>Q3</td><td>SD JWT-based Support</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%3D%22Inji%20Web%22%20and%20labels%20in%20%28sdjwt%29%20order%20by%20created%20DESC">SD JWT VC</a></td><td>v0.14.0</td></tr><tr><td>Q3</td><td>OpenIDVP: Same-Device Flow</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22OpenIDVP_SameDevice_Flow%22">OpenIDVP_SameDevice_Flow</a></td><td>v0.15.0</td></tr><tr><td>Q3</td><td><p>OpenID4VCI enhancements:</p><ol start="1"><li>credential_offer endpoint</li><li>pre-authorised code flow</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%3D%22Inji%20Web%22%20and%20labels%20in%20%28OpenID4VCI%29%20order%20by%20created%20DESC">OpenID4VCI Enhancements</a></td><td>v0.15.0</td></tr><tr><td>Q3</td><td>Revocation VC</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=project%3D%22Inji%20Web%22%20and%20labels%20in%20%28Revocation%29%20order%20by%20created%20DESC">VC Revocation</a></td><td>v0.15.0</td></tr><tr><td>Q4</td><td><p>BBS+ Support</p><ul><li>Improve user privacy</li><li>1 Secret, and a domain-specific public key.</li></ul></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22BBS%2B_Support%22">BBS+_Support</a></td><td>v0.16.0</td></tr><tr><td>Q4</td><td><p>Inji Wallet (Web) - One-time credentials.</p><ol start="1"><li>Request for bulk credentials. So multiple copies of the same credentials with different credential IDs and different keys are issued.</li><li>Then, the wallet would present every credential once. This helps in privacy, as every credential is unique, breaking the 360-degree profiling.</li><li>The wallet should abstract all these credentials and show it as only one card on the UI.</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=cf%5B10043%5D%20%3D%20%22One-time_Credentials%22">One-time_Credentials</a></td><td>v0.16.0</td></tr><tr><td>Q4</td><td><p>Multi-user Credentials -</p><p>(Eg: Revocation to be done from both the wallet )</p><ol start="1"><li>Credentials that are used for the family. combining multiple subjects.</li><li>Each subject might need to download this credential.</li><li>Each one can use it for their own needs.</li><li>eg: ration card, property sale deed (property title)</li></ol></td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22Multi-user_Credentials%22">Multi-user_Credentials</a></td><td>v1.0</td></tr><tr><td>Q4</td><td>Key Support for download and Verification: ECC R1</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22ECC_Key_Support(Web)%22">ECC_Key_Support(Web)</a></td><td>v1.0</td></tr><tr><td>Q4</td><td>Implement SIOP (Key binding as part of the download)</td><td>To be planned</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22SIOP_Key_Binding%22">SIOP_Key_Binding</a></td><td>v1.0</td></tr></tbody></table>
+* Help a user get started using your product.
+* Reduce the number of support requests related to installation issues.
+* Establish consistency in the existing developer experience.
+* Ensure increased retention of a user who explores your product.
+* Confirm a user has everything they need to configure, customize, and/or upgrade your product.
 
-### Inji Verify
+Installation guides are often confused with how-to guides. It is essential to distinguish between an installation guide and a how-to guide document.
+​
+An installation guide shows how to install the product (as a procedure), while a "how-to" topic shows how to do something with the product after it's been installed. The difference lies in the purpose of the instructions. An installation guide describes the process of setting up and configuring a specific software, application, or service. A how-to guide describes how to accomplish a particular task using a specific product or technology (which would already be installed).
+​
+The key differences are listed in the following table:
 
-Q1: Jan 25 - Mar 25
+|          | **installation guide** | **how-to guide** |
+| -------  | --------------         | -------------------- |
+| Audience |Systems administrators and users who require detailed instructions and technical details when setting-up and installing a software product.| Users with a less technical background who want to set-up and install a software product.   |
+|  Scope   |  An installation guide provides specific instructions on how to install and set up a particular software product.   |  A how-to guide takes the user through a series of steps required to perform a specific task to solve a particular problem.  |
+|   Format | An installation guide is a prerequisite document a user reads before considering How-to Guides; because you need the product itself installed before you solve any problem related to that product. Due to the broad scope and availability of different variables and conditions in which an installation guide would function, an installation guide should be independent of a how-to guide.    |  how-to guide (or even a Tutorial) may include installation steps of the software or an application that needs to be installed as part of the How-to solution process. A hyperlink within the how-to guide would link back to the dedicated installation guide.  |
 
-Q2: Apr 25 - Jun 25
+## Before writing an installation guide
 
-Q3: Jul 25 - Sep 25
+Before you start working on your installation guide, identify the following:
 
-Q4: Oct 25 - Dec 25
+* The target user who needs to follow your installation guide. This helps determine the appropriate level of information.
+* The specific version of the software or application to be installed and the system requirements for installation.
+* Software prerequisites or libraries dependencies.
+* Installation options such as following an installation wizard or customized installation.
+* Identify common issues that may arise during the installation process, and provide troubleshooting tips to help users overcome these issues.
 
-<table data-full-width="true"><thead><tr><th width="60">Quarter</th><th>Feature</th><th width="90">Status</th><th width="100">Feature Details</th><th width="80">Release Details</th></tr></thead><tbody><tr><td>Q1</td><td>Inji Verify SDK</td><td>In-Progress</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22inji_verify_sdk%22">inji_verify_sdk</a></td><td><strong>v0.12.0</strong></td></tr><tr><td>Q1</td><td>OpenIDVP: Same Device Flow (QR code based Verifiable Presentation): Multiple credential requests during the presentation.</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22ovp_same_device%22">ovp_same_device</a></td><td><strong>v0.12.0</strong></td></tr><tr><td>Q1</td><td>Support for Country QR code - CWT Format</td><td>In-Progress</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22country_qr_code%22">country_qr_code</a></td><td></td></tr><tr><td>Q1</td><td>Verify mDoc and mDL</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22consume_credentials_data%22">consume_credentials_data</a><br><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22mDoc_mDL%22">mDoc_mDL</a></td><td></td></tr><tr><td>Q1</td><td>Revoked Credentials</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22credential_revocation%22">credential_revocation</a></td><td></td></tr><tr><td>Q2</td><td>Templatizing post-VC verification on Inji Verify (SVG Rendering)</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22VC_render%22">VC_render</a></td><td></td></tr><tr><td>Q2</td><td>Support Server Side VC Verification: ECC- K1 and R1</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22ECC_K1_R1%22">ECC_K1_R1</a></td><td></td></tr><tr><td>Q2</td><td>Verify: W3C VC, SD JWT</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22consume_credentials_data%22">consume_credentials_data</a><br><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22mDoc_mDL%22">mDoc_mDL</a></td><td></td></tr><tr><td>Q2</td><td>Verify document(pdf) with multiple QR Codes</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22multiple_QR_Verification%22">multiple_QR_Verification</a></td><td></td></tr><tr><td>Q3</td><td><p>Support for multi proof: Single credential should support multiple proofs</p><p>(both embedded and linked)</p></td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22offline_verification_SDK%22">offline_verification_SDK</a></td><td></td></tr><tr><td>Q3</td><td><p>GA Release :</p><ol start="1"><li>Support multiple issuers</li><li>Support common crypto algorithms</li><li>Support various QR codes, VPs</li><li>Data Model 1.1, 2.0 VCs</li><li>Scalability</li><li>Bug Fixes</li><li>Performance Testing- 1 mill/day</li><li>Security Testing</li><li>Test Coverage>80%</li><li>Sonar Coverage</li></ol></td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22Injiverify_LTS_B1%22">Injiverify_LTS_B1</a></td><td>v1.0</td></tr><tr><td>Q3</td><td>Credential Correction</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22Credential_correction%22">Credential_correction</a></td><td></td></tr><tr><td>Q4</td><td>Offline Verification SDK</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22offline_verification_SDK%22">offline_verification_SDK</a></td><td></td></tr><tr><td>Q4</td><td>BLE based verifiable presentation</td><td>Wishlist</td><td><a href="https://mosip.atlassian.net/issues/?jql=labels%20%3D%20%22InjiVerify_BLE_Verification%22">InjiVerify_BLE_Verification</a></td><td></td></tr></tbody></table>
+## Writing the installation guide
+
+This section provides details about writing the installation guide.
+
+### About the "Introduction" section
+
+In this section, state the purpose of the installation guide. Optionally, you can specify the benefits of this installation such as increased performance, better system stability, and enhanced security.
+​
+Optional: add a link to a demo of the installed product or a sandbox to try out the product.
+
+### About the "Installation types" section
+
+In this section, explain what is included within the installation guide. This can include a list of different versions to be installed as an option. Make sure you highlight the differences between the installation scenarios. These can be outlined in a table with columns indicating the name of the installation type, a description of the installation type, and a link to the relevant installation steps within the guide.
+
+If your product can be used in different environments, include a table specifying the different installation types. This table can help users choose the relevant installation type based on their needs. For example, you can classify the installation type based on:
+
+* Main or lite version when a product has installable options with different functionalities.
+* Operating system types such as installation for Windows, Linux, and MacOS.
+* Cloud providers for products that require self-hosting to work such as CodeSpaces, CodeSandBox, and GitPod.
+
+Add an introductory sentence to the table. Also, include links for all the available options.               |
+
+### About the "Overview" section
+
+In this section, explain the intended result of the installation, such as the commands, command aliases, major flags, available plugins, files downloaded, or application programs.
+
+Also, include a sequential end-to-end summary of the installation process that can serve as a quick link or reference section for users. Consider displaying this information in a table with one column summarizing the specific process and a second column linking to a relevant document.
+​
+Optionally, you can include links to previous versions, if applicable. Consider formatting this list of versions in a table.
+
+### About the "System requirements" section
+
+In this section, explain the different installation types and subsequent requirements for each type. This section leads into the next section on specific prerequisites.
+
+Based on your use case, you can adjust the structure of this section by using it in reverse order. For example, you could list the installation type as the heading and system requirements for that type as a sub-section. For example, "Install on Linux > System Requirements" and "Install on Windows > System Requirements", instead of "System Requirements > Install on Linux > Install on Windows."
+
+### About the "Before you begin" section
+
+In this section, explain the prerequisites. Prerequisites tell the user what they require to accomplish a goal, such as:
+
+* Necessary dependencies or packages.
+* Required version for your system or other system requirements.
+* Specialist knowledge or skills.
+
+### About the "Installation steps" section
+
+​In this section, describe what the user needs to do to install the software. When writing this section:
+
+* Use numeric steps.
+* Categorize the steps into subheadings,  as required.
+* Create subheadings based on the complexity of the installation.
+* Add a one-sentence description of the step.
+* Start each step with an active verb such as "open" and "download".
+* Explain the expected result after completing each step.
+* Include checks for success if each step is done correctly and/or tips if the installation didn't work at each step.
+* Mention installation options where required, but mention which path is recommended.
+* Add visuals (GIFs, images, or videos) where required.
+* Add code block examples and snippets where required.
+
+### About the "Verify installation" section
+
+In this section, include test commands, intended outputs, or other steps to confirm the installation was successful.
+
+### About the "Post installation" section
+
+In this section, provide an overview of options once the installation is completed. Include links to other relevant resources if available.
+
+### About the "Configuration options" section
+
+In this section, provide information regarding post-installation configuration options. Describe the requirements for configuring the installed product. Provide links to other resources if available.
+
+### About the "Upgrade options" section
+
+In this section, provide information about upgrade options (also known as an update options), if relevant. Describe how to install updates from a range of possible options. Provide a link to available updates with specific version numbers, release dates, and key features.
+
+### About the "Downgrade options" section
+
+In this section, provide downgrade options, if supported.
+
+### About the "Uninstallation options" section
+
+In this section, clearly describe the procedure to uninstall the product.
+
+### About the "Troubleshooting" section
+
+In this section, list a number of anticipated problems and associated solutions. This section helps solve problems encountered during installation. Start with a problem statement, then indicate the cause and provide a solution. Include any important additional information, such as restarting the computer.
+
+You can also include steps or contact information for additional support.
+
+### About the "Next steps" section
+
+In this section, include essential or recommended steps to take after installing the product. Provide links to further resources, if available. Also, include support/contact information for issue reports and feedback.
+
+### About the "Product version history" section
+
+​In this section, you can list previous versions in a table, providing the version number and whether the version was major, minor, or a patch release. Always ensure the change history is consistent across the documentation. Refer to [semver.org](https://semver.org) to learn about the semantic versioning specification.
+
+### About the "Definition of terms" section
+
+This section is optional. Provide a glossary table describing the terms, acronyms, and abbreviations used in the installation guide.
+
+---
+
+> Explore other templates from [The Good Docs Project](https://thegooddocsproject.dev/). Use our [feedback form](https://thegooddocsproject.dev/feedback/?template=Installation%20guide%20guide) to give feedback on this template.
+
+
+
