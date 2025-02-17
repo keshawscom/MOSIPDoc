@@ -4,7 +4,7 @@ This document aims to assist users in setting up Inji Web on their local environ
 
 ### Repositories:
 
-Clone the repositories locally to bring up your own setup. Repository information can be fetched from [here](https://docs.mosip.io/inji/inji-web/inji-web/version-0.11.0#repository-released).
+Clone the repositories locally to bring up your own setup. Repository information can be fetched from [**here**](https://github.com/mosip/inji-web.git).
 
 **Pre-requisite:**
 
@@ -40,20 +40,15 @@ docker build -t inji-web:local .
 ```
 
 2. **Prepare the environment:**
-
    * In the `docker-compose` folder, there are configuration files and certificates for integrating Mimoto as the BFF (Backend for Frontend) for the web and mobile services.
-
-   1. **Create a `certs` folder** in the `docker-compose` directory and add the necessary OIDC client certificate (as mentioned below).
-   2. **Update the configuration files:**
-      - `mimoto-issuers-config.json` (Add Id providers as issuers)
-      - `mimoto-trusted-verifiers.json` (Add verifiers clientId and redirect URI for online sharing)
-      - Update **Esignet host references** in the `mimoto-default.properties`, `mimoto-issuers-config.json` files.
-      - Set the `oidc_p12_password` environment variable value as per the documentation.
-
-   3. **Create OIDC client** and generate `oidckeystore.p12`. You can follow the setup guide for this process [here](https://docs.mosip.io/inji/inji-mobile-wallet/customization-overview/credential_providers).
-
-   4. **Update `mimoto-issuers-config.json`** with the client ID and client alias as per your OIDC onboarding.
-
+   * **Create a `certs` folder** in the `docker-compose` directory and add the necessary OIDC client certificate (as mentioned below).
+   * **Update the configuration files:**
+     * `mimoto-issuers-config.json` (Add Id providers as issuers)
+     * `mimoto-trusted-verifiers.json` (Add verifiers clientId and redirect URI for online sharing)
+     * Update **Esignet host references** in the `mimoto-default.properties`, `mimoto-issuers-config.json` files.
+     * Set the `oidc_p12_password` environment variable value as per the documentation.
+   * **Create OIDC client** and generate `oidckeystore.p12`. You can follow the setup guide for this process [here](https://docs.mosip.io/inji/inji-mobile-wallet/customization-overview/credential_providers).
+   * **Update `mimoto-issuers-config.json`** with the client ID and client alias as per your OIDC onboarding.
 3. **Start the Docker Compose environment:**
 
 ```bash
@@ -67,8 +62,7 @@ docker-compose up -d
 docker-compose down
 ```
 
-
----
+***
 
 ## Run Inji Web locally (Non-Docker Compose Setup):
 
@@ -87,21 +81,21 @@ npm install
 npm start
 ```
 
-3. **Troubleshooting CORS issues:**
+3.  **Troubleshooting CORS issues:**
 
-   If you encounter CORS errors when running the web app locally, you will need to set up a proxy server and configure it to point to `https://api.collab.mosip.net` for Mimoto's API.
+    If you encounter CORS errors when running the web app locally, you will need to set up a proxy server and configure it to point to `https://api.collab.mosip.net` for Mimoto's API.
 
-   - Follow this [guide](https://jakemccambley.medium.com/fixing-cors-errors-when-working-with-3rd-party-apis-a69dc5474804) to set up the proxy.
-   - Once the proxy server is running, update the `Inji Web` app to use the proxy by modifying the `window.location.origin` in the `src/utils/api.ts` file.
-
+    * Follow this [guide](https://jakemccambley.medium.com/fixing-cors-errors-when-working-with-3rd-party-apis-a69dc5474804) to set up the proxy.
+    * Once the proxy server is running, update the `Inji Web` app to use the proxy by modifying the `window.location.origin` in the `src/utils/api.ts` file.
 4. **Run tests:**
 
 ```bash
 npm test
 ```
----
+
+***
+
 ### Summary:
 
-- **Docker Compose Setup**: This is the recommended setup for running Inji Web along with Mimoto locally.
-- **Standalone Setup**: If you prefer, you can run Inji Web as a standalone Node.js application.
-
+* **Docker Compose Setup**: This is the recommended setup for running Inji Web along with Mimoto locally.
+* **Standalone Setup**: If you prefer, you can run Inji Web as a standalone Node.js application.
