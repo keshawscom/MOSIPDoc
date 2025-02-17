@@ -1,6 +1,6 @@
 # User Guide
 
-This user guide is designed to provide assistance to Operators and Supervisors in successfully installing, running, and registering applicants to obtain their Unique Identification Numbers (UIN) on tablet devices.
+Login using OTPLogin using OTPThis user guide is designed to provide assistance to Operators and Supervisors in successfully installing, running, and registering applicants to obtain their Unique Identification Numbers (UIN) on tablet devices.
 
 ## Prerequisites
 
@@ -49,11 +49,7 @@ To begin the Registration process, the Operator is required to follow the steps 
 2. Select the language to be used for data entry, which will be used to collect the resident's information. There will be a default language for data entry.
 3. Choose the language in which the notification will be sent to the resident. Click **Submit** to proceed.
 
-<div align="center">
-
-<figure><img src="../../.gitbook/assets/home_page.png" alt="" width="375"><figcaption><p>New registration</p></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../../.gitbook/assets/home_page.png" alt="" width="375"><figcaption><p>New registration</p></figcaption></figure></div>
 
 <figure><img src="../../.gitbook/assets/language-select-1.png" alt="" width="375"><figcaption><p>New registration</p></figcaption></figure>
 
@@ -184,37 +180,13 @@ Once the packet is created by the Operator, as an additional check, the Supervis
 
 **Step 1:** The user goes to the “Pending Approval” section from the Operational Tasks section. The user will be taken to the page where they can see the list of all the Applications created by the Operator. All of these Applications will be “Pending”.
 
-<div>
-
-<figure><img src="../../.gitbook/assets/supervisor approval 1.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/supervisor approval 2.png" alt=""><figcaption><p>Supervisor's approval</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/supervisor approval 3.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/supervisor approval 1.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/supervisor approval 2.png" alt=""><figcaption><p>Supervisor's approval</p></figcaption></figure> <figure><img src="../../.gitbook/assets/supervisor approval 3.png" alt=""><figcaption></figcaption></figure></div>
 
 **Step 2:** The Supervisor then clicks on the Application ID one by one. At this stage, the Supervisor can either Approve the Application or he can Reject it. If the Supervisor decides to reject it, they also will have to mandatorily mention the reason for rejection.
 
 **Step 3:** Once the Application has been Approved or Rejected, the Supervisor will have to authenticate himself by clicking on the “Submit” button and thereby entering their Username and Password. The User can also bulk submit the Applications. The only pre-requisite is that the packet has to be in Approved or Rejected status (pending Applications cannot be submitted for uploading). Once they have successfully authenticated, the Application will be removed from the “Pending Approval” section and will be moved to the “Manage Application” Section.
 
-<div>
-
-<figure><img src="../../.gitbook/assets/supervisor approval 4.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/supervisor approval 5.png" alt=""><figcaption><p>Pending approval</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/supervisor approval 6.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/supervisor approval 4.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/supervisor approval 5.png" alt=""><figcaption><p>Pending approval</p></figcaption></figure> <figure><img src="../../.gitbook/assets/supervisor approval 6.png" alt=""><figcaption></figcaption></figure></div>
 
 **Step 4:** Once the Application is either Approved or Rejected by the Supervisor and is submitted, those packets can be uploaded to the server from the “Manage Application” section or can be exported to their local device storage.
 
@@ -289,35 +261,11 @@ In a scenario where the Resident wants to update their data, they can do so by l
 
 **Step 3:** Enter the data that the Resident wants to update. It could demographic data, documents, and biometrics.
 
-<div>
-
-<figure><img src="../../.gitbook/assets/update uin 2.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/update uin 3.png" alt=""><figcaption><p>Update data</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/update uin 4.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/update uin 2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/update uin 3.png" alt=""><figcaption><p>Update data</p></figcaption></figure> <figure><img src="../../.gitbook/assets/update uin 4.png" alt=""><figcaption></figcaption></figure></div>
 
 **Step 4:** Once all the required data is filled, the User will be taken to the Preview screen (data can still be modified) and then to the Acknowledgment screen (data cannot be updated hereafter).
 
-<div>
-
-<figure><img src="../../.gitbook/assets/update uin 5.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/update uin 6.png" alt=""><figcaption><p>Acknowledge data</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/update uin 7.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/update uin 5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/update uin 6.png" alt=""><figcaption><p>Acknowledge data</p></figcaption></figure> <figure><img src="../../.gitbook/assets/update uin 7.png" alt=""><figcaption></figcaption></figure></div>
 
 **Step 5:** The user will then have to authenticate himself using his Username and Password. Once the authentication is successful, the packet will be uploaded to the server.
 
@@ -344,3 +292,41 @@ b. The user will then have to capture all the above-listed biometrics one by one
 c. Steps to capture the biometrics are given [**here**](https://docs.mosip.io/1.2.0/modules/android-registration-client/android-registration-client-user-guide#face-photo-capture-process)**.**&#x20;
 
 d. Once all the biometrics are duly captured, the below acknowledgment message will be displayed on the screen.
+
+### Handles Feature Authentication: <a href="#handles-feature-authentication" id="handles-feature-authentication"></a>
+
+**Assumption:** The Handles feature is enabled, and the email ID is designated as a Handle during registration.
+
+**Scenarios:** A resident attempts to log into the Resident Portal using their Handle (i.e., email ID).
+
+**Step 1:** Open the Resident Portal and navigate to **"UIN Services."**
+
+<figure><img src="../../.gitbook/assets/Resident_portal_UI_services.png" alt=""><figcaption><p>UIN Services</p></figcaption></figure>
+
+**Step 2:** The resident will be taken to the eSignet login page.
+
+<figure><img src="../../.gitbook/assets/eSignet_login.png" alt=""><figcaption><p>eSignet Login Page</p></figcaption></figure>
+
+**Step 3:** Choose the option to “Login using OTP”
+
+<figure><img src="../../.gitbook/assets/Login_using_OTP.png" alt=""><figcaption><p>Login Using OTP</p></figcaption></figure>
+
+**Step 4:** Enter the attributes marked as Handle (email ID in this case) and click on “Get OTP”. OTP will be sent to registered email ID and/or mobile number
+
+<figure><img src="../../.gitbook/assets/Get_OTP (1).png" alt=""><figcaption><p>Get OTP</p></figcaption></figure>
+
+**Step 5:** Enter the OTP received over the registered email ID and/or mobile number
+
+<figure><img src="../../.gitbook/assets/Enter_OTP.png" alt=""><figcaption><p>Enter OTP</p></figcaption></figure>
+
+**Step 6:** Select/De-select the Claims based on preference.
+
+<figure><img src="../../.gitbook/assets/select_deselect.png" alt=""><figcaption><p>Select/Deselect Claims</p></figcaption></figure>
+
+&#x20;And click on the “Allow” button.
+
+<figure><img src="../../.gitbook/assets/Allow.png" alt=""><figcaption><p>Click Allow</p></figcaption></figure>
+
+**Step 7:** You have now successfully authenticated and logged into Resident Portal via eSignet using handles (email ID in this case).
+
+<figure><img src="../../.gitbook/assets/Resident_Services.png" alt=""><figcaption><p>Resident Services</p></figcaption></figure>

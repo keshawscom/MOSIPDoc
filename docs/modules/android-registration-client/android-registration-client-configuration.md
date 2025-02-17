@@ -4,6 +4,24 @@ This guide provides a comprehensive list of configurable properties for the Andr
 
 It is important to acknowledge that all properties listed in this guide are automatically synchronized with the Android Registration Client. These properties are sourced from the `registration-default.properties` file.
 
+1. In the **`registration-default.properties`** file, update the following property to specify the field values on which you want to enable the handle. Ensure that these field values match the field values in the **IDSchema.**
+
+```properties
+mosip.registration.default-selected-handle-fields=email,phone
+```
+
+2. In the **`id-authentication-default.properties`** file, update the **Regex** to validate handles with the provided key as the postfix:
+
+```properties
+mosip.ida.handle-types.regex={ '@email' : '.*@email$', '@phonenumber' : '.*@phonenumber$' }
+```
+
+3. In the **`id-repository-default.properties`** file, map the postfix values with the corresponding field values:
+
+```properties
+mosip.identity.fieldid.handle-postfix.mapping={'email':'@email', 'phone':'@phonenumber'}
+```
+
 #### Configuration files
 
 * `application-default.properties`

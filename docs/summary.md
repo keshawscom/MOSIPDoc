@@ -177,6 +177,7 @@
   * [MOSIP Branching Strategy](community/mosip-branching-strategy.md)
   * [Community Calendars](community/community-calendar.md)
 * [📖 Releases](releases/README.md)
+  * [Android Registration Client v0.11.0](releases/android-registration-client-v0.11.0.md)
   * [Resident Services v0.9.1](releases/resident-services-v0.9.1/README.md)
     * [Test Report](releases/resident-services-v0.9.1/test-report.md)
   * [API Test Commons Releases](releases/api-test-commons-releases/README.md)

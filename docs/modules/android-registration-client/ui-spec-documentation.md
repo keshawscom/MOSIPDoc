@@ -434,3 +434,51 @@ Each process has multiple screens and each screen is rendered with one or more f
    "autoSelectedGroups": null
 }
 ```
+
+
+
+### Enabling Handles Feature
+
+Add the following in the properties section of IDSchema:
+
+```properties
+"selectedHandles": 
+{
+    "fieldCategory": "none",
+    "format": "none",
+    "type": "array",
+    "items": 
+    {
+        "type": "string"
+    },
+    "fieldType": "default"
+},
+
+```
+
+{% hint style="info" %}
+Enable handles on a particular field by setting property as: "handle": true
+{% endhint %}
+
+**Example:**
+
+```properties
+"email":
+ {
+    "bioAttributes": [],
+    "validators": 
+    [
+        {
+            "langCode": null,
+            "validator": "^[A-Za-z0-9_\\-]+(\\.[A-Za-z0-9_]+)*@[A-Za-z0-9_-]+(\\.[A-Za-z0-9_]+)*(\\.[a-zA-Z]{2,})$",
+            "arguments": [],
+            "type": "regex"
+        }
+    ],
+    "fieldCategory": "pvt",
+    "format": "none",
+    "type": "string",
+    "fieldType": "default",
+    "handle": true
+}
+```

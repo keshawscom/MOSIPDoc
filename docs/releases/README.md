@@ -2,6 +2,14 @@
 
 ## Latest Releases 🌟
 
+**Version: v0.11.0 - Android Registration Client**
+
+* **Support**: Stable Release
+* **Date:** Coming Soon!
+* Release Notes
+
+**Release Date**: Coming Soon!
+
 **Version: 0.9.1 - Resident Services**
 
 * **Date:** 28th January, 2025
