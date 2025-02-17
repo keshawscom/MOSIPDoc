@@ -6,9 +6,7 @@
 
 * **Support**: Stable Release
 * **Date:** Coming Soon!
-* Release Notes
-
-**Release Date**: Coming Soon!
+* [Release Notes](https://docs.mosip.io/1.2.0/releases/android-registration-client-v0.11.0)
 
 **Version: 0.9.1 - Resident Services**
 

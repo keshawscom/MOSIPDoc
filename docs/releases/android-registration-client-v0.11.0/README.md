@@ -59,5 +59,6 @@ To learn more about the available features, processes, and user interface, pleas
 
 To view the list of known issues, refer **here**. (To be updated)
 
-### Test Report
+### Documentation
 
+QA Report(To be updated soon)
