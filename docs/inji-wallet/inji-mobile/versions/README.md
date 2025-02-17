@@ -4,7 +4,7 @@
 
 Name: Inji Wallet 0.15.0
 
-Date: Coming Soon
+Date: 17th Feb, 2025
 
 [Release Notes](./#version-0.15.0)
 
