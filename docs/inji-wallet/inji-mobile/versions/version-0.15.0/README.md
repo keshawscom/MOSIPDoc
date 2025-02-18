@@ -4,7 +4,7 @@
 
 **Release Type:** Developer
 
-**Release Date:** 17th Feb, 2025
+**Release Date:** 18th Feb, 2025
 
 ### **Overview:**
 
@@ -44,7 +44,7 @@ We are excited to announce the release of Inji Wallet Version 0.15.0! This updat
 | **Module**                | **Version**                                                                  |
 | ------------------------- | ---------------------------------------------------------------------------- |
 | Inji Mobile Wallet        | [**v0.15.0**](https://github.com/mosip/inji-wallet/tree/v0.15.0)             |
-| mimoto                    | [**v0.15.1**](https://github.com/mosip/mimoto/tree/v0.15.1)                  |
+| mimoto                    | [**v0.15.2**](https://github.com/mosip/mimoto/tree/v0.15.2)                  |
 | vc-verifier               | [**v0.1.0**](https://github.com/mosip/vc-verifier/tree/v1.1.0)               |
 | inji-openid4vp-ios-swift  | [**v0.1.0**](https://github.com/mosip/inji-openid4vp-ios-swift/tree/v0.1.0)  |
 | inji-openid4vp            | [**v0.1.0**](https://github.com/mosip/inji-openid4vp/tree/v0.1.0)            |
