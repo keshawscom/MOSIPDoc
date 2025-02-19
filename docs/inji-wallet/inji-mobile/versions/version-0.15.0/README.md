@@ -121,5 +121,5 @@ Below is the [**list**](https://mosip.atlassian.net/jira/software/c/projects/INJ
 * [Feature Documentation](https://docs.mosip.io/inji/inji-mobile-wallet/overview/features)
 * [Integration Guides](https://docs.mosip.io/inji/inji-mobile-wallet/integration-guide)
 * [User Guide](https://docs.mosip.io/inji/inji-mobile-wallet/end-user-guide)
-* [QA Report](../version-0.14.0/test-report.md)
-* [API Documentation](https://github.com/mosip/mimoto/tree/release-0.10.0/docs/postman-collections)
+* [QA Report](https://docs.inji.io/inji-wallet/inji-mobile/versions/version-0.15.0/test-report)
+* [API Documentation](https://github.com/mosip/mimoto/tree/release-0.15.x/docs/postman-collections)
