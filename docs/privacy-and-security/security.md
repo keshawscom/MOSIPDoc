@@ -24,7 +24,97 @@ Internal security practices encompass measures such as security requirement elic
 
 MOSIP's fundamental architecture and design incorporate high levels of privacy and security.
 
-(Table to be updated soon)
+**Threat Modelling**
+
+MOSIP employs threat modelling to identify potential attack vectors and integrate security measures into its design principles.
+
+* **STRIDE**: Focuses on six security threat categories - Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege to assess application vulnerabilities.
+* **DREAD**: Provides a scoring system to prioritize threats based on their potential impact and exploitability, considering factors like Damage potential, Reproducibility, Exploitability, Affected users, and Discoverability. This combination helps teams proactively address risks and prioritize remediation efforts effectively.
+
+**Access Management**
+
+* Secure **login** mechanism with multi-factor authentication (MFA) support.
+* **Forgot password** section with secure recovery mechanisms.
+* Secure **re-authentication** for sensitive operations.
+* Third-party authentication handling using OAuth 2.0 or OpenID Connect..
+* **Brute force protection** (account lockout/temporary blocking).
+* Secure error responses to **prevent credential enumeration**.
+* **Strong password hashing** using algorithms like bcrypt, PBKDF2, or Argon2.
+* Regular **privilege inspection** for user accounts.
+
+**Checks during file upload**
+
+* Restrict file uploads to **permitted extensions**.
+* Scan uploaded files for **malware and viruses**.
+* Prevent multiple extensions (e.g., .jpg.exe ambiguity).
+* Restrict **password-protected file uploads**.
+* **Enforce file size limits** to prevent buffer overflow attacks.
+* Proper **directory and executory privileges** for uploaded files.
+
+**Input Validation**
+
+* Sanitize **all** user input to prevent injection attacks.
+* Use proper **regular expressions** for input validation.
+* Validate redirected URLs to prevent open redirection attacks.
+* Enforce **data range, type, and length** validation.
+* Certain keywords should be blocklisted to avoid misuse.
+
+**Safe Output (encoding and avoiding user input)**
+
+Implement **HTML, JavaScript, and URL encoding** to prevent cross-site scripting (XSS).
+
+**Captcha Enabling**
+
+Implement CAPTCHA in every login page to make sure brute forcing and dictionary attacks are harder to execute.
+
+Password / Pin based Auth vulnerabilities (Resetting and number of requests):
+
+Password/PIN based logins should be checked for **brute force and reset pin/password option** should be provided.
+
+**OTP based Auth vulnerabilities(No of OTPs ,avoiding OTP flooding)**
+
+Check for **OTP flooding**(number of OTPs a user can send must be defined through config).
+
+**Session Management**
+
+* **Secure session identifier** generation.
+* Implement **session timeout and auto-logout** policies.
+* Enforce **secure persistent logins** configurations.
+* Ensure **session identifier regeneration** upon re-authentication.
+
+**Cryptographic Process**
+
+* Encrypt sensitive data at rest and in transit using **AES-256** and **TLS 1.2+**.
+* Handle cryptographic module failures gracefully.
+* Follow **NIST-approved cryptographic standards**.
+* Implement **secure key management policies**.
+
+**PII data storage in DB in plaintext**
+
+* PII data should NEVER be stored in **DB in plaintext.**
+* It should be strongly encrypted (due to large size symmetric key cryptography is generally used)
+
+**Sensitive Data transmission in plaintext**
+
+Whether HTTPS is strictly enabled or not, we should make sure PII data is not sent in plaintext.
+
+**Consent of Resident/user**
+
+* Consent is the most important step towards data integrity.
+* Check if PII data is taken, consent is taken beforehand
+* Consent management (**changing consent/partial consent**) should be defined
+
+**Error handling vulnerabilities**
+
+* The error page should be a **default white-label error page**d and should not show direct user-inputs
+* **Server version** should not be disclosed.
+* Internal queries(SQL etc) or too much information on an error should not be provided in the error message.
+
+**CSRF vulnerabilities**
+
+X-CSRF-Token should be part of header
+
+Set cookies to SameSite=Strict or SameSite=Lax
 
 #### Development and Release Practices
 

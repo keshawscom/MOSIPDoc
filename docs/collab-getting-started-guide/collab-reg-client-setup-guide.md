@@ -46,7 +46,7 @@ With the implementation of this Registration Client Demo Setup, you are now on t
   * Once the TPM utility is extracted and run in your system, fill out the details in this form [here](https://docs.google.com/forms/d/e/1FAIpQLSfqx6K8uZI-AxakNJiJLj4Vh5lSr7Lb1rqZaX_05MoyR2aXsQ/viewform?fbzx=-6425171175964917239) to get your machine registered with MOSIP.
   * Make sure you share **tpmdetails.txt** with us according to the form fields.
   * Once the details are received, we at MOSIP, will register your machine for usage of Registration Client in the Collab environment.
-* **Credentials**: Once the TPM request is received via the [form](https://docs.google.com/forms/d/e/1FAIpQLSfqx6K8uZI-AxakNJiJLj4Vh5lSr7Lb1rqZaX_05MoyR2aXsQ/viewform?fbzx=-6425171175964917239), and your machine is registered with us, we will provide you with the necessary credentials to access the Registration Client and share the details with you via your email ID provided in the form.
+* **Credentials and WireGuard**: Once the TPM request is received via the [form](https://docs.google.com/forms/d/e/1FAIpQLSfqx6K8uZI-AxakNJiJLj4Vh5lSr7Lb1rqZaX_05MoyR2aXsQ/viewform?fbzx=-6425171175964917239), and your machine is registered with us, we will provide you with the necessary credentials to access the Registration Client. Along with these credentials, you will also need to receive access to WireGuard. The details will be shared via the email ID provided in the form.
 * **Mock MDS**: Click [here](https://drive.google.com/drive/folders/14q7E5pZtfj0eimF3JGzlVfU4eV-MRPCQ) to download the Mock MDS in your system folder, which will enable you to simulate biometric capture (without real biometric devices).
 
 #### **Steps to run Mock MDS**

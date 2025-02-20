@@ -61,4 +61,4 @@ To view the list of known issues, refer **here**. (To be updated)
 
 ### Documentation
 
-QA Report(To be updated soon)
+QA Report
