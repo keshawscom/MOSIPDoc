@@ -1,4 +1,10 @@
-# 👨💻 Technology Stack
+---
+description: MOSIP is built using the below tools and technologies.
+---
+
+# 👨‍💻 Technology Stack
+
+### Technologies and Tools Used
 
 This page lists all the technologies used in building MOSIP. Free and open-source software with clear long-term support availability has been chosen. For a deployment, certain choices can be replaced with other free or commercial options.
 

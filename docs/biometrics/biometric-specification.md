@@ -2,19 +2,23 @@
 
 ## Introduction
 
-Biometrics images for various modalities are represented and exchanged as per the below specifications.
+Biometric images for various modalities are captured, represented, and exchanged according to the specifications outlined below.
 
 ## Change History
 
-| Date         | Changes                                                                                               |
-| ------------ | ----------------------------------------------------------------------------------------------------- |
-| 7th May 2021 | NFIQ v2.0 has been removed from the supported quality score for **fingerprint authentication device** |
+The below table outlines the updates and modifications made to the biometric specifications over time.
+
+| Date         | Changes                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| 7th May 2021 | Removed NFIQ v2.0 from the supported quality score for fingerprint authentication devices. |
 
 ## Image formats
 
 ### Fingerprint
 
-Refer ISO 19794-4:2011 Specifications.
+Captures and compresses fingerprint images for registration and authentication.
+
+Please refer to ISO 19794-4:2011 Specifications.
 
 | Factor                                       | Registration Devices                                                             | Authentication Devices           |
 | -------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------- |
@@ -33,13 +37,16 @@ Refer ISO 19794-4:2011 Specifications.
 | FTM\*\*                                      | SBI 1.0 - Use host based security (and above)                                    | SBI 2.0 - FTM supported security |
 
 {% hint style="info" %}
-\* MOSIP adopters can change this if needed.\
-\*\* Please refer [SBI specification documentation](broken-reference).
+Note: \
+MOSIP adopters can change this if needed.\
+Please refer to [SBI specification documentation](broken-reference).
 {% endhint %}
 
 ### Iris
 
-RRefer to ISO 19794-6:2011 Specifications.
+Captures high-quality iris images with optional cropping and compression.
+
+Please refer to ISO 19794-6:2011 Specifications.
 
 | Factor                  | Registration Devices                                                                                              | Authentication Devices                                                                                            |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -63,13 +70,16 @@ RRefer to ISO 19794-6:2011 Specifications.
 | FTM\*\*                 | SBI 1.0 - Use host-based security (and above)                                                                     | SBI 2.0 - FTM supported security                                                                                  |
 
 {% hint style="info" %}
-\* MOSIP adopters can change this if needed.\
-\*\* Please refer [SBI specification documentation](broken-reference).
+**Note:**\
+MOSIP adopters can change this if needed.\
+Please refer [SBI specification documentation](broken-reference).
 {% endhint %}
 
 ### Face Capture
 
-Refer ISO 19794-5:2011 Specifications.
+Captures facial images with lossless or lossy compression for identification.
+
+Please refer to ISO 19794-5:2011 Specifications.
 
 | Factor                        | Registration Devices                                                                                                  | Authentication Devices           |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -85,12 +95,13 @@ Refer ISO 19794-5:2011 Specifications.
 | FTM\*\*                       | SBI 1.0 - Use host based security (and above)                                                                         | SBI 2.0 - FTM supported security |
 
 {% hint style="info" %}
-\* MOSIP adopters can change this if needed.\
-\*\* Please refer [SBI specification documentation](broken-reference).
+**Note:**\
+MOSIP adopters can change this if needed.\
+Please refer [SBI specification documentation](broken-reference).
 {% endhint %}
 
 {% hint style="info" %}
-_Capture Time across modalities should be less than 4 Seconds (time taken for providing a final capture response to the calling application, when the biometrics are well placed on the sensors)_
+Capture Time across modalities should be less than 4 Seconds (time taken for providing a final capture response to the calling application, when the biometrics are well placed on the sensors)
 {% endhint %}
 
 We recommend that countries look at ergonomics, accessibility, ease of usage, and common availability of devices while choosing devices for use in registration and authentication scenarios.
