@@ -431,9 +431,7 @@ protected SecurityFilterChain configureSecurityFilterChain(final HttpSecurity ht
 
 For reference, see the implementation in the file [TestSecurityConfig.java](https://github.com/mosip/commons/blob/release-1.3.x/kernel/kernel-notification-service/src/test/java/io/mosip/kernel/emailnotification/test/config/TestSecurityConfig.java#L34-L38) (lines 34-38)
 
-If you encounter the following error:\
-\
-Error:
+If you encounter the following error:
 
 ```java
 ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for
@@ -486,7 +484,8 @@ javaCopyEdit@TestPropertySource("classpath:application.properties")
 Replace `application.properties` with the correct properties file name, if different.
 
 {% hint style="info" %}
-**Note:** **Avoid Mixing JUnit 4 and JUnit 5**
+**Note:** \
+**Avoid Mixing JUnit 4 and JUnit 5**
 
 While this may not be directly related to Java migration, it is strongly recommended to use either JUnit 4 or JUnit 5 consistently throughout your test classes. Mixing the two versions can cause compatibility issues, leading to test failures or unexpected behavior.
 
@@ -506,27 +505,25 @@ While this may not be directly related to Java migration, it is strongly recomme
 
 In Spring MVC, the default path-matching strategy has changed to `PathPatternParser`. This can cause failures when processing Ant-style patterns. To avoid such issues, explicitly configure the application to use  `AntPathMatcher` by setting the appropriate property in your configuration file.
 
-Example:
+**For example:**
 
 ```properties
 propertiesCopyEditspring.mvc.pathmatch.matching-strategy=ANT_PATH_MATCHER
 ```
 
-Refer to the implementation here:\
-[application-default.properties (lines 469-470)](https://github.com/mosip/mosip-config/blob/release-1.3.x/application-default.properties#L469-L470)
+Refer to the implementation here: [application-default.properties (lines 469-470)](https://github.com/mosip/mosip-config/blob/release-1.3.x/application-default.properties#L469-L470)
 
 **2. Updated HTTP Header Size Property**
 
 The `server.max-http-header-size` property is now deprecated. Use `server.max-http-request-header-size` instead to configure the maximum HTTP request header size.
 
-Example:
+**For example:**
 
 ```properties
 propertiesCopyEditserver.max-http-request-header-size=8192
 ```
 
-Refer to the implementation here:\
-[application-default.properties (lines 337-338)](https://github.com/mosip/mosip-config/blob/release-1.3.x/application-default.properties#L337-L338)
+Refer to the implementation here: [application-default.properties (lines 337-338)](https://github.com/mosip/mosip-config/blob/release-1.3.x/application-default.properties#L337-L338)
 
 ### **V. Artifactory Changes**
 
@@ -536,7 +533,7 @@ The following steps can be followed to configure Artifactory during the Java mig
 2. The idea is to keep the existing artifacts unchanged to have the existing services unaffected and only add new entries that are differentiated by the new version in the jar file or the containing folder. Finally, when all modules migration is done we can remove the old version artifact entries.
 3. While deploying a migrated service, it is essential to update the Docker run command or Helm chart configuration to include the appropriate argument for loading the newer version of the dynamic library from the Artifactory server.
 
-### **VI. Docker file changes: \[Yet to be Tested]**
+### **VI. Docker file changes**
 
 The following updates are done in the docker file.
 
@@ -570,7 +567,7 @@ The following updates are done in the docker file.
 {% hint style="info" %}
 #### **Note:**
 
-* Please refer to the changes made for running the audit-service in the following pull requests (PRs):
+* Please refer to the changes made for running the audit service in the following pull requests (PRs):
   * [PR 1499 - mosip/commons](https://github.com/mosip/commons/pull/1499)
   * [PR 248 - mosip/mosip-openid-bridge](https://github.com/mosip/mosip-openid-bridge/pull/248)
   * [PR 144 - mosip/audit-manager](https://github.com/mosip/audit-manager/pull/144)
@@ -599,7 +596,7 @@ As part of the Java upgrade from an older version, the above method is deprecate
 
 ```java
 public boolean onSave(Object entity, Object id, Object[] state, String[] propertyNames, Type[] types) {
-// Instead of super.onSave need to return Interceptor.onSave
+// Instead of super.onSave needs to return Interceptor.onSave
 return Interceptor.onSave(entity, id, state, propertyNames, types);
 }
 public boolean onLoad(Object entity, Object id, Object[] state, String[] propertyNames, Type[] types) {
@@ -614,26 +611,29 @@ return Interceptor.super.onFlushDirty(entity, id, currentState, previousState, p
 * During the migration, issues were observed when converting request and response objects to `String` or `Map` with `registration-processor` APIs. To address this:
   * The `requestType` for some APIs was explicitly set to `String`.
   * The response is now received as an `Object` and converted to a `Map` to handle exceptions.
-* **Due to this change:**
-  * A non-migrated `registration-client` will not work with a migrated `registration-processor`.
-  * However, a migrated `registration-client` will work with a non-migrated `registration-processor`, or both modules must be migrated together.
-  * As part of the Java migration, JavaFX has been upgraded to version 21.0.3 to support the latest features. When setting up the Java 21-migrated `registration-client` repository in your IDE, you will need to:
-    1. Download the required JavaFX ZIP file.
-  *   While running or debugging the `Initialization.java` class to start the `registration-client` application, we pass certain VM arguments to ensure the application runs correctly. One of these arguments specifies the path to the OpenJFX ZIP file. You will need to update the path in the VM arguments to point to the latest JavaFX ZIP file that was downloaded in the previous step. Additionally, a few changes have been made to the existing VM arguments to support Java 21. The updated VM arguments are listed below:\
+*   **Due to this change:**
+
+    * A non-migrated `registration-client` will not work with a migrated `registration-processor`.
+    * However, a migrated `registration-client` will work with a non-migrated `registration-processor`, or both modules must be migrated together.
+    * As part of the Java migration, JavaFX has been upgraded to version 21.0.3 to support the latest features. When setting up the Java 21-migrated `registration-client` repository in your IDE, you will need to:
+      1. Download the required JavaFX ZIP file.
+    * While running or debugging the `Initialization.java` class to start the `registration-client` application, we pass certain VM arguments to ensure the application runs correctly. One of these arguments specifies the path to the OpenJFX ZIP file. You will need to update the path in the VM arguments to point to the latest JavaFX ZIP file that was downloaded in the previous step. Additionally, a few changes have been made to the existing VM arguments to support Java 21.&#x20;
+
+    The updated VM arguments are listed below:\
 
 
-      ```css
-      --module-path <path-to-zip-file>\openjfx-21.0.3_windows-x64_bin-sdk\javafx-sdk-21.0.3\lib 
-      --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.web,javafx.swing,javafx.graphics 
-      --add-exports javafx.graphics/com.sun.javafx.application=ALL-UNNAMED 
-      --add-modules=ALL-SYSTEM 
-      --add-opens=java.base/java.lang=ALL-UNNAMED
-      ```
+    ```css
+    --module-path <path-to-zip-file>\openjfx-21.0.3_windows-x64_bin-sdk\javafx-sdk-21.0.3\lib 
+    --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.web,javafx.swing,javafx.graphics 
+    --add-exports javafx.graphics/com.sun.javafx.application=ALL-UNNAMED 
+    --add-modules=ALL-SYSTEM 
+    --add-opens=java.base/java.lang=ALL-UNNAMED
+    ```
 
 #### Running the Registration Client Downloader Docker image
 
 * The base image in the Dockerfile has been updated to `mosipdev/openjdk-21-jdk:latest`    to support Java 21.
-* The `registration-api-stub-impl` JAR dependency has been added to the Artifactory POM file. During the deployment of the registration-client, this dependency is pulled from Artifactory and bundled with other JAR files in the `lib` folder. This approach avoids adding the dependency directly to the `registration-services` POM file. If custom implementations related to document scanning or geo-positioning are required, they can be pulled from Artifactory and bundled without modifying the `registration-client` codebase.
+* The `registration-api-stub-impl` JAR dependency has been added to the Artifactory POM file. During the deployment of the registration client, this dependency is pulled from Artifactory and bundled with other JAR files in the `lib` folder. This approach avoids adding the dependency directly to the `registration-services` POM file. If custom implementations related to document scanning or geo-positioning are required, they can be pulled from Artifactory and bundled without modifying the `registration-client` codebase.
 * Since JavaFX has been migrated to version 21.0.3, the JavaFX-related files, specifically `zulu21.34.19-ca-fx-jre21.0.3-win_x64.zip`, have been added to Artifactory. This ZIP file is used when preparing the registration-client downloadable ZIP file.
 * Modifications have been made to the `configure.sh` script to support the above two changes.
 
