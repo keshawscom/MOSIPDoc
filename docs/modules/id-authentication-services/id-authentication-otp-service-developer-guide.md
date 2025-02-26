@@ -107,4 +107,4 @@ Below are the configurations to be done in Eclipse:
 
 ## Authentication OTP Service API
 
-* For API documentation, refer [here](https://mosip.github.io/documentation/1.2.0/1.2.0.html).
+* For API documentation, refer [here](https://mosip.github.io/documentation/1.2.0/authentication-otp-service.html).
