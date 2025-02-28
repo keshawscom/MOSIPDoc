@@ -231,11 +231,12 @@ mosip.registration.reset_password_url=${mosip.api.internal.url}/keycloak/auth/re
 **Note:** The placeholder **`“mosip.api.internal.url”`** should be defined in **`application-default.properties`**.
 {% endhint %}
 
-**Supervisor Packet Approval Configuration**
+#### **Supervisor Packet Approval Configuration**
 
 This configuration determines whether supervisor approval is required before submitting registration packets.
 
-* If **enabled (Y)**, the system requires a supervisor to review and approve the registration packet before it is uploaded.
+* If **enabled (Y)**, the system requires a supervisor to review and approve the registration packet before it is uploaded.&#x20;
+* Additionally, the system will cross-check the resident’s biometrics with locally stored operator biometric templates to verify the registration.
 
 ```
 mosip.registration.supervisor_approval_config_flag=Y
