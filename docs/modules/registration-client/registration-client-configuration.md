@@ -1,10 +1,14 @@
-# Registration Client Configuration
+# Registration Client Configuration Guide
 
 ## Overview
 
-The guide here lists down some of the important properties that may be customised for a given installation. Note that the listing here is not exhaustive, but a checklist to review properties that are likely to be different from default. If you would like to see all the properites, then refer to the files listed below.
+The guide here lists down some of the important properties that may be customized for a given installation. Note that the listing here is not exhaustive, but a checklist to review properties that are likely to be different from default. If you would like to see all the properties, then refer to the files listed below.
 
-**IMPORTANT : From the LTS version, All the properties are synced to the registration-client only from `registration-default.properties` file.**
+{% hint style="info" %}
+**IMPORTANT:**&#x20;
+
+**From the LTS version, All the properties are synced to the registration-client only from `registration-default.properties` file.**
+{% endhint %}
 
 ## Configuration files
 
@@ -13,18 +17,18 @@ application-default.properties
 registration-default.properties
 ```
 
-See [Module Configuration](https://docs.mosip.io/1.2.0/modules/module-configuration) for location of these files.
+See [Module Configuration](https://docs.mosip.io/1.2.0/modules/module-configuration) for the location of these files.
 
 ## SBI related configurations
 
-Registration Client reaches SBI on 127.0.0.1 within the below configured port range. As per SBI spec, allowed port range is from 4501 to 4600.
+Registration Client reaches SBI on 127.0.0.1 within the below configured port range. As per SBI spec, the allowed port range is from 4501 to 4600.
 
 ```
 mosip.registration.mdm.portRangeFrom=4501
 mosip.registration.mdm.portRangeTo=4600
 ```
 
-Timeouts in milliseconds set during any http calls to SBI.
+Timeouts in milliseconds are set during any http calls to SBI.
 
 ```
 mosip.registration.mdm.connection.timeout=10000
@@ -43,7 +47,7 @@ mosip.registration.iris_threshold=60
 mosip.registration.face_threshold=9
 ```
 
-Retry attemps, Possible values 1 to 10
+Retry attempts, Possible values 1 to 10
 
 ```
 mosip.registration.num_of_fingerprint_retries=3
@@ -51,7 +55,7 @@ mosip.registration.num_of_iris_retries=3
 mosip.registration.num_of_face_retries=3
 ```
 
-Quality score threshold based on modality for operator authentication, Possible values 1 to 100
+Quality score threshold based on the modality for operator authentication, Possible values 1 to 100
 
 ```
 mosip.fingerprint_authentication.quality_score=30
@@ -61,7 +65,7 @@ mosip.face_authentication.quality_score=30
 
 ## SDK
 
-Registration client can be integrated with more than one bio-sdks. Possible values for "modality-name" are "finger", "iris" or "face".
+Registration clients can be integrated with more than one bio-sdks. Possible values for "modality-name" are "finger", "iris" or "face".
 
 * SDK implementation class full name
 
@@ -71,7 +75,7 @@ Registration client can be integrated with more than one bio-sdks. Possible valu
 
 `mosip.biometric.sdk.providers.<modality-name>.<vendor-name>.version`
 
-* SDK implementation class consturctor args - comma separated
+* SDK implementation class constructor args - comma separated
 
 `mosip.biometric.sdk.providers.<modality-name>.<vendor-name>.args`
 
@@ -83,7 +87,7 @@ Registration client can be integrated with more than one bio-sdks. Possible valu
 
 `mosip.biometric.sdk.providers.<modality-name>.<vendor-name>.threshold`
 
-Example configurations shown below for MOCK SDK named as mockvendor:
+Example configurations are shown below for MOCK SDK named as mockvendor:
 
 ```
 mosip.biometric.sdk.providers.finger.mockvendor.classname=io.mosip.mock.sdk.impl.SampleSDK
@@ -100,13 +104,13 @@ mosip.biometric.sdk.providers.face.mockvendor.args=
 mosip.biometric.sdk.providers.face.mockvendor.threshold=60
 ```
 
-On every successful biometric capture during registration, Quality of the biometrics is computed by bio-sdk if below config is enabled. Possible values are Y/N.
+On every successful biometric capture during registration, the Quality of the biometrics is computed by bio-sdk if below config is enabled. Possible values are Y/N.
 
 `mosip.registration.quality_check_with_sdk=Y`
 
 ## Batch size
 
-Jobs like RID sync, packet upload, status sync is carried out in batches, number of registration records to be executed in a batch on every trigger.
+Jobs like RID sync, packet upload, and status sync are carried out in batches, number of registration records to be executed in a batch on every trigger.
 
 ```
 mosip.registration.rid_sync_batch_size=5
@@ -124,19 +128,19 @@ mosip.registration.operator.onboarding.bioattributes=leftLittle,leftRing,leftMid
 
 ## Pre-Registration sync
 
-On every Pre-Registration application fetch in registration page, clears all the captured data prior to Pre-Registration application fetch. Set the field id's which should not be cleared after Pre-Registration application fetch. It is comma separated list of field ids as per UI-SPEC.
+On every Pre-Registration application fetch in the registration page, clear all the captured data before the Pre-Registration application fetch. Set the field IDs which should not be cleared after the Pre-Registration application fetch. It is a comma-separated list of field ids as per UI-SPEC.
 
 ```
 mosip.registration.fields.to.retain.post.prid.fetch=consent,consentText,preferredLang
 ```
 
-Storage Location to store the downloaded Pre-Registration Packets in local system
+Storage Location to store the downloaded Pre-Registration Packets in the local system
 
 ```
 mosip.registration.registration_pre_reg_packet_location=PreRegPacketStore
 ```
 
-Pre-registration applications fetch time span, No. of days before appointment date.
+Pre-registration applications fetch period, No. of days before the appointment date.
 
 ```
 mosip.registration.pre_reg_no_of_days_limit=7
@@ -144,19 +148,19 @@ mosip.registration.pre_reg_no_of_days_limit=7
 
 ## Scheduled Jobs
 
-Comma separated list of offline job ids. Offline jobs are the jobs which are not part of manual sync.
+Comma-separated list of offline job IDs. Offline jobs are jobs that are not part of manual sync.
 
 ```
 mosip.registration.jobs.offline=DEL_J00013,RDJ_J00010,ADJ_J00012,PVS_J00015
 ```
 
-Comma separated list of untagged job ids. Untagged jobs, which will be not part of manual sync but only from scheduler.
+Comma separated list of untagged job IDs. Untagged jobs, which will be not part of manual sync but only from the scheduler.
 
 ```
 mosip.registration.jobs.unTagged=PDS_J00003
 ```
 
-Comma separated list of job ids which needs Registration Client restart.
+Comma separated list of job IDs that need Registration Client restart.
 
 ```
 mosip.registration.jobs.restart=RCS_J00005
@@ -178,7 +182,7 @@ mosip.registration.sync_jobs_restart_freq=0 0 */11 ? * *
 
 All the identified scanner implementations will be used to list the identified devices. For each device dpi, width and height can be configured. If it is not configured, it defaults to 0.
 
-Values in the this config `mosip.registration.docscanner.id` map supports regex.
+Values in this config `mosip.registration.docscanner.id` map support regex.
 
 ```
 mosip.registration.docscanner.id={ "id1" : "STUB-SCANNER", "id2" : "S600" }
@@ -189,7 +193,7 @@ mosip.registration.docscanner.height={ "id1" : 200, "id2" : 400 }
 
 ## GPS Device Connection
 
-* Enable GPS device for capturing the geo-location. If y, GPS device will be enabled. If n, GPS device will be disabled.
+* Enable GPS device for capturing the geo-location. If y, the GPS device will be enabled. If n, the GPS device will be disabled.
 
 `mosip.registration.gps_device_enable_flag=N`
 
@@ -215,22 +219,31 @@ mosip.registration.docscanner.height={ "id1" : 200, "id2" : 400 }
 
 ## Other configurations
 
-To Reset Password in Registration Client
+#### Resetting Password in Registration Client
 
-On clicking _Reset password_ from the Actions menu present in the top right corner of Home page, it redirects the operator to the URL below which is configurable.
+To reset a password in the Registration Client, click **Reset Password** from the **Actions** menu in the top-right corner of the **Home** page. This redirects the operator to a configurable URL:
 
 ```
 mosip.registration.reset_password_url=${mosip.api.internal.url}/keycloak/auth/realms/mosip/account/
-Note: The place holder “mosip.api.internal.url” should be defined in application-default.properties.
 ```
 
-Enables / disables reviewer authentication on any biometric exception during registration
+{% hint style="info" %}
+**Note:** The placeholder **`“mosip.api.internal.url”`** should be defined in **`application-default.properties`**.
+{% endhint %}
+
+**Reviewer Approval for Biometric Exceptions**
+
+This configuration determines whether reviewer approval is required for biometric exceptions during registration.
+
+Enables/disables reviewer approval on any biometric exception during registration.
+
+* If **enabled (`Y`),** the system will cross-check the resident’s biometrics with locally stored operator biometric templates to verify the exception.
 
 ```
-mosip.registration.reviewer_authentication_configuration=Y
+mosip.registration.supervisor_approval_config_flag=Y
 ```
 
-If enabled cross-checks of residents biometrics with locally stored operator biometric templates.
+* If **disabled (`N`)**, the registration proceeds without additional authentication and packets are automatically uploaded in the next scheduled job.
 
 ```
 mosip.registration.mds.deduplication.enable.flag=N
