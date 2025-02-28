@@ -60,7 +60,7 @@ The image below shows the setup of Registration Client Host machine.
 
 The Registration Client runs background tasks to keep data synchronized with the Registration Processor. It continuously updates the server with newly created packets and syncs additional metadata to improve packet recovery in case of a client failure.
 
-Another background task handles packet uploads. If supervisor approval is required (`'y'`), approved packets are uploaded in batches. If approval is not required (`'n'`), packets are uploaded immediately. With this feature, the registration client has fully capable auto upload.
+Another background task handles packet uploads. If supervisor approval is required (`'y'`), approved packets are uploaded in batches. If approval is not required (`'n'`), packets are uploaded during the next scheduled job. With this feature, the registration client has fully capable auto upload.
 
 You can configure these settings in the [Scheduled Jobs](registration-client-configuration.md#scheduled-jobs) and [Batch Configuration](registration-client-configuration.md#batch-size) sections.
 
