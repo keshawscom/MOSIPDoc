@@ -231,13 +231,11 @@ mosip.registration.reset_password_url=${mosip.api.internal.url}/keycloak/auth/re
 **Note:** The placeholder **`“mosip.api.internal.url”`** should be defined in **`application-default.properties`**.
 {% endhint %}
 
-**Reviewer Approval for Biometric Exceptions**
+**Supervisor Packet Approval Configuration**
 
-This configuration determines whether reviewer approval is required for biometric exceptions during registration.
+This configuration determines whether supervisor approval is required before submitting registration packets.
 
-Enables/disables reviewer approval on any biometric exception during registration.
-
-* If **enabled (`Y`),** the system will cross-check the resident’s biometrics with locally stored operator biometric templates to verify the exception.
+* If **enabled (Y)**, the system requires a supervisor to review and approve the registration packet before it is uploaded.
 
 ```
 mosip.registration.supervisor_approval_config_flag=Y
