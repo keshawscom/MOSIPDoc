@@ -233,28 +233,29 @@ mosip.registration.reset_password_url=${mosip.api.internal.url}/keycloak/auth/re
 
 #### **Supervisor Packet Approval Configuration**
 
-This configuration determines whether supervisor approval is required before submitting registration packets.
+This configuration determines whether supervisor approval is required before the Sync and Upload of registration packets.
 
-* If **enabled (Y)**, the system requires a supervisor to review and approve the registration packet before it is uploaded.&#x20;
-* Additionally, the system will cross-check the resident’s biometrics with locally stored operator biometric templates to verify the registration.
+* If **enabled (Y)**, the system requires a supervisor to review and approve the registration packets before it is synched and uploaded.&#x20;
 
 ```
 mosip.registration.supervisor_approval_config_flag=Y
 ```
 
-* If **disabled (`N`)**, the registration proceeds without additional authentication and packets are automatically uploaded in the next scheduled job.
+* If **disabled (`N`)**, the registration proceeds auto approving, and packets are automatically uploaded in the next scheduled job.
+
+Additionally, the system will cross-check the resident’s biometrics with locally stored operator biometric templates to verify the registration.
 
 ```
 mosip.registration.mds.deduplication.enable.flag=N
 ```
 
-Minimum disk space required to create a packet - in MB
+Minimum disk space that should be available in the machine to proceed with registration - in MB
 
 ```
 mosip.registration.disk_space_size=5
 ```
 
-Registration packet store location
+Location to store registration packets in the client machine:
 
 ```
   object.store.base.location=packets
@@ -264,15 +265,15 @@ Number of days allowed to start Registration Client without upgrade when softwar
 
 `mosip.registration.softwareUpdateCheck_configured_frequency=60`
 
-Time in Seconds for forced log-out of operator, if operator is idle for the specified duration
+Time in Seconds for forced log-out of the operator, if the operator is idle for the specified duration
 
 `mosip.registration.idle_time=900`
 
-Time in Seconds to diplay the warning message pop-up to operator, if operator is idle for the specified duration
+Time in Seconds to display the warning message pop-up to the operator, if the operator is idle for the specified duration
 
 `mosip.registration.refreshed_login_time=600`
 
-Maximum no. of days for approved packet pending to be synced to server beyond which Registration Client is frozen for registration
+Maximum no. of days for approved packet pending to be synced to a server beyond which Registration Client is frozen for registration
 
 `mosip.registration.last_export_registration_config_time=100`
 
@@ -280,7 +281,7 @@ Maximum no. of packets pending EOD approval beyond which Registration Client is 
 
 `mosip.registration.reg_pak_max_cnt_apprv_limit=100`
 
-Enable supervisor authentication feature. If y, supervisor approval will be enabled, else, will be disbaled
+Enable supervisor authentication feature. If y, supervisor approval will be enabled, else, will be disabled
 
 `mosip.registration.supervisor_approval_config_flag=Y`
 
@@ -288,27 +289,27 @@ No. of days beyond audit creation date to delete audits
 
 `mosip.registration.audit_log_deletion_configured_days=10`
 
-No. of days beyond registration date to delete synced and uploaded registration packet
+No. of days beyond the registration date to delete synced and uploaded registration packet:
 
 `mosip.registration.reg_deletion_configured_days=1`
 
-No. of days beyond appointment date to delete unconsumed pre-registration application data
+No. of days beyond the appointment date to delete unconsumed pre-registration application data
 
 `mosip.registration.pre_reg_deletion_configured_days=1`
 
-Maximum duration to which registration is permitted without sync of master data
+The maximum duration to which registration is permitted without sync of master data
 
 `mosip.registration.sync_transaction_no_of_days_limit=5`
 
-Allowed number of invalid login attempts
+Allowed a number of invalid login attempts:
 
 `mosip.registration.invalid_login_count=50`
 
-Used to configure the time (in minutes) for locking account after crossing configured invalid login count
+Used to configure the time (in minutes) for locking the account after crossing the configured invalid login count
 
 `mosip.registration.invalid_login_time=2`
 
-Configuration used to check if any sync job is missed / failed beyond expected days, this configuration is checked everytime operator clicks on any registration process. We follow below convention to create this config key.
+Configuration is used to check if any sync job is missed/failed beyond expected days, this configuration is checked every time the operator clicks on any registration process. We follow the below convention to create this config key.
 
 `mosip.registration.job api name as in sync_job_def table.frequency=value in days`
 
@@ -342,7 +343,7 @@ Configuration used to check if any sync job is missed / failed beyond expected d
 
 ## Date formats
 
-Date format to be displayed on acknowledgement slip, default value - dd/MM/yyyy hh:mm a
+Date format to be displayed on acknowledgment slip, default value - dd/MM/yyyy hh:mm a
 
 ```
   mosip.registration.application_date_format
