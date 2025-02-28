@@ -56,6 +56,14 @@ The image below shows the setup of Registration Client Host machine.
 * Registration packet is an signed and encrypted ZIP.
 * Registration acknowledgment is also signed and encrypted with TPM key.
 
+## Background Tasks
+
+The Registration Client runs background tasks to keep data synchronized with the Registration Processor. It continuously updates the server with newly created packets and syncs additional metadata to improve packet recovery in case of a client failure.
+
+Another background task handles packet uploads. If supervisor approval is required (`'y'`), approved packets are uploaded in batches. If approval is not required (`'n'`), packets are uploaded immediately. With this feature, the registration client has fully capable auto upload.
+
+You can configure these settings in the [Scheduled Jobs](registration-client-configuration.md#scheduled-jobs) and [Batch Configuration](registration-client-configuration.md#batch-size) sections.
+
 ## Configurations
 
 Registration Client can be customized as per a country' requirements. For details related to Registration Client configurations, refer to [Registration Client configuration](https://docs.mosip.io/1.2.0/modules/registration-client/registration-client-configuration).
@@ -70,7 +78,7 @@ Registration Client can be customized as per a country' requirements. For detail
 * UI-SPEC json files are tamper proof, client checks the stored file hash everytime it tries to load registration UI.
 * UI-SPEC json will fail to load if tampered.
 
-Default UI Specifications loaded with Sandbox installation is available [here](https://github.com/mosip/mosip-infra/blob/1.2.0-rc2/deployment/v3/mosip/kernel/masterdata/xlsx/ui\_spec.xlsx)
+Default UI Specifications loaded with Sandbox installation is available [here](https://github.com/mosip/mosip-infra/blob/1.2.0-rc2/deployment/v3/mosip/kernel/masterdata/xlsx/ui_spec.xlsx)
 
 ## Developer Guide
 
