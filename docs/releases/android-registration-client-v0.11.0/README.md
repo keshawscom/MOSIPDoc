@@ -61,4 +61,4 @@ To view the list of known issues, refer **here**. (To be updated)
 
 ### Documentation
 
-QA Report
+[QA Report](https://docs.mosip.io/1.2.0/releases/android-registration-client-v0.11.0/test-report)

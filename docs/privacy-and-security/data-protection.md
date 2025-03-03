@@ -6,25 +6,50 @@ Various flows with encryption are illustrated below. Refer to [Keys](../modules/
 
 ## Registration data flow
 
-![](../.gitbook/assets/cryptography-registration-flow.png)
+The below diagram represents a registration data flow system for biometric authentication and identity management.
 
-1. [Biometrics](../biometrics/) are signed by the private key of the device provider (PK2). The signature is verified by the Registration Client.
-2. [Registration Client](../modules/registration-client/) signs the packet using the TPM key of the machine (K10) and encrypts the packet using MOSIP public key specific to (the registration centre, machine id) combination (K11).
-3. [Registration processor](../modules/registration-processor/) stores packets created in (2) "as is" in [Object Store](../modules/persistence/object-store.md).
-4. [ID Repository](../modules/id-repository/) encrypts biometrics, demographics and documents and stores them in Object Store. (K7.1,K7.2,K7.3)
-5. The UINs are hashed, encrypted and stored in `uin` the table of `mosip_idrepo` DB. (K7.4)
-6. Biometrics are shared and encrypted with the ABIS partner's key (PK1).
-7. Registration processor stores encrypted demographic data in `mosip_regprc` DB. (K11)
+<figure><img src="../.gitbook/assets/Registration-Data-Flow.png" alt=""><figcaption><p>Registration Data Flow</p></figcaption></figure>
+
+1. **Biometric Capture:**
+   * A biometric device captures and signs biometric data before sending it to the **Registration Client (PK2)**. Then registration client verifies the signature
+2. **Registration & Encryption:**
+   * The **Registration Client**, running on the operator’s system, receives biometric data and securely encrypts it into packets.
+   * The client always refers to **Keycloak** for authentication, ensuring that only authorized operators can access the system.
+   * [Registration Client](https://docs.mosip.io/1.2.0/modules/registration-client) signs the packet using the TPM key of the machine (K10) and encrypts the packet using MOSIP public key specific to (the registration centre, machine id) combination (K11).
+3. **Data Processing & Storage:**
+   * The encrypted packets are transmitted to the **Registration Processor**, which processes and signs the data.
+   * The processed data is then stored in the **Object Store** and **ID Repository** for further use.
+4. **Secure Storage of Biometric Data:**
+   * [ID Repository](https://docs.mosip.io/1.2.0/modules/id-repository) encrypts biometrics, demographics, and documents and stores them in the Object Store. (K7.1,K7.2,K7.3)
+5. **Hashed UIN Storage:**
+   * The UINs are hashed, encrypted, and stored in `uin` the table of `mosip_idrepo` DB. (K7.4)
+6. **Data Sharing & Policy Enforcement:**
+   * When encrypted biometric data needs to be shared, it is sent to **ABIS** for authentication.
+   * The system consults the **Partner/Policy Management System** to verify partner details and enforce data-sharing policies.
+   * Only partners who have registered and authenticated via **Keycloak** can access the **Partner Management System**, where they must subscribe to specific policies to receive data.
+7. **Demographic Data Storage:**
+   * Encrypted demographic data is stored in the **Registration Processor Database**. (K11)
+8. **Credential Issuance:**
+   * Encrypted resident data is shared with **credential requestors and printers** based on the subscribed policies. (K12)
+9. **Operator Authentication:**
+   * The **Registration Client** checks **Keycloak** to ensure that only authenticated operators can perform registrations.
+10. **Policy Validation for Data Transfer:**
+
+* Before transferring encrypted data to **ABIS, partners, or credential requestors**, the system refers to the **Partner/Policy Management System** to validate policies.
+
+11\. **Partner & Policy Control:**
+
+* The **Partner Management System** is controlled by **Keycloak**, ensuring that only registered partners with valid credentials can subscribe to and enforce policies for data access. (11,12,13)
 
 ## Datashare
 
-![](../.gitbook/assets/cryptography-datashare.png)
+![Datashare Flow Diagram](../.gitbook/assets/cryptography-datashare.png)
 
-Data shared with all partners like ABIS, Print, Adjudication, IDA etc. is encrypted using partners' public key. Note that IDA is also a partner, however, a special partner in the sense that data is additionally zero-knowledge encrypted before sending to IDA (see the section below).
+Data shared with all partners like ABIS, Print, Adjudication, IDA, etc. is encrypted using partners' public key. Note that IDA is also a partner, however, a special partner in the sense that data is additionally zero-knowledge encrypted before sending to IDA (see the section below).
 
 ## Zero-knowledge encryption
 
-The [ID Authentication](../id-authentication.md) module (IDA) is an independent module and may be hosted by several providers. IDA hosts all the biometric templates and demographic data. Unique additional protection is provided here to make sure that mass decryption of user data is very difficult to achieve. The data can only be decrypted if the user's UIN is provided. Here is the encryption scheme:
+The [ID Authentication](../id-authentication.md) module (IDA) is independent and may be hosted by several providers. IDA hosts all the biometric templates and demographic data. Unique additional protection is provided here to make sure that mass decryption of user data is very difficult to achieve. The data can only be decrypted if the user's UIN is provided. Here is the encryption scheme:
 
 ### Encryption and sharing by Credential Service
 
@@ -56,6 +81,6 @@ The [ID Authentication](../id-authentication.md) module (IDA) is an independent 
 ![](../.gitbook/assets/cryptography-ida-flow.png)
 
 1. L1 devices contain [FTM](../biometrics/ftm.md) to encrypt (DE1, K21) and sign (FK1) biometrics at the source and send them to the authentication client.
-2. The authentication client further encrypts the auth request with IDA-PARTNER public key.
+2. The authentication client further encrypts the auth request with the IDA-PARTNER public key.
 3. IDA decrypts zero-knowledge data as given in [Step 4](data-protection.md#encryption-and-share-by-credential-service) and then performs a demographic and/or biometric authentication.
-4. The match result is returned to Auth client. In the case of KYC, the KYC attributes are encrypted with the Partner's public key (as in [Datashare](../modules/datashare.md)).
+4. The match result is returned to the Auth client. In the case of KYC, the KYC attributes are encrypted with the Partner's public key (as in [Datashare](../modules/datashare.md)).
