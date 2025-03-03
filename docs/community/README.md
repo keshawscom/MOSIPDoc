@@ -1,2 +1,6 @@
-# 🤝 Community
+---
+icon: people-group
+---
+
+# Community
 

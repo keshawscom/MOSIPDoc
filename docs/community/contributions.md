@@ -1,3 +1,7 @@
+---
+icon: hands-holding-circle
+---
+
 # Contributions
 
 ## Overview

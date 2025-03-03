@@ -1,4 +1,8 @@
-# 🍁 Home
+---
+icon: passport
+---
+
+# MOSIP
 
 ## About MOSIP
 
@@ -15,7 +19,7 @@ The key objectives of MOSIP are to :
 
 The latest release of MOSIP, version **1.2.0 LTS** is here! Check out the exciting new services and enhancements in the documentation.
 
-To learn more, see our [Releases Notes](releases/).
+To learn more, see our [Releases Notes](roadmap-and-releases/releases/).
 
 To read through the previous version of the documentation, see the [Older version documentation (1.1.5)](https://docs.mosip.io/1.1.5).
 

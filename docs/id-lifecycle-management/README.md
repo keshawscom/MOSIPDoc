@@ -1,4 +1,8 @@
-# 🆔 ID Lifecycle Management
+---
+icon: id-card-clip
+---
+
+# ID Lifecycle Management
 
 ## Overview
 
@@ -6,11 +10,9 @@ Identity Lifecycle Management refers to the **process of issuing and managing us
 
 The various life cycle events are briefly explained below:
 
-* New ID issuance (for adults and infants)
-* ID data update or update individual’s information
-* De-activate or re-activate the individual’s ID
-* Lost ID
-* Correction process
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td></td><td><a href="../.gitbook/assets/nav-card-identity-issuance.png">nav-card-identity-issuance.png</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/nav-card-Identity-verification.png">nav-card-Identity-verification.png</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/v-identity-management.png">v-identity-management.png</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/nav-card-support-systems.png">nav-card-support-systems.png</a></td></tr></tbody></table>
+
+
 
 ## New ID issuance
 
@@ -18,7 +20,7 @@ The various life cycle events are briefly explained below:
 
 ### Pre-registration
 
-[Pre-registration](../modules/pre-registration/) is a resident-facing web-based portal that allows a resident to provide registration data, upload document proofs and book an appointment with a registration centre to complete the rest of the registration process. This data can be accessed by the registration officers who could then complete the registration process such as collecting biometrics, verifying the documents and other formalities thus saving time and effort at the registration centre.
+[Pre-registration](identity-issuance/pre-registration/) is a resident-facing web-based portal that allows a resident to provide registration data, upload document proofs and book an appointment with a registration centre to complete the rest of the registration process. This data can be accessed by the registration officers who could then complete the registration process such as collecting biometrics, verifying the documents and other formalities thus saving time and effort at the registration centre.
 
 A resident can access the pre-registration portal and do the following:
 
@@ -29,7 +31,7 @@ A resident can access the pre-registration portal and do the following:
 
 ### Registration (enrolment)
 
-Registration is a process that allows a resident to provide demographic information and biometrics by visiting a registration centre. The [Registration Client](../modules/registration-client/) operated by a registration officer is used to securely capture the details and send them to [Registration Processor](../modules/registration-processor/) for processing and issuance of an ID. If a resident has pre-registered, the registration officer can retrieve the registration data by giving the pre-registration ID to the Registration Client.
+Registration is a process that allows a resident to provide demographic information and biometrics by visiting a registration centre. The [Registration Client](identity-issuance/registration-client/) operated by a registration officer is used to securely capture the details and send them to [Registration Processor](identity-issuance/registration-processor/) for processing and issuance of an ID. If a resident has pre-registered, the registration officer can retrieve the registration data by giving the pre-registration ID to the Registration Client.
 
 #### For adults
 
@@ -63,7 +65,7 @@ _Note: For infants/children less than 5 years old, the Registration Client does 
 ## De-activate/re-activate individual’s ID
 
 * De-activate ID means an individual will not be able to authenticate themselves by using the UIN or VID.
-* If a country wants to deactivate an individual’s ID for any specific reason, the system deactivates the individual’s ID after certain validations are performed in the [Registration Processor](../modules/registration-processor/).
+* If a country wants to deactivate an individual’s ID for any specific reason, the system deactivates the individual’s ID after certain validations are performed in the [Registration Processor](identity-issuance/registration-processor/).
 * Likewise, a country can also re-activate an individual’s ID as need be.
 
 ## Finding a lost ID
