@@ -49,7 +49,7 @@ The **key features** of Authentication Partner incorporated in this release are:
 * **Compatibility:**
   * Optimized for standard browser sizes (laptop/desktop) with responsive UI design for laptop/desktop views.
 
-For detailed description of the above features, refer to [Feature Documentation](../../../id-lifecycle-management/support-systems/partner-management-services/functional-overview/features.md).
+For detailed description of the above features, refer to [Feature Documentation](../../../id-lifecycle-management/support-systems/partner-management-services/overview/features.md).
 
 **Note:** All other existing services offered by earlier version of Partner Management Portal (Version 1.2.0.2) for roles such as Partner Admin, Device Provider, FTM Chip provider etc will continue to work in the previous UI until our revamp incorporates all these features in upcoming releases.
 
