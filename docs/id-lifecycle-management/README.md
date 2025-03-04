@@ -10,7 +10,7 @@ Identity Lifecycle Management refers to the **process of issuing and managing us
 
 The various life cycle events are briefly explained below:
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td></td><td><a href="../.gitbook/assets/nav-card-identity-issuance.png">nav-card-identity-issuance.png</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/nav-card-Identity-verification.png">nav-card-Identity-verification.png</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/v-identity-management.png">v-identity-management.png</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/nav-card-support-systems.png">nav-card-support-systems.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td><a href="../.gitbook/assets/nav-card-identity-issuance.png">nav-card-identity-issuance.png</a></td><td><a href="identity-issuance/">identity-issuance</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/nav-card-Identity-verification.png">nav-card-Identity-verification.png</a></td><td><a href="identity-verification/">identity-verification</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/v-identity-management.png">v-identity-management.png</a></td><td><a href="identity-management/">identity-management</a></td></tr><tr><td></td><td><a href="../.gitbook/assets/nav-card-support-systems.png">nav-card-support-systems.png</a></td><td><a href="support-systems/">support-systems</a></td></tr></tbody></table>
 
 
 
